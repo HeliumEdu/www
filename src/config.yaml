@@ -7,9 +7,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Helium - The student planner that lightens your course load'
-    template: '%s - Helium'
-  description: 'Free, open-source student planner. Calendar, classes, grades, todos, and notebook - across every device. Built for students, by students.'
+    default: 'Helium - Student Planner & Academic Calendar App'
+    template: '%s | Helium'
+  description: 'Helium is a smart student planner that organizes your classes, assignments, grades, and notes into one color-coordinated calendar for academic success.'
   robots:
     index: true
     follow: true
