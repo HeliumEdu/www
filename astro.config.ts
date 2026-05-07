@@ -18,6 +18,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   output: 'static',
 
+  redirects: {
+    '/support': 'https://support.heliumedu.com',
+    '/contact': 'https://support.heliumedu.com',
+    '/status': 'https://status.heliumedu.com',
+    '/app': 'https://app.heliumedu.com',
+    '/press': '/',
+    '/docs': '/',
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,

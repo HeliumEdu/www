@@ -1,0 +1,51 @@
+---
+import type { Faqs as Props } from '~/types';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { Icon } from 'astro-icon/components';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline,
+  items = [],
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-4xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={{
+      container: 'max-w-3xl mx-auto',
+      title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+      subtitle: 'max-w-2xl mx-auto text-xl text-muted dark:text-slate-400',
+    }}
+  />
+  <ul class="divide-y divide-blue-100 dark:divide-slate-700 rounded-xl border border-blue-100 dark:border-slate-700 bg-white/60 dark:bg-slate-800/40 shadow-sm overflow-hidden">
+    {
+      items.map(({ title: q, description }) => (
+        <li>
+          <details class="group">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-6 py-5 text-left text-lg font-semibold text-heading dark:text-white hover:bg-blue-50/60 dark:hover:bg-slate-700/40 transition">
+              <span>{q}</span>
+              <Icon
+                name="tabler:chevron-down"
+                class="h-5 w-5 shrink-0 text-primary transition-transform group-open:rotate-180"
+              />
+            </summary>
+            {description && (
+              <div class="px-6 pb-6 -mt-1 text-muted dark:text-slate-400 leading-relaxed" set:html={description} />
+            )}
+          </details>
+        </li>
+      ))
+    }
+  </ul>
+</WidgetWrapper>

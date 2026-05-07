@@ -1,0 +1,53 @@
+---
+import type { Steps as Props } from '~/types';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { Icon } from 'astro-icon/components';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline,
+  items = [],
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={{
+      container: 'max-w-3xl mx-auto',
+      title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+      subtitle: 'max-w-2xl mx-auto text-xl text-muted dark:text-slate-400',
+    }}
+  />
+  <ol class="relative max-w-3xl mx-auto">
+    {
+      items.map(({ title: itemTitle, description, icon }, index) => (
+        <li class="relative flex items-start gap-5 pb-10 last:pb-0">
+          <div class="flex flex-col items-center self-stretch">
+            <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-white shadow-md ring-4 ring-blue-50 dark:ring-slate-800">
+              {icon ? (
+                <Icon name={icon} class="h-6 w-6" />
+              ) : (
+                <span class="text-lg font-bold">{index + 1}</span>
+              )}
+            </div>
+            {index < items.length - 1 && <div class="mt-2 w-0.5 grow bg-blue-100 dark:bg-slate-700" />}
+          </div>
+          <div class="pt-1.5 pb-2">
+            {itemTitle && <h3 class="text-xl md:text-2xl font-bold text-heading dark:text-white">{itemTitle}</h3>}
+            {description && <p class="mt-2 text-muted dark:text-slate-400 leading-relaxed" set:html={description} />}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+</WidgetWrapper>

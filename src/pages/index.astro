@@ -1,21 +1,34 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '~/layouts/PageLayout.astro';
 
 import StackedHero from '~/components/widgets/StackedHero.astro';
 import DownloadBadges from '~/components/widgets/DownloadBadges.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
+import Faqs from '~/components/widgets/Faqs.astro';
+// import Testimonials from '~/components/widgets/Testimonials.astro';
+import Button from '~/components/ui/Button.astro';
+
+import iosBadge from '~/assets/images/ios-badge.png';
+import playBadge from '~/assets/images/play-badge.png';
 
 import smartCalendars from '~/assets/images/screenshots/month-view.png';
+import externalCalendars from '~/assets/images/screenshots/external-calendars.png';
 import liveGrades from '~/assets/images/screenshots/grades.png';
+import gradeDetail from '~/assets/images/screenshots/grade-detail.png';
 import schedules from '~/assets/images/screenshots/week-view.png';
+import classesList from '~/assets/images/screenshots/classes-list.png';
 import notebook from '~/assets/images/screenshots/notebook.png';
 import assignmentPlanner from '~/assets/images/screenshots/assignment-planner.png';
-import supplies from '~/assets/images/screenshots/supplies.png';
 import customTodos from '~/assets/images/screenshots/todos.png';
 import attachmentsReminders from '~/assets/images/screenshots/attachments-reminders.png';
 
+import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB } from '~/links';
+
 const metadata = {
-  title: 'Helium - Student Planner & Academic Calendar App',
+  title: 'Helium — Student Planner & Academic Calendar App',
   ignoreTitleTemplate: true,
 };
 ---
@@ -27,20 +40,108 @@ const metadata = {
 
   <div id="overview"></div>
 
+  <Features
+    id="features"
+    title="Not just a planner. A study buddy that actually helps."
+    subtitle="Helium organizes and color-codes your schedule, does the math, and surfaces what matters most — so you can focus on the actual learning."
+    columns={3}
+    items={[
+      {
+        title: 'Calculates what grade you need',
+        description:
+          'Use the <strong>What Grade Do I Need?</strong> calculator to see exactly what you need on the Final on achieve your desired grade.',
+        icon: 'tabler:calculator',
+      },
+      {
+        title: 'Shows your pace',
+        description:
+          '<strong>Progress vs. Pace</strong> shows whether you\'re Ahead, On Track, or Behind — work done vs. time elapsed in the term.',
+        icon: 'tabler:gauge',
+      },
+      {
+        title: 'Surfaces at-risk classes',
+        description:
+          '<strong>At-Risk Classes</strong> appear at the top of your dashboard whenever a class slips below the threshold you set.',
+        icon: 'tabler:alert-triangle',
+      },
+      {
+        title: 'Nudges, never nags',
+        description:
+          'Native push on iOS, Android, and web, or email — before assignments, classes, and exams sneak up.',
+        icon: 'tabler:bell',
+      },
+      {
+        title: 'Syncs in both directions',
+        description:
+          'Subscribe to Google, Apple, or any other calendar — it shows up in Helium. Or share Helium back the other way.',
+        icon: 'tabler:transfer',
+      },
+      {
+        title: 'Travels with you',
+        description:
+          'Native iOS and Android apps. Web in any browser. Sign in once — your schedule, on every device.',
+        icon: 'tabler:devices',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Features>
+
+  <Steps
+    title="From zero to organized in minutes."
+    subtitle="Just four quick moves and you're on track for the whole term."
+    items={[
+      {
+        title: 'Sign up.',
+        description:
+          'Use Google, Apple, or any email and password to create an account.',
+        icon: 'tabler:user-plus',
+      },
+      {
+        title: 'Add classes & assignments.',
+        description:
+          'Walk through your syllabus once: classes, schedules, assignments, due dates, rubrics. Helium takes it from there.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Track assignments & grades.',
+        description:
+          'Mark things done and enter your grades as the term rolls along. Helium calculates everything — class, category, term — and shows you exactly where you stand.',
+        icon: 'tabler:checkbox',
+      },
+      {
+        title: 'Stay ahead.',
+        description:
+          'Trust Helium to nudge you before things sneak up. Glance at <strong>At-Risk Classes</strong> when you sit down to study to help target what might need more focus.',
+        icon: 'tabler:trending-up',
+      },
+    ]}
+  />
+
   <Content
     id="calendars"
     tagline="Smart Calendars"
-    title="Smart Calendars."
+    title="One planner. Every view."
     subtitle="The Home Base."
-    image={{
-      src: smartCalendars,
-      alt: 'Smart Calendars',
-    }}  >
+  >
     <Fragment slot="content">
-      Don't worry about trying to remember every homework assignment, project, or test-use that brainpower
-      to <em>learn</em>. Helium keeps all your classes, deadlines, and study time organized in one clean,
-      color-coded calendar. You can even subscribe to external calendars-or use Helium's feeds in your
-      favorite calendar app-so everything stays in sync wherever you plan.
+      <p>
+        Don't worry about jumping between five apps to know what's coming. Helium keeps your classes, assignments, and
+        personal events in one color-coded planner. Use <strong>Month</strong> for the long horizon,
+        <strong>Week</strong> for the academic rhythm, <strong>Day</strong> for what's right in front of you,
+        <strong>Agenda</strong> when you need your schedule listed — whatever fits the moment.
+      </p>
+      <p class="mt-4">
+        Already living in Google, Apple, or another calendar app? Subscribe to your existing calendars and they show up
+        alongside your Helium schedule. Or share Helium the other direction, so your classes and assignments appear
+        in other apps.
+      </p>
+    </Fragment>
+    <Fragment slot="image">
+      <Image src={smartCalendars} alt="Helium month view" class="rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={externalCalendars} alt="External calendars panel" class="mt-4 rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
@@ -50,76 +151,50 @@ const metadata = {
   <Content
     id="grades"
     isReversed
-    isAfterContent
-    tagline="Live Grade Tracker"
-    title="Live Grade Tracker & Analysis."
+    tagline="Live Grade Tracker & Calculator"
+    title="Know your grade, and know what's next."
     subtitle="The Bottom Line."
-    image={{
-      src: liveGrades,
-      alt: 'Live Grade Tracker',
-    }}  >
+  >
     <Fragment slot="content">
-      Done calculating grades by hand? Us too. Helium updates your grades in real time-per class, category,
-      and the entire term. See exactly which classes you're rocking and where you need to pick up the pace.
-      Weighted categories, progress charts, and trend indicators help you plan ahead (and catch problems
-      early).
+      <p>
+        Done with the spreadsheet? Us too. Helium recalculates your grades in real time — by class, by category, and
+        across the whole term — however your professor grades. The dashboard surfaces your overall grade,
+        <strong>At-Risk Classes</strong>, <strong>Progress vs. Pace</strong>, and <strong>Pending Impact</strong>
+        (the ungraded assignments that could most affect your grade) at a glance, so you always know which class needs
+        your attention next.
+      </p>
+      <p class="mt-4">
+        Drill down into any class to see how every category contributes — essays, quizzes, labs, exams — and
+        precisely where the points are coming from. Need to know what you have to score on the final?
+        The <strong>What Grade Do I Need?</strong> calculator can show you.
+      </p>
     </Fragment>
-  </Content>
-
-  <Content
-    id="classes"
-    isAfterContent
-    tagline="At-a-Glance Schedules"
-    title="At-a-Glance Schedules."
-    subtitle="The Brass Tacks."
-    image={{
-      src: schedules,
-      alt: 'At-a-Glance Schedules',
-    }}  >
-    <Fragment slot="content">
-      See your term clearly with detailed class and assignment information-times, teachers, rooms, credits,
-      categories &amp; grades-and quick access to your full workload. Switch between month, week, day, and
-      "Todos" views to understand exactly what's coming up and plan your time with confidence.
-    </Fragment>
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    <Fragment slot="image">
+      <Image src={liveGrades} alt="Grades dashboard" class="rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={gradeDetail} alt="Class grade category breakdown" class="mt-4 rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
     </Fragment>
   </Content>
 
   <Content
     id="notebook"
-    isReversed
-    isAfterContent
     tagline="Rich Notebook"
-    title="Rich Notebook."
-    subtitle="The Full Picture."
+    title="Notes that know what they're about."
+    subtitle="The Backstory."
     image={{
       src: notebook,
       alt: 'Rich Notebook',
-    }}  >
+    }}
+  >
     <Fragment slot="content">
-      Your notes, in context. Write rich notes linked directly to your work-so the details you need are
-      always right where you need them. Or keep standalone notes for anything else: lecture summaries,
-      paper drafts, or anything you want to capture on the fly. Either way, everything lives in one
-      organized notebook.
-    </Fragment>
-  </Content>
-
-  <Content
-    id="assignments"
-    isAfterContent
-    tagline="Detailed Assignment Planner"
-    title="Detailed Assignment Planner."
-    subtitle="The Nitty Gritty."
-    image={{
-      src: assignmentPlanner,
-      alt: 'Detailed Assignment Planner',
-    }}  >
-    <Fragment slot="content">
-      Never miss an assignment again. Helium remembers the details so you don't have to. Enter due dates,
-      links, and textbook information, jot down notes to yourself, set priority levels, attach materials,
-      and record grades when you're done. Everything you need to manage the life cycle of an assignment
-      lives in one organized place.
+      <p>
+        Your Notebook can hold notes for anything in Helium — and each one knows what it's about, so the rubric, the
+        lecture summary, or the half-written outline is always one click from the thing it relates to. Need to draft
+        a paper or capture lecture notes that aren't tied to anything yet? Standalone notes let you capture that too.
+      </p>
+      <p class="mt-4">
+        Notes can be formatted just like you would a doc — headings, lists, quotes, and links — so they read the way
+        you think. Print them when you need a hard copy, and search across everything you've written, all in one place.
+      </p>
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
@@ -127,39 +202,47 @@ const metadata = {
   </Content>
 
   <Content
-    id="materials"
+    id="classes"
     isReversed
-    isAfterContent
-    tagline="Supplies Organizer"
-    title="Supplies Organizer."
-    subtitle="The Meat & Potatoes."
-    image={{
-      src: supplies,
-      alt: 'Supplies Organizer',
-    }}  >
+    tagline="At-a-Glance Schedules"
+    title="Your day-to-day, hour by hour."
+    subtitle="The Brass Tacks."
+  >
     <Fragment slot="content">
-      Everything you need for every class in one place! Helium will maintain a list of the supplies, books,
-      technology, and equipment you'll need to pick up to be ready for class each term and each day. Make
-      textbook resale a snap by recording details about each book. Conveniently link digital tools to
-      assignments.
+      <p>
+        Zoom in to your week, hour by hour. Class meetings are time-blocked when they actually happen — even when that
+        varies day-to-day, like a Friday lab that runs longer than Tuesday's lecture.
+      </p>
+      <p class="mt-4">
+        Assignments show up exactly when they're due, so a glance at tomorrow morning tells you what you're walking
+        into. Drag and drop to shift an assignment or event when plans inevitably change.
+      </p>
+      <p class="mt-4">
+        Need more info on Tuesday's class, room number, teacher's email, or a refresh on the grading scale? Details
+        are always just a click away.
+      </p>
+    </Fragment>
+    <Fragment slot="image">
+      <Image src={schedules} alt="Week view" class="rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={classesList} alt="Classes list with teachers and rooms" class="mt-4 rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
     </Fragment>
   </Content>
 
   <Content
     id="filters"
-    isAfterContent
-    tagline="Custom Todos"
-    title="Custom Todos & Filtered Lists."
+    tagline="Todos View"
+    title="When the calendar isn't the right layout."
     subtitle="The Nuts & Bolts."
     image={{
       src: customTodos,
       alt: 'Custom Todos',
-    }}  >
+    }}
+  >
     <Fragment slot="content">
-      Calendar view doesn't always cut it. Helium's "Todos" view give you a focused, flexible way to manage
-      your workload. Sort assignments by class, priority, due date, materials, completion, or grade. Create
-      targeted study plans, prep for exams, break down long-term projects, or quickly see what's due next.
-      When things get busy, this view helps you stay in control.
+      Sometimes a calendar isn't the right layout. The <strong>Todos</strong> view turns your assignments into a
+      focused, checkable list — sort and filter by anything, and check things off as you go. See what's due next,
+      isolate one class to prep for an exam, or knock out a backlog. When things get busy, this is where you stay in
+      control.
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
@@ -167,21 +250,146 @@ const metadata = {
   </Content>
 
   <Content
+    id="assignments"
     isReversed
-    isAfterContent
-    tagline="Attachments & Reminders"
-    title="Attachments & Reminders."
-    subtitle="The Extra Mile."
+    tagline="Detailed Assignment Planner"
+    title="Every detail. One place."
+    subtitle="The Nitty Gritty."
     image={{
-      src: attachmentsReminders,
-      alt: 'Attachments & Reminders',
-    }}  >
+      src: assignmentPlanner,
+      alt: 'Detailed Assignment Planner',
+    }}
+  >
     <Fragment slot="content">
-      Attach syllabi, handouts, readings, project rubrics, or any supporting files right to the classes and
-      assignments they belong to. No more digging through downloads or email threads. And use customizable
-      reminders-in your browser or on your phone-to stay ahead of deadlines and show up prepared for every
-      class meeting, quiz, and project milestone.
+      <p>
+        A title and a due date is enough for a five-second to-do. Class, category, priority, linked resources,
+        reminders, attached rubric and prompt, and notes are there when the semester project deserves more thought.
+      </p>
+      <p class="mt-4">
+        Tag a paper high priority and it floats to the top of your <strong>Todos</strong> view. Link the textbook
+        chapter to the reading and the right materials are one click away when you sit down to work. Clone recurring
+        weekly homework once and reuse the template for the rest of the term.
+      </p>
     </Fragment>
   </Content>
 
+  <Content
+    tagline="Reminders"
+    title="Helpful, never noisy."
+    subtitle="The Heads-Up."
+    image={{
+      src: attachmentsReminders,
+      alt: 'Reminders and notification center',
+    }}
+  >
+    <Fragment slot="content">
+      You don't need to carry your schedule around in your head. Helium taps you on the shoulder before assignments,
+      classes, exams, events — native push notifications on iOS, Android, and web, or email if that's your style. Set
+      it up, forget about it, and focus your brain power on thinking, learning, and understanding the material.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Content>
+
+  <Faqs
+    id="faqs"
+    title="FAQs."
+    items={[
+      {
+        title: 'Is Helium free?',
+        description:
+          '<p>Yes. A passion project, free for everyone. <a href="' +
+          PATREON +
+          '" target="_blank" rel="noopener" class="text-primary hover:underline">Supporters like you</a> are what make that possible, covering real costs like hosting and app store fees.</p>' +
+          '<p class="mt-3">Helium is also built in the open on <a href="' +
+          GITHUB +
+          '" target="_blank" rel="noopener" class="text-primary hover:underline">GitHub</a> — technical contributors welcome if you\'d like to help out.</p>',
+      },
+      {
+        title: 'Does Helium have ads or share my data?',
+        description:
+          'No ads, no data sales. Helium is funded entirely by Patreon supporters — keeping it free, ad-free, and yours.',
+      },
+      {
+        title: 'Is Helium for high school, college, and beyond?',
+        description:
+          'Yes. Middle school, grad school, homeschool — Helium works just as well for any academic level. <strong>Class Groups</strong> let you organize multiple terms at once.',
+      },
+      {
+        title: 'What devices can I use Helium on?',
+        description:
+          'Helium has native apps for iOS and Android, plus a web app that runs in any modern browser. Sign in once and your schedule comes with you to every device.',
+      },
+      {
+        title: 'Can I use my Google or Apple account?',
+        description:
+          'Yes. Sign in with your existing Google or Apple account — no separate password to manage. Email and password sign-in is also available if you prefer.',
+      },
+      {
+        title: 'Can I bring my Google or Apple calendar into Helium?',
+        description:
+          'Yes. Subscribe to your Google calendar, your Apple calendar, your school\'s calendar, or any other calendar. <strong>External Calendars</strong> show alongside your Helium schedule.',
+      },
+      {
+        title: 'Can I send Helium\'s calendar to other apps?',
+        description:
+          'Yes. Helium\'s <strong>Feeds</strong> let you share private calendars of your events, assignments, and class schedules with Google Calendar, Apple Calendar, or any other calendar app.',
+      },
+      {
+        title: 'Can I take my data with me?',
+        description:
+          'Always. Export your full schedule — classes, grades, notes, events, reminders, <strong>External Calendars</strong>, and <strong>Resources</strong> — anytime.',
+      },
+      {
+        title: 'I\'m a Helium Classic user. What happens to my account?',
+        description:
+          'Helium Classic will remain available until July 31, 2026. Your data syncs seamlessly between Classic and the new Helium, so you can transition whenever you are ready.',
+      },
+    ]}
+  />
+
+  {/*
+    Testimonials stub — uncomment once real student quotes are gathered.
+    The widget itself is scaffolded at src/components/widgets/Testimonials.astro.
+
+    <Testimonials
+      title="What students are saying."
+      testimonials={[
+        {
+          testimonial: '"I used to keep my classes in three apps and a notebook. Now they are all in Helium and I have not missed a deadline since."',
+          name: 'Maya R.',
+          job: 'Junior, Biology major',
+        },
+        {
+          testimonial: '"The What Grade Do I Need? calculator is the most useful thing in any planner I have ever used. Period."',
+          name: 'Devon T.',
+          job: 'Sophomore, Psychology major',
+        },
+        {
+          testimonial: '"Push notifications on my phone, the same calendar on my laptop, and grades that update themselves. It just works."',
+          name: 'Sarah K.',
+          job: 'Senior, English major',
+        },
+      ]}
+    />
+  */}
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blue-50/40 to-blue-50/80 dark:from-transparent dark:via-primary/5 dark:to-primary/10"></div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tighter font-heading text-heading">Stop juggling. Start studying.</h2>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href={IOS_STORE} target="_blank" rel="noopener" class="inline-block">
+          <Image src={iosBadge} alt="Download on the App Store" height={54} class="h-[55px] w-auto" />
+        </a>
+        <a href={ANDROID_STORE} target="_blank" rel="noopener" class="inline-block">
+          <Image src={playBadge} alt="Get it on Google Play" height={54} class="h-[54px] w-auto" />
+        </a>
+      </div>
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+        <Button variant="link" text="Or sign up on the web" href={APP_SIGNUP} target="_blank" />
+      </div>
+    </div>
+  </section>
 </Layout>

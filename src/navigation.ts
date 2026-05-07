@@ -14,8 +14,8 @@ import {
 export const headerData = {
   actions: [
     { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank', class: 'hidden md:inline-flex' },
-    { text: 'Login', href: APP_LOGIN, target: '_blank' },
-    { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', class: 'hidden md:inline-flex' },
+    { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+    { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
   ],
 };
 
@@ -25,7 +25,7 @@ export const footerData = {
       title: 'App',
       links: [
         { text: 'Sign up', href: APP_SIGNUP },
-        { text: 'Login', href: APP_LOGIN },
+        { text: 'Sign in', href: APP_LOGIN },
         { text: 'iOS', href: IOS_STORE },
         { text: 'Android', href: ANDROID_STORE },
         { text: 'Helium Classic', href: CLASSIC_LOGIN },
