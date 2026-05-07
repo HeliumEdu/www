@@ -10,8 +10,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
     "fetch-support-articles": "pip install -r requirements.txt && python scripts/fetch_support_articles.py"
   },
   "dependencies": {

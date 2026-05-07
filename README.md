@@ -5,7 +5,7 @@
 
 # Helium Marketing Site
 
-The marketing site for [Helium](https://www.heliumedu.com/), served from `landing.heliumedu.com`.
+The marketing site for [Helium](https://www.heliumedu.com/).
 
 This repository also mirrors FreshDesk support articles into `support/`. FreshDesk remains the source of truth for the rendered support portal.
 
@@ -40,4 +40,4 @@ npm run fetch-support-articles
 
 ### Deployment
 
-Pushes to `main` auto-deploy to `landing.heliumedu.com`. The site is served from S3 (`heliumedu.www.static`) behind CloudFront. Infrastructure is defined in the [`infra` repo's `global` workspace](https://github.com/HeliumEdu/infra/tree/main/terraform/environments/global).
+Pushes to `main` will redeploy the marketing site. The site is served from S3 (`heliumedu.www.static`) behind CloudFront. Infrastructure is defined in the [`infra` repo's `global` workspace](https://github.com/HeliumEdu/infra/tree/main/terraform/environments/global).
