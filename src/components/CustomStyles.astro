@@ -1,0 +1,48 @@
+---
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/dm-serif-display/400.css';
+---
+
+<style is:inline>
+  :root {
+    --aw-font-sans: 'Poppins';
+    --aw-font-serif: 'DM Serif Display';
+    --aw-font-heading: 'Poppins';
+
+    --aw-color-primary: rgb(65 142 185);
+    --aw-color-secondary: rgb(50 113 150);
+    --aw-color-accent: rgb(4 159 113);
+
+    --aw-color-text-heading: rgb(20 20 20);
+    --aw-color-text-default: rgb(40 40 40);
+    --aw-color-text-muted: rgb(40 40 40 / 70%);
+    --aw-color-bg-page: rgb(255 255 255);
+
+    --aw-color-bg-page-dark: rgb(15 20 24);
+
+    ::selection {
+      background-color: rgb(65 142 185 / 25%);
+    }
+  }
+
+  .dark {
+    --aw-color-primary: rgb(65 142 185);
+    --aw-color-secondary: rgb(50 113 150);
+    --aw-color-accent: rgb(51 250 190);
+
+    --aw-color-text-heading: rgb(245 246 248);
+    --aw-color-text-default: rgb(225 228 233);
+    --aw-color-text-muted: rgb(225 228 233 / 65%);
+    --aw-color-bg-page: rgb(15 20 24);
+
+    --aw-color-bg-page-dark: rgb(15 20 24);
+
+    ::selection {
+      background-color: rgb(65 142 185 / 35%);
+      color: rgb(245 246 248);
+    }
+  }
+</style>

@@ -1,0 +1,187 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import StackedHero from '~/components/widgets/StackedHero.astro';
+import DownloadBadges from '~/components/widgets/DownloadBadges.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import smartCalendars from '~/assets/images/screenshots/month-view.png';
+import liveGrades from '~/assets/images/screenshots/grades.png';
+import schedules from '~/assets/images/screenshots/week-view.png';
+import notebook from '~/assets/images/screenshots/notebook.png';
+import assignmentPlanner from '~/assets/images/screenshots/assignment-planner.png';
+import supplies from '~/assets/images/screenshots/supplies.png';
+import customTodos from '~/assets/images/screenshots/todos.png';
+import attachmentsReminders from '~/assets/images/screenshots/attachments-reminders.png';
+
+const metadata = {
+  title: 'Helium - A smarter way to organize your academic life',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <StackedHero />
+
+  <DownloadBadges />
+
+  <div id="overview"></div>
+
+  <Content
+    id="calendars"
+    tagline="Smart Calendars"
+    title="Smart Calendars."
+    subtitle="The Home Base."
+    image={{
+      src: smartCalendars,
+      alt: 'Smart Calendars',
+    }}  >
+    <Fragment slot="content">
+      Don't worry about trying to remember every homework assignment, project, or test-use that brainpower
+      to <em>learn</em>. Helium keeps all your classes, deadlines, and study time organized in one clean,
+      color-coded calendar. You can even subscribe to external calendars-or use Helium's feeds in your
+      favorite calendar app-so everything stays in sync wherever you plan.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    id="grades"
+    isReversed
+    isAfterContent
+    tagline="Live Grade Tracker"
+    title="Live Grade Tracker & Analysis."
+    subtitle="The Bottom Line."
+    image={{
+      src: liveGrades,
+      alt: 'Live Grade Tracker',
+    }}  >
+    <Fragment slot="content">
+      Done calculating grades by hand? Us too. Helium updates your grades in real time-per class, category,
+      and the entire term. See exactly which classes you're rocking and where you need to pick up the pace.
+      Weighted categories, progress charts, and trend indicators help you plan ahead (and catch problems
+      early).
+    </Fragment>
+  </Content>
+
+  <Content
+    id="classes"
+    isAfterContent
+    tagline="At-a-Glance Schedules"
+    title="At-a-Glance Schedules."
+    subtitle="The Brass Tacks."
+    image={{
+      src: schedules,
+      alt: 'At-a-Glance Schedules',
+    }}  >
+    <Fragment slot="content">
+      See your term clearly with detailed class and assignment information-times, teachers, rooms, credits,
+      categories &amp; grades-and quick access to your full workload. Switch between month, week, day, and
+      "Todos" views to understand exactly what's coming up and plan your time with confidence.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    id="notebook"
+    isReversed
+    isAfterContent
+    tagline="Rich Notebook"
+    title="Rich Notebook."
+    subtitle="The Full Picture."
+    image={{
+      src: notebook,
+      alt: 'Rich Notebook',
+    }}  >
+    <Fragment slot="content">
+      Your notes, in context. Write rich notes linked directly to your work-so the details you need are
+      always right where you need them. Or keep standalone notes for anything else: lecture summaries,
+      paper drafts, or anything you want to capture on the fly. Either way, everything lives in one
+      organized notebook.
+    </Fragment>
+  </Content>
+
+  <Content
+    id="assignments"
+    isAfterContent
+    tagline="Detailed Assignment Planner"
+    title="Detailed Assignment Planner."
+    subtitle="The Nitty Gritty."
+    image={{
+      src: assignmentPlanner,
+      alt: 'Detailed Assignment Planner',
+    }}  >
+    <Fragment slot="content">
+      Never miss an assignment again. Helium remembers the details so you don't have to. Enter due dates,
+      links, and textbook information, jot down notes to yourself, set priority levels, attach materials,
+      and record grades when you're done. Everything you need to manage the life cycle of an assignment
+      lives in one organized place.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    id="materials"
+    isReversed
+    isAfterContent
+    tagline="Supplies Organizer"
+    title="Supplies Organizer."
+    subtitle="The Meat & Potatoes."
+    image={{
+      src: supplies,
+      alt: 'Supplies Organizer',
+    }}  >
+    <Fragment slot="content">
+      Everything you need for every class in one place! Helium will maintain a list of the supplies, books,
+      technology, and equipment you'll need to pick up to be ready for class each term and each day. Make
+      textbook resale a snap by recording details about each book. Conveniently link digital tools to
+      assignments.
+    </Fragment>
+  </Content>
+
+  <Content
+    id="filters"
+    isAfterContent
+    tagline="Custom Todos"
+    title="Custom Todos & Filtered Lists."
+    subtitle="The Nuts & Bolts."
+    image={{
+      src: customTodos,
+      alt: 'Custom Todos',
+    }}  >
+    <Fragment slot="content">
+      Calendar view doesn't always cut it. Helium's "Todos" view give you a focused, flexible way to manage
+      your workload. Sort assignments by class, priority, due date, materials, completion, or grade. Create
+      targeted study plans, prep for exams, break down long-term projects, or quickly see what's due next.
+      When things get busy, this view helps you stay in control.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent
+    tagline="Attachments & Reminders"
+    title="Attachments & Reminders."
+    subtitle="The Extra Mile."
+    image={{
+      src: attachmentsReminders,
+      alt: 'Attachments & Reminders',
+    }}  >
+    <Fragment slot="content">
+      Attach syllabi, handouts, readings, project rubrics, or any supporting files right to the classes and
+      assignments they belong to. No more digging through downloads or email threads. And use customizable
+      reminders-in your browser or on your phone-to stay ahead of deadlines and show up prepared for every
+      class meeting, quiz, and project milestone.
+    </Fragment>
+  </Content>
+
+</Layout>

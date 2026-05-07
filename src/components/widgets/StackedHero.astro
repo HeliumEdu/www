@@ -1,0 +1,62 @@
+---
+import { Image } from 'astro:assets';
+import Button from '~/components/ui/Button.astro';
+import laptop from '~/assets/images/frames/frame-laptop.png';
+import tablet from '~/assets/images/frames/frame-tablet.png';
+import phone from '~/assets/images/frames/frame-phone.png';
+import { APP_SIGNUP } from '~/links';
+---
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-blue-50/60 via-white to-white dark:from-primary/15 dark:via-transparent dark:to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-12 md:pt-20 pb-12 md:pb-16">
+    <div class="text-center max-w-3xl mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
+        A smarter way to organize your <span class="text-primary">academic life.</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-muted">
+        Track classes, assignments, grades, and notes in one clear, color-coded planner built for students.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <Button
+          variant="primary"
+          text="Sign up"
+          href={APP_SIGNUP}
+          target="_blank"
+          icon="tabler:user"
+        />
+        <Button variant="secondary" text="Read More" href="#overview" />
+      </div>
+    </div>
+
+    <div class="mt-12 md:mt-16">
+      <div class="flex items-end justify-center gap-2 sm:gap-4 md:gap-6">
+        <Image
+          src={laptop}
+          alt="Helium month view on a laptop"
+          widths={[600, 900, 1200]}
+          sizes="(min-width: 1024px) 60vw, 70vw"
+          class="w-[64%] max-w-3xl drop-shadow-2xl"
+          loading="eager"
+        />
+        <Image
+          src={tablet}
+          alt="Helium month view on a tablet"
+          widths={[300, 450, 600]}
+          sizes="(min-width: 1024px) 22vw, 26vw"
+          class="w-[24%] max-w-[260px] drop-shadow-xl"
+          loading="eager"
+        />
+        <Image
+          src={phone}
+          alt="Helium month view on a phone"
+          widths={[180, 240, 320]}
+          sizes="(min-width: 1024px) 12vw, 16vw"
+          class="w-[12%] max-w-[140px] drop-shadow-xl"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </div>
+</section>

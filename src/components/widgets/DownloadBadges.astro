@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import iosBadge from '~/assets/images/ios-badge.png';
+import playBadge from '~/assets/images/play-badge.png';
+import { IOS_STORE, ANDROID_STORE } from '~/links';
+---
+
+<section class="py-10">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="bg-gray-50 dark:bg-white/5 rounded-lg p-8 text-center">
+      <h2 class="text-2xl font-light mb-2 dark:text-white">Available on iOS &amp; Android</h2>
+      <p class="text-muted text-sm mb-6">
+        Helium works seamlessly across iOS and Android. Your schedule stays in sync no matter which device you use.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a
+          href={IOS_STORE}
+          target="_blank"
+          rel="noopener"
+          class="inline-block"
+        >
+          <Image src={iosBadge} alt="Download on the App Store" height={54} class="h-[55px] w-auto" />
+        </a>
+        <a
+          href={ANDROID_STORE}
+          target="_blank"
+          rel="noopener"
+          class="inline-block"
+        >
+          <Image src={playBadge} alt="Get it on Google Play" height={54} class="h-[54px] w-auto" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

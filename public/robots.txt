@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://landing.heliumedu.com/sitemap-index.xml
