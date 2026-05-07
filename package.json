@@ -1,7 +1,7 @@
 {
   "name": "helium-www",
   "version": "1.0.0",
-  "description": "Marketing site for Helium Edu. Built with Astro + AstroWind.",
+  "description": "Marketing site for Helium - Student Planner.",
   "type": "module",
   "engines": {
     "node": ">=24"
