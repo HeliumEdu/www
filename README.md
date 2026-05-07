@@ -1,6 +1,6 @@
 <p align="center"><img src="https://www.heliumedu.com/assets/img/logo_full_blue.png" /></p>
 
-[![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/ci.yml)](https://github.com/HeliumEdu/www/actions/workflows/ci.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
 ![GitHub License](https://img.shields.io/github/license/heliumedu/www)
 
 # Helium Marketing Site
