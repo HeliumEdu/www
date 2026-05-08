@@ -67,7 +67,7 @@ jobs:
 
       - name: Invalidate CloudFront cache
         env:
-          DOMAIN: landing.heliumedu.com
+          DOMAIN: www.heliumedu.com
         run: |
           DISTRIBUTION_ID=$(aws cloudfront list-distributions \
             --query "DistributionList.Items[?contains(not_null(Aliases.Items, \`[]\`), '${DOMAIN}')].Id" \
@@ -86,4 +86,4 @@ jobs:
         run: |
           echo "### Marketing site deployed" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **URL**: https://landing.heliumedu.com" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL**: https://www.heliumedu.com" >> $GITHUB_STEP_SUMMARY
