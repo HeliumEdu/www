@@ -2,7 +2,6 @@ import { getPermalink } from './utils/permalinks';
 import {
   APP_SIGNIN,
   APP_SIGNUP,
-  CLASSIC_LOGIN,
   IOS_STORE,
   ANDROID_STORE,
   API_DOCS,
@@ -17,7 +16,6 @@ export const headerData = {
     { text: 'Support', href: getPermalink('/support') },
   ],
   actions: [
-    { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank', class: 'hidden min-[850px]:inline-flex' },
     { text: 'Sign in', href: APP_SIGNIN, target: '_blank', class: 'hidden md:inline-flex' },
     { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
   ],
