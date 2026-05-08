@@ -23,7 +23,7 @@ import classesList from '~/assets/images/screenshots/classes-list.png';
 import notebook from '~/assets/images/screenshots/notebook.png';
 import assignmentPlanner from '~/assets/images/screenshots/assignment-planner.png';
 import customTodos from '~/assets/images/screenshots/todos.png';
-import attachmentsReminders from '~/assets/images/screenshots/attachments-reminders.png';
+import reminders from '~/assets/images/screenshots/attachments-reminders.png';
 
 import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB } from '~/links';
 
@@ -49,7 +49,7 @@ const metadata = {
       {
         title: 'Calculates what grade you need',
         description:
-          'Use the <strong>What Grade Do I Need?</strong> calculator to see exactly what you need on the Final on achieve your desired grade.',
+          'Use the <strong>What Grade Do I Need?</strong> calculator to see exactly what you need on the Final to achieve your desired grade.',
         icon: 'tabler:calculator',
       },
       {
@@ -79,7 +79,7 @@ const metadata = {
       {
         title: 'Travels with you',
         description:
-          'Native iOS and Android apps. Web in any browser. Sign in once — your schedule, on every device.',
+          'Native iOS and Android apps. Web in any browser. Your schedule, on every device.',
         icon: 'tabler:devices',
       },
     ]}
@@ -193,7 +193,7 @@ const metadata = {
       </p>
       <p class="mt-4">
         Notes can be formatted just like you would a doc — headings, lists, quotes, and links — so they read the way
-        you think. Print them when you need a hard copy, and search across everything you've written, all in one place.
+        you think. Search across everything you've written, and print any note when you need a hard copy.
       </p>
     </Fragment>
     <Fragment slot="bg">
@@ -218,7 +218,7 @@ const metadata = {
         into. Drag and drop to shift an assignment or event when plans inevitably change.
       </p>
       <p class="mt-4">
-        Need more info on Tuesday's class, room number, teacher's email, or a refresh on the grading scale? Details
+        Need more info on Wednesday's class, room number, teacher's email, or a refresh on the grading scale? Details
         are always just a click away.
       </p>
     </Fragment>
@@ -229,13 +229,13 @@ const metadata = {
   </Content>
 
   <Content
-    id="filters"
+    id="todos"
     tagline="Todos View"
     title="When the calendar isn't the right layout."
     subtitle="The Nuts & Bolts."
     image={{
       src: customTodos,
-      alt: 'Custom Todos',
+      alt: 'Todos view with sort and filter controls',
     }}
   >
     <Fragment slot="content">
@@ -257,13 +257,14 @@ const metadata = {
     subtitle="The Nitty Gritty."
     image={{
       src: assignmentPlanner,
-      alt: 'Detailed Assignment Planner',
+      alt: 'Assignment editor with priority, linked resources, and reminders',
     }}
   >
     <Fragment slot="content">
       <p>
         A title and a due date is enough for a five-second to-do. Class, category, priority, linked resources,
-        reminders, attached rubric and prompt, and notes are there when the semester project deserves more thought.
+        reminders, <strong>Attachments</strong> like the rubric and prompt, and notes are there when the semester
+        project deserves more thought.
       </p>
       <p class="mt-4">
         Tag a paper high priority and it floats to the top of your <strong>Todos</strong> view. Link the textbook
@@ -274,11 +275,12 @@ const metadata = {
   </Content>
 
   <Content
+    id="reminders"
     tagline="Reminders"
     title="Helpful, never noisy."
     subtitle="The Heads-Up."
     image={{
-      src: attachmentsReminders,
+      src: reminders,
       alt: 'Reminders and notification center',
     }}
   >
@@ -349,31 +351,7 @@ const metadata = {
     ]}
   />
 
-  {/*
-    Testimonials stub — uncomment once real student quotes are gathered.
-    The widget itself is scaffolded at src/components/widgets/Testimonials.astro.
-
-    <Testimonials
-      title="What students are saying."
-      testimonials={[
-        {
-          testimonial: '"I used to keep my classes in three apps and a notebook. Now they are all in Helium and I have not missed a deadline since."',
-          name: 'Maya R.',
-          job: 'Junior, Biology major',
-        },
-        {
-          testimonial: '"The What Grade Do I Need? calculator is the most useful thing in any planner I have ever used. Period."',
-          name: 'Devon T.',
-          job: 'Sophomore, Psychology major',
-        },
-        {
-          testimonial: '"Push notifications on my phone, the same calendar on my laptop, and grades that update themselves. It just works."',
-          name: 'Sarah K.',
-          job: 'Senior, English major',
-        },
-      ]}
-    />
-  */}
+  {/* Testimonials widget at src/components/widgets/Testimonials.astro — re-add here once real student quotes are gathered. */}
 
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blue-50/40 to-blue-50/80 dark:from-transparent dark:via-primary/5 dark:to-primary/10"></div>
@@ -388,7 +366,7 @@ const metadata = {
         </a>
       </div>
       <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
-        <Button variant="link" text="Or sign up on the web" href={APP_SIGNUP} target="_blank" />
+        <Button variant="primary" text="Sign up on web" href={APP_SIGNUP} target="_blank" icon="tabler:user-plus" />
       </div>
     </div>
   </section>
