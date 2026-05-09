@@ -26,10 +26,102 @@ import customTodos from '~/assets/images/screenshots/todos.png';
 import reminders from '~/assets/images/screenshots/reminders.png';
 
 import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB } from '~/links';
+import { SITE, METADATA } from 'astrowind:config';
+import ogImage from '~/assets/images/og-default.png';
 
 const metadata = {
   title: 'Helium — Student Planner & Academic Calendar App',
   ignoreTitleTemplate: true,
+};
+
+const faqs = [
+  {
+    title: 'Is Helium free?',
+    description:
+      '<p>Yes. A passion project, free for everyone. <a href="' +
+      PATREON +
+      '" target="_blank" rel="noopener" class="text-primary hover:underline">Supporters like you</a> are what make that possible, covering real costs like hosting and app store fees.</p>' +
+      '<p class="mt-3">Helium is also built in the open on <a href="' +
+      GITHUB +
+      '" target="_blank" rel="noopener" class="text-primary hover:underline">GitHub</a> — technical contributors welcome if you\'d like to help out.</p>',
+  },
+  {
+    title: 'Does Helium have ads or share my data?',
+    description:
+      'No ads, no data sales. Helium is funded entirely by Patreon supporters — keeping it free, ad-free, and yours.',
+  },
+  {
+    title: 'Is Helium for high school, college, and beyond?',
+    description:
+      'Yes. Middle school, grad school, homeschool — Helium works just as well for any academic level. <strong>Class Groups</strong> let you organize multiple terms at once.',
+  },
+  {
+    title: 'What devices can I use Helium on?',
+    description:
+      'Helium has native apps for iOS and Android, plus a web app that runs in any modern browser. Sign in once and your schedule comes with you to every device.',
+  },
+  {
+    title: 'Can I use my Google or Apple account?',
+    description:
+      'Yes. Sign in with your existing Google or Apple account — no separate password to manage. Email and password sign-in is also available if you prefer.',
+  },
+  {
+    title: 'Can I bring my Google or Apple calendar into Helium?',
+    description:
+      'Yes. Subscribe to your Google calendar, your Apple calendar, your school\'s calendar, or any other calendar. <strong>External Calendars</strong> show alongside your Helium schedule.',
+  },
+  {
+    title: 'Can I send Helium\'s calendar to other apps?',
+    description:
+      'Yes. Helium\'s <strong>Feeds</strong> let you share private calendars of your events, assignments, and class schedules with Google Calendar, Apple Calendar, or any other calendar app.',
+  },
+  {
+    title: 'Can I take my data with me?',
+    description:
+      'Always. Export your full schedule — classes, grades, notes, events, reminders, <strong>External Calendars</strong>, and <strong>Resources</strong> — anytime.',
+  },
+  {
+    title: 'I\'m a Helium Classic user. What happens to my account?',
+    description:
+      'Helium Classic will remain available until July 31, 2026. Your data syncs seamlessly between Classic and the new Helium, so you can transition whenever you are ready.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(({ title, description }) => ({
+    '@type': 'Question',
+    name: title,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: description,
+    },
+  })),
+};
+
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Helium',
+  alternateName: 'Helium Edu',
+  description: METADATA.description,
+  url: SITE.site,
+  image: `${SITE.site}${ogImage.src}`,
+  applicationCategory: 'EducationalApplication',
+  operatingSystem: 'iOS, Android, Web',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+  author: {
+    '@type': 'Organization',
+    name: 'Helium Edu',
+    url: SITE.site,
+  },
+  installUrl: IOS_STORE,
+  downloadUrl: ANDROID_STORE,
 };
 ---
 
@@ -294,57 +386,10 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <Faqs
-    id="faqs"
-    title="FAQs."
-    items={[
-      {
-        title: 'Is Helium free?',
-        description:
-          '<p>Yes. A passion project, free for everyone. <a href="' +
-          PATREON +
-          '" target="_blank" rel="noopener" class="text-primary hover:underline">Supporters like you</a> are what make that possible, covering real costs like hosting and app store fees.</p>' +
-          '<p class="mt-3">Helium is also built in the open on <a href="' +
-          GITHUB +
-          '" target="_blank" rel="noopener" class="text-primary hover:underline">GitHub</a> — technical contributors welcome if you\'d like to help out.</p>',
-      },
-      {
-        title: 'Does Helium have ads or share my data?',
-        description:
-          'No ads, no data sales. Helium is funded entirely by Patreon supporters — keeping it free, ad-free, and yours.',
-      },
-      {
-        title: 'Is Helium for high school, college, and beyond?',
-        description:
-          'Yes. Middle school, grad school, homeschool — Helium works just as well for any academic level. <strong>Class Groups</strong> let you organize multiple terms at once.',
-      },
-      {
-        title: 'What devices can I use Helium on?',
-        description:
-          'Helium has native apps for iOS and Android, plus a web app that runs in any modern browser. Sign in once and your schedule comes with you to every device.',
-      },
-      {
-        title: 'Can I use my Google or Apple account?',
-        description:
-          'Yes. Sign in with your existing Google or Apple account — no separate password to manage. Email and password sign-in is also available if you prefer.',
-      },
-      {
-        title: 'Can I bring my Google or Apple calendar into Helium?',
-        description:
-          'Yes. Subscribe to your Google calendar, your Apple calendar, your school\'s calendar, or any other calendar. <strong>External Calendars</strong> show alongside your Helium schedule.',
-      },
-      {
-        title: 'Can I send Helium\'s calendar to other apps?',
-        description:
-          'Yes. Helium\'s <strong>Feeds</strong> let you share private calendars of your events, assignments, and class schedules with Google Calendar, Apple Calendar, or any other calendar app.',
-      },
-      {
-        title: 'Can I take my data with me?',
-        description:
-          'Always. Export your full schedule — classes, grades, notes, events, reminders, <strong>External Calendars</strong>, and <strong>Resources</strong> — anytime.',
-      },
-    ]}
-  />
+  <Faqs id="faqs" title="FAQs." items={faqs} />
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} is:inline />
 
   {/* Testimonials widget at src/components/widgets/Testimonials.astro — re-add here once real student quotes are gathered. */}
 

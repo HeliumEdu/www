@@ -17,8 +17,8 @@ metadata:
     site_name: Helium
     images:
       - url: '~/assets/images/og-default.png'
-        width: 940
-        height: 500
+        width: 1200
+        height: 630
     type: website
 
 i18n:

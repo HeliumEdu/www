@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -23,8 +24,8 @@ export default defineConfig({
     '/contact': 'https://support.heliumedu.com',
     '/status': 'https://status.heliumedu.com',
     '/app': 'https://app.heliumedu.com',
-    '/press': '/',
-    '/docs': '/',
+    '/press': '/about',
+    '/docs': 'https://support.heliumedu.com',
   },
 
   integrations: [
@@ -32,7 +33,21 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     mdx(),
-    sitemap(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+    {
+      name: 'sitemap-xml-alias',
+      hooks: {
+        'astro:build:done': ({ dir }) => {
+          const src = fileURLToPath(new URL('sitemap-index.xml', dir));
+          const dest = fileURLToPath(new URL('sitemap.xml', dir));
+          if (fs.existsSync(src)) fs.copyFileSync(src, dest);
+        },
+      },
+    },
     icon({
       include: {
         tabler: ['*'],

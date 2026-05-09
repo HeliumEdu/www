@@ -1,0 +1,24 @@
+{
+  "name": "Helium - Student Planner & Academic Calendar App",
+  "short_name": "Helium",
+  "description": "Helium is a smart student planner that organizes your classes, assignments, grades, and notes into one color-coordinated calendar for academic success.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#418eb9",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
