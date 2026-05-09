@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://landing.heliumedu.com/sitemap-index.xml
+Sitemap: https://www.heliumedu.com/sitemap-index.xml
