@@ -23,8 +23,8 @@ export default defineConfig({
     '/contact': 'https://support.heliumedu.com',
     '/status': 'https://status.heliumedu.com',
     '/app': 'https://app.heliumedu.com',
-    '/press': '/',
-    '/docs': '/',
+    '/press': '/about',
+    '/docs': 'https://support.heliumedu.com',
   },
 
   integrations: [
@@ -32,7 +32,11 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     mdx(),
-    sitemap(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
     icon({
       include: {
         tabler: ['*'],
