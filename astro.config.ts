@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -37,6 +38,16 @@ export default defineConfig({
       priority: 0.7,
       lastmod: new Date(),
     }),
+    {
+      name: 'sitemap-xml-alias',
+      hooks: {
+        'astro:build:done': ({ dir }) => {
+          const src = fileURLToPath(new URL('sitemap-index.xml', dir));
+          const dest = fileURLToPath(new URL('sitemap.xml', dir));
+          if (fs.existsSync(src)) fs.copyFileSync(src, dest);
+        },
+      },
+    },
     icon({
       include: {
         tabler: ['*'],
