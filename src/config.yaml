@@ -9,7 +9,7 @@ metadata:
   title:
     default: 'Helium - Student Planner & Academic Calendar App'
     template: '%s | Helium'
-  description: 'Helium is a smart student planner that organizes your classes, assignments, grades, and notes into one color-coordinated calendar for academic success.'
+  description: 'Helium is a smart, color-coded student planner that tracks classes, assignments, grades, and notes — built for the way you actually study.'
   robots:
     index: true
     follow: true
