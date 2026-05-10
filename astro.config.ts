@@ -26,6 +26,7 @@ export default defineConfig({
     '/app': 'https://app.heliumedu.com',
     '/press': '/about',
     '/docs': 'https://support.heliumedu.com',
+    '/index': '/',
   },
 
   integrations: [
