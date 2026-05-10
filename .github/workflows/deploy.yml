@@ -63,6 +63,15 @@ jobs:
           # Short cache for sitemaps, robots, JSON
           find ./dist \( -name "*.xml" -o -name "robots.txt" -o -name "*.json" \) -exec sh -c 'RELPATH="${1#./dist/}"; aws s3 cp "$1" "s3://'"${BUCKET_NAME}"'/${RELPATH}" --cache-control "public, max-age=300"' _ {} \;
 
+          # Apple requires apple-app-site-association to be served as application/json.
+          # The file has no extension, so set the content type explicitly.
+          if [ -f ./dist/.well-known/apple-app-site-association ]; then
+            aws s3 cp ./dist/.well-known/apple-app-site-association \
+              "s3://${BUCKET_NAME}/.well-known/apple-app-site-association" \
+              --content-type "application/json" \
+              --cache-control "public, max-age=300"
+          fi
+
           echo "Deployment complete."
 
       - name: Invalidate CloudFront cache
