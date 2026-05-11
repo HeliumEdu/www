@@ -58,8 +58,8 @@ You can attach files (such as your syllabus or course packet) directly to a clas
 ## Related Articles
 
   * [Setting Up Weighted Grading & Assignment Categories](https://heliumedu.freshdesk.com/support/solutions/articles/159000418670)
-  * [Why Your Class Schedule Isn't Showing on the Calendar](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
-  * [Why Your Grades Might Not Match Your LMS' or Teacher's](https://heliumedu.freshdesk.com/support/solutions/articles/159000418645)
+  * [Cancelling Class Sessions and Setting Term Holidays](https://heliumedu.freshdesk.com/support/solutions/articles/159000431121)
+  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644)[](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
 
 ---
 

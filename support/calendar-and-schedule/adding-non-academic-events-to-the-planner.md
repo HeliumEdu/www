@@ -16,10 +16,9 @@ Helium lets you add events like study sessions, concerts, appointments, and anyt
 
 ## Related Articles
 
-  * [Why Your Assignments or Events Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644)
+  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644)
   * [Customizing Colors for Planner Display](https://heliumedu.freshdesk.com/support/solutions/articles/159000418663)
   * [Planner Views, and Changing Your Default](https://heliumedu.freshdesk.com/support/solutions/articles/159000418667)
-  * [Why Your Class Schedule Isn't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
 
 ---
 
