@@ -43,7 +43,7 @@ The Schedule tab is where you set when your class meets each week. Once configur
   3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** —this lets you set independent start and end times for each selected day
   4. Tap **Save**
 
-Class Schedule items appear on the **Week** , **Day** , **Month** , and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Your Class Schedule Isn't Showing on the Calendar](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668).
+Class Schedule items appear on the **Week** , **Day** , **Month** , and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)[Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644).
 
 A schedule is optional—if your class has no fixed meeting time (e.g., a fully asynchronous online course), you can leave the Schedule tab with no days selected.
 
@@ -59,7 +59,7 @@ You can attach files (such as your syllabus or course packet) directly to a clas
 
   * [Setting Up Weighted Grading & Assignment Categories](https://heliumedu.freshdesk.com/support/solutions/articles/159000418670)
   * [Cancelling Class Sessions and Setting Term Holidays](https://heliumedu.freshdesk.com/support/solutions/articles/159000431121)
-  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644)[](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
+  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644) [](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
 
 ---
 
