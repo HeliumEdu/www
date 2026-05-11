@@ -4,7 +4,7 @@
 
 Source: https://heliumedu.freshdesk.com/support/solutions/articles/159000427002
 
-In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual courses. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.
+In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.
 
 ## Class Groups
 
@@ -24,7 +24,7 @@ With a group selected, tap the **+** button to add a class. Class setup is split
 
 ### Details Tab
 
-  * **Title** — the name of the course (required)
+  * **Title** — the name of the class (required)
   * **From / To** — the start and end dates for this specific class; defaults to the group's date range
   * **Website** — a link to the class's page, LMS, or other online resource
   * **Teacher** — your instructor's name
@@ -45,7 +45,7 @@ The Schedule tab is where you set when your class meets each week. Once configur
 
 Class Schedule items appear on the **Week** , **Day** , **Month** , and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)[Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644).
 
-A schedule is optional—if your class has no fixed meeting time (e.g., a fully asynchronous online course), you can leave the Schedule tab with no days selected.
+A schedule is optional—if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no days selected.
 
 ### Categories Tab
 
@@ -53,7 +53,7 @@ Categories let you organize assignments by type (Homework, Quizzes, Exams, etc.)
 
 ### Attachments Tab
 
-You can attach files (such as your syllabus or course packet) directly to a class. Tap the **+** button on the Attachments tab to upload a file or photo from your device.
+You can attach files (such as your syllabus or class packet) directly to a class. Tap the **+** button on the Attachments tab to upload a file or photo from your device.
 
 ## Related Articles
 

@@ -10,7 +10,7 @@ The **What Grade Do I Need?** calculator helps you figure out what score you nee
 
   1. Open [**Grades**](https://app.heliumedu.com/grades)
   2. Tap the **What Grade Do I Need?** icon (calculator), to the right of the "Grade Trend" header
-  3. If you have multiple eligible courses, a list will appear—select the class you want to calculate for
+  3. If you have multiple eligible classes, a list will appear—select the class you want to calculate for
 
 The calculator icon only appears when at least one of your classes has a category that meets the requirements below.
 

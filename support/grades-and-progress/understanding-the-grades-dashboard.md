@@ -4,18 +4,18 @@
 
 Source: https://heliumedu.freshdesk.com/support/solutions/articles/159000418647
 
-The Grades dashboard combines three summary widgets — **At-Risk Classes** , **Progress vs. Pace** , and **Pending Impact** — with a grade trend graph below them. Each highlights a different aspect of the current term.
+The Grades dashboard surfaces three summary widgets — **At-Risk Classes** , **Progress vs. Pace** , and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
 
 ## At-Risk Classes
 
-**At-Risk Classes** shows how many classes have an overall grade below a threshold you set. The label reads _below 70%_ by default, or _All classes passing!_ when no classes are at risk. A class is included only after it has at least one graded assignment.
+**At-Risk Classes** shows how many classes have an overall grade below a threshold you set. The label reads _All classes passing!_ when no classes are at risk. A class is included only after it has at least one graded assignment.
 
 Tap the widget to scroll to and expand the first at-risk class in the list below.
 
 ### Adjusting the At-Risk Threshold
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings)
-  2. Set the **At-risk threshold (%)** value (0–100, default 70)
+  2. Set the **At-risk threshold (%)** value (default 70%)
   3. Tap **Save**
 
 ## Progress vs. Pace
@@ -25,12 +25,12 @@ Tap the widget to scroll to and expand the first at-risk class in the list below
   * **Work** — the percentage of assignments completed in the current Class Group
   * **Time** — the percentage of the Class Group's date range that has elapsed
 
-A status badge of **Ahead** , **On Track** , or **Behind** compares the two. By default, the gap must exceed 10 percentage points in either direction before the status switches from On Track.
+A status badge of _Ahead_ , _On Track_ , or _Behind_ compares the two. The gap must exceed the tolerance threshole in either direction before the status switches from _On Track_.
 
 ### Adjusting the On-Track Tolerance
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings)
-  2. Set the **On-track tolerance (%)** value
+  2. Set the **On-track tolerance (%)** value (default 10%)
   3. Tap **Save**
 
 ## Pending Impact
@@ -39,15 +39,29 @@ A status badge of **Ahead** , **On Track** , or **Behind** compares the two. By 
 
 ## Grade Trend Graph
 
-The grade trend graph plots your grades over the course of the term. Tap the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
+The grade trend graph plots your grades over the class of the term. Tap the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
 
 ### Switch between term view and individual class view
 
-Select **Entire Term** to see all classes plotted together, or choose a specific class from the list to focus the graph on that course's grade trend alone.
+Select **Entire Term** to see all classes plotted together, or choose a specific class from the list to focus the graph on that class's grade trend alone.
 
 ### Auto-adjust to graded range
 
-Check **Auto-adjust to graded range** to zoom the graph's X-axis to the actual date range of your graded assignments, rather than spanning the full course group date range. This can make grade trends easier to read when grading is clustered within a shorter period.
+Check **Auto-adjust to graded range** to zoom the graph's X-axis to the actual date range of your graded assignments, rather than spanning the full class group date range. This can make grade trends easier to read when grading is clustered within a shorter period.
+
+## Per-Class Breakdown
+
+Below the trend graph, each class has a breakdown table with one row per category, including:
+
+  * **Contribution** — shown only for classes using weighted grading (see below)
+  * **Graded** — how many assignments in the category have been graded
+  * **Average** — the category's current grade
+
+### How Contribution Is Calculated
+
+**Contribution** shows each category's current share of the class's overall grade — not the weight configured for the category. It is calculated as _weight × current average_ for each category, then normalized so all visible contributions sum to 100%. The mix shifts as more assignments are graded.
+
+A category may show a smaller contribution than its configured weight if its current average is lower than the others, or larger if higher.
 
 ## Related Articles
 
@@ -66,4 +80,4 @@ In [Helium Classic Grades](https://www.heliumedu.com/planner/grades), the graph 
   2. Select a class from the **dropdown menu** to narrow the graph to that class, or leave it on the full term view
   3. Check the corresponding box to enable **Auto-adjust to graded range**
 
- __Helium Classic will remain available until July 31, 2026.__
+ _Helium Classic will remain available until July 31, 2026._
