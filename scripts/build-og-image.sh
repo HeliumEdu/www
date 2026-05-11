@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# Composes public/og-default.png from the framed laptop screenshot.
+#
+# The laptop is scaled to fill the 1200-wide OG canvas, anchored at the top,
+# with the bottom bleeding off the 630px-tall canvas. This produces an
+# "immersive" social card where the planner content dominates the frame
+# and the platform-rendered title/description handle the branding text.
+#
+# Re-run after updating frame-laptop.png:
+#   npm run build-og-image
+#
+# Requires: ImageMagick 7+  (brew install imagemagick)
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Source — the framed laptop screenshot. Replace this PNG to update the OG card.
+LAPTOP="$ROOT/src/assets/images/frames/frame-laptop.png"
+
+# Output — served at https://heliumedu.com/og-default.png
+OUT="$ROOT/public/og-default.png"
+
+# OG card dimensions (Twitter/LinkedIn/Slack/iMessage all expect 1200x630).
+WIDTH=1200
+HEIGHT=630
+
+# Brand blue (Helium app primary seed color, 0xff418eb9). Only visible where
+# the laptop frame has transparent rounded corners.
+BG_COLOR="#418eb9"
+
+# Laptop is scaled to fill the canvas width. Top edge anchored at y=0,
+# bottom bleeds off the canvas (overflow is automatically cropped by the
+# canvas bounds).
+LAPTOP_WIDTH=$WIDTH
+LAPTOP_TOP=0
+
+command -v magick >/dev/null || {
+  echo "Error: ImageMagick not found. Install with: brew install imagemagick" >&2
+  exit 1
+}
+[[ -f "$LAPTOP" ]] || {
+  echo "Error: laptop frame not found at $LAPTOP" >&2
+  exit 1
+}
+
+magick -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
+  \( "$LAPTOP" -resize "${LAPTOP_WIDTH}x" \) \
+  -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
+  "$OUT"
+
+echo "Wrote $OUT (${WIDTH}x${HEIGHT})"
