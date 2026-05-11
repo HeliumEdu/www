@@ -59,7 +59,7 @@ You can attach files (such as your syllabus or course packet) directly to a clas
 
   * [Setting Up Weighted Grading & Assignment Categories](https://heliumedu.freshdesk.com/support/solutions/articles/159000418670)
   * [Cancelling Class Sessions and Setting Term Holidays](https://heliumedu.freshdesk.com/support/solutions/articles/159000431121)
-  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644) [](https://heliumedu.freshdesk.com/support/solutions/articles/159000418668)
+  * [Why Items Aren't Showing on the Planner](https://heliumedu.freshdesk.com/support/solutions/articles/159000418644)
 
 ---
 
