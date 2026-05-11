@@ -37,6 +37,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Sync support articles from Freshdesk
         run: npm run fetch-support-articles
 
