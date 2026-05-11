@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build-og-image": "./scripts/build-og-image.sh",
     "fetch-support-articles": "pip install -r requirements.txt && python scripts/fetch_support_articles.py"
   },
   "dependencies": {

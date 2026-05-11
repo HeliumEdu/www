@@ -27,7 +27,6 @@ import reminders from '~/assets/images/screenshots/reminders.png';
 
 import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB, SUPPORT } from '~/links';
 import { SITE, METADATA } from 'astrowind:config';
-import ogImage from '~/assets/images/og-default.png';
 
 const metadata = {
   title: 'Helium — Student Planner & Academic Calendar App',
@@ -118,7 +117,7 @@ const softwareSchema = {
   alternateName: ['Helium Student Planner', 'Helium — Student Planner', 'Helium Edu'],
   description: METADATA.description,
   url: SITE.site,
-  image: `${SITE.site}${ogImage.src}`,
+  image: `${SITE.site}/og-default.png`,
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'iOS, Android, Web',
   offers: {
