@@ -36,8 +36,8 @@ BG_COLOR="#418eb9"
 LAPTOP_WIDTH=$WIDTH
 LAPTOP_TOP=0
 
-command -v magick >/dev/null || {
-  echo "Error: ImageMagick not found. Install with: brew install imagemagick" >&2
+command -v convert >/dev/null || {
+  echo "Error: ImageMagick not found. Install with: brew install imagemagick (macOS) or apt-get install imagemagick (Linux)" >&2
   exit 1
 }
 [[ -f "$LAPTOP" ]] || {
@@ -45,9 +45,10 @@ command -v magick >/dev/null || {
   exit 1
 }
 
-magick -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
+convert -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
   \( "$LAPTOP" -resize "${LAPTOP_WIDTH}x" \) \
   -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
+  -strip \
   "$OUT"
 
 echo "Wrote $OUT (${WIDTH}x${HEIGHT})"

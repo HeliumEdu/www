@@ -1,6 +1,6 @@
-name: "Sync Support Articles"
+name: "Sync"
 
-run-name: "Sync Support Articles"
+run-name: "Sync"
 
 on:
   schedule:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: helium-sync-support-articles
+  group: helium-www-sync
 
 jobs:
   sync:
@@ -37,8 +37,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch support articles
+      - name: Sync support articles from Freshdesk
         run: npm run fetch-support-articles
+
+      - name: Regenerate OG image
+        run: npm run build-og-image
 
       - name: Get GitHub App bot user ID
         id: get-bot-user-id
@@ -51,10 +54,10 @@ jobs:
         run: |
           git config --global user.name "${{ steps.app-token.outputs.app-slug }}[bot]"
           git config --global user.email "${{ steps.get-bot-user-id.outputs.user-id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com"
-          git add -A support/
+          git add -A support/ public/og-default.png
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: sync Helium support articles from Freshdesk"
+            git commit -m "chore: sync www content"
             git push
           fi
