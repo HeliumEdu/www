@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Composes public/img/og-default.png from the framed laptop screenshot.
+# Composes src/assets/img/og-default.png from the framed laptop screenshot.
 #
 # The laptop is scaled to fill the 1200-wide OG canvas, anchored at the top,
 # with the bottom bleeding off the 630px-tall canvas. This produces an
@@ -19,8 +19,8 @@ ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 # Source — the framed laptop screenshot. Replace this PNG to update the OG card.
 LAPTOP="$ROOT/src/assets/img/screenshots/frames/frame-laptop.png"
 
-# Output — served at https://heliumedu.com/img/og-default.png
-OUT="$ROOT/public/img/og-default.png"
+# Output — Astro processes this and emits a fingerprinted /_astro/og-default.<hash>.png at build.
+OUT="$ROOT/src/assets/img/og-default.png"
 
 mkdir -p "$(dirname "$OUT")"
 
