@@ -8,6 +8,7 @@ export const SUPPORT = 'https://support.heliumedu.com';
 export const API_DOCS = 'https://api.heliumedu.com/docs';
 export const SUPPORT_EMAIL = 'support@heliumedu.com';
 export const CONTACT_EMAIL = 'contact@heliumedu.com';
+export const API_DOCS = 'https://api.heliumedu.com/docs';
 export const STATUS = 'https://status.heliumedu.com';
 export const GITHUB = 'https://github.com/HeliumEdu';
 export const PATREON = 'https://www.patreon.com/alexdlaird/membership';

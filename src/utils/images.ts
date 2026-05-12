@@ -8,7 +8,7 @@ type OptimizedImage = Awaited<ReturnType<ImagesOptimizer>>[0];
 const load = async function () {
   let images: Record<string, () => Promise<unknown>> | undefined = undefined;
   try {
-    images = import.meta.glob('~/assets/images/**/*.{jpeg,jpg,png,tiff,webp,gif,svg,JPEG,JPG,PNG,TIFF,WEBP,GIF,SVG}');
+    images = import.meta.glob('~/assets/img/**/*.{jpeg,jpg,png,tiff,webp,gif,svg,JPEG,JPG,PNG,TIFF,WEBP,GIF,SVG}');
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     // continue regardless of error
@@ -39,7 +39,7 @@ export const findImage = async (
   }
 
   // Relative paths or not "~/assets/"
-  if (!imagePath.startsWith('~/assets/images')) {
+  if (!imagePath.startsWith('~/assets/img')) {
     return imagePath;
   }
 
@@ -82,6 +82,15 @@ export const adaptOpenGraphImages = async (
           isUnpicCompatible(resolvedImage)
         ) {
           _image = (await unpicOptimizer(resolvedImage, [defaultWidth], defaultWidth, defaultHeight, 'jpg'))[0];
+        } else if (
+          typeof resolvedImage === 'string' &&
+          (resolvedImage.startsWith('http://') || resolvedImage.startsWith('https://'))
+        ) {
+          return {
+            url: resolvedImage,
+            width: image.width,
+            height: image.height,
+          };
         } else if (resolvedImage) {
           const dimensions =
             typeof resolvedImage !== 'string' && resolvedImage?.width <= defaultWidth

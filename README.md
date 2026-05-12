@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/images/helium-logo.png" alt="Helium" width="300" />
+  <img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/img/helium-logo.png" alt="Helium" width="300" />
   <br />
-  <img src="https://raw.githubusercontent.com/HeliumEdu/www/main/public/og-default.png" alt="Helium - Student Planner" width="800" />
+  <img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/img/og-default.png" alt="Helium - Student Planner" width="800" />
 </p>
 
 [![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
@@ -34,12 +34,6 @@ To build a production version of the site, execute:
 
 ```sh
 npm run build
-```
-
-To run the FreshDesk support article sync locally:
-
-```sh
-npm run fetch-support-articles
 ```
 
 ### Deployment

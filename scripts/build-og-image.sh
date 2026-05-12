@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Composes public/og-default.png from the framed laptop screenshot.
+# Composes src/assets/img/og-default.png from the framed laptop screenshot.
 #
 # The laptop is scaled to fill the 1200-wide OG canvas, anchored at the top,
 # with the bottom bleeding off the 630px-tall canvas. This produces an
@@ -17,10 +17,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # Source — the framed laptop screenshot. Replace this PNG to update the OG card.
-LAPTOP="$ROOT/src/assets/images/frames/frame-laptop.png"
+LAPTOP="$ROOT/src/assets/img/screenshots/frames/frame-laptop.png"
 
-# Output — served at https://heliumedu.com/og-default.png
-OUT="$ROOT/public/og-default.png"
+# Output — Astro processes this and emits a fingerprinted /_astro/og-default.<hash>.png at build.
+OUT="$ROOT/src/assets/img/og-default.png"
+
+mkdir -p "$(dirname "$OUT")"
 
 # OG card dimensions (Twitter/LinkedIn/Slack/iMessage all expect 1200x630).
 WIDTH=1200
@@ -36,8 +38,8 @@ BG_COLOR="#418eb9"
 LAPTOP_WIDTH=$WIDTH
 LAPTOP_TOP=0
 
-command -v magick >/dev/null || {
-  echo "Error: ImageMagick not found. Install with: brew install imagemagick" >&2
+command -v convert >/dev/null || {
+  echo "Error: ImageMagick not found. Install with: brew install imagemagick (macOS) or apt-get install imagemagick (Linux)" >&2
   exit 1
 }
 [[ -f "$LAPTOP" ]] || {
@@ -45,9 +47,10 @@ command -v magick >/dev/null || {
   exit 1
 }
 
-magick -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
+convert -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
   \( "$LAPTOP" -resize "${LAPTOP_WIDTH}x" \) \
   -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
+  -depth 8 -type TrueColor -strip \
   "$OUT"
 
 echo "Wrote $OUT (${WIDTH}x${HEIGHT})"

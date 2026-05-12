@@ -11,7 +11,9 @@
     "start": "astro dev",
     "build": "astro build",
     "build-og-image": "./scripts/build-og-image.sh",
-    "fetch-support-articles": "pip install -r requirements.txt && python scripts/fetch_support_articles.py"
+    "fetch-support-articles": "pip install -r requirements.txt && python scripts/fetch_support_articles.py",
+    "grab-screenshots": "./scripts/grab-screenshots.sh",
+    "scale-for-appstore": "./scripts/scale-for-appstore.sh"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
