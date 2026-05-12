@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Composes public/og-default.png from the framed laptop screenshot.
+# Composes public/img/og-default.png from the framed laptop screenshot.
 #
 # The laptop is scaled to fill the 1200-wide OG canvas, anchored at the top,
 # with the bottom bleeding off the 630px-tall canvas. This produces an
@@ -17,10 +17,12 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # Source — the framed laptop screenshot. Replace this PNG to update the OG card.
-LAPTOP="$ROOT/src/assets/images/frames/frame-laptop.png"
+LAPTOP="$ROOT/src/assets/img/screenshots/frames/frame-laptop.png"
 
-# Output — served at https://heliumedu.com/og-default.png
-OUT="$ROOT/public/og-default.png"
+# Output — served at https://heliumedu.com/img/og-default.png
+OUT="$ROOT/public/img/og-default.png"
+
+mkdir -p "$(dirname "$OUT")"
 
 # OG card dimensions (Twitter/LinkedIn/Slack/iMessage all expect 1200x630).
 WIDTH=1200
