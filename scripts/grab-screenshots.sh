@@ -82,11 +82,44 @@ frame_and_move() {
   fi
 }
 
+# Project-local composite for Pixel Tablet — frameit's catalog has no
+# modern Android tablet frame. Source frame from jamesjingyi/mockup-device-frames
+# (Porcelain colorway), rotated to portrait and tinted to dark to match the Pixel 5
+# black phone frame.
+# Screen area within the frame PNG: 1731×2747 at offset +200+200 (portrait).
+PIXEL_TABLET_FRAME="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/src/assets/img/screenshots/frames/frame-pixel-tablet.png"
+
+composite_pixel_tablet() {
+  local raw="$1"
+  local slug="$2"
+  local framed="$DEST/${slug}_framed.png"
+
+  if [[ ! -f "$PIXEL_TABLET_FRAME" ]]; then
+    echo "  ✗ Pixel Tablet frame missing at $PIXEL_TABLET_FRAME"
+    mv "$raw" "$DEST/${slug}.png"
+    return 1
+  fi
+
+  if command -v magick >/dev/null; then
+    magick "$PIXEL_TABLET_FRAME" \
+      \( "$raw" -resize 1731x2747! \) \
+      -gravity northwest -geometry +200+200 -composite \
+      "$framed"
+  else
+    convert "$PIXEL_TABLET_FRAME" \
+      \( "$raw" -resize 1731x2747! \) \
+      -gravity northwest -geometry +200+200 -composite \
+      "$framed"
+  fi
+  rm -f "$raw"
+  echo "  ✓ $framed"
+}
+
 # ─── per-screenshot loop ─────────────────────────────────────────────────
 prompt_and_capture() {
   local capture_fn="$1"
   local device_slug="$2"
-  local skip_frame="$3"
+  local frame_mode="$3"   # "frameit" | "pixel-tablet" | "none"
   local shot="$4"
 
   local slug="${shot}_${device_slug}"
@@ -105,19 +138,21 @@ prompt_and_capture() {
   fi
   echo "  📸 captured $(basename "$raw")"
 
-  if [[ "$skip_frame" == "true" ]]; then
-    mv "$raw" "$DEST/${slug}.png"
-    echo "  ✓ $DEST/${slug}.png (no frame)"
-  else
-    frame_and_move "$raw" "$slug" || true
-  fi
+  case "$frame_mode" in
+    frameit)      frame_and_move "$raw" "$slug" || true ;;
+    pixel-tablet) composite_pixel_tablet "$raw" "$slug" || true ;;
+    none|*)
+      mv "$raw" "$DEST/${slug}.png"
+      echo "  ✓ $DEST/${slug}.png (no frame)"
+      ;;
+  esac
 }
 
 run_device() {
   local label="$1"
   local slug="$2"
   local capture_fn="$3"
-  local skip_frame="$4"
+  local frame_mode="$4"
   shift 4
   local shots=("$@")
 
@@ -132,7 +167,7 @@ run_device() {
   fi
 
   for shot in "${shots[@]}"; do
-    prompt_and_capture "$capture_fn" "$slug" "$skip_frame" "$shot"
+    prompt_and_capture "$capture_fn" "$slug" "$frame_mode" "$shot"
   done
 }
 
@@ -140,10 +175,10 @@ run_device() {
 echo "Target: $DEST"
 echo "Workdir: $WORKDIR (cleaned on exit)"
 
-run_device "iPhone 15 Pro"       "iphone"        capture_ios     "false" "${PHONE_SHOTS[@]}"
-run_device "iPad Air 13\" M4"    "ipad"          capture_ios     "false" "${TABLET_SHOTS[@]}"
-run_device "Pixel 5"             "pixel-phone"   capture_android "false" "${PHONE_SHOTS[@]}"
-run_device "Pixel Tablet"        "pixel-tablet"  capture_android "true"  "${TABLET_SHOTS[@]}"
+run_device "iPhone 15 Pro"       "iphone"        capture_ios     "frameit"      "${PHONE_SHOTS[@]}"
+run_device "iPad Air 13\" M4"    "ipad"          capture_ios     "frameit"      "${TABLET_SHOTS[@]}"
+run_device "Pixel 5"             "pixel-phone"   capture_android "frameit"      "${PHONE_SHOTS[@]}"
+run_device "Pixel Tablet"        "pixel-tablet"  capture_android "pixel-tablet" "${TABLET_SHOTS[@]}"
 
 echo ""
 echo "════════════════════════════════════════════════════════════"
