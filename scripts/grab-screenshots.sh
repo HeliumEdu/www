@@ -86,7 +86,8 @@ frame_and_move() {
 prompt_and_capture() {
   local capture_fn="$1"
   local device_slug="$2"
-  local shot="$3"
+  local skip_frame="$3"
+  local shot="$4"
 
   local slug="${shot}_${device_slug}"
   local raw="$WORKDIR/${slug}.png"
@@ -103,14 +104,21 @@ prompt_and_capture() {
     return 0
   fi
   echo "  📸 captured $(basename "$raw")"
-  frame_and_move "$raw" "$slug" || true
+
+  if [[ "$skip_frame" == "true" ]]; then
+    mv "$raw" "$DEST/${slug}.png"
+    echo "  ✓ $DEST/${slug}.png (no frame)"
+  else
+    frame_and_move "$raw" "$slug" || true
+  fi
 }
 
 run_device() {
   local label="$1"
   local slug="$2"
   local capture_fn="$3"
-  shift 3
+  local skip_frame="$4"
+  shift 4
   local shots=("$@")
 
   echo ""
@@ -124,7 +132,7 @@ run_device() {
   fi
 
   for shot in "${shots[@]}"; do
-    prompt_and_capture "$capture_fn" "$slug" "$shot"
+    prompt_and_capture "$capture_fn" "$slug" "$skip_frame" "$shot"
   done
 }
 
@@ -132,9 +140,10 @@ run_device() {
 echo "Target: $DEST"
 echo "Workdir: $WORKDIR (cleaned on exit)"
 
-run_device "iPhone 15 Pro"       "iphone"        capture_ios     "${PHONE_SHOTS[@]}"
-run_device "iPad Air 13\" M4"    "ipad"          capture_ios     "${TABLET_SHOTS[@]}"
-run_device "Pixel 5"             "pixel-phone"   capture_android "${PHONE_SHOTS[@]}"
+run_device "iPhone 15 Pro"       "iphone"        capture_ios     "false" "${PHONE_SHOTS[@]}"
+run_device "iPad Air 13\" M4"    "ipad"          capture_ios     "false" "${TABLET_SHOTS[@]}"
+run_device "Pixel 5"             "pixel-phone"   capture_android "false" "${PHONE_SHOTS[@]}"
+run_device "Pixel Tablet"        "pixel-tablet"  capture_android "true"  "${TABLET_SHOTS[@]}"
 
 echo ""
 echo "════════════════════════════════════════════════════════════"
