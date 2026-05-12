@@ -7,7 +7,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Helium - Student Planner & Academic Calendar App'
+    default: 'Helium — Student Planner & Academic Calendar App'
     template: '%s | Helium'
   description: 'Helium is a smart, color-coded student planner that tracks classes, assignments, grades, and notes — built for the way you actually study.'
   robots:
