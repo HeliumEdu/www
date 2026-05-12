@@ -13,6 +13,7 @@ import Button from '~/components/ui/Button.astro';
 
 import iosBadge from '~/assets/img/ios-badge.png';
 import playBadge from '~/assets/img/play-badge.png';
+import ogDefault from '~/assets/img/og-default.png';
 
 import smartCalendars from '~/assets/img/screenshots/month-view.png';
 import externalCalendars from '~/assets/img/screenshots/external-calendars.png';
@@ -117,7 +118,7 @@ const softwareSchema = {
   alternateName: ['Helium Student Planner', 'Helium — Student Planner', 'Helium Edu'],
   description: METADATA.description,
   url: SITE.site,
-  image: `${SITE.site}/img/og-default.png`,
+  image: `${SITE.site}${ogDefault.src}`,
   applicationCategory: 'EducationalApplication',
   operatingSystem: 'iOS, Android, Web',
   offers: {
