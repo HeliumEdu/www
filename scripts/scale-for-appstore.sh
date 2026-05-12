@@ -1,29 +1,23 @@
 #!/usr/bin/env bash
 # Letterbox-pads framed device screenshots to App Store Connect's
-# accepted dimensions, preserving the device-frame proportions.
+# accepted dimensions, preserving the device-frame proportions. Writes
+# back to public/img/screenshots/framed/ in place — operation is
+# idempotent (re-running on already-scaled files is a no-op).
 #
 # Override background color (e.g. brand blue):
 #   BG_COLOR='#418eb9' ./scripts/scale-for-appstore.sh
 #
-# Sources:
-#   public/img/screenshots/framed/*_iphone_framed.png
-#   public/img/screenshots/framed/*_ipad_framed.png
-#
-# Outputs:
-#   /tmp/appstore/iphone/   1320 × 2868  (6.9" display class)
-#   /tmp/appstore/ipad/     2064 × 2752  (13" iPad)
+# Targets:
+#   *_iphone_framed.png  →  1320 × 2868  (App Store 6.9")
+#   *_ipad_framed.png    →  2064 × 2752  (App Store 13")
 #
 # Requires: ImageMagick 7+ (magick) or ImageMagick 6 (convert).
 
 set -uo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SRC="$REPO/public/img/screenshots/framed"
-OUT_IPHONE="/tmp/appstore/iphone"
-OUT_IPAD="/tmp/appstore/ipad"
+DIR="$REPO/public/img/screenshots/framed"
 BG_COLOR="${BG_COLOR:-white}"
-
-mkdir -p "$OUT_IPHONE" "$OUT_IPAD"
 
 if command -v magick >/dev/null; then
   IM=(magick)
@@ -35,24 +29,26 @@ else
 fi
 
 letterbox() {
-  local in="$1" out="$2" w="$3" h="$4"
+  local in="$1" w="$2" h="$3"
+  local tmp
+  tmp=$(mktemp -t letterbox.XXXXXX.png)
   "${IM[@]}" "$in" \
     -resize "${w}x${h}" \
     -gravity center \
     -background "$BG_COLOR" \
     -extent "${w}x${h}" \
-    "$out"
+    "$tmp"
+  mv "$tmp" "$in"
 }
 
 echo "Background: $BG_COLOR"
 echo ""
 echo "iPhone → 1320 × 2868 (App Store 6.9\")"
 count=0
-for f in "$SRC"/*_iphone_framed.png; do
+for f in "$DIR"/*_iphone_framed.png; do
   [[ -f "$f" ]] || continue
-  out="$OUT_IPHONE/$(basename "$f")"
-  letterbox "$f" "$out" 1320 2868
-  echo "  ✓ $(basename "$out")"
+  letterbox "$f" 1320 2868
+  echo "  ✓ $(basename "$f")"
   ((count++))
 done
 echo "  ($count files)"
@@ -60,16 +56,13 @@ echo "  ($count files)"
 echo ""
 echo "iPad → 2064 × 2752 (App Store 13\")"
 count=0
-for f in "$SRC"/*_ipad_framed.png; do
+for f in "$DIR"/*_ipad_framed.png; do
   [[ -f "$f" ]] || continue
-  out="$OUT_IPAD/$(basename "$f")"
-  letterbox "$f" "$out" 2064 2752
-  echo "  ✓ $(basename "$out")"
+  letterbox "$f" 2064 2752
+  echo "  ✓ $(basename "$f")"
   ((count++))
 done
 echo "  ($count files)"
 
 echo ""
-echo "Done."
-echo "  iPhone: $OUT_IPHONE"
-echo "  iPad:   $OUT_IPAD"
+echo "Done. Files updated in place at $DIR"
