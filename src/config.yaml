@@ -16,7 +16,7 @@ metadata:
   openGraph:
     site_name: Helium
     images:
-      - url: '~/assets/img/og-default.png'
+      - url: 'https://www.heliumedu.com/img/og-default.png'
         width: 1200
         height: 630
     type: website

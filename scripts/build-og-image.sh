@@ -50,7 +50,7 @@ command -v convert >/dev/null || {
 convert -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
   \( "$LAPTOP" -resize "${LAPTOP_WIDTH}x" \) \
   -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
-  -strip \
+  -depth 8 -type TrueColor -strip \
   "$OUT"
 
 echo "Wrote $OUT (${WIDTH}x${HEIGHT})"
