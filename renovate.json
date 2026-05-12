@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "dependencyDashboard": false,
+  "prHourlyLimit": 0,
+  "rangeStrategy": "bump",
+  "timezone": "America/Chicago",
+  "schedule": ["before 6am on monday"],
+  "enabledManagers": ["npm"],
+  "labels": ["renovate"],
+  "rebaseWhen": "behind-base-branch",
+  "platformAutomerge": true,
+  "gitIgnoredAuthors": ["272566303+heliumedu-bot[bot]@users.noreply.github.com"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on monday"]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["npm"],
+      "automerge": true
+    }
+  ]
+}

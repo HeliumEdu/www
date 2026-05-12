@@ -138,5 +138,11 @@ run_device "Pixel 5"             "pixel-phone"   capture_android "${PHONE_SHOTS[
 
 echo ""
 echo "════════════════════════════════════════════════════════════"
-echo "Done. Files in $DEST:"
+echo "Capture done. Files in $DEST:"
 ls -1 "$DEST/" 2>/dev/null || echo "  (none yet)"
+
+echo ""
+echo "════════════════════════════════════════════════════════════"
+echo "Scaling iPhone and iPad shots to App Store dimensions..."
+echo "════════════════════════════════════════════════════════════"
+"$(dirname "${BASH_SOURCE[0]}")/scale-for-appstore.sh"

@@ -36,12 +36,6 @@ To build a production version of the site, execute:
 npm run build
 ```
 
-To run the FreshDesk support article sync locally:
-
-```sh
-npm run fetch-support-articles
-```
-
 ### Deployment
 
 Pushes to `main` will redeploy the marketing site. The site is served from S3 (`heliumedu.www.static`) behind CloudFront. Infrastructure is defined in the [`infra` repo's `global` workspace](https://github.com/HeliumEdu/infra/tree/main/terraform/environments/global).
