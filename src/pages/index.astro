@@ -26,7 +26,7 @@ import assignmentPlanner from '~/assets/img/screenshots/assignment-planner.png';
 import customTodos from '~/assets/img/screenshots/todos.png';
 import reminders from '~/assets/img/screenshots/reminders.png';
 
-import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB, SUPPORT } from '~/links';
+import { APP_SIGNUP, APP_LOGIN, IOS_STORE, ANDROID_STORE, PATREON, GITHUB, SUPPORT, API_DOCS } from '~/links';
 import { SITE, METADATA } from 'astrowind:config';
 
 const metadata = {
@@ -80,9 +80,11 @@ const faqs = [
       'Yes. Helium\'s <strong>Feeds</strong> let you share private calendars of your events, assignments, and class schedules with Google Calendar, Apple Calendar, or any other calendar app.',
   },
   {
-    title: 'Can I take my data with me?',
+    title: 'Can I take my data with me, or import it from another app?',
     description:
-      'Always. Export your full schedule — classes, grades, notes, events, reminders — anytime.',
+      'Always. Export your full schedule as JSON — classes, grades, notes, events, reminders — anytime. The same format powers Helium\'s import, so you can migrate from another planner, restore a backup, or build an integration that automatically imports from a syllabus or course outline. Our <a href="https://heliumedu.freshdesk.com/support/solutions/articles/159000418665" target="_blank" rel="noopener" class="text-primary hover:underline">import guide</a> has more information, and the <a href="' +
+      API_DOCS +
+      '" target="_blank" rel="noopener" class="text-primary hover:underline">API docs</a> are where the magic happens.',
   },
   {
     title: 'How do I get help with Helium?',
@@ -115,7 +117,16 @@ const softwareSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Helium',
-  alternateName: ['Helium Student Planner', 'Helium — Student Planner', 'Helium Edu'],
+  alternateName: [
+    'Helium Student Planner',
+    'Helium — Student Planner',
+    'Helium Edu',
+    'Online Student Planner',
+    'Online Academic Planner',
+    'Online School Planner',
+    'Online Homework Planner',
+    'Academic Calendar Website for Students',
+  ],
   description: METADATA.description,
   url: SITE.site,
   image: `${SITE.site}${ogDefault.src}`,

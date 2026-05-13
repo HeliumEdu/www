@@ -26,12 +26,19 @@ Imported data is added alongside existing schedules in separate groups and does 
   2. Sign out and sign in to the destination account
   3. Import the backup file
 
-> **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported. Newer backups will not include these legacy fields, and thus if you import a new backup, thus newer backups will not import **comments** or **details** in to Helium Classic.
+> **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported. Newer backups will not include these legacy fields, so they will not import as **comments** or **details** into Helium Classic.
+
+## Build Your Own Integration
+
+Helium's import endpoint accepts the same JSON format produced by its exports. You can use scripts or other tooling to build your own integration to migrate from another planner or automate the import process for a syllabus or course outline.
+
+The full schema and authentication flow are in our [API docs](https://api.heliumedu.com/docs). Helium does not maintain or support any official tooling for this, but we've made the platform accessible so you can build your own.
 
 ## Related Articles
 
   * [What Is Included in a Helium Backup (and What Isn't)?](https://heliumedu.freshdesk.com/support/solutions/articles/159000418666)
   * [Re-Importing the "Example Schedule"](https://heliumedu.freshdesk.com/support/solutions/articles/159000418664)
+  * [Using the Helium API](https://heliumedu.freshdesk.com/support/solutions/articles/159000431246)
 
 ---
 

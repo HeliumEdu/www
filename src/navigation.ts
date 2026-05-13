@@ -34,7 +34,7 @@ export const footerData = {
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Support', href: SUPPORT },
-        { text: 'Docs', href: API_DOCS },
+        { text: 'API', href: API_DOCS },
         { text: 'Status', href: STATUS },
         { text: 'GitHub', href: GITHUB },
         { text: 'Patreon', href: PATREON },
