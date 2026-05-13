@@ -30,9 +30,9 @@ Imported data is added alongside existing schedules in separate groups and does 
 
 ## Build Your Own Integration
 
-Helium's import endpoint accepts the same JSON format produced by the export. If you can write a script — or use a tool that can — you can build your own integration to migrate from another planner or automate import from a syllabus or course outline.
+Helium's import endpoint accepts the same JSON format produced by its exports. You can use scripts or other tooling to build your own integration to migrate from another planner or automate the import process for a syllabus or course outline.
 
-The full schema and authentication flow are in our [API docs](https://api.heliumedu.com/docs). Helium does not maintain or support any official tooling for this, we just make the platform accessible to you so you can build your own, if interested.
+The full schema and authentication flow are in our [API docs](https://api.heliumedu.com/docs). Helium does not maintain or support any official tooling for this, but we've made the platform accessible so you can build your own.
 
 ## Related Articles
 
