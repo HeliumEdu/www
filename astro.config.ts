@@ -27,7 +27,7 @@ export default defineConfig({
     '/press': '/about',
     '/docs': 'https://api.heliumedu.com/docs',
     '/api': 'https://api.heliumedu.com/docs',
-    '/index': 'https://www.heliumedu.com',
+    '/index': '/',
   },
 
   integrations: [
