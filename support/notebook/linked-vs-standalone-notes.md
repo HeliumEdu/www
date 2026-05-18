@@ -18,7 +18,7 @@ Linked notes display a badge showing what they're connected to, making it easy t
 
 ## Standalone Notes
 
-A standalone note isn't attached to anything—you can think of these more as general documents, from taking more broader notes, jotting down your thoughts, or drafting a paper or project. Create one by opening the Notebook and tapping the "+" button.
+A standalone note isn't attached to anything—you can think of these more as general documents, from taking broader notes, jotting down your thoughts, or drafting a paper or project. Create one by opening the Notebook and tapping the "+" button.
 
 ## Why Can't I See My Notes?
 

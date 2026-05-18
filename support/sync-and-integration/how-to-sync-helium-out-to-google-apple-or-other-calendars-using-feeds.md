@@ -31,7 +31,7 @@ For instructions on how to add a feed URL to a specific calendar application, se
 
 ## Related Articles
 
-  * [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](https://heliumedu.freshdesk.com/support/solutions/articles/159000418651)
+  * [How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars](https://heliumedu.freshdesk.com/support/solutions/articles/159000418651)
   * [How to Export Data to an iCal/ICS File](https://heliumedu.freshdesk.com/support/solutions/articles/159000418692)
 
 ---

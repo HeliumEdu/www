@@ -24,19 +24,19 @@ Helium backups contain nearly all of your account data, exported in JSON format.
   * **User Preferences**
   * **Login and Account Information**
 
-> **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported. Newer backups will not include these legacy fields, and thus if you import a new backup, thus newer backups will not import **comments** or **details** in to Helium Classic.
+> **Note:** Backups store notes in a dedicated **notes** section. Legacy **comments** and **details** fields from earlier versions of Helium are preserved and automatically converted to **Notes** when a backup is imported
 
-## Related Articles
+## **Related Articles**
 
-  * [Using Exports to Backup Data & Move Between Accounts](https://heliumedu.freshdesk.com/support/solutions/articles/159000418665)
-  * [Using Resources to Track Study Materials](https://heliumedu.freshdesk.com/support/solutions/articles/159000079864)
-  * [Setting Up and Managing Reminders](https://heliumedu.freshdesk.com/support/solutions/articles/159000418660)
-  * [How to Export Data to an iCal/ICS File](https://heliumedu.freshdesk.com/support/solutions/articles/159000418650)
+  * **[Using Exports to Backup Data& Move Between Accounts](https://heliumedu.freshdesk.com/support/solutions/articles/159000418665)**
+  * **[Using Resources to Track Study Materials](https://heliumedu.freshdesk.com/support/solutions/articles/159000079864)**
+  * **[Setting Up and Managing Reminders](https://heliumedu.freshdesk.com/support/solutions/articles/159000418660)**
+  * **[How to Export Data to an iCal/ICS File](https://heliumedu.freshdesk.com/support/solutions/articles/159000418650)**
 
 ---
 
-## Helium Classic
+## **Helium Classic**
 
-In Helium Classic, the same data is included with one naming difference: **Resources** are called **Materials** , so your export file will show "Material Groups" instead of "Resource Groups."
+**In Helium Classic, the same data is included with one naming difference: Resources are called Materials, so your export file will show "Material Groups" instead of "Resource Groups."**
 
-__Helium Classic will remain available until July 31, 2026.__
+**__Helium Classic will remain available until July 31, 2026.__**

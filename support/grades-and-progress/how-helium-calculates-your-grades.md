@@ -19,7 +19,7 @@ For weighted grading, your class grade is calculated against the weight of each 
 
 ## Overall Category Grade
 
-The overall grade of a category is a flat average of all graded assignment's in that category. Even in classes with weighted grading, weights would only play a role when comparing assignments in different categories, so this is not taken in to consideration when simply looking at an individual category's grade.
+The overall grade of a category is a flat average of all graded assignments in that category. Even in classes with weighted grading, weights would only play a role when comparing assignments in different categories, so this is not taken into consideration when simply looking at an individual category's grade.
 
 ## Overall Term Grade
 

@@ -1,6 +1,6 @@
 <!-- Auto-synced from Freshdesk. Do not edit here — changes will be overwritten. To update this article, edit it in FreshDesk. -->
 
-# How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars
+# How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars
 
 Source: https://heliumedu.freshdesk.com/support/solutions/articles/159000418651
 
@@ -8,7 +8,7 @@ Source: https://heliumedu.freshdesk.com/support/solutions/articles/159000418651
 
 Helium can display calendars from other services alongside your own schedule, as long as those services provide a public iCal/ICS URL. For example, you can find instructions for getting a Google Calendar iCal URL in [Google's own documentation](https://support.google.com/calendar/answer/37648?hl=en).
 
-> **Tip:** If you're looking to export data from Helium _to_ other calendar, see [](http://How%20to%20Sync%20Google,%20Apple,%20or%20Other%20Calendars%20in%20to%20Helium%20Using%20External%20Calendars)[How to Sync Google, Apple, or Other Calendars in to Helium Using Feeds](https://heliumedu.freshdesk.com/support/solutions/articles/159000418649).
+> **Tip:** If you're looking to export data from Helium _to_ other calendar, see [](http://How%20to%20Sync%20Google,%20Apple,%20or%20Other%20Calendars%20in%20to%20Helium%20Using%20External%20Calendars)[How to Sync Google, Apple, or Other Calendars into Helium Using Feeds](https://heliumedu.freshdesk.com/support/solutions/articles/159000418649).
 
 ## How to Add an External Calendar
 

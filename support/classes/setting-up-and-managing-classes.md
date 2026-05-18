@@ -11,7 +11,7 @@ In Helium, your academic life is organized around **Class Groups** and **Classes
 Before adding classes, you need at least one Class Group to hold them. Class Groups set the overall date range for a term.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Tap the group menu (three-dot icon) and select **Add group**
+  2. Tap the group menu at the top and select **Add Group**
   3. Fill in the group details:
      * **Title** — e.g., "Fall 2025" or "Spring 2026"
      * **From / To** — the start and end dates of the term
