@@ -187,6 +187,6 @@ ls -1 "$DEST/" 2>/dev/null || echo "  (none yet)"
 
 echo ""
 echo "════════════════════════════════════════════════════════════"
-echo "Scaling iPhone and iPad shots to App Store dimensions..."
+echo "Scaling iPhone and iPad shots to App Store dimensions ..."
 echo "════════════════════════════════════════════════════════════"
 "$(dirname "${BASH_SOURCE[0]}")/scale-for-appstore.sh"
