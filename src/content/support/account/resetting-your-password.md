@@ -31,13 +31,3 @@ updatedDate: 2026-05-19
 ## Related Articles
 
   * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple)
-
----
-
-## Helium Classic
-
-In Helium Classic, the password reset option works the same way, but in a different location. The logged-in password change option is no longer available in Helium Classic.
-
-  * **Forgot your password:** Click [**Forgot your Password?**](https://www.heliumedu.com/forgot) on the login page
-
- __Helium Classic will remain available until July 31, 2026.__

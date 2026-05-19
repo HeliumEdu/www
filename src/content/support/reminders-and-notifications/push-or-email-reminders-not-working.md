@@ -57,11 +57,3 @@ Editing an assignment's or event's date or time reschedules its reminders automa
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
   * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications)
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web)
-
----
-
-## Helium Classic
-
-Helium Classic supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
-
-__Helium Classic will remain available until July 31, 2026.__

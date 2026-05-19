@@ -47,11 +47,3 @@ You can also add both types to the same item — for example, an email a day bef
 
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
   * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working)
-
----
-
-## Helium Classic
-
-Helium Classic supports **Popup** reminders (alerts in the browser) and **Email** reminders sent to your registered email address. There are no Push notifications and no Notification Center in Helium Classic.
-
-__Helium Classic will remain available until July 31, 2026.__

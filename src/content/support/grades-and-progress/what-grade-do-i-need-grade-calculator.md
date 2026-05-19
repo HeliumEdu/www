@@ -42,11 +42,3 @@ The result will tell you one of the following:
 
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
-
----
-
-## Helium Classic
-
-The grade calculator is not available in Helium Classic.
-
-__Helium Classic will remain available until July 31, 2026.__
