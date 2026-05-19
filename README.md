@@ -9,7 +9,7 @@
 
 # Helium Marketing Site
 
-The marketing site for [Helium](https://www.heliumedu.com/), including the [support portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` redirects to the JSM Help Center contact form.
+The marketing site for [Helium](https://www.heliumedu.com/), including the [Support Portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` redirects to the JSM Help Center contact form.
 
 ## Prerequisites
 
