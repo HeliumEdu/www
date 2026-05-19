@@ -6,10 +6,10 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Button from '~/components/ui/Button.astro';
 
 import { SUPPORT_EMAIL } from '~/links';
+import {getHomePermalink} from "~/utils/permalinks";
 
 const metadata = {
   title: 'Ticket Submitted — Helium Support',
-  description: 'Your support request was submitted.',
   robots: { index: false, follow: true },
 };
 ---
@@ -22,19 +22,15 @@ const metadata = {
       </div>
 
       <h1 class="font-bold font-heading text-3xl md:text-4xl leading-tighter tracking-tighter text-heading">
-        Ticket submitted
+        Submitted
       </h1>
       <p class="mt-4 text-lg text-muted">
         Thanks for reaching out. You'll get a reply at the email address you provided.
       </p>
-      <p class="mt-3 text-sm text-muted">
-        If you don't hear back, drop a line directly at
-        <a href={`mailto:${SUPPORT_EMAIL}`} class="text-primary hover:underline">{SUPPORT_EMAIL}</a>.
-      </p>
 
       <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
-        <Button variant="primary" text="Back to Support" href="/support" icon="tabler:arrow-left" />
-        <Button variant="secondary" text="Home" href="/" />
+        <Button variant="primary" text="Back to Support" href="/support" />
+        <Button variant="secondary" text="Home" href="{getHomePermalink()}" />
       </div>
     </div>
   </WidgetWrapper>
