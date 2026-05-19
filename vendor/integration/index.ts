@@ -32,7 +32,10 @@ export default ({ config: _themeConfig = 'src/config.yaml' } = {}): AstroIntegra
           site: SITE.site,
           base: SITE.base,
 
-          trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+          // 'ignore' (instead of 'never') so both /foo and /foo/ render the same
+          // page. Internal links are still emitted without trailing slashes via
+          // src/utils/permalinks.ts when SITE.trailingSlash is false.
+          trailingSlash: SITE.trailingSlash ? 'always' : 'ignore',
 
           vite: {
             plugins: [

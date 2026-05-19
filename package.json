@@ -11,7 +11,6 @@
     "start": "astro dev",
     "build": "astro build",
     "build-og-image": "./scripts/build-og-image.sh",
-    "fetch-support-articles": "pip install -r requirements.txt && python scripts/fetch_support_articles.py",
     "grab-screenshots": "./scripts/grab-screenshots.sh",
     "scale-for-appstore": "./scripts/scale-for-appstore.sh"
   },
@@ -35,8 +34,10 @@
     "@types/js-yaml": "^4.0.9",
     "@types/lodash.merge": "^4.6.9",
     "astro-compress": "^2.4.1",
+    "astro-pagefind": "^2.0.0",
     "js-yaml": "^4.1.1",
     "mdast-util-to-string": "^4.0.0",
+    "pagefind": "^1.5.2",
     "reading-time": "^1.5.0",
     "sharp": "^0.34.5",
     "tailwind-merge": "^2.6.1",

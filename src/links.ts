@@ -5,7 +5,7 @@ export const CLASSIC_LOGIN = 'https://www.heliumedu.com/login';
 export const IOS_STORE = 'https://apps.apple.com/us/app/helium-student-planner/id6758323154';
 export const ANDROID_STORE = 'https://play.google.com/store/apps/details?id=com.heliumedu.heliumapp';
 
-export const SUPPORT = 'https://support.heliumedu.com';
+export const SUPPORT = 'https://www.heliumedu.com/support';
 export const SUPPORT_EMAIL = 'support@heliumedu.com';
 export const CONTACT_EMAIL = 'contact@heliumedu.com';
 export const API_DOCS = 'https://api.heliumedu.com/docs';

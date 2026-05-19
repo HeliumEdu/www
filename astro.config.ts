@@ -9,10 +9,16 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
+import pagefind from 'astro-pagefind';
 
 import astrowind from './vendor/integration';
 
-import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter';
+import {
+  readingTimeRemarkPlugin,
+  responsiveTablesRehypePlugin,
+  lazyImagesRehypePlugin,
+  externalLinksRehypePlugin,
+} from './src/utils/frontmatter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -20,8 +26,9 @@ export default defineConfig({
   output: 'static',
 
   redirects: {
-    '/support': 'https://support.heliumedu.com',
-    '/contact': 'https://support.heliumedu.com',
+    '/contact': '/support',
+    // TODO: revert once JSM Embed is fixed and /support/submit can host the form inline.
+    '/support/submit': 'https://heliumedu.atlassian.net/helpcenter/HS/contact-us',
     '/status': 'https://status.heliumedu.com',
     '/app': 'https://app.heliumedu.com',
     '/press': '/about',
@@ -70,11 +77,12 @@ export default defineConfig({
     astrowind({
       config: './src/config.yaml',
     }),
+    pagefind(),
   ],
 
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
-    rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin],
+    rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin, externalLinksRehypePlugin],
   },
 
   vite: {

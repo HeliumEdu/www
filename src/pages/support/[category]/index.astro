@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+import { SUPPORT_CATEGORIES, CATEGORY_BY_SLUG } from '~/utils/supportCategories';
+
+export async function getStaticPaths() {
+  const allArticles = await getCollection('support');
+
+  return SUPPORT_CATEGORIES.map((category) => {
+    const articles = allArticles
+      .filter((a) => a.data.category === category.slug)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+    return {
+      params: { category: category.slug },
+      props: { category, articles },
+    };
+  });
+}
+
+const { category, articles } = Astro.props;
+
+const metadata = {
+  title: `${category.title} — Helium Support`,
+  description: category.description,
+};
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper containerClass="max-w-4xl mx-auto py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="text-sm text-muted mb-6">
+      <a href="/support" class="hover:text-primary">Support</a>
+      <span class="mx-2">/</span>
+      <span class="text-default dark:text-slate-200">{category.title}</span>
+    </nav>
+
+    <div class="flex items-center gap-4 mb-3">
+      <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary p-2">
+        <Icon name={category.icon} class="w-7 h-7" />
+      </div>
+      <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter text-heading">
+        {category.title}
+      </h1>
+    </div>
+    <p class="text-lg text-muted mb-10">{category.description}</p>
+
+    {
+      articles.length === 0 ? (
+        <p class="text-muted">No articles in this category yet.</p>
+      ) : (
+        <ul class="divide-y divide-gray-200 dark:divide-slate-700 border-y border-gray-200 dark:border-slate-700">
+          {articles.map((article) => (
+            <li>
+              <a
+                href={`/support/${article.id}`}
+                class="group flex items-start justify-between gap-4 py-5 hover:bg-blue-50/40 dark:hover:bg-white/[0.03] -mx-4 px-4 rounded-lg transition-colors"
+              >
+                <div class="flex-1">
+                  <h2 class="text-lg font-bold text-heading dark:text-white group-hover:text-primary transition-colors">
+                    {article.data.title}
+                  </h2>
+                  <p class="text-muted dark:text-slate-400 text-sm mt-1">{article.data.description}</p>
+                </div>
+                <Icon name="tabler:chevron-right" class="w-5 h-5 text-muted mt-1 shrink-0" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    <div class="mt-10">
+      <a href="/support" class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+        <Icon name="tabler:arrow-left" class="w-4 h-4" />
+        Back to Support
+      </a>
+    </div>
+  </WidgetWrapper>
+</Layout>
