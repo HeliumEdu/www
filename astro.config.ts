@@ -26,9 +26,7 @@ export default defineConfig({
   output: 'static',
 
   redirects: {
-    '/contact': '/support',
-    // TODO: revert once JSM Embed is fixed and /support/submit can host the form inline.
-    '/support/submit': 'https://heliumedu.atlassian.net/helpcenter/HS/contact-us',
+    '/contact': '/support/submit',
     '/status': 'https://status.heliumedu.com',
     '/app': 'https://app.heliumedu.com',
     '/press': '/about',
