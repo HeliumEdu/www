@@ -84,7 +84,7 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
           required
           class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
         >
-          <option value="">Select…</option>
+          <option value="">Select ...</option>
           {CATEGORIES.map((c) => <option value={c}>{c}</option>)}
         </select>
       </div>
@@ -127,7 +127,7 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
         >
           <Icon name="tabler:send" class="w-5 h-5" />
           <span data-label="idle">Submit Ticket</span>
-          <span data-label="busy" class="hidden">Sending…</span>
+          <span data-label="busy" class="hidden">Submitting ...</span>
         </button>
       </div>
     </form>

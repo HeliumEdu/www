@@ -18,7 +18,7 @@ export const headerData = {
   ],
   actions: [
     { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank', class: 'hidden min-[850px]:inline-flex' },
-    { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+    { text: 'Sign in', href: APP_LOGIN, target: '_blank', class: 'hidden md:inline-flex' },
     { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
   ],
 };
