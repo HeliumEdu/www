@@ -1,6 +1,6 @@
 ---
 title: Why Your Grades Might Not Match Your LMS' or Teacher's
-description: If your Helium grade looks different from the grade your teacher or LMS is showing you, it's usually due to category weighting differences or missing/ungraded assignments.
+description: "If your Helium grade differs from your teacher's or LMS, it's usually category weighting or missing assignments — how to find and fix the mismatch."
 category: grades-and-progress
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

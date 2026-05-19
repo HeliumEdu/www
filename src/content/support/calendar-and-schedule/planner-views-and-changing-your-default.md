@@ -1,6 +1,6 @@
 ---
 title: Planner Views, and Changing Your Default
-description: 'Helium offers five Planner display options:'
+description: "Switch between Month, Week, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

@@ -1,6 +1,6 @@
 ---
 title: Why Your Grade Graph Shows Sudden Drops or Spikes
-description: Sudden changes in grades on the graph usually come from newly added or corrected grades on assignments.
+description: "Sudden changes in your Helium grade graph usually trace to a newly graded assignment, a weight change, or an edited grade — how to investigate."
 category: grades-and-progress
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

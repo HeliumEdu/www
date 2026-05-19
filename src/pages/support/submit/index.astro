@@ -175,6 +175,21 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
     function oversizeMessage(name: string): string {
       return `"${name}" is larger than ${formatBytes(maxBytes)}. Please choose a smaller file.`;
     }
+    function firstString(v: unknown): string | undefined {
+      if (typeof v === 'string') return v;
+      if (Array.isArray(v)) {
+        for (const x of v) {
+          const s = firstString(x);
+          if (s) return s;
+        }
+      } else if (v && typeof v === 'object') {
+        for (const x of Object.values(v)) {
+          const s = firstString(x);
+          if (s) return s;
+        }
+      }
+      return undefined;
+    }
 
     // Pull the live max-upload size from the API so the client stays in sync
     // with the backend's MAX_UPLOAD_SIZE without a rebuild. Falls back to the
@@ -214,21 +229,33 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
 
       setBusy(true);
       try {
-        const res = await fetch(endpoint, { method: 'POST', body: new FormData(form) });
+        const formData = new FormData(form);
+        if (!files.length) formData.delete('attachment');
+        const res = await fetch(endpoint, { method: 'POST', body: formData });
         if (res.ok) {
           window.location.href = '/support/submit/sent';
           return;
         }
         if (res.status === 429) {
-          showError("You've sent a lot of requests in a short time. Please wait a minute and try again.");
+          let minutes = 1;
+          try {
+            const body = await res.json();
+            const match = typeof body?.detail === 'string' ? body.detail.match(/in (\d+) seconds?/) : null;
+            if (match) {
+              const seconds = Number(match[1]);
+              if (seconds > 0) minutes = Math.max(1, Math.ceil(seconds / 60));
+            }
+          } catch {}
+          const unit = minutes === 1 ? 'minute' : 'minutes';
+          showError(`You've sent a lot of emails in a short time. You can use this form again in ${minutes} ${unit}.`);
         } else {
           let detail = 'Something went wrong sending your message. Please try again.';
           try {
             const body = await res.json();
             if (body?.detail) detail = body.detail;
-            else if (body && typeof body === 'object') {
-              const first = Object.values(body).flat()[0];
-              if (typeof first === 'string') detail = first;
+            else {
+              const s = firstString(body);
+              if (s) detail = s;
             }
           } catch {}
           showError(detail);

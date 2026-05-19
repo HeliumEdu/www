@@ -1,6 +1,6 @@
 ---
 title: What Grade Do I Need? (Grade Calculator)
-description: The What Grade Do I Need? calculator helps you figure out what score you need on an upcoming assignment to hit a target overall grade for a class.
+description: "Use Helium's grade calculator to figure out what you need on an upcoming assignment to hit a target grade for the class."
 category: grades-and-progress
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

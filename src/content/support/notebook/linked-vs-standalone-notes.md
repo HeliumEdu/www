@@ -1,6 +1,6 @@
 ---
 title: Linked vs. Standalone Notes
-description: Notes in Helium can exist on their own or be linked to an Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
+description: "Notes in Helium can be linked to a class, assignment, event, or resource — or stand on their own. When to use each, and why."
 category: notebook
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

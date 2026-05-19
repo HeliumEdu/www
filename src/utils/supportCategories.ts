@@ -13,7 +13,7 @@ export const SUPPORT_CATEGORIES: SupportCategory[] = [
   { slug: 'notebook', title: 'Notebook & Resources', description: 'Capture notes and track study materials linked to your classes.', icon: 'tabler:notebook' },
   { slug: 'reminders-and-notifications', title: 'Reminders & Notifications', description: 'Stay ahead with timely push and email reminders.', icon: 'tabler:bell' },
   { slug: 'sync-and-integration', title: 'Sync & Integration', description: 'External calendars, feeds, and integrations.', icon: 'tabler:refresh' },
-  { slug: 'import-export-and-backup', title: 'Import, Export & Backup', description: 'Move data in and out of Helium safely.', icon: 'tabler:arrows-left-right' },
+  { slug: 'import-export-and-backup', title: 'Import, Export & Backup', description: 'Move data in and out of Helium.', icon: 'tabler:arrows-left-right' },
   { slug: 'account', title: 'Account', description: 'Sign-in, settings, and account management.', icon: 'tabler:user-circle' },
 ];
 

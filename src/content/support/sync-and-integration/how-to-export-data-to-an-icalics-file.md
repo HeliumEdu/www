@@ -1,6 +1,6 @@
 ---
 title: How to Export Data to an iCal/ICS File
-description: You can export Helium calendar data to iCal/ICS format for a one-time import into another calendar application. This uses the same Feeds feature that enables continuous sync — the difference is simply…
+description: "Download your Helium schedule as an iCal/ICS file for a one-time import into another calendar — separate from continuous feed sync."
 category: sync-and-integration
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

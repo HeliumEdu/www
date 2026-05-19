@@ -1,6 +1,6 @@
 ---
 title: Using the Helium API
-description: Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, view grades, edit notes, run a bulk import — is also available via the API. The…
+description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

@@ -1,6 +1,6 @@
 ---
 title: Printing and Exporting
-description: Helium can print (or export to PDF) from any screen, as well as formatted notes, and the Todos view can be exported to a CSV file.
+description: "Print any Helium screen to paper or PDF, print formatted notes, and export your Todos view to a CSV spreadsheet."
 category: import-export-and-backup
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

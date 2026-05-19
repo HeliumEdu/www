@@ -1,6 +1,6 @@
 ---
 title: Using Exports to Backup Data, Move Between Accounts
-description: Helium lets you export your data as a JSON file, which can be used to archive your data or transfer it to another Helium account.
+description: "Export your full Helium schedule as JSON to back up your data, transfer to another account, or seed an automated import."
 category: import-export-and-backup
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

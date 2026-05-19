@@ -1,6 +1,6 @@
 ---
 title: Deleting Your Account and Data
-description: You can permanently remove your Helium account and all associated data at any time. This action cannot be undone.
+description: "Permanently delete your Helium account and all associated data — and how to back up first if you want a copy before it's gone."
 category: account
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

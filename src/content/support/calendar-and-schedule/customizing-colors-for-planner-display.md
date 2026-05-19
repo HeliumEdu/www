@@ -1,6 +1,6 @@
 ---
 title: Customizing Colors for Planner Display
-description: Helium offers several color customization options for how items appear on your Planner. These settings are found in Settings → Preferences(https://app.heliumedu.com/settings).
+description: "Customize how items are color-coded on your Helium Planner — by class, by category, by grade, and more."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

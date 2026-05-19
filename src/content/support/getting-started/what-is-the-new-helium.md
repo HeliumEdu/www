@@ -1,6 +1,6 @@
 ---
 title: What is the New Helium?
-description: We've completely rebuilt Helium from the ground up — sleek, modern, fast, and built to last. The new Helium includes a redesigned web app plus brand new native iOS and Android apps , all sharing a…
+description: "The new Helium is a redesigned web app plus brand-new iOS and Android apps — what's new, what's retired, and how to switch from Helium Classic."
 category: getting-started
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19

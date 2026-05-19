@@ -1,6 +1,6 @@
 ---
 title: Getting the Helium App (iOS, Android, and Web)
-description: Helium is available as a native app for iOS and Android, and also runs in any modern web browser. Your data syncs automatically across all platforms.
+description: "Get Helium on iOS, Android, and the web — install steps for each platform and how your data syncs automatically across every device."
 category: getting-started
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19
