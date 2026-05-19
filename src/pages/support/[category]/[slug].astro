@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 
 import Layout from '~/layouts/PageLayout.astro';
+import ArticleStructuredData from '~/components/common/ArticleStructuredData.astro';
+import BreadcrumbStructuredData from '~/components/common/BreadcrumbStructuredData.astro';
 
 import { CATEGORY_BY_SLUG } from '~/utils/supportCategories';
 
@@ -26,9 +28,17 @@ const metadata = {
   title: `${article.data.title} — Helium Support`,
   description: article.data.description,
 };
+
+const breadcrumbs = [
+  { name: 'Support', path: '/support' },
+  ...(category ? [{ name: category.title, path: `/support/${category.slug}` }] : []),
+  { name: article.data.title, path: `/support/${article.data.category}/${article.id.split('/').slice(1).join('/')}` },
+];
 ---
 
 <Layout metadata={metadata}>
+  <ArticleStructuredData article={article} />
+  <BreadcrumbStructuredData items={breadcrumbs} />
   <section class="px-4 py-12 sm:px-6 mx-auto lg:px-8 lg:py-16 max-w-4xl">
     <nav aria-label="Breadcrumb" class="text-sm text-muted mb-6">
       <a href="/support" class="hover:text-primary">Support</a>

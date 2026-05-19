@@ -1,0 +1,29 @@
+---
+import { SITE } from 'astrowind:config';
+
+export interface Crumb {
+  name: string;
+  path: string;
+}
+
+export interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+
+const base = SITE.site.replace(/\/$/, '');
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((crumb, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: crumb.name,
+    item: `${base}${crumb.path}`,
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

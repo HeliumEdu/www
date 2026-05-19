@@ -22,6 +22,27 @@ import {
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const SUPPORT_URL_PATTERN = /^\/support\/([^/]+)\/([^/]+)\/?$/;
+
+function readSupportArticleDate(category: string, slug: string): string | null {
+  const filePath = path.resolve(__dirname, './src/content/support', category, `${slug}.md`);
+  if (!fs.existsSync(filePath)) return null;
+
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
+  const fmMatch = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (fmMatch) {
+    const updated = fmMatch[1].match(/^updatedDate:\s*(.+)$/m);
+    const published = fmMatch[1].match(/^publishedDate:\s*(.+)$/m);
+    const dateString = (updated?.[1] ?? published?.[1])?.trim().replace(/^['"]|['"]$/g, '');
+    if (dateString) {
+      const parsed = new Date(dateString);
+      if (!Number.isNaN(parsed.getTime())) return parsed.toISOString();
+    }
+  }
+
+  return fs.statSync(filePath).mtime.toISOString();
+}
+
 export default defineConfig({
   output: 'static',
 
@@ -44,6 +65,17 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) => !/\/support\/submit(\/|$)/.test(page),
+      serialize(item) {
+        const pathname = new URL(item.url).pathname;
+        const match = pathname.match(SUPPORT_URL_PATTERN);
+        if (match) {
+          const [, category, slug] = match;
+          const lastmod = readSupportArticleDate(category, slug);
+          if (lastmod) item.lastmod = lastmod;
+        }
+        return item;
+      },
     }),
     {
       name: 'sitemap-xml-alias',
