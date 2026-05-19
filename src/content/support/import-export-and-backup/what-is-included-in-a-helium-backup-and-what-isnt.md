@@ -1,5 +1,5 @@
 ---
-title: What is Included in a Helium Backup (and What Isn’t)
+title: What is Included in a Helium Backup (and What Isn't)
 description: "What a Helium JSON backup includes — classes, assignments, grades, notes, reminders — and what it doesn't (attachments, preferences, login info)."
 category: import-export-and-backup
 publishedDate: 2026-05-19
