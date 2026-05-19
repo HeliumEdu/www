@@ -25,11 +25,3 @@ The [**Resources**](https://app.heliumedu.com/resources) screen lets you track t
      * **Classes** — one or more classes this resource is associated with
      * **Website** — a URL for the resource (e.g., a publisher page, textbook, or link to an online app or tool)
   4. Tap **Save**
-
----
-
-## Helium Classic
-
-In Helium Classic, Resources are called **Materials** and are accessible from the Planner menu at [**Planner → Materials**](https://www.heliumedu.com/planner/materials). The concept is the same — materials are organized into Material Groups and can be associated with classes. The field labels and navigation differ slightly, but the same information can be tracked.
-
-_Helium Classic will remain available until July 31, 2026._

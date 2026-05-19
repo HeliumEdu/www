@@ -48,11 +48,3 @@ You can reschedule assignments and events by dragging them to a different time s
 ## Related Articles
 
   * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display/)
-
----
-
-## Helium Classic
-
-The same views are available in Helium Classic. To change your default view, navigate to [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), select your preferred option from the **Default view** dropdown, and click **Save**.
-
-__Helium Classic will remain available until July 31, 2026.__
