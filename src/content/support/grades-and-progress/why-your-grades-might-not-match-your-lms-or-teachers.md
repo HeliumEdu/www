@@ -26,7 +26,7 @@ In [**Classes**](https://app.heliumedu.com/classes), confirm your categories:
 
 On the [**Planner**](https://app.heliumedu.com/planner), check that assignments are categorized correctly.
 
-Review ungraded items—any assignment not marked as Complete with a grade entered will not be factored in.
+Review ungraded items — any assignment not marked as Complete with a grade entered will not be factored in.
 
 If attendance is graded:
 
@@ -34,7 +34,7 @@ If attendance is graded:
   * Create a single assignment in that category, with its date at or near the end of the term
   * Mark it as Complete and grade it accordingly
 
-Double-check term and class dates—the start and end dates you set for the term and class affect which assignments are calculated and how grades are displayed. Adjust dates to ensure all assignments fall within the class and term date range.
+Double-check term and class dates — the start and end dates you set for the term and class affect which assignments are calculated and how grades are displayed. Adjust dates to ensure all assignments fall within the class and term date range.
 
 ## Related Articles
 

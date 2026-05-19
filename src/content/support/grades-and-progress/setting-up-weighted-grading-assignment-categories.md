@@ -13,7 +13,7 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
   3. Tap the **+** button to add a category, or tap an existing category to edit it
   4. Set the **Weight (%)** field to match the weight given in your syllabus
   5. Tap **Save**
-  6. Repeat for each category—all weights should add up to 100%
+  6. Repeat for each category — all weights should add up to 100%
 
 ## Related Articles
 

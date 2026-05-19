@@ -13,8 +13,8 @@ For weighted grading, your class grade is calculated against the weight of each 
 ## Missing or Ungraded Work
 
   * Assignments are not included in grade calculations unless they **Complete** is checked and **Grade** is set
-  * A missed assignment needs to still be marked as **Completed** and have its **Grade** set to "0" to be reflected in the grade calculation—simply leaving **Grade** blank will not cause it to affect grade calculations
-  * In classes with weighted grading, categories that have no **Weight** are ungraded—assignments placed in this category are ignored by the grading system, even if **Grade** is set
+  * A missed assignment needs to still be marked as **Completed** and have its **Grade** set to "0" to be reflected in the grade calculation — simply leaving **Grade** blank will not cause it to affect grade calculations
+  * In classes with weighted grading, categories that have no **Weight** are ungraded — assignments placed in this category are ignored by the grading system, even if **Grade** is set
   * The start/end dates you set for the term and the class can impact what grades are calculated and how grades are shown, so be sure all assignments are within the date range of the class and term in which they are to be graded
 
 ## Overall Category Grade

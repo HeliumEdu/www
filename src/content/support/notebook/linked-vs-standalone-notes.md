@@ -18,7 +18,7 @@ Linked notes display a badge showing what they're connected to, making it easy t
 
 ## Standalone Notes
 
-A standalone note isn't attached to anything—you can think of these more as general documents, from taking broader notes, jotting down your thoughts, or drafting a paper or project. Create one by opening the Notebook and tapping the "+" button.
+A standalone note isn't attached to anything — you can think of these more as general documents, from taking broader notes, jotting down your thoughts, or drafting a paper or project. Create one by opening the Notebook and tapping the "+" button.
 
 ## Why Can't I See My Notes?
 
@@ -27,7 +27,7 @@ The Notebook has filters that may hide some notes. If you're missing a note:
   * **Check your filters:** Tap the filter icon and make sure the relevant type (Assignments, Events, Resources, or Unlinked) is selected.
   * **Search by title:** Use the search bar to find notes by title or by the name of the linked item.
 
-If you have "Remember filter state" enabled in Settings, your filters persist between sessions—so a filter you set last week might still be active.
+If you have "Remember filter state" enabled in Settings, your filters persist between sessions — so a filter you set last week might still be active.
 
 ## Can I Unlink a Note?
 

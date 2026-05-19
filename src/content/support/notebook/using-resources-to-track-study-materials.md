@@ -1,10 +1,10 @@
 ---
 title: Using Resources to Track Study Materials
 description: The Resources(https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into…
-category: resources
+category: notebook
 ---
 
-The [**Resources**](https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into **Resource Groups** —for example, you could group them by term, or category.
+The [**Resources**](https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into **Resource Groups** — for example, you could group them by term, or category.
 
 ## Creating a Resource Group
 
@@ -28,6 +28,6 @@ The [**Resources**](https://app.heliumedu.com/resources) screen lets you track t
 
 ## Helium Classic
 
-In Helium Classic, Resources are called **Materials** and are accessible from the Planner menu at [**Planner → Materials**](https://www.heliumedu.com/planner/materials). The concept is the same—materials are organized into Material Groups and can be associated with classes. The field labels and navigation differ slightly, but the same information can be tracked.
+In Helium Classic, Resources are called **Materials** and are accessible from the Planner menu at [**Planner → Materials**](https://www.heliumedu.com/planner/materials). The concept is the same — materials are organized into Material Groups and can be associated with classes. The field labels and navigation differ slightly, but the same information can be tracked.
 
 _Helium Classic will remain available until July 31, 2026._

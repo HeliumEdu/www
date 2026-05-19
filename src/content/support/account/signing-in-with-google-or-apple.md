@@ -21,7 +21,7 @@ In addition to signing in with an email and password, Helium supports signing in
 
 If you already have a Helium account with an email and password, you can link it to your Google or Apple account (as long as the email address matches). Follow the same steps above for "How to Sign In", and when the process completes, Helium will detect your existing account by the matching email address, and merge them.
 
-Once linked, you can sign in using either your email and password _or_ Google/Apple—whichever is more convenient.
+Once linked, you can sign in using either your email and password _or_ Google/Apple — whichever is more convenient.
 
 ## Account Management with OAuth
 

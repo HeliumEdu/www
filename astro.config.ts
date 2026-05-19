@@ -54,6 +54,9 @@ export default defineConfig({
     '/docs': 'https://api.heliumedu.com/docs',
     '/api': 'https://api.heliumedu.com/docs',
     '/index': '/',
+    '/support/resources': '/support/notebook',
+    '/support/resources/using-resources-to-track-study-materials':
+      '/support/notebook/using-resources-to-track-study-materials',
   },
 
   integrations: [

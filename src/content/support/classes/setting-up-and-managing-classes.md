@@ -40,12 +40,12 @@ The Schedule tab is where you set when your class meets each week. Once configur
 
   1. Select the days your class meets using the **Class Days** toggle (tap each day to include it)
   2. Set the **Start** and **End** times for class
-  3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** —this lets you set independent start and end times for each selected day
+  3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** — this lets you set independent start and end times for each selected day
   4. Tap **Save**
 
 Class Schedule items appear on the **Week** , **Day** , **Month** , and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner).
 
-A schedule is optional—if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no days selected.
+A schedule is optional — if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no days selected.
 
 ### Categories Tab
 

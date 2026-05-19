@@ -20,12 +20,12 @@ You can share your Helium schedules with external calendar applications using Fe
      * Events
   4. Tap **Copy** next to any feed to copy its URL to your clipboard, then paste it into your external calendar application. On supported devices, you can also tap the **Share** button to send the URL directly.
 
-For instructions on how to add a feed URL to a specific calendar application, see your provider's documentation—for example, [Google Calendar's guide for subscribing to calendars](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop).
+For instructions on how to add a feed URL to a specific calendar application, see your provider's documentation — for example, [Google Calendar's guide for subscribing to calendars](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop).
 
 ## Key Notes About Feeds
 
   * External applications can only **display** Helium calendars through this method; they cannot edit Helium data
-  * Feed refresh occurs on the host application's own schedule—updates may not appear immediately
+  * Feed refresh occurs on the host application's own schedule — updates may not appear immediately
   * Feeds are disabled by default to protect your privacy
   * Keep your private feed URLs secret. If a feed URL is ever compromised, disabling and re-enabling Feeds will regenerate new URLs for all three feeds
 
