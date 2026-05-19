@@ -2,6 +2,8 @@
 title: What is the New Helium?
 description: We've completely rebuilt Helium from the ground up — sleek, modern, fast, and built to last. The new Helium includes a redesigned web app plus brand new native iOS and Android apps , all sharing a…
 category: getting-started
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 We've completely rebuilt Helium from the ground up — sleek, modern, fast, and built to last. The new Helium includes a redesigned web app plus **brand new native iOS and Android apps**, all sharing a consistent experience.

@@ -2,6 +2,8 @@
 title: Setting Up and Managing Classes
 description: In Helium, your academic life is organized around Class Groups and Classes. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting…
 category: classes
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.

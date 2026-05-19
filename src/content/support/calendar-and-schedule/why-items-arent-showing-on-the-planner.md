@@ -2,6 +2,8 @@
 title: Why Items Aren't Showing on the Planner
 description: If something isn't appearing on your Planner, one of the causes below is usually responsible. The first three apply to anything that can show on the Planner; the later sections cover what's specific…
 category: calendar-and-schedule
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 If something isn't appearing on your Planner, one of the causes below is usually responsible. The first three apply to anything that can show on the Planner; the later sections cover what's specific to each item type.

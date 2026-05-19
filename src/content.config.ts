@@ -7,7 +7,6 @@ const support = defineCollection({
     title: z.string(),
     description: z.string(),
     category: z.string(),
-    tags: z.array(z.string()).optional(),
     publishedDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     faq: z

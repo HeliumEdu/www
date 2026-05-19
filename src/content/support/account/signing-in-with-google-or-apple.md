@@ -2,6 +2,8 @@
 title: Signing In with Google or Apple
 description: In addition to signing in with an email and password, Helium supports signing in with your Google or Apple account. This lets you log in without managing a separate password.
 category: account
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 In addition to signing in with an email and password, Helium supports signing in with your Google or Apple account. This lets you log in without managing a separate password.

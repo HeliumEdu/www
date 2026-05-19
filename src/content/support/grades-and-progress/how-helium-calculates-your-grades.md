@@ -2,6 +2,8 @@
 title: How Helium Calculates Your Grades
 description: Helium supports point-based grading as well as weighted grading.
 category: grades-and-progress
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Helium supports point-based grading as well as weighted grading.

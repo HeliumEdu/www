@@ -2,6 +2,8 @@
 title: Cancelling Class Sessions and Setting Term Holidays
 description: 'Helium provides two ways to exclude dates from a class''s recurring schedule: Class Cancellations for individual sessions of a single class, and Holidays & Breaks for term-wide dates that apply to…'
 category: classes
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Helium provides two ways to exclude dates from a class's recurring schedule: **Class Cancellations** for individual sessions of a single class, and **Holidays & Breaks** for term-wide dates that apply to every class in a Class Group.

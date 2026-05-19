@@ -2,6 +2,8 @@
 title: How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds
 description: You can share your Helium schedules with external calendar applications using Feeds, which provide standard iCal/ICS URLs for continuous synchronization.
 category: sync-and-integration
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 ## Overview

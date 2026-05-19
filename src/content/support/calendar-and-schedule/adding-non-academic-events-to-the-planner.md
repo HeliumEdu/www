@@ -2,6 +2,8 @@
 title: Adding non-Academic Events to the Planner
 description: Helium lets you add events like study sessions, concerts, appointments, and anything else you need to block out time for in your schedule. Unlike assignments, events are not attached to a class, are…
 category: calendar-and-schedule
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Helium lets you add events like study sessions, concerts, appointments, and anything else you need to block out time for in your schedule. Unlike assignments, events are not attached to a class, are ungraded, and won't appear in the Todos view.

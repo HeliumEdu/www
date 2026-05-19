@@ -2,6 +2,8 @@
 title: How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars
 description: Helium can display calendars from other services alongside your own schedule, as long as those services provide a public iCal/ICS URL. For example, you can find instructions for getting a Google…
 category: sync-and-integration
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 ## Overview

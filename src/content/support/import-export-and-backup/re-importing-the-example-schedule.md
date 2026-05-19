@@ -2,6 +2,8 @@
 title: Re-Importing the "Example Schedule"
 description: When you first create a Helium account, an example schedule is automatically added to help you explore the app's features. If you've cleared this data and want to bring it back, you can re-import it…
 category: import-export-and-backup
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 ## Overview

@@ -2,6 +2,8 @@
 title: Understanding the Grades   Dashboard
 description: The Grades dashboard surfaces three summary widgets — At-Risk Classes , Progress vs. Pace , and Pending Impact — at the top of the page, followed by a grade trend graph and a per-class breakdown.
 category: grades-and-progress
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.

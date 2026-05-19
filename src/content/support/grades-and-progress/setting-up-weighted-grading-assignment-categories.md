@@ -2,6 +2,8 @@
 title: Setting Up Weighted Grading & Assignment Categories
 description: Weighted categories let you match your teacher's grading scheme (e.g., Homework 30%, Quizzes 20%, Exams 50%). Weighted grading is enabled for a class whenever any of its categories has a Weight (%)…
 category: grades-and-progress
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Weighted categories let you match your teacher's grading scheme (e.g., Homework 30%, Quizzes 20%, Exams 50%). Weighted grading is enabled for a class whenever any of its categories has a **Weight (%)** value set.

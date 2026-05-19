@@ -2,6 +2,8 @@
 title: What Grade Do I Need? (Grade Calculator)
 description: The What Grade Do I Need? calculator helps you figure out what score you need on an upcoming assignment to hit a target overall grade for a class.
 category: grades-and-progress
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 The **What Grade Do I Need?** calculator helps you figure out what score you need on an upcoming assignment to hit a target overall grade for a class.

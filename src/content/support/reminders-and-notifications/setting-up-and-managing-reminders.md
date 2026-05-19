@@ -2,6 +2,8 @@
 title: Setting Up and Managing Reminders
 description: Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and configure how they…
 category: reminders-and-notifications
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and configure how they are sent.

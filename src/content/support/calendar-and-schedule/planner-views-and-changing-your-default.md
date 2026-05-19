@@ -2,6 +2,8 @@
 title: Planner Views, and Changing Your Default
 description: 'Helium offers five Planner display options:'
 category: calendar-and-schedule
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 ## Available Views

@@ -2,6 +2,8 @@
 title: Changing the App Theme (Dark Mode)
 description: Helium supports Light, Dark, and System-synced themes. You can change the theme at any time from Settings(https://app.heliumedu.com/settings).
 category: account
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 Helium supports Light, Dark, and System-synced themes. You can change the theme at any time from [**Settings**](https://app.heliumedu.com/settings).

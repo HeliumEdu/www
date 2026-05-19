@@ -2,6 +2,8 @@
 title: Using Resources to Track Study Materials
 description: The Resources(https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into…
 category: notebook
+publishedDate: 2026-05-19
+updatedDate: 2026-05-19
 ---
 
 The [**Resources**](https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into **Resource Groups** — for example, you could group them by term, or category.
