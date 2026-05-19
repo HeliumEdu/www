@@ -20,10 +20,10 @@ Helium offers five Planner display options:
 
 On mobile devices, the month view displays colored indicator dots below each date rather than showing individual items. Each dot represents a different type of item scheduled for that day:
 
-  * ● **Assignments**
-  * ● **Events** (matches your Events color in Preferences)
-  * ● **Class Schedules**
-  * ● **External Calendars**
+  * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#CFA25E;vertical-align:middle;margin-right:0.4em"></span>**Assignments**
+  * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#E74674;vertical-align:middle;margin-right:0.4em"></span>**Events** (matches your Events color in Preferences)
+  * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#5658D7;vertical-align:middle;margin-right:0.4em"></span>**Class Schedules**
+  * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#049F71;vertical-align:middle;margin-right:0.4em"></span>**External Calendars**
 
 Tap any date to view the full list of items in the agenda section below the calendar.
 

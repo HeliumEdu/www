@@ -5,7 +5,7 @@ export interface Post {
   /** A unique ID number that identifies a post. */
   id: string;
 
-  /** A post’s unique slug – part of the post’s URL based on its name, i.e. a post called “My Sample Page” has a slug “my-sample-page”. */
+  /** A post's unique slug - part of the post's URL based on its name, i.e. a post called "My Sample Page" has a slug "my-sample-page". */
   slug: string;
 
   /**  */
@@ -229,11 +229,6 @@ export interface Stats extends Omit<Headline, 'classes'>, Widget {
 
 export interface Pricing extends Omit<Headline, 'classes'>, Widget {
   prices?: Array<Price>;
-}
-
-export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
-  testimonials?: Array<Testimonial>;
-  callToAction?: CallToAction;
 }
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {

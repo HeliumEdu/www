@@ -61,7 +61,7 @@ Below the trend graph, each class has a breakdown table with one row per categor
 
 ### How Contribution Is Calculated
 
-**Contribution** shows each category's current share of the class's overall grade — not the weight configured for the category. It is calculated as _weight × current average_ for each category, then normalized so all visible contributions sum to 100%. The mix shifts as more assignments are graded.
+**Contribution** shows each category's current share of the class's overall grade — not the weight configured for the category. It is calculated as `weight` x `current average` for each category, then normalized so all visible contributions sum to 100%. The mix shifts as more assignments are graded.
 
 A category may show a smaller contribution than its configured weight if its current average is lower than the others, or larger if higher.
 
