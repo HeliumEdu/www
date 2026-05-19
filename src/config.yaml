@@ -1,6 +1,6 @@
 site:
   name: Helium
-  site: 'https://landing.heliumedu.com'
+  site: 'https://www.heliumedu.com'
   base: '/'
   trailingSlash: false
 
