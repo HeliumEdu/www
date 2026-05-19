@@ -24,13 +24,16 @@ export interface Props {
 
 const { metadata = {} } = Astro.props;
 const { language, textDirection } = I18N;
+
+const pathname = Astro.url.pathname;
+const isSupportPage = pathname === '/support' || pathname.startsWith('/support/');
 ---
 
 <!doctype html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <CommonMeta />
-    <meta name="apple-itunes-app" content="app-id=6758323154" />
+    {!isSupportPage && <meta name="apple-itunes-app" content="app-id=6758323154" />}
     <Favicons />
     <CustomStyles />
     <ApplyColorMode />
