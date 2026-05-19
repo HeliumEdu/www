@@ -8,7 +8,7 @@ Helium can print (or export to PDF) from any screen, as well as formatted notes,
 
 ## Printing
 
-The **Planner** , **Notebook** , **Cl****asses** , **Resources** , **Grades** screens can be printed using the standard keyboard shortcuts:
+The **Planner**, **Notebook**, **Classes**, **Resources**, **Grades** screens can be printed using the standard keyboard shortcuts:
 
   * **Mac:** Cmd + P
   * **Windows / Linux:** Ctrl + P

@@ -6,13 +6,20 @@ category: reminders-and-notifications
 
 Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and configure how they are sent.
 
+## Setting a Default Reminder
+
+To avoid re-configuring the same type and offset every time, set the defaults in [**Settings → Preferences**](https://app.heliumedu.com/settings) to configure what is pre-filled for each reminder:
+
+  * **Default reminder** — sets the default reminder **Type** (**Email** or **Push**)
+  * **Remind before** — sets the default offset (e.g., "1 Day", "10 minutes")
+
 ## Adding a Reminder
 
 ### For an Assignment or Event
 
   1. Open the [**Planner**](https://app.heliumedu.com/planner) and tap on an assignment or event to open its details
   2. In the details panel, tap **+**
-  3. Enter a **Message** for the reminder, **Type** , and **Remind before**
+  3. Enter a **Message** for the reminder, **Type**, and **Remind before**
   4. Tap **Save**
 
 ### For a Class
@@ -20,16 +27,9 @@ Reminders let you receive an alert before an assignment is due, or when a class 
 Class reminders fire before every session of a class's recurring schedule.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes) and tap the class
-  2. Go to the **Schedule Reminders** tab, tap ****+****
-  3. Enter a **Message** for the reminder, **Type** , and **Remind before**
+  2. Go to the **Schedule Reminders** tab, tap **+**
+  3. Enter a **Message** for the reminder, **Type**, and **Remind before**
   4. Tap **Save**
-
-## Setting a Default Reminder
-
-To avoid re-configuring the same type and offset every time, set the defaults in [**Settings → Preferences**](https://app.heliumedu.com/settings) to configure what is pre-filled for each reminder:
-
-  * **Default reminder** — sets the default reminder **Type** (**Email** or **Push**)
-  * **Remind before** — sets the default offset (e.g., "1 Day", "10 minutes")
 
 ## Notification Center
 

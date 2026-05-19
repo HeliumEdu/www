@@ -17,4 +17,4 @@ Sudden changes in grades on the graph usually come from newly added or corrected
 
   1. Click the grade point on the graph that reflects the spike or drop, which will open the corresponding assignment; check that the grade and category are correct
   2. Double-check the grades and categories of surrounding assignments (using the "Todos" view and sorting by **Due Date** can make this easier)
-  3. In **[Classes](https://app.heliumedu.com/classes)** , double check that the category weights haven't changed and are correct
+  3. In **[Classes](https://app.heliumedu.com/classes)**, double check that the category weights haven't changed and are correct

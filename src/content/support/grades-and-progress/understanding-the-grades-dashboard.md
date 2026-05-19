@@ -4,7 +4,7 @@ description: The Grades dashboard surfaces three summary widgets — At-Risk Cla
 category: grades-and-progress
 ---
 
-The Grades dashboard surfaces three summary widgets — **At-Risk Classes** , **Progress vs. Pace** , and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
+The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
 
 ## At-Risk Classes
 
@@ -25,7 +25,7 @@ Tap the widget to scroll to and expand the first at-risk class in the list below
   * **Work** — the percentage of assignments completed in the current Class Group
   * **Time** — the percentage of the Class Group's date range that has elapsed
 
-A status badge of _Ahead_ , _On Track_ , or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_.
+A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_.
 
 ### Adjusting the On-Track Tolerance
 

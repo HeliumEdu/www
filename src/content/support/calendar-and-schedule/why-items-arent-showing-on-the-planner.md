@@ -18,7 +18,7 @@ A hidden Class Group hides all of its class schedules and assignments. In [**Cla
 
 ### Wrong View
 
-The **Todos** view displays only Assignments. Events, Class Schedules, and External Calendars will not appear there. Switch to **Week** , **Day** , **Month** , or **Agenda** if you're looking for any of those.
+The **Todos** view displays only Assignments. Events, Class Schedules, and External Calendars will not appear there. Switch to **Week**, **Day**, **Month**, or **Agenda** if you're looking for any of those.
 
 ## Assignments or Events
 
