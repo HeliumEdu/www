@@ -48,3 +48,27 @@ export const lazyImagesRehypePlugin: RehypePlugin = () => {
     });
   };
 };
+
+// Marks links that leave the support portal (or any other internal nav) so they
+// open in a new tab. Anchors, mailto:/tel:, and /support/* paths stay in-tab.
+export const externalLinksRehypePlugin: RehypePlugin = () => {
+  return function (tree) {
+    visit(tree, 'element', function (node) {
+      if (node.tagName !== 'a') return;
+      const href = node.properties?.href;
+      if (typeof href !== 'string') return;
+
+      if (
+        href.startsWith('#') ||
+        href.startsWith('mailto:') ||
+        href.startsWith('tel:') ||
+        href.startsWith('/support')
+      ) {
+        return;
+      }
+
+      node.properties.target = '_blank';
+      node.properties.rel = 'noopener noreferrer';
+    });
+  };
+};

@@ -4,7 +4,6 @@ import {
   APP_SIGNUP,
   IOS_STORE,
   ANDROID_STORE,
-  SUPPORT,
   API_DOCS,
   STATUS,
   GITHUB,
@@ -33,7 +32,7 @@ export const footerData = {
       title: 'Project',
       links: [
         { text: 'About', href: getPermalink('/about') },
-        { text: 'Support', href: SUPPORT },
+        { text: 'Support', href: getPermalink('/support') },
         { text: 'API', href: API_DOCS },
         { text: 'Status', href: STATUS },
         { text: 'GitHub', href: GITHUB },

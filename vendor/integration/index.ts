@@ -32,7 +32,10 @@ export default ({ config: _themeConfig = 'src/config.yaml' } = {}): AstroIntegra
           site: SITE.site,
           base: SITE.base,
 
-          trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+          // 'ignore' (instead of 'never') so both /foo and /foo/ render the same
+          // page. Internal links are still emitted without trailing slashes via
+          // src/utils/permalinks.ts when SITE.trailingSlash is false.
+          trailingSlash: SITE.trailingSlash ? 'always' : 'ignore',
 
           vite: {
             plugins: [
@@ -74,12 +77,12 @@ export default ({ config: _themeConfig = 'src/config.yaml' } = {}): AstroIntegra
 
       'astro:build:done': async ({ logger }) => {
         const buildLogger = logger.fork('astrowind');
-        buildLogger.info('Updating `robots.txt` with `sitemap-index.xml` ...');
+        buildLogger.info('Updating `robots.txt` with `sitemap.xml` ...');
 
         try {
           const outDir = cfg.outDir;
           const publicDir = cfg.publicDir;
-          const sitemapName = 'sitemap-index.xml';
+          const sitemapName = 'sitemap.xml';
           const sitemapFile = new URL(sitemapName, outDir);
           const robotsTxtFile = new URL('robots.txt', publicDir);
           const robotsTxtFileInOut = new URL('robots.txt', outDir);
