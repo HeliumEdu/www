@@ -231,11 +231,6 @@ export interface Pricing extends Omit<Headline, 'classes'>, Widget {
   prices?: Array<Price>;
 }
 
-export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
-  testimonials?: Array<Testimonial>;
-  callToAction?: CallToAction;
-}
-
 export interface Brands extends Omit<Headline, 'classes'>, Widget {
   icons?: Array<string>;
   images?: Array<Image>;
