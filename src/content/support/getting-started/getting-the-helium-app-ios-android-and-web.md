@@ -9,14 +9,14 @@ Helium is available as a native app for iOS and Android, and also runs in any mo
 ## iOS (iPhone and iPad)
 
   1. Open the **[App Store](https://apps.apple.com/us/app/helium-student-planner/id6758323154)** on your iPhone or iPad
-  2. Search for **Helium – Student Planner**
+  2. Search for **Helium - Student Planner**
   3. Tap **Get** to install
   4. Open the app and sign in to your existing account, or create a new one
 
 ## Android (Phone and Tablet)
 
   1. Open the **[Google Play Store](https://play.google.com/store/apps/details?id=com.heliumedu.heliumapp)** on your Android device
-  2. Search for **Helium – Student Planner**
+  2. Search for **Helium - Student Planner**
   3. Tap **Install**
   4. Open the app and sign in to your existing account, or create a new one
 
