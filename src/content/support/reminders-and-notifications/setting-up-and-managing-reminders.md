@@ -1,19 +1,21 @@
 ---
 title: Setting Up and Managing Reminders
-description: "Set push or email reminders on any assignment, class, or event in Helium — including defaults so you don't have to configure each one."
+description: "Add push or email reminders to any assignment, class, or event in Helium, set defaults so you don't configure each one, and edit or delete them later."
 category: reminders-and-notifications
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19
 ---
 
-Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and configure how they are sent.
+Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and choose whether each is delivered as a push notification or an email.
+
+For the difference between the two delivery methods and how the Notification Center works, see [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications).
 
 ## Setting a Default Reminder
 
-To avoid re-configuring the same type and offset every time, set the defaults in [**Settings → Preferences**](https://app.heliumedu.com/settings) to configure what is pre-filled for each reminder:
+To avoid re-configuring the same type and offset every time, set the defaults under the **Reminders** section of [**Settings → Preferences**](https://app.heliumedu.com/settings) to control what is pre-filled on each new reminder:
 
-  * **Default reminder** — sets the default reminder **Type** (**Email** or **Push**)
-  * **Remind before** — sets the default offset (e.g., "1 Day", "10 minutes")
+  * **Default reminder** — the default reminder type (**Email** or **Push**)
+  * **Default "Remind before"** — the default offset value and unit (e.g., "1 Day", "10 minutes")
 
 ## Adding a Reminder
 
@@ -33,21 +35,21 @@ Class reminders fire before every session of a class's recurring schedule.
   3. Enter a **Message** for the reminder, **Type**, and **Remind before**
   4. Tap **Save**
 
-## Notification Center
+You can add more than one reminder to the same item — for example, a push reminder a day before and an email reminder an hour before — by repeating these steps with a different **Type** or **Remind before**.
 
-The **Notification Center** (bell icon in the navigation bar) collects Push reminders after they have been sent. From there you can:
+## Editing or Deleting a Reminder
 
-  * Tap a notification to open the linked assignment, class, or event
-  * Dismiss individual notifications to remove them from the list
+Open the item the reminder is attached to (the assignment or event in the [**Planner**](https://app.heliumedu.com/planner), or the **Schedule Reminders** tab of a [**Class**](https://app.heliumedu.com/classes)), then:
 
-Notifications are removed automatically when you edit or delete their linked item.
+  * Tap an existing reminder to change its **Message**, **Type**, or **Remind before**, then tap **Save**
+  * Delete a reminder to stop it from being sent
 
-## Enabling Push Notifications on Your Device
-
-For Push reminders to work, Helium must be on your device, and your device must have notifications enabled for the app (or browser, if using web). When you first use Push reminders, your device may prompt you to allow notifications. If you previously declined, you can re-enable them in your device's system settings.
+If you change the due date or start time of an assignment or event, its reminders are rescheduled automatically — there's no need to re-create them. Deleting an assignment, class, or event also removes any reminders attached to it.
 
 ## Related Articles
 
+  * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications)
+  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working)
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web)
 
 ---
