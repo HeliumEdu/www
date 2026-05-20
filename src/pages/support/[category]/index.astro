@@ -9,12 +9,75 @@ import BreadcrumbStructuredData from '~/components/common/BreadcrumbStructuredDa
 import { SUPPORT_CATEGORIES, CATEGORY_BY_SLUG } from '~/utils/supportCategories';
 
 export async function getStaticPaths() {
+  // Per-category article order (slug, without category prefix). Tutorial/intro articles
+  // come first, then by commonality, with "help I'm stuck" troubleshooting articles last.
+  // Articles not listed fall back to alphabetical after the listed ones.
+  const ARTICLE_ORDER: Record<string, string[]> = {
+    'getting-started': [
+      'getting-the-helium-app-ios-android-and-web',
+      'where-to-start-with-helium',
+      'what-is-the-new-helium',
+    ],
+    'calendar-and-schedule': [
+      'planner-views-and-changing-your-default',
+      'adding-non-academic-events-to-the-planner',
+      'customizing-colors-for-planner-display',
+      'why-items-arent-showing-on-the-planner',
+    ],
+    classes: ['setting-up-and-managing-classes', 'cancelling-class-sessions-and-setting-term-holidays'],
+    'grades-and-progress': [
+      'understanding-the-grades-dashboard',
+      'how-helium-calculates-your-grades',
+      'setting-up-weighted-grading-assignment-categories',
+      'what-grade-do-i-need-grade-calculator',
+      'why-your-grades-might-not-match-your-lms-or-teachers',
+      'why-your-grade-graph-shows-sudden-drops-or-spikes',
+    ],
+    notebook: ['linked-vs-standalone-notes', 'using-resources-to-track-study-materials'],
+    'reminders-and-notifications': [
+      'setting-up-and-managing-reminders',
+      'reminder-types-push-vs-email-notifications',
+      'push-or-email-reminders-not-working',
+    ],
+    'sync-and-integration': [
+      'how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars',
+      'how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds',
+      'how-to-export-data-to-an-icalics-file',
+      'using-the-helium-api',
+    ],
+    'import-export-and-backup': [
+      'using-exports-to-backup-data-move-between-accounts',
+      'what-is-included-in-a-helium-backup-and-what-isnt',
+      'printing-and-exporting',
+      're-importing-the-example-schedule',
+    ],
+    account: [
+      'signing-in-with-google-or-apple',
+      'changing-the-app-theme-dark-mode',
+      'resetting-your-password',
+      'deleting-your-account-and-data',
+    ],
+  };
+
+  const articleSlug = (id: string) => id.split('/').slice(1).join('/');
+
   const allArticles = await getCollection('support');
 
   return SUPPORT_CATEGORIES.map((category) => {
+    const order = ARTICLE_ORDER[category.slug] ?? [];
+    const indexOf = (slug: string) => {
+      const i = order.indexOf(slug);
+      return i === -1 ? Number.MAX_SAFE_INTEGER : i;
+    };
+
     const articles = allArticles
       .filter((a) => a.data.category === category.slug)
-      .sort((a, b) => a.data.title.localeCompare(b.data.title));
+      .sort((a, b) => {
+        const ai = indexOf(articleSlug(a.id));
+        const bi = indexOf(articleSlug(b.id));
+        if (ai !== bi) return ai - bi;
+        return a.data.title.localeCompare(b.data.title);
+      });
 
     return {
       params: { category: category.slug },

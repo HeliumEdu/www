@@ -36,12 +36,8 @@ Notifications are removed automatically when you edit or delete their linked ite
   * Reminder times use the timezone set on your account, so they stay correct as your schedule changes
   * If you change an item's date or time, its reminders are rescheduled automatically
 
-## Choosing Between Push and Email
-
-  * **Push** is best for time-sensitive, glanceable alerts — but needs Helium installed with notifications allowed
-  * **Email** is best for reliability and detail — it works without the app and is easy to find later in your inbox
-
-You can also add both types to the same item — for example, an email a day before and a push reminder an hour before.
+Note also that you can add multiple reminders, at different times and of different types, for the same item on the
+calendar.
 
 ## Related Articles
 

@@ -85,4 +85,89 @@ const breadcrumbs = [
       </a>
     </div>
   </article>
+
+  <template id="copy-button-template">
+    <button
+      type="button"
+      aria-label="Copy to clipboard"
+      class="ml-3 align-middle text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="w-6 h-6"
+        aria-hidden="true"
+      >
+        <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+        <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+      </svg>
+    </button>
+  </template>
+  <template id="copy-button-copied-content">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="w-6 h-6"
+      aria-hidden="true"
+    >
+      <path d="M5 12l5 5l10 -10" />
+    </svg>
+  </template>
 </Layout>
+
+<script>
+  const COPY_LABEL = 'Copy to clipboard';
+  const COPIED_LABEL = 'Copied';
+
+  const buttonTemplate = document.getElementById('copy-button-template') as HTMLTemplateElement | null;
+  const copiedContentTemplate = document.getElementById('copy-button-copied-content') as HTMLTemplateElement | null;
+
+  const findPrecedingHeading = (pre: HTMLPreElement): HTMLElement | null => {
+    let cursor: Element | null = pre.previousElementSibling;
+    while (cursor) {
+      if (/^H[1-6]$/.test(cursor.tagName)) return cursor as HTMLElement;
+      cursor = cursor.previousElementSibling;
+    }
+    return null;
+  };
+
+  if (buttonTemplate && copiedContentTemplate) {
+    document.querySelectorAll<HTMLPreElement>('article .prose pre').forEach((pre) => {
+      const heading = findPrecedingHeading(pre);
+      if (!heading || heading.querySelector('[data-copy-button]')) return;
+
+      const button = buttonTemplate.content.firstElementChild?.cloneNode(true) as HTMLButtonElement | null;
+      if (!button) return;
+      button.dataset.copyButton = '';
+
+      const originalChildren = Array.from(button.children).map((c) => c.cloneNode(true));
+      heading.appendChild(button);
+
+      button.addEventListener('click', async () => {
+        const code = pre.querySelector('code')?.textContent ?? pre.textContent ?? '';
+        try {
+          await navigator.clipboard.writeText(code);
+          const copied = Array.from(copiedContentTemplate.content.children).map((c) => c.cloneNode(true));
+          button.replaceChildren(...copied);
+          button.setAttribute('aria-label', COPIED_LABEL);
+          setTimeout(() => {
+            button.replaceChildren(...originalChildren.map((c) => c.cloneNode(true)));
+            button.setAttribute('aria-label', COPY_LABEL);
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy code block:', err);
+        }
+      });
+    });
+  }
+</script>
