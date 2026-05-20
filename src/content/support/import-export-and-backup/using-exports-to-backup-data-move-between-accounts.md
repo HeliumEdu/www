@@ -12,12 +12,12 @@ Helium lets you export your data as a JSON file, which can be used to archive yo
 
 ## Exporting Your Data
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings)
+  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings?tab=6)
   2. Click **Export**
 
 ## Importing Data
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings)
+  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings?tab=6)
   2. Click **Import** and select your backup file
 
 Imported data is added alongside existing schedules in separate groups and does not overwrite anything already in your account.

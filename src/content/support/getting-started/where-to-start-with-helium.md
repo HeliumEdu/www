@@ -20,7 +20,7 @@ Each step below has a one-line summary and a link to the full article in the rel
   3. **Add your first class and its schedule.** Inside the group, add a class with a title, color, and weekly meeting times — the same article also covers the **Details** and **Schedule** tabs.
   4. **Set up grading categories.** Needed only if your syllabus uses weights (e.g., Homework 20%, Exams 50%, Participation 30%) — see [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories).
   5. **Add an assignment and a reminder.** Open the [**Planner**](https://app.heliumedu.com/planner), add an assignment to the class, and attach a push or email reminder — see [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders).
-  6. **Pick the Planner view that suits you.** Month, Week, Day, Agenda, or Todos — set the one you want as your default in [**Settings → Preferences**](https://app.heliumedu.com/settings). See [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default).
+  6. **Pick the Planner view that suits you.** Month, Week, Day, Agenda, or Todos — set the one you want as your default in [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1). See [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default).
 
 That's the minimum to get a usable term in Helium. Bring outside calendars in with **External Calendars**, or send Helium out to other apps with **Feeds** — see [Sync & Integration](/support/sync-and-integration) when you're ready.
 
@@ -35,7 +35,7 @@ In this approach, an AI assistant (a modern LLM like ChatGPT, Claude, Gemini, or
   3. The AI will read [the Helium API docs](https://api.heliumedu.com/docs) you pointed it at. When it's ready, it will ask you to attach your syllabi — you can include every class in a single conversation.
   4. Answer the AI's follow-up questions about anything the syllabi don't make explicit. The prompt instructs the AI to ask rather than guess (credits, lecture/lab structure, online vs. in-person, vague due-by times, and similar often come up).
   5. The AI will produce an import file for you to download. Save it somewhere you can find it again — you do not need to open it.
-  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings), click **Import**, and select your saved file.
+  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings?tab=6), click **Import**, and select your saved file.
   7. Spot-check the result — term dates on the Class Group, class colors and meeting times, category weights matching your syllabus, and a sample assignment's due date. Tweak directly in Helium from there.
 
 Each import adds new Class Groups alongside anything you've already added — nothing in your account gets overwritten. If you want to start over after a bad import, delete the imported Class Group and try again.
