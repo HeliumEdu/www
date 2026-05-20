@@ -88,3 +88,4 @@ If the AI's first attempt looks off (missing classes, wrong dates, or text paste
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
   * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts)
+  * [Using the Helium API](/support/sync-and-integration/using-the-helium-api)

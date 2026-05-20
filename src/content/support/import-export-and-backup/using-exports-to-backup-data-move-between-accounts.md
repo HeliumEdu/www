@@ -40,6 +40,7 @@ The full schema and authentication flow are in our [API docs](https://api.helium
 
   * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt)
   * [Re-Importing the "Example Schedule"](/support/import-export-and-backup/re-importing-the-example-schedule)
+  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium)
   * [Using the Helium API](/support/sync-and-integration/using-the-helium-api)
 
 ---
