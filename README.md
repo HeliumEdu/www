@@ -20,7 +20,7 @@
 
 ---
 
-# Helium Marketing Site
+# Helium Landing Site
 
 [![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
 ![GitHub License](https://img.shields.io/github/license/heliumedu/www)
