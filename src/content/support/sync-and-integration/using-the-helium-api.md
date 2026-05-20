@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-05-20
 ---
 
 ## Overview
@@ -12,8 +12,11 @@ Helium exposes a public REST API. Anything you can do in the iOS, Android, or we
 
 Helium does not maintain or support official tooling or pre-built integrations, but we've made the platform accessible so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu), and contributions are welcome! If you build something with the API and want to share it, [let us know](/support/submit) and we'd be happy to consider promoting community integrations.
 
+If you don't want to write any code, the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) is a no-code way to use the import endpoint — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces.
+
 ## Related Articles
 
+  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium)
   * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts)
 
 ---

@@ -3,7 +3,7 @@ title: Using Exports to Backup Data, Move Between Accounts
 description: "Export your full Helium schedule as JSON to back up your data, transfer to another account, or seed an automated import."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-05-20
 ---
 
 ## Overview
@@ -34,7 +34,7 @@ Imported data is added alongside existing schedules in separate groups and does 
 
 Helium's import endpoint accepts the same JSON format produced by its exports. You can use scripts or other tooling to build your own integration to migrate from another planner or automate the import process for a syllabus or course outline.
 
-The full schema and authentication flow are in our [API docs](https://api.heliumedu.com/docs). Helium does not maintain or support any official tooling for this, but we've made the platform accessible so you can build your own.
+If you're starting from a syllabus, the fastest path is the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces. For things beyond that, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api).
 
 ## Related Articles
 
