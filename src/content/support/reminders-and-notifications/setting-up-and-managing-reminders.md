@@ -12,7 +12,7 @@ For the difference between the two delivery methods and how the Notification Cen
 
 ## Setting a Default Reminder
 
-To avoid re-configuring the same type and offset every time, set the defaults under the **Reminders** section of [**Settings → Preferences**](https://app.heliumedu.com/settings) to control what is pre-filled on each new reminder:
+To avoid re-configuring the same type and offset every time, set the defaults under the **Reminders** section of [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1) to control what is pre-filled on each new reminder:
 
   * **Default reminder** — the default reminder type (**Email** or **Push**)
   * **Default "Remind before"** — the default offset value and unit (e.g., "1 Day", "10 minutes")

@@ -8,11 +8,57 @@ updatedDate: 2026-05-20
 
 ## Overview
 
-Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, view grades, edit notes, run a bulk import — is also available via the API. The full schema and authentication flow are documented in our [API docs](https://api.heliumedu.com/docs).
+Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, see grades, edit notes, run a bulk import — is also available via the API. The full schema and authentication reference live in our [API docs](https://api.heliumedu.com/docs).
 
-Helium does not maintain or support official tooling or pre-built integrations, but we've made the platform accessible so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu), and contributions are welcome! If you build something with the API and want to share it, [let us know](/support/submit) and we'd be happy to consider promoting community integrations.
+Helium doesn't maintain official tooling or pre-built integrations, but the platform is open so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu) — contributions are welcome, and if you build something with the API and want to share it, [let us know](/support/submit).
 
-If you don't want to write any code, the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) is a no-code way to use the import endpoint — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces.
+> **Tip:** If you'd rather not write any code, the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) is a no-code way to use the import endpoint — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces.
+
+## Getting Your API Token
+
+To use the API from a script or tool, you need an **API token** — a long-lived key you can copy into your script, save in a password manager, or paste into something like Postman.
+
+> **Important:** Your new API token is shown **exactly once**. Copy it the moment you see it and save it somewhere safe. If you lose it, you can always generate a new one with these same steps.
+
+> **Note:** This requires a Helium password. If you signed up with Google or Apple and don't have a Helium password, the steps below won't work for you.
+
+  1. **Sign in.** Trade your email and password for a short-lived session token:
+
+     ```sh
+     curl -X POST https://api.heliumedu.com/auth/token/ \
+       -H 'Content-Type: application/json' \
+       -d '{"email": "you@example.com", "password": "your-password"}'
+     # → {"access": "<SESSION>", "refresh": "..."}
+     ```
+
+  2. **Request your API token** using that session:
+
+     ```sh
+     curl -X POST https://api.heliumedu.com/auth/api-token/ \
+       -H 'Authorization: Bearer <SESSION>'
+     # → {"token": "<API_TOKEN>", "created_at": "..."}
+     ```
+
+  3. **Use the API token** on every API call from then on:
+
+     ```sh
+     curl https://api.heliumedu.com/planner/courses/ \
+       -H 'Authorization: Token <API_TOKEN>'
+     ```
+
+For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs#section/Authentication).
+
+## Rotating or Revoking Your Token
+
+  * **Rotate** — get a fresh token and invalidate the old one. Repeat step 2 above. Do this if you think your token may have leaked, or on a schedule of your own choosing.
+  * **Revoke** — turn off your current token without replacing it:
+
+    ```sh
+    curl -X DELETE https://api.heliumedu.com/auth/api-token/ \
+      -H 'Authorization: Bearer <SESSION>'
+    ```
+
+> **Note:** Only one API token is active per Helium account at a time. If you have multiple scripts or tools that need access, you can use the same token across all of them (just be sure to rotate them together, if you request a new token).
 
 ## Related Articles
 
