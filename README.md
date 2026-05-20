@@ -25,7 +25,7 @@
 [![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
 ![GitHub License](https://img.shields.io/github/license/heliumedu/www)
 
-The marketing site for Helium - Student Planner, including the [Support Portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` redirects to the JSM Help Center contact form.
+The marketing site for Helium - Student Planner, including the [Support Portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` is an owned form that POSTs to the `platform` API.
 
 ## Prerequisites
 
