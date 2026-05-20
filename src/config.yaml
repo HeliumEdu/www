@@ -2,7 +2,7 @@ site:
   name: Helium
   site: 'https://www.heliumedu.com'
   base: '/'
-  trailingSlash: false
+  trailingSlash: true
 
 # Default SEO metadata
 metadata:
