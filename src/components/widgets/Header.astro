@@ -46,6 +46,10 @@ const {
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+const onSupportPage = currentPath === '/support' || currentPath.startsWith('/support/');
+
+const statusIconClass =
+  'text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center';
 ---
 
 <header
@@ -77,6 +81,20 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </a>
       <div class="flex items-center gap-2 md:hidden">
         {showToggleTheme && <ToggleTheme iconClass="w-6 h-6" />}
+        {
+          onSupportPage && (
+            <a
+              class={statusIconClass}
+              aria-label="Helium status"
+              title="Helium status"
+              href="https://status.heliumedu.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <Icon name="tabler:activity-heartbeat" class="w-6 h-6" />
+            </a>
+          )
+        }
         <ToggleMenu />
       </div>
     </div>
@@ -141,6 +159,20 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         <div class="flex">
           {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />}
           {
+            onSupportPage && (
+              <a
+                class={twMerge(statusIconClass, 'ml-1')}
+                aria-label="Helium status"
+                title="Helium status"
+                href="https://status.heliumedu.com"
+                target="_blank"
+                rel="noopener"
+              >
+                <Icon name="tabler:activity-heartbeat" class="w-5 h-5" />
+              </a>
+            )
+          }
+          {
             showRssFeed && (
               <a
                 class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
@@ -154,7 +186,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         </div>
         {
           actions?.length ? (
-            <span class="ml-4 rtl:ml-0 rtl:mr-4">
+            <span class="ml-2 rtl:ml-0 rtl:mr-3">
               {actions.map(({ class: btnClass, ...btnProps }) => (
                 <Button
                   {...btnProps}
