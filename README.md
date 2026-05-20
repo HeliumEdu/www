@@ -4,12 +4,28 @@
   <img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/img/og-default.png" alt="Helium - Student Planner" width="800" />
 </p>
 
-[![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
-![GitHub License](https://img.shields.io/github/license/heliumedu/www)
+---
+
+[**Helium**](https://www.heliumedu.com) is a free, color-coded online student planner for classes, homework, grades, and notes — the academic calendar built for the way you actually study.
+
+<p align="center">
+  <a href="https://apps.apple.com/us/app/helium-student-planner/id6758323154"><img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/img/ios-badge.png" alt="Download on the App Store" height="50" /></a>
+  &nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.heliumedu.heliumapp"><img src="https://raw.githubusercontent.com/HeliumEdu/www/main/src/assets/img/play-badge.png" alt="Get it on Google Play" height="50" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.patreon.com/alexdlaird/membership"><img src="https://raw.githubusercontent.com/HeliumEdu/www/main/public/img/support-patreon.png" alt="Support on Patreon" height="30" /></a>
+</p>
+
+---
 
 # Helium Marketing Site
 
-The marketing site for [Helium](https://www.heliumedu.com/), including the [Support Portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` redirects to the JSM Help Center contact form.
+[![Build](https://img.shields.io/github/actions/workflow/status/HeliumEdu/www/build.yml)](https://github.com/HeliumEdu/www/actions/workflows/build.yml)
+![GitHub License](https://img.shields.io/github/license/heliumedu/www)
+
+The marketing site for Helium - Student Planner, including the [Support Portal](https://www.heliumedu.com/support). Knowledge base articles live as Astro content collection entries in `src/content/support/<category>/<slug>.md`; the "Submit a Ticket" flow at `/support/submit` redirects to the JSM Help Center contact form.
 
 ## Prerequisites
 
