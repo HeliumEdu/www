@@ -52,4 +52,4 @@ npm run build
 
 ### Deployment
 
-Pushes to `main` will redeploy the marketing site. The site is served from S3 (`heliumedu.www.static`) behind CloudFront. Infrastructure is defined in the [`infra` repo's `global` workspace](https://github.com/HeliumEdu/infra/tree/main/terraform/environments/global).
+Pushes to `main` will redeploy the landing site. The site is served from S3 (`heliumedu.www.static`) behind CloudFront. Infrastructure is defined in the [`infra` repo's `global` workspace](https://github.com/HeliumEdu/infra/tree/main/terraform/environments/global).
