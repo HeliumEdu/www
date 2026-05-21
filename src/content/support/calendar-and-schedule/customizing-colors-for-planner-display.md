@@ -6,7 +6,7 @@ publishedDate: 2026-05-19
 updatedDate: 2026-05-19
 ---
 
-Helium offers several color customization options for how items appear on your Planner. These settings are found in [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1).
+Helium offers several color customization options for how items appear on your Planner. These settings are found in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences).
 
 ## Available Color Options
 

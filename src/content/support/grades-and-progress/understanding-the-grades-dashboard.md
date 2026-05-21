@@ -16,7 +16,7 @@ Tap the widget to scroll to and expand the first at-risk class in the list below
 
 ### Adjusting the At-Risk Threshold
 
-  1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1)
+  1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
   2. Set the **At-risk threshold (%)** value (default 70%)
   3. Tap **Save**
 
@@ -31,7 +31,7 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
 ### Adjusting the On-Track Tolerance
 
-  1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1)
+  1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
   2. Set the **On-track tolerance (%)** value (default 10%)
   3. Tap **Save**
 
