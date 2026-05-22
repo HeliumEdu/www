@@ -32,7 +32,6 @@ export const footerData = {
         { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
         { text: 'iOS', href: IOS_STORE, target: '_blank' },
         { text: 'Android', href: ANDROID_STORE, target: '_blank' },
-        { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank' },
       ],
     },
     {
