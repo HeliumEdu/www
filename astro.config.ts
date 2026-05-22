@@ -52,7 +52,6 @@ export default defineConfig({
     '/app': 'https://app.heliumedu.com',
     '/signin': 'https://app.heliumedu.com/login',
     '/signup': 'https://app.heliumedu.com/signup',
-    '/press': '/about',
     '/docs': 'https://api.heliumedu.com/docs',
     '/api': 'https://api.heliumedu.com/docs',
     '/index': '/',

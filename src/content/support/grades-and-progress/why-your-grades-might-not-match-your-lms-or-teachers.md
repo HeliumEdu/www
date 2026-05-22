@@ -40,9 +40,9 @@ Double-check term and class dates — the start and end dates you set for the te
 
 ## Related Articles
 
-  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades)
-  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
-  * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes)
+  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)
 
 ---
 

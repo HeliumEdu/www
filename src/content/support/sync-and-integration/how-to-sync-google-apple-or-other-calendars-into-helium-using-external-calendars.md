@@ -10,7 +10,7 @@ updatedDate: 2026-05-19
 
 Helium can display calendars from other services alongside your own schedule, as long as those services provide a public iCal/ICS URL. For example, you can find instructions for getting a Google Calendar iCal URL in [Google's own documentation](https://support.google.com/calendar/answer/37648?hl=en).
 
-> **Tip:** If you're looking to export data from Helium _to_ another calendar, see [How to Sync Google, Apple, or Other Calendars into Helium Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds).
+> **Tip:** If you're looking to export data from Helium _to_ another calendar, see [How to Sync Google, Apple, or Other Calendars into Helium Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds/).
 
 ## How to Add an External Calendar
 
@@ -27,11 +27,11 @@ Helium can display calendars from other services alongside your own schedule, as
   * External calendars are read-only within Helium — you cannot create, edit, or delete events from an external calendar within Helium
   * External calendars refresh on their own schedule; updates from the source may take some time to appear in Helium
 
-If your external calendar isn't appearing after adding it, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner).
+If your external calendar isn't appearing after adding it, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
 
 ## Related Articles
 
-  * [How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds)
+  * [How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds/)
 
 ---
 

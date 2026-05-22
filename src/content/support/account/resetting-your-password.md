@@ -30,7 +30,7 @@ updatedDate: 2026-05-19
 
 ## Related Articles
 
-  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple)
+  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple/)
 
 ---
 

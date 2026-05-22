@@ -18,9 +18,9 @@ Helium lets you add events like study sessions, concerts, appointments, and anyt
 
 ## Related Articles
 
-  * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner)
-  * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display)
-  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default)
+  * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/)
+  * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display/)
+  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
 
 ---
 

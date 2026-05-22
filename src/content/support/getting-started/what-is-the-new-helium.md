@@ -22,10 +22,10 @@ The new Helium includes several features not available in Classic:
     * **Pending Impact** showing ungraded assignments that could most affect your grade
     * **Improved Grade Graph** — The grade trend chart now has enhanced tooltips that let you see how an individual assignment's grade affected both the overall class and term grades at a glance. On mobile, tap and hold to view.
     * Class' category grade breakdown is now easier to view, as a stacked bar chart.
-  * **Dark Mode** — Choose between light, dark, or system-synced themes in Settings. See [Changing the App Theme](/support/account/changing-the-app-theme-dark-mode) for details.
-  * **Sign in with Google or Apple** — Create an account or sign in using your existing Google or Apple ID instead of a password. See [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple).
-  * **Grade Calculator** — Quickly calculate what grade you need on upcoming assignments to reach your target. See [What Grade Do I Need?](/support/grades-and-progress/what-grade-do-i-need-grade-calculator)
-  * **Notebook** — Capture rich-text notes linked to Assignments, Events, or Resources — or keep them standalone. Search and filter everything in one place. See [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes).
+  * **Dark Mode** — Choose between light, dark, or system-synced themes in Settings. See [Changing the App Theme](/support/account/changing-the-app-theme-dark-mode/) for details.
+  * **Sign in with Google or Apple** — Create an account or sign in using your existing Google or Apple ID instead of a password. See [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple/).
+  * **Grade Calculator** — Quickly calculate what grade you need on upcoming assignments to reach your target. See [What Grade Do I Need?](/support/grades-and-progress/what-grade-do-i-need-grade-calculator/)
+  * **Notebook** — Capture rich-text notes linked to Assignments, Events, or Resources — or keep them standalone. Search and filter everything in one place. See [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes/).
   * **Actionable Links** — Websites and emails that you add to Classes, Resources, and elsewhere now show as tappable buttons, making it easy to launch a site or compose an email directly from Helium.
   * **Smarter Filtering** — The separate Classes filter has been combined with the Filters menu at the top of the Planner. The Complete/Incomplete filter is also improved, and a similar Graded/Ungraded filter was added.
   * **Tooltip Controls** — You can now disable tooltips on the Planner if you prefer a cleaner view.

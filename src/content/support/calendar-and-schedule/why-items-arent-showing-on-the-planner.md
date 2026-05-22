@@ -32,7 +32,7 @@ Assignments are tied to the start and end date range of their class. An assignme
 
 ### Schedule Not Set Up
 
-Class Schedule items appear on the Planner only when the class has a schedule. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes) for setting up class meeting days and times.
+Class Schedule items appear on the Planner only when the class has a schedule. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/) for setting up class meeting days and times.
 
 ### Date Range
 
@@ -56,9 +56,9 @@ Helium refreshes External Calendars on a periodic basis. If the source calendar 
 
 ## Related Articles
 
-  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default)
-  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes)
-  * [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars)
+  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
+  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
+  * [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)
 
 ---
 

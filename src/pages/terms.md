@@ -7,7 +7,7 @@ _Last updated February 19, 2026_
 
 ## 1. Acceptance of Terms
 
-By accessing or using Helium's website, apps, and related services (the "Service"), you agree to these Terms of Service ("Terms"). If you do not agree to these Terms or our [Privacy Policy](/privacy), do not use the Service.
+By accessing or using Helium's website, apps, and related services (the "Service"), you agree to these Terms of Service ("Terms"). If you do not agree to these Terms or our [Privacy Policy](/privacy/), do not use the Service.
 
 ## 2. Eligibility and Accounts
 
@@ -29,7 +29,7 @@ You retain ownership of the content you submit to the Service (such as classes, 
 
 ## 5. Privacy and Communications
 
-Our [Privacy Policy](/privacy) is incorporated into these Terms by reference. You agree that we may send service-related communications (for example, account, security, verification, and reminder messages) by email, push notification, or SMS when enabled by you.
+Our [Privacy Policy](/privacy/) is incorporated into these Terms by reference. You agree that we may send service-related communications (for example, account, security, verification, and reminder messages) by email, push notification, or SMS when enabled by you.
 
 ## 6. Cancellation and Termination
 

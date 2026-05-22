@@ -32,8 +32,8 @@ When you sign in on a new device, all your classes, assignments, grades, and set
 
 ## Related Articles
 
-  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple)
-  * [Resetting Your Password](/support/account/resetting-your-password)
+  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple/)
+  * [Resetting Your Password](/support/account/resetting-your-password/)
 
 ---
 

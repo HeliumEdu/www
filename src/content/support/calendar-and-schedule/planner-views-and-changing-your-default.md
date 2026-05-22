@@ -47,7 +47,7 @@ You can reschedule assignments and events by dragging them to a different time s
 
 ## Related Articles
 
-  * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display)
+  * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display/)
 
 ---
 

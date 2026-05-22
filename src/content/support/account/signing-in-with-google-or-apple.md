@@ -35,7 +35,7 @@ If your account is linked to both a password and an OAuth provider, the Change P
 
 ## Related Articles
 
-  * [Resetting Your Password](/support/account/resetting-your-password)
+  * [Resetting Your Password](/support/account/resetting-your-password/)
 
 ---
 

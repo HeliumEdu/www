@@ -28,22 +28,22 @@ export const footerData = {
     {
       title: 'App',
       links: [
-        { text: 'Sign up', href: APP_SIGNUP },
-        { text: 'Sign in', href: APP_LOGIN },
-        { text: 'iOS', href: IOS_STORE },
-        { text: 'Android', href: ANDROID_STORE },
-        { text: 'Helium Classic', href: CLASSIC_LOGIN },
+        { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
+        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'iOS', href: IOS_STORE, target: '_blank' },
+        { text: 'Android', href: ANDROID_STORE, target: '_blank' },
+        { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank' },
       ],
     },
     {
       title: 'Project',
       links: [
-        { text: 'About', href: getPermalink('/about') },
         { text: 'Support', href: getPermalink('/support') },
-        { text: 'API', href: API_DOCS },
-        { text: 'Status', href: STATUS },
-        { text: 'GitHub', href: GITHUB },
-        { text: 'Patreon', href: PATREON },
+        { text: 'Press', href: getPermalink('/press') },
+        { text: 'API', href: API_DOCS, target: '_blank' },
+        { text: 'Status', href: STATUS, target: '_blank' },
+        { text: 'GitHub', href: GITHUB, target: '_blank' },
+        { text: 'Patreon', href: PATREON, target: '_blank' },
       ],
     },
     {

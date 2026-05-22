@@ -34,14 +34,14 @@ Imported data is added alongside existing schedules in separate groups and does 
 
 Helium's import endpoint accepts the same JSON format produced by its exports. You can use scripts or other tooling to build your own integration to migrate from another planner or automate the import process for a syllabus or course outline.
 
-If you're starting from a syllabus, the fastest path is the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces. For things beyond that, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api).
+If you're starting from a syllabus, the fastest path is the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/#the-prompt) — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces. For things beyond that, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api/).
 
 ## Related Articles
 
-  * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt)
-  * [Re-Importing the "Example Schedule"](/support/import-export-and-backup/re-importing-the-example-schedule)
-  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium)
-  * [Using the Helium API](/support/sync-and-integration/using-the-helium-api)
+  * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt/)
+  * [Re-Importing the "Example Schedule"](/support/import-export-and-backup/re-importing-the-example-schedule/)
+  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/)
+  * [Using the Helium API](/support/sync-and-integration/using-the-helium-api/)
 
 ---
 

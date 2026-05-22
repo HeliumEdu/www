@@ -23,7 +23,7 @@ The calculator works for a category when:
   * The category has a **Weight (%)** set (weighted grading must be configured)
   * The category has **exactly one remaining ungraded assignment**
 
-If a category does not meet these requirements, it will not be shown in the dropdown. See [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories) if weighted grading is not yet configured for your class.
+If a category does not meet these requirements, it will not be shown in the dropdown. See [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/) if weighted grading is not yet configured for your class.
 
 ## Using the Calculator
 
@@ -40,8 +40,8 @@ The result will tell you one of the following:
 
 ## Related Articles
 
-  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades)
-  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
+  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
 
 ---
 

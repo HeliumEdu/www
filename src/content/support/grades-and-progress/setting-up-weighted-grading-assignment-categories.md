@@ -19,9 +19,9 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
 
 ## Related Articles
 
-  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes)
-  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades)
-  * [Why Your Grades Might Not Match Your LMS' or Teacher's](/support/grades-and-progress/why-your-grades-might-not-match-your-lms-or-teachers)
+  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
+  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
+  * [Why Your Grades Might Not Match Your LMS' or Teacher's](/support/grades-and-progress/why-your-grades-might-not-match-your-lms-or-teachers/)
 
 ---
 

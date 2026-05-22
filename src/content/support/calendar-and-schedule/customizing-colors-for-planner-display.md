@@ -17,8 +17,8 @@ Helium offers several color customization options for how items appear on your P
 
 ## Related Articles
 
-  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default)
-  * [How to Sync Google, Apple, or Other Calendars in to Helium](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars)
+  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
+  * [How to Sync Google, Apple, or Other Calendars in to Helium](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)
 
 ---
 

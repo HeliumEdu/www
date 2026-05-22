@@ -8,7 +8,7 @@ updatedDate: 2026-05-19
 
 Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and choose whether each is delivered as a push notification or an email.
 
-For the difference between the two delivery methods and how the Notification Center works, see [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications).
+For the difference between the two delivery methods and how the Notification Center works, see [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/).
 
 ## Setting a Default Reminder
 
@@ -48,9 +48,9 @@ If you change the due date or start time of an assignment or event, its reminder
 
 ## Related Articles
 
-  * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications)
-  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working)
-  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web)
+  * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/)
+  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working/)
+  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
 
 ---
 
