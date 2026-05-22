@@ -17,6 +17,13 @@ REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LAPTOP="$REPO/src/assets/img/screenshots/frames/frame-laptop.png"
 OUT="$REPO/src/assets/img/og-default.png"
 
+# Sibling repos that ship their own copy of the laptop frame and should be
+# kept in sync. Paths are relative to www's parent dir; entries are skipped
+# silently if the sibling isn't checked out locally.
+SIBLING_MIRRORS=(
+  "../frontend/assets/img/frame_laptop.png"   # Flutter Getting Started dialog
+)
+
 WIDTH=1200
 HEIGHT=630
 BG_COLOR="#418eb9"            # brand seed
@@ -89,6 +96,16 @@ install_source() {
   check_aspect "$src"
   cp -f "$src" "$LAPTOP"
   echo "  [OK] installed -> $LAPTOP"
+
+  # Mirror to sibling repos that ship their own copy.
+  local mirror abs
+  for mirror in "${SIBLING_MIRRORS[@]}"; do
+    abs="$REPO/$mirror"
+    if [[ -d "$(dirname "$abs")" ]]; then
+      cp -f "$LAPTOP" "$abs"
+      echo "  [OK] mirrored -> $abs"
+    fi
+  done
 }
 
 prompt_for_source() {
