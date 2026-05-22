@@ -49,8 +49,8 @@ export const lazyImagesRehypePlugin: RehypePlugin = () => {
   };
 };
 
-// Marks links that leave the support portal (or any other internal nav) so they
-// open in a new tab. Anchors, mailto:/tel:, and /support/* paths stay in-tab.
+// Marks external links so they open in a new tab. Anchors, mailto:/tel:, and
+// any internal absolute path ("/...") stay in-tab.
 export const externalLinksRehypePlugin: RehypePlugin = () => {
   return function (tree) {
     visit(tree, 'element', function (node) {
@@ -62,7 +62,7 @@ export const externalLinksRehypePlugin: RehypePlugin = () => {
         href.startsWith('#') ||
         href.startsWith('mailto:') ||
         href.startsWith('tel:') ||
-        href.startsWith('/support')
+        href.startsWith('/')
       ) {
         return;
       }
