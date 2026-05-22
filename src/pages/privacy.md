@@ -7,7 +7,7 @@ _Last updated March 9, 2026_
 
 This Privacy Policy describes how Helium Edu ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
-Your use of the Services is also governed by our [Terms of Service](/terms).
+Your use of the Services is also governed by our [Terms of Service](/terms/).
 
 ## 1. Information We Collect
 

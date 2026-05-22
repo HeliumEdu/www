@@ -2,6 +2,7 @@ import { getPermalink } from './utils/permalinks';
 import {
   APP_LOGIN,
   APP_SIGNUP,
+  CLASSIC_LOGIN,
   IOS_STORE,
   ANDROID_STORE,
   API_DOCS,
@@ -16,8 +17,34 @@ export const headerData = {
     { text: 'Support', href: getPermalink('/support') },
   ],
   actions: [
+    { text: 'Helium Classic', href: CLASSIC_LOGIN, target: '_blank', class: 'hidden min-[850px]:inline-flex' },
     { text: 'Sign in', href: APP_LOGIN, target: '_blank', class: 'hidden md:inline-flex' },
     { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
+  ],
+  mobileExtras: [
+    {
+      title: 'Account',
+      links: [
+        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
+      ],
+    },
+    {
+      title: 'More',
+      links: [
+        { text: 'Press', href: getPermalink('/press') },
+        { text: 'Service Status', href: STATUS, target: '_blank' },
+        { text: 'GitHub', href: GITHUB, target: '_blank' },
+        { text: 'Patreon', href: PATREON, target: '_blank' },
+      ],
+    },
+    {
+      title: 'Legal',
+      links: [
+        { text: 'Terms', href: getPermalink('/terms') },
+        { text: 'Privacy', href: getPermalink('/privacy') },
+      ],
+    },
   ],
 };
 
@@ -26,21 +53,21 @@ export const footerData = {
     {
       title: 'App',
       links: [
-        { text: 'Sign up', href: APP_SIGNUP },
-        { text: 'Sign in', href: APP_LOGIN },
-        { text: 'iOS', href: IOS_STORE },
-        { text: 'Android', href: ANDROID_STORE },
+        { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
+        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'iOS', href: IOS_STORE, target: '_blank' },
+        { text: 'Android', href: ANDROID_STORE, target: '_blank' },
       ],
     },
     {
       title: 'Project',
       links: [
-        { text: 'About', href: getPermalink('/about') },
         { text: 'Support', href: getPermalink('/support') },
-        { text: 'API', href: API_DOCS },
-        { text: 'Status', href: STATUS },
-        { text: 'GitHub', href: GITHUB },
-        { text: 'Patreon', href: PATREON },
+        { text: 'Press', href: getPermalink('/press') },
+        { text: 'API', href: API_DOCS, target: '_blank' },
+        { text: 'Service Status', href: STATUS, target: '_blank' },
+        { text: 'GitHub', href: GITHUB, target: '_blank' },
+        { text: 'Patreon', href: PATREON, target: '_blank' },
       ],
     },
     {

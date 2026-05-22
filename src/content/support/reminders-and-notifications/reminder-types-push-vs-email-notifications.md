@@ -8,13 +8,13 @@ updatedDate: 2026-05-19
 
 When you add a reminder to an assignment, class, or event, you choose how it's delivered. The Helium apps support two reminder types: **Push** and **Email**. This article explains how each one behaves, where the Notification Center fits in, and when reminders actually fire.
 
-To add or change a reminder, see [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders).
+To add or change a reminder, see [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/).
 
 ## Push Notifications
 
 A **Push** reminder is delivered as a system notification on the device or browser where you use Helium, the same way other apps notify you. Push reminders are also collected in the Notification Center (described below) so you can review them later.
 
-Push requires Helium to be on your device, and notifications to be enabled for the app (or browser, if using web). If you're not receiving them, see [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working).
+Push requires Helium to be on your device, and notifications to be enabled for the app (or browser, if using web). If you're not receiving them, see [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working/).
 
 ## Email Reminders
 
@@ -41,5 +41,13 @@ calendar.
 
 ## Related Articles
 
-  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
-  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working)
+  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
+  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working/)
+
+---
+
+## Helium Classic
+
+Helium Classic supports **Popup** reminders (alerts in the browser) and **Email** reminders sent to your registered email address. There are no Push notifications and no Notification Center in Helium Classic.
+
+__Helium Classic will remain available until July 31, 2026.__

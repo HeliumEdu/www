@@ -45,13 +45,13 @@ The Schedule tab is where you set when your class meets each week. Once configur
   3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** — this lets you set independent start and end times for each selected day
   4. Tap **Save**
 
-Class Schedule items appear on the **Week**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner).
+Class Schedule items appear on the **Week**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
 
 A schedule is optional — if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no days selected.
 
 ### Categories Tab
 
-Categories let you organize assignments by type (Homework, Quizzes, Exams, etc.) and optionally assign grade weights to match your syllabus. See [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories) for full details.
+Categories let you organize assignments by type (Homework, Quizzes, Exams, etc.) and optionally assign grade weights to match your syllabus. See [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/) for full details.
 
 ### Attachments Tab
 
@@ -59,6 +59,19 @@ You can attach files (such as your syllabus or class packet) directly to a class
 
 ## Related Articles
 
-  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
-  * [Cancelling Class Sessions and Setting Term Holidays](/support/classes/cancelling-class-sessions-and-setting-term-holidays)
-  * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [Cancelling Class Sessions and Setting Term Holidays](/support/classes/cancelling-class-sessions-and-setting-term-holidays/)
+  * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/)
+
+---
+
+## Helium Classic
+
+In Helium Classic, classes work the same way conceptually. The key navigation differences are:
+
+  * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu
+  * To add or edit a class, click on it and then use the tabs (**Details**, **Schedule**, **Categories**, **Attachments**) — the same four tabs exist in Classic
+  * The category weight field is labeled **Weight** (not "Weight (%)")
+  * Class Groups are labeled by term and work identically
+
+ __Helium Classic will remain available until July 31, 2026.__

@@ -45,5 +45,5 @@ The exported file includes a row for every todo that matches your current filter
 
 ## Related Articles
 
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts)
-  * [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes)
+  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
+  * [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes/)

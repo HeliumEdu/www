@@ -8,7 +8,7 @@ updatedDate: 2026-05-19
 
 If a reminder didn't arrive, one of the causes below is usually responsible. Start with the section that matches the reminder **Type** you set, then check the causes that apply to both.
 
-For how reminder types differ, see [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications).
+For how reminder types differ, see [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/).
 
 ## Push Notifications
 
@@ -18,7 +18,7 @@ Push reminders require notifications to be enabled for Helium on the intended de
 
 ### Helium Not Installed or Not Signed In on That Device
 
-Push is delivered to the device or browser where Helium is signed in and notifications were allowed. Make sure Helium is installed and you're signed in there. See [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web).
+Push is delivered to the device or browser where Helium is signed in and notifications were allowed. Make sure Helium is installed and you're signed in there. See [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/).
 
 ### Reminder Type Set to Email
 
@@ -42,10 +42,18 @@ The Notification Center (bell icon) collects **Push** reminders only. Email remi
 
 ### Recurring Class Reminders
 
-Class reminders fire before each session of the class's recurring schedule. If the class has no schedule set up, or you're outside the class's term date range, there are no sessions to remind you about. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes).
+Class reminders fire before each session of the class's recurring schedule. If the class has no schedule set up, or you're outside the class's term date range, there are no sessions to remind you about. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/).
 
 ## Related Articles
 
-  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
-  * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications)
-  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web)
+  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
+  * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/)
+  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
+
+---
+
+## Helium Classic
+
+Helium Classic supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
+
+__Helium Classic will remain available until July 31, 2026.__

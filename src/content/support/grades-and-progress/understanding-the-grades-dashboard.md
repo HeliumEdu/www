@@ -67,7 +67,19 @@ A category may show a smaller contribution than its configured weight if its cur
 
 ## Related Articles
 
-  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades)
-  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
-  * [What Grade Do I Need? (Grade Calculator)](/support/grades-and-progress/what-grade-do-i-need-grade-calculator)
-  * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes)
+  * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [What Grade Do I Need? (Grade Calculator)](/support/grades-and-progress/what-grade-do-i-need-grade-calculator/)
+  * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)
+
+---
+
+## Helium Classic
+
+In [Helium Classic Grades](https://www.heliumedu.com/planner/grades), the graph settings work similarly but class selection uses a dropdown instead of radio buttons:
+
+  1. Click the gear icon in the Grades graph area
+  2. Select a class from the **dropdown menu** to narrow the graph to that class, or leave it on the full term view
+  3. Check the corresponding box to enable **Auto-adjust to graded range**
+
+ _Helium Classic will remain available until July 31, 2026._

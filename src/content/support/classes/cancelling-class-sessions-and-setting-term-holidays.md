@@ -47,5 +47,5 @@ Cancellations and holidays only affect the recurring class schedule. They do _no
 
 ## Related Articles
 
-  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes)
-  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default)
+  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
+  * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)

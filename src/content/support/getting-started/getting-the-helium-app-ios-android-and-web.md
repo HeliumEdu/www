@@ -32,5 +32,13 @@ When you sign in on a new device, all your classes, assignments, grades, and set
 
 ## Related Articles
 
-  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple)
-  * [Resetting Your Password](/support/account/resetting-your-password)
+  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple/)
+  * [Resetting Your Password](/support/account/resetting-your-password/)
+
+---
+
+## Helium Classic
+
+Helium Classic is a web-only experience and does not have dedicated iOS or Android apps. It is accessible in a browser at [**heliumedu.com**](https://www.heliumedu.com).
+
+__Helium Classic will remain available until July 31, 2026.__

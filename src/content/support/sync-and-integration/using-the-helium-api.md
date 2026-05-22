@@ -10,9 +10,9 @@ updatedDate: 2026-05-20
 
 Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, see grades, edit notes, run a bulk import — is also available via the API. The full schema and authentication reference live in our [API docs](https://api.heliumedu.com/docs).
 
-Helium doesn't maintain official tooling or pre-built integrations, but the platform is open so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu) — contributions are welcome, and if you build something with the API and want to share it, [let us know](/support/submit).
+Helium doesn't maintain official tooling or pre-built integrations, but the platform is open so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu) — contributions are welcome, and if you build something with the API and want to share it, [let us know](/support/submit/).
 
-> **Tip:** If you'd rather not write any code, the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium#the-prompt) is a no-code way to use the import endpoint — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces.
+> **Tip:** If you'd rather not write any code, the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/#the-prompt) is a no-code way to use the import endpoint — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces.
 
 ## Getting Your API Token
 
@@ -62,7 +62,7 @@ For the full authentication reference, see the [API docs](https://api.heliumedu.
 
 ## Related Articles
 
-  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium)
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts)
+  * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/)
+  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
 
 ---

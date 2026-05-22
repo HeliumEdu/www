@@ -7,7 +7,7 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import { API_HOST, API_SUPPORT_CONTACT } from '~/links';
 
 const metadata = {
-  title: 'Submit a Ticket — Helium Support',
+  title: 'Submit a ticket — Helium Support',
   description: "Describe your issue and you'll get a reply over email.",
 };
 
@@ -21,14 +21,14 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
 <Layout metadata={metadata}>
   <WidgetWrapper containerClass="max-w-3xl mx-auto py-12 md:py-16">
     <nav aria-label="Breadcrumb" class="text-sm text-muted mb-6">
-      <a href="/support" class="hover:text-primary">Support</a>
+      <a href="/support/" class="hover:text-primary">Support</a>
       <span class="mx-2">/</span>
-      <span class="text-default dark:text-slate-200">Submit a Ticket</span>
+      <span class="text-default dark:text-slate-200">Submit a ticket</span>
     </nav>
 
     <div class="text-center mb-10">
       <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter text-heading">
-        Submit a Ticket
+        Submit a ticket.
       </h1>
       <p class="mt-4 text-lg text-muted">
         Describe your issue and you'll get a reply over email.
@@ -126,16 +126,16 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
           class="btn-primary inline-flex items-center justify-center gap-2 w-full md:w-auto"
         >
           <Icon name="tabler:send" class="w-5 h-5" />
-          <span data-label="idle">Submit Ticket</span>
+          <span data-label="idle">Submit ticket</span>
           <span data-label="busy" class="hidden">Submitting ...</span>
         </button>
       </div>
     </form>
 
     <div class="mt-8 text-center">
-      <a href="/support" class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+      <a href="/support/" class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
         <Icon name="tabler:arrow-left" class="w-4 h-4" />
-        Back to Support
+        Back to support
       </a>
     </div>
   </WidgetWrapper>

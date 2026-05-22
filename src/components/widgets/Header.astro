@@ -15,16 +15,23 @@ interface Link {
   href?: string;
   ariaLabel?: string;
   icon?: string;
+  target?: string;
 }
 
 interface MenuLink extends Link {
   links?: Array<MenuLink>;
 }
 
+interface MobileSection {
+  title: string;
+  links: Array<Link>;
+}
+
 export interface Props {
   id?: string;
   links?: Array<MenuLink>;
   actions?: Array<CallToAction>;
+  mobileExtras?: Array<MobileSection>;
   isSticky?: boolean;
   isDark?: boolean;
   isFullWidth?: boolean;
@@ -37,6 +44,7 @@ const {
   id = 'header',
   links = [],
   actions = [],
+  mobileExtras = [],
   isSticky = false,
   isDark = false,
   isFullWidth = false,
@@ -148,6 +156,32 @@ const statusIconClass =
           ))
         }
       </ul>
+      {
+        mobileExtras.length > 0 && (
+          <div class="md:hidden w-full mt-2 border-t border-gray-200 dark:border-slate-700 pt-4">
+            {mobileExtras.map(({ title, links: sectionLinks }) => (
+              <div class="mb-4">
+                <h3 class="text-xs font-bold tracking-wide uppercase text-muted dark:text-gray-400 px-4 mb-1">
+                  {title}
+                </h3>
+                <ul>
+                  {sectionLinks.map(({ text, href, target }) => (
+                    <li>
+                      <a
+                        class="hover:text-link dark:hover:text-white px-4 py-2 flex items-center whitespace-nowrap text-lg"
+                        href={href}
+                        {...(target ? { target, rel: 'noopener noreferrer' } : {})}
+                      >
+                        {text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )
+      }
     </nav>
     <div
       class:list={[
@@ -161,7 +195,7 @@ const statusIconClass =
           {
             onSupportPage && (
               <a
-                class={twMerge(statusIconClass, 'ml-1')}
+                class={twMerge(statusIconClass, 'ml-2')}
                 aria-label="Helium status"
                 title="Helium status"
                 href="https://status.heliumedu.com"

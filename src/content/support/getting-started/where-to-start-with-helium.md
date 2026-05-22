@@ -1,6 +1,6 @@
 ---
 title: Where to Start with Helium
-description: "Set up Helium for a new term step by step, or import a whole syllabus at once with the AI-assisted prompt — two ways to get started."
+description: "Set up Helium for a new term step by step, or import a whole syllabus at once with an AI-assisted prompt — two ways to get started."
 category: getting-started
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19
@@ -15,14 +15,14 @@ There are two ways to set up Helium for a new term. Pick whichever fits how you 
 
 Each step below has a one-line summary and a link to the full article in the relevant category. If you already have an account and the app installed, skip straight to step 2.
 
-  1. **Install Helium and sign in.** Available on iOS, Android, and the web — see [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web).
-  2. **Add a Class Group for your term.** In Helium, your academic life is organized around **Class Groups** (e.g., "Fall 2026") and **Classes** within them. Open [**Classes**](https://app.heliumedu.com/classes), add a group, and set its start and end dates — see [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes).
+  1. **Install Helium and sign in.** Available on iOS, Android, and the web — see [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/).
+  2. **Add a Class Group for your term.** In Helium, your academic life is organized around **Class Groups** (e.g., "Fall 2026") and **Classes** within them. Open [**Classes**](https://app.heliumedu.com/classes), add a group, and set its start and end dates — see [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/).
   3. **Add your first class and its schedule.** Inside the group, add a class with a title, color, and weekly meeting times — the same article also covers the **Details** and **Schedule** tabs.
-  4. **Set up grading categories.** Needed only if your syllabus uses weights (e.g., Homework 20%, Exams 50%, Participation 30%) — see [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories).
-  5. **Add an assignment and a reminder.** Open the [**Planner**](https://app.heliumedu.com/planner), add an assignment to the class, and attach a push or email reminder — see [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders).
-  6. **Pick the Planner view that suits you.** Month, Week, Day, Agenda, or Todos — set the one you want as your default in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences). See [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default).
+  4. **Set up grading categories.** Needed only if your syllabus uses weights (e.g., Homework 20%, Exams 50%, Participation 30%) — see [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/).
+  5. **Add an assignment and a reminder.** Open the [**Planner**](https://app.heliumedu.com/planner), add an assignment to the class, and attach a push or email reminder — see [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/).
+  6. **Pick the Planner view that suits you.** Month, Week, Day, Agenda, or Todos — set the one you want as your default in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences). See [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/).
 
-That's the minimum to get a usable term in Helium. Bring outside calendars in with **External Calendars**, or send Helium out to other apps with **Feeds** — see [Sync & Integration](/support/sync-and-integration) when you're ready.
+That's the minimum to get a usable term in Helium. Bring outside calendars in with **External Calendars**, or send Helium out to other apps with **Feeds** — see [Sync & Integration](/support/sync-and-integration/) when you're ready.
 
 ## Import a Whole Syllabus with AI
 
@@ -83,9 +83,9 @@ If the AI's first attempt looks off (missing classes, wrong dates, or text paste
 
 ## Related Articles
 
-  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web)
-  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes)
-  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories)
-  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders)
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts)
-  * [Using the Helium API](/support/sync-and-integration/using-the-helium-api)
+  * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
+  * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
+  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
+  * [Using the Helium API](/support/sync-and-integration/using-the-helium-api/)
