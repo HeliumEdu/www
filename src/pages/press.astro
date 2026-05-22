@@ -23,8 +23,11 @@ const facts = [
   { label: 'Audience', value: 'Students at all levels' },
 ];
 
-const boilerplate =
+const boilerplateShort =
   'Helium is a free, color-coded online student planner for classes, homework, grades, and notes — the academic calendar built for the way you actually study.';
+
+const boilerplateLong =
+  "Helium is a free, open-source student planner for iOS, Android, and the web — a color-coded workspace for tracking classes, assignments, grades, and notes. Originally released in 2009 as Get Organized, a cross-platform desktop app, Helium has been continuously developed for more than 15 years. It's MIT-licensed, supported by Patreon, carries no ads, and never sells user data.";
 
 const logos = [
   {
@@ -128,10 +131,10 @@ const tabletShots = [
     </dl>
   </WidgetWrapper>
 
-  <WidgetWrapper id="about" containerClass="max-w-3xl mx-auto">
+  <WidgetWrapper id="about" containerClass="max-w-5xl mx-auto">
     <Headline
       tagline="Boilerplate"
-      title="Copy-ready description."
+      title="Copy-ready descriptions."
       subtitle="Lift verbatim, or use as a starting point."
       classes={{
         container: 'max-w-3xl mx-auto',
@@ -139,29 +142,37 @@ const tabletShots = [
         subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
       }}
     />
-    <div class="relative rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 pr-16 shadow-sm">
-      <p id="boilerplate-text" class="text-default dark:text-slate-200 leading-relaxed">{boilerplate}</p>
-      <button
-        type="button"
-        data-copy-target="boilerplate-text"
-        aria-label="Copy to clipboard"
-        class="absolute top-3 right-3 text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex items-center"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="w-5 h-5"
-          aria-hidden="true"
-        >
-          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
-          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-        </svg>
-      </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {[
+        { id: 'boilerplate-short', label: 'Short', text: boilerplateShort },
+        { id: 'boilerplate-long', label: 'Long', text: boilerplateLong },
+      ].map((b) => (
+        <div class="relative rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 pr-16 shadow-sm">
+          <p class="text-xs font-bold tracking-wide uppercase text-secondary dark:text-blue-200 mb-3">{b.label}</p>
+          <p id={b.id} class="text-default dark:text-slate-200 leading-relaxed">{b.text}</p>
+          <button
+            type="button"
+            data-copy-target={b.id}
+            aria-label="Copy to clipboard"
+            class="absolute top-3 right-3 text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-5 h-5"
+              aria-hidden="true"
+            >
+              <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+              <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+            </svg>
+          </button>
+        </div>
+      ))}
     </div>
   </WidgetWrapper>
 
