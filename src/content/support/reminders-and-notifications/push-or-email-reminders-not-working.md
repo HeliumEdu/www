@@ -51,9 +51,3 @@ Class reminders fire before each session of the class's recurring schedule. If t
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
 
 ---
-
-## Helium Classic
-
-Helium Classic supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
-
-__Helium Classic will remain available until July 31, 2026.__

@@ -34,18 +34,3 @@ If your external calendar isn't appearing after adding it, see [Why Items Aren't
   * [How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds/)
 
 ---
-
-## Helium Classic
-
-In Helium Classic, External Calendars are found inside the Preferences page rather than as their own dedicated section:
-
-  1. Sign in to your Helium account
-  2. Navigate to [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences)
-  3. Scroll to the **External Calendars** section
-  4. Click the **+** button
-  5. Paste your iCal/ICS URL
-  6. Choose a color for display
-  7. Check the **Enabled** checkbox
-  8. Click **Save**
-
- __Helium Classic will remain available until July 31, 2026.__

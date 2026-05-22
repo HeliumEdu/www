@@ -37,15 +37,3 @@ For instructions on how to add a feed URL to a specific calendar application, se
   * [How to Export Data to an iCal/ICS File](/support/sync-and-integration/how-to-export-data-to-an-icalics-file/)
 
 ---
-
-## Helium Classic
-
-In Helium Classic, the navigation and interface differ slightly:
-
-  1. Sign in to your Helium account
-  2. Navigate to [**Account → Settings → Feeds**](https://www.heliumedu.com/settings/#tab-feeds)
-  3. Click **Enable**
-  4. Helium displays individual feed URLs for Assignments, Class Schedule, and Events
-  5. Copy any of the URLs and paste them into your external calendar application
-
- __Helium Classic will remain available until July 31, 2026.__

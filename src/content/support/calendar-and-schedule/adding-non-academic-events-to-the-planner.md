@@ -23,14 +23,3 @@ Helium lets you add events like study sessions, concerts, appointments, and anyt
   * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
 
 ---
-
-## Helium Classic
-
-In Helium Classic, the toggle to switch between Assignment and Event works differently:
-
-  1. Open the [**Calendar**](https://www.heliumedu.com/planner/calendar)
-  2. Click on a day or time slot, or click the **+** button
-  3. When the "Add Assignment" dialog appears, click the **book icon** in the upper-right corner to switch it to the "Add Event" dialog
-  4. Enter your event details and click **Save**
-
- __Helium Classic will remain available until July 31, 2026.__

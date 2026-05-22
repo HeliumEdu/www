@@ -53,14 +53,3 @@ If you change the due date or start time of an assignment or event, its reminder
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
 
 ---
-
-## Helium Classic
-
-In Helium Classic, reminders work similarly:
-
-  * **Popup** — alerts in the browser
-  * **Email** — sent to your registered email address
-
-There are no Push notifications in Helium Classic.
-
-__Helium Classic will remain available until July 31, 2026.__

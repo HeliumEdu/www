@@ -45,12 +45,3 @@ Double-check term and class dates — the start and end dates you set for the te
   * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)
 
 ---
-
-## Helium Classic
-
-The same steps apply in Helium Classic. The key navigation differences are:
-
-  * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu; the category weight field is labeled **Weight** (not "Weight (%)")
-  * Assignments can be reviewed on the [**Calendar**](https://www.heliumedu.com/planner/calendar)
-
- __Helium Classic will remain available until July 31, 2026.__

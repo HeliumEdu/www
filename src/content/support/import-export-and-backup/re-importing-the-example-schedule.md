@@ -29,15 +29,3 @@ To remove the example schedule from your account:
   * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt/)
 
 ---
-
-## Helium Classic
-
-In Helium Classic, the steps are similar:
-
-  1. Sign in to your account
-  2. Navigate to **Account → Settings → Import/Export**
-  3. Select the re-import option
-
-To remove the example schedule, navigate to the **Calendar** and click **Delete Example Schedule** in the **Welcome to Helium** dialog. This dialog appears each time you land on the Calendar page until you clear the example data.
-
-__Helium Classic will remain available until July 31, 2026.__
