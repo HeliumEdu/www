@@ -12,7 +12,7 @@ If something isn't appearing on your Planner, one of the causes below is usually
 
 ### Filters
 
-The Planner has filter options that control what's displayed. A highlighted filter indicator means filters are currently active. If **Remember filter selections** is enabled in [**Settings → Preferences**](https://app.heliumedu.com/settings?tab=1), filters from a previous session may still be in effect. Verify that the type of item you're looking for (Assignments, Events, Class Schedules, or External Calendars) is selected.
+The Planner has filter options that control what's displayed. A highlighted filter indicator means filters are currently active. If **Remember filter selections** is enabled in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences), filters from a previous session may still be in effect. Verify that the type of item you're looking for (Assignments, Events, Class Schedules, or External Calendars) is selected.
 
 ### Hidden Class Group
 
@@ -42,13 +42,13 @@ Class Schedules are generated only for dates within the class's start and end da
 
 ### Show on Calendar Toggle
 
-Each external calendar has a **Show on calendar** toggle. If it's off, the calendar won't appear on the Planner. Find your calendar in [**Settings → External Calendars**](https://app.heliumedu.com/settings?tab=2) and make sure the toggle is on.
+Each external calendar has a **Show on calendar** toggle. If it's off, the calendar won't appear on the Planner. Find your calendar in [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars) and make sure the toggle is on.
 
 If the toggle keeps turning itself off, something is likely wrong with the iCal feed itself — Helium automatically disables a calendar when it encounters recurring errors with the URL source.
 
 ### URL Changed
 
-Some services rotate or invalidate feed URLs after account changes (changing your password, switching accounts, adjusting privacy settings). If a feed suddenly stops working, check the source URL to see if it's changed, and update it in [**Settings → External Calendars**](https://app.heliumedu.com/settings?tab=2).
+Some services rotate or invalidate feed URLs after account changes (changing your password, switching accounts, adjusting privacy settings). If a feed suddenly stops working, check the source URL to see if it's changed, and update it in [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars).
 
 ### Refresh Delay
 

@@ -15,7 +15,7 @@ updatedDate: 2026-05-19
 
 ## Changing Your Password While Logged In
 
-  1. Open [**Settings → Change Password**](https://app.heliumedu.com/settings?tab=5)
+  1. Open [**Settings → Change Password**](https://app.heliumedu.com/settings/change-password)
   2. Enter your **Current password**
   3. Enter your **New password**
   4. Re-enter your new password in the **Confirm password** field
