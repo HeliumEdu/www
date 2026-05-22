@@ -45,6 +45,15 @@ const logos = [
     bg: 'bg-white',
     alt: 'Helium square icon',
   },
+  {
+    title: 'Social Card',
+    description: 'For Twitter, Facebook, and LinkedIn previews.',
+    file: '/press/logos/helium-og-card.png',
+    width: 1200,
+    height: 630,
+    bg: 'bg-white',
+    alt: 'Helium social share card',
+  },
 ];
 
 const colors = [
@@ -53,11 +62,17 @@ const colors = [
   { name: 'Icon Yellow', hex: '#E6E414', rgb: 'rgb(230, 228, 20)', swatch: '#E6E414' },
 ];
 
+const fullAppShots = [
+  { title: 'Month View', file: '/press/screenshots/web/helium-web-full-month-view.png' },
+  { title: 'Notebook', file: '/press/screenshots/web/helium-web-full-notebook.png' },
+  { title: 'Grades Dashboard', file: '/press/screenshots/web/helium-web-full-grades.png' },
+];
+
 const webShots = [
   { title: 'Month View', file: '/press/screenshots/web/helium-web-month-view.png' },
   { title: 'Week View', file: '/press/screenshots/web/helium-web-week-view.png' },
   { title: 'Grades Dashboard', file: '/press/screenshots/web/helium-web-grades.png' },
-  { title: 'Grade Detail', file: '/press/screenshots/web/helium-web-grade-detail.png' },
+  { title: 'Grades Breakdown', file: '/press/screenshots/web/helium-web-grade-detail.png' },
   { title: 'Notebook', file: '/press/screenshots/web/helium-web-notebook.png' },
   { title: 'Todos', file: '/press/screenshots/web/helium-web-todos.png' },
   { title: 'Assignment Planner', file: '/press/screenshots/web/helium-web-assignment-planner.png' },
@@ -65,6 +80,8 @@ const webShots = [
   { title: 'External Calendars', file: '/press/screenshots/web/helium-web-external-calendars.png' },
 ];
 
+const FULL_W = 2790;
+const FULL_H = 1482;
 const WEB_W = 1880;
 const WEB_H = 1000;
 const PHONE_W = 1320;
@@ -219,7 +236,7 @@ const tabletShots = [
     </Fragment>
     <Headline
       tagline="Logos"
-      title="Marks and app icons."
+      title="Marks and assets."
       subtitle="Ready-to-use PNGs."
       classes={{
         container: 'max-w-3xl mx-auto',
@@ -227,7 +244,7 @@ const tabletShots = [
         subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
       }}
     />
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       {
         logos.map((logo) => (
           <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
@@ -286,13 +303,46 @@ const tabletShots = [
     <Headline
       tagline="Product Screenshots (Web)"
       title="On web."
-      subtitle="High-resolution 1880 × 1000 PNGs."
+      subtitle="Full-app hero shots and feature crops."
       classes={{
         container: 'max-w-3xl mx-auto',
         title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
         subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
       }}
     />
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Full app</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+      {
+        fullAppShots.map((s) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <a href={s.file} download class="block">
+              <img
+                src={s.file}
+                alt={`Helium web app (full) — ${s.title}`}
+                width={FULL_W}
+                height={FULL_H}
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-4 flex items-center justify-between">
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
+              <a
+                href={s.file}
+                download
+                class="inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Feature crops</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {
         webShots.map((s) => (
@@ -308,7 +358,7 @@ const tabletShots = [
               />
             </a>
             <div class="p-4 flex items-center justify-between">
-              <h3 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h3>
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
               <a
                 href={s.file}
                 download
