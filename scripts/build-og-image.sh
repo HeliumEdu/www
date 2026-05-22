@@ -47,8 +47,11 @@ command -v convert >/dev/null || {
   exit 1
 }
 
+# Downscale in linear-light (RGB) with Lanczos2 for sharper UI text/edges,
+# then a light unsharp mask to crisp up details lost in the ~1.88x downscale.
 convert -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
-  \( "$LAPTOP" -resize "${LAPTOP_WIDTH}x" \) \
+  \( "$LAPTOP" -colorspace RGB -filter Lanczos2 -resize "${LAPTOP_WIDTH}x" -colorspace sRGB \
+     -unsharp 0x0.5+0.6+0.01 \) \
   -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
   -depth 8 -type TrueColor -strip \
   "$OUT"
