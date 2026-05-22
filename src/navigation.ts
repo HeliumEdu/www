@@ -21,6 +21,31 @@ export const headerData = {
     { text: 'Sign in', href: APP_LOGIN, target: '_blank', class: 'hidden md:inline-flex' },
     { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
   ],
+  mobileExtras: [
+    {
+      title: 'Account',
+      links: [
+        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
+      ],
+    },
+    {
+      title: 'More',
+      links: [
+        { text: 'Press', href: getPermalink('/press') },
+        { text: 'Service Status', href: STATUS, target: '_blank' },
+        { text: 'GitHub', href: GITHUB, target: '_blank' },
+        { text: 'Patreon', href: PATREON, target: '_blank' },
+      ],
+    },
+    {
+      title: 'Legal',
+      links: [
+        { text: 'Terms', href: getPermalink('/terms') },
+        { text: 'Privacy', href: getPermalink('/privacy') },
+      ],
+    },
+  ],
 };
 
 export const footerData = {
@@ -40,7 +65,7 @@ export const footerData = {
         { text: 'Support', href: getPermalink('/support') },
         { text: 'Press', href: getPermalink('/press') },
         { text: 'API', href: API_DOCS, target: '_blank' },
-        { text: 'Status', href: STATUS, target: '_blank' },
+        { text: 'Service Status', href: STATUS, target: '_blank' },
         { text: 'GitHub', href: GITHUB, target: '_blank' },
         { text: 'Patreon', href: PATREON, target: '_blank' },
       ],
