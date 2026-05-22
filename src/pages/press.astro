@@ -61,7 +61,7 @@ const webShots = [
   { title: 'Notebook', file: '/press/screenshots/web/helium-web-notebook.png' },
   { title: 'Todos', file: '/press/screenshots/web/helium-web-todos.png' },
   { title: 'Assignment Planner', file: '/press/screenshots/web/helium-web-assignment-planner.png' },
-  { title: 'Classes List', file: '/press/screenshots/web/helium-web-classes-list.png' },
+  { title: 'Class Manager', file: '/press/screenshots/web/helium-web-classes-list.png' },
   { title: 'External Calendars', file: '/press/screenshots/web/helium-web-external-calendars.png' },
 ];
 
@@ -76,13 +76,14 @@ const phoneShots = [
   { title: 'Month View', file: '/press/screenshots/mobile/helium-phone-month-view.png' },
   { title: 'Grades', file: '/press/screenshots/mobile/helium-phone-grades.png' },
   { title: 'Todos', file: '/press/screenshots/mobile/helium-phone-todos.png' },
-  { title: 'Notebook', file: '/press/screenshots/mobile/helium-phone-notebook.png' },
+  { title: 'Notebook', file: '/press/screenshots/mobile/helium-phone-note-editor.png' },
 ];
 
 const tabletShots = [
   { title: 'Month View', file: '/press/screenshots/mobile/helium-tablet-month-view.png' },
   { title: 'Grades', file: '/press/screenshots/mobile/helium-tablet-grades.png' },
-  { title: 'Week View', file: '/press/screenshots/mobile/helium-tablet-week-view.png' },
+  { title: 'Todos', file: '/press/screenshots/mobile/helium-tablet-todos.png' },
+  { title: 'Notebook', file: '/press/screenshots/mobile/helium-tablet-note-editor.png' },
 ];
 ---
 
@@ -360,7 +361,7 @@ const tabletShots = [
     </div>
 
     <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Tablet</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
       {
         tabletShots.map((s) => (
           <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
