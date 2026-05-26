@@ -1,0 +1,22 @@
+---
+import { SITE } from 'astrowind:config';
+import logo from '~/assets/img/helium-logo-square.png';
+import { GITHUB, PATREON, SUPPORT, CONTACT_EMAIL } from '~/links';
+
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Helium Edu',
+  url: SITE.site,
+  logo: `${SITE.site}${logo.src}`,
+  sameAs: [GITHUB, PATREON],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: CONTACT_EMAIL,
+    url: SUPPORT,
+    contactType: 'Customer Support',
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organization)} />

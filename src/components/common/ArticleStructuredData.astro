@@ -1,0 +1,95 @@
+---
+import { SITE } from 'astrowind:config';
+import logo from '~/assets/img/helium-logo-square.png';
+import { getCanonical } from '~/utils/permalinks';
+
+export interface Props {
+  article: {
+    data: {
+      title: string;
+      description: string;
+      publishedDate?: Date;
+      updatedDate?: Date;
+      faq?: { q: string; a: string }[];
+      howTo?: {
+        name?: string;
+        totalTime?: string;
+        steps: { name: string; text: string }[];
+      };
+    };
+  };
+}
+
+const { article } = Astro.props;
+const { data } = article;
+
+const canonical = String(getCanonical(String(Astro.url.pathname)));
+const logoUrl = `${SITE.site}${logo.src}`;
+const ogImageUrl = `${SITE.site}/img/og-default.png`;
+
+const datePublished = data.publishedDate ? new Date(data.publishedDate).toISOString() : undefined;
+const dateModified = data.updatedDate
+  ? new Date(data.updatedDate).toISOString()
+  : datePublished;
+
+const publisher = {
+  '@type': 'Organization',
+  name: 'Helium Edu',
+  logo: {
+    '@type': 'ImageObject',
+    url: logoUrl,
+  },
+};
+
+const articleSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  image: ogImageUrl,
+  author: publisher,
+  publisher,
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical,
+  },
+};
+
+if (datePublished) articleSchema.datePublished = datePublished;
+if (dateModified) articleSchema.dateModified = dateModified;
+
+const faqSchema = data.faq?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a,
+        },
+      })),
+    }
+  : null;
+
+const howToSchema = data.howTo?.steps?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: data.howTo.name ?? data.title,
+      description: data.description,
+      ...(data.howTo.totalTime ? { totalTime: data.howTo.totalTime } : {}),
+      step: data.howTo.steps.map((step, index) => ({
+        '@type': 'HowToStep',
+        position: index + 1,
+        name: step.name,
+        text: step.text,
+      })),
+    }
+  : null;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+{howToSchema && <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />}

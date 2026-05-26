@@ -1,0 +1,270 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+import { API_HOST, API_SUPPORT_CONTACT } from '~/links';
+
+const metadata = {
+  title: 'Submit a ticket — Helium Support',
+  description: "Describe your issue and you'll get a reply over email.",
+};
+
+const CATEGORIES = ['Bug Report', 'Feature Request', 'Account Issue'];
+
+const API_INFO = `${API_HOST}/info/`;
+
+const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper containerClass="max-w-3xl mx-auto py-12 md:py-16">
+    <nav aria-label="Breadcrumb" class="text-sm text-muted mb-6">
+      <a href="/support/" class="hover:text-primary">Support</a>
+      <span class="mx-2">/</span>
+      <span class="text-default dark:text-slate-200">Submit a ticket</span>
+    </nav>
+
+    <div class="text-center mb-10">
+      <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter text-heading">
+        Submit a ticket.
+      </h1>
+      <p class="mt-4 text-lg text-muted">
+        Describe your issue and you'll get a reply over email.
+      </p>
+    </div>
+
+    <form
+      id="support-contact-form"
+      data-endpoint={API_SUPPORT_CONTACT}
+      data-info-endpoint={API_INFO}
+      data-max-bytes={FALLBACK_MAX_UPLOAD_BYTES}
+      enctype="multipart/form-data"
+      novalidate
+      class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm p-6 md:p-8 space-y-6"
+    >
+      <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <div>
+        <label for="form-subject" class="block text-sm font-semibold text-heading dark:text-slate-200 mb-2">
+          Subject <span class="text-red-500">*</span>
+        </label>
+        <input
+          id="form-subject"
+          type="text"
+          name="subject"
+          required
+          maxlength="200"
+          class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+        />
+      </div>
+
+      <div>
+        <label for="form-email" class="block text-sm font-semibold text-heading dark:text-slate-200 mb-2">
+          Your email <span class="text-red-500">*</span>
+        </label>
+        <input
+          id="form-email"
+          type="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+        />
+        <p class="mt-1 text-xs text-muted">Replies will go to this address.</p>
+      </div>
+
+      <div>
+        <label for="form-category" class="block text-sm font-semibold text-heading dark:text-slate-200 mb-2">
+          Category <span class="text-red-500">*</span>
+        </label>
+        <select
+          id="form-category"
+          name="category"
+          required
+          class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+        >
+          <option value="">Select ...</option>
+          {CATEGORIES.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </div>
+
+      <div>
+        <label for="form-description" class="block text-sm font-semibold text-heading dark:text-slate-200 mb-2">
+          Description <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="form-description"
+          name="description"
+          required
+          rows="8"
+          maxlength="10000"
+          class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary resize-y"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="form-attachment" class="block text-sm font-semibold text-heading dark:text-slate-200 mb-2">
+          Attachment
+        </label>
+        <input
+          id="form-attachment"
+          type="file"
+          name="attachment"
+          multiple
+          class="w-full text-sm text-muted file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer"
+        />
+        <p id="form-attachment-hint" class="mt-1 text-xs text-muted">Optional. Screenshots help. Max 10&nbsp;MB per file.</p>
+      </div>
+
+      <div id="form-error" class="hidden rounded-lg border border-red-300 bg-red-50 dark:bg-red-900/20 dark:border-red-700 text-red-700 dark:text-red-300 text-sm px-4 py-3"></div>
+
+      <div class="pt-2">
+        <button
+          id="form-submit"
+          type="submit"
+          class="btn-primary inline-flex items-center justify-center gap-2 w-full md:w-auto"
+        >
+          <Icon name="tabler:send" class="w-5 h-5" />
+          <span data-label="idle">Submit ticket</span>
+          <span data-label="busy" class="hidden">Submitting ...</span>
+        </button>
+      </div>
+    </form>
+
+    <div class="mt-8 text-center">
+      <a href="/support/" class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+        <Icon name="tabler:arrow-left" class="w-4 h-4" />
+        Back to support
+      </a>
+    </div>
+  </WidgetWrapper>
+</Layout>
+
+<script>
+  const form = document.getElementById('support-contact-form') as HTMLFormElement | null;
+  if (form) {
+    const endpoint = form.dataset.endpoint!;
+    const infoEndpoint = form.dataset.infoEndpoint!;
+    let maxBytes = Number(form.dataset.maxBytes);
+    const errorBox = document.getElementById('form-error')!;
+    const attachmentHint = document.getElementById('form-attachment-hint')!;
+    const submitBtn = document.getElementById('form-submit') as HTMLButtonElement;
+    const idleLabel = submitBtn.querySelector('[data-label="idle"]') as HTMLElement;
+    const busyLabel = submitBtn.querySelector('[data-label="busy"]') as HTMLElement;
+    const fileInput = form.querySelector<HTMLInputElement>('input[name="attachment"]');
+
+    function showError(msg: string) {
+      errorBox.textContent = msg;
+      errorBox.classList.remove('hidden');
+    }
+    function clearError() {
+      errorBox.textContent = '';
+      errorBox.classList.add('hidden');
+    }
+    function setBusy(busy: boolean) {
+      submitBtn.disabled = busy;
+      idleLabel.classList.toggle('hidden', busy);
+      busyLabel.classList.toggle('hidden', !busy);
+    }
+    function formatBytes(bytes: number): string {
+      const mb = bytes / (1024 * 1024);
+      const rounded = mb % 1 === 0 ? mb.toFixed(0) : mb.toFixed(1);
+      return `${rounded} MB`;
+    }
+    function oversizeMessage(name: string): string {
+      return `"${name}" is larger than ${formatBytes(maxBytes)}. Please choose a smaller file.`;
+    }
+    function firstString(v: unknown): string | undefined {
+      if (typeof v === 'string') return v;
+      if (Array.isArray(v)) {
+        for (const x of v) {
+          const s = firstString(x);
+          if (s) return s;
+        }
+      } else if (v && typeof v === 'object') {
+        for (const x of Object.values(v)) {
+          const s = firstString(x);
+          if (s) return s;
+        }
+      }
+      return undefined;
+    }
+
+    // Pull the live max-upload size from the API so the client stays in sync
+    // with the backend's MAX_UPLOAD_SIZE without a rebuild. Falls back to the
+    // server-rendered data-max-bytes if the request fails.
+    fetch(infoEndpoint)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((info) => {
+        if (info && typeof info.max_upload_size === 'number') {
+          maxBytes = info.max_upload_size;
+          attachmentHint.textContent = `Optional. Screenshots help. Max ${formatBytes(maxBytes)} per file.`;
+        }
+      })
+      .catch(() => {});
+
+    fileInput?.addEventListener('change', () => {
+      clearError();
+      const files = Array.from(fileInput.files ?? []);
+      const oversized = files.find((f) => f.size > maxBytes);
+      if (oversized) {
+        showError(oversizeMessage(oversized.name));
+        fileInput.value = '';
+      }
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      clearError();
+
+      const files = Array.from(fileInput?.files ?? []);
+      const oversized = files.find((f) => f.size > maxBytes);
+      if (oversized) {
+        showError(oversizeMessage(oversized.name));
+        return;
+      }
+
+      if (!form.reportValidity()) return;
+
+      setBusy(true);
+      try {
+        const formData = new FormData(form);
+        if (!files.length) formData.delete('attachment');
+        const res = await fetch(endpoint, { method: 'POST', body: formData });
+        if (res.ok) {
+          window.location.href = '/support/submit/sent';
+          return;
+        }
+        if (res.status === 429) {
+          let minutes = 1;
+          try {
+            const body = await res.json();
+            const match = typeof body?.detail === 'string' ? body.detail.match(/in (\d+) seconds?/) : null;
+            if (match) {
+              const seconds = Number(match[1]);
+              if (seconds > 0) minutes = Math.max(1, Math.ceil(seconds / 60));
+            }
+          } catch {}
+          const unit = minutes === 1 ? 'minute' : 'minutes';
+          showError(`You've sent a lot of emails in a short time. You can use this form again in ${minutes} ${unit}.`);
+        } else {
+          let detail = 'Something went wrong sending your message. Please try again.';
+          try {
+            const body = await res.json();
+            if (body?.detail) detail = body.detail;
+            else {
+              const s = firstString(body);
+              if (s) detail = s;
+            }
+          } catch {}
+          showError(detail);
+        }
+      } catch {
+        showError('Network error. Please check your connection and try again.');
+      } finally {
+        setBusy(false);
+      }
+    });
+  }
+</script>

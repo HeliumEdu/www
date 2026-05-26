@@ -1,0 +1,48 @@
+{
+  "name": "helium-www",
+  "version": "1.0.0",
+  "description": "Marketing site for Helium - Student Planner.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "build-og-image": "./scripts/build-og-image.sh",
+    "grab-screenshots": "./scripts/grab-screenshots.sh",
+    "scale-for-appstore": "./scripts/scale-for-appstore.sh"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@astrolib/analytics": "^0.6.1",
+    "@astrolib/seo": "^1.0.0-beta.8",
+    "@fontsource/dm-serif-display": "^5.2.8",
+    "@fontsource/poppins": "^5.2.7",
+    "astro": "^5.18.1",
+    "astro-icon": "^1.1.5",
+    "limax": "^4.2.3",
+    "lodash.merge": "^4.6.2",
+    "unpic": "^4.2.2"
+  },
+  "devDependencies": {
+    "@astrojs/mdx": "^4.3.14",
+    "@astrojs/tailwind": "^5.1.5",
+    "@iconify-json/tabler": "^1.2.34",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/js-yaml": "^4.0.9",
+    "@types/lodash.merge": "^4.6.9",
+    "astro-compress": "^2.4.1",
+    "astro-pagefind": "^2.0.0",
+    "js-yaml": "^4.1.1",
+    "mdast-util-to-string": "^4.0.0",
+    "pagefind": "^1.5.2",
+    "reading-time": "^1.5.0",
+    "sharp": "^0.34.5",
+    "tailwind-merge": "^2.6.1",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.3",
+    "unist-util-visit": "^5.1.0"
+  }
+}

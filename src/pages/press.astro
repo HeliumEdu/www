@@ -1,0 +1,452 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
+
+import { CONTACT_EMAIL } from '~/links';
+
+const metadata = {
+  title: 'Press Kit — Helium',
+  description:
+    'Logos, app icons, screenshots, brand colors, and boilerplate copy for press, partners, and writers covering Helium.',
+};
+
+const facts = [
+  { label: 'Founded', value: '2009' },
+  { label: 'Originally', value: 'Get Organized (desktop)' },
+  { label: 'Platforms', value: 'iOS, Android, Web' },
+  { label: 'Pricing', value: 'Free, Patreon-supported' },
+  { label: 'License', value: 'MIT (open source)' },
+  { label: 'Audience', value: 'Students at all levels' },
+];
+
+const boilerplate =
+  'Helium is a free, open-source student planner that organizes color-coded classes, assignments, notes, and grades — with calculations that tell students exactly what they need on the Final. No ads and no data sales. Available on iOS, Android, and the web.';
+
+const logos = [
+  {
+    title: 'Wordmark',
+    description: 'Primary horizontal logo.',
+    file: '/press/logos/helium-logo.png',
+    width: 1062,
+    height: 333,
+    bg: 'bg-white',
+    alt: 'Helium wordmark logo',
+  },
+  {
+    title: 'Icon',
+    description: 'Square brand mark.',
+    file: '/press/logos/helium-logo-square.png',
+    width: 512,
+    height: 512,
+    bg: 'bg-white',
+    alt: 'Helium square icon',
+  },
+  {
+    title: 'Social Card',
+    description: 'For Twitter, Facebook, and LinkedIn previews.',
+    file: '/press/logos/helium-og-card.png',
+    width: 1200,
+    height: 630,
+    bg: 'bg-white',
+    alt: 'Helium social share card',
+  },
+];
+
+const colors = [
+  { name: 'Primary Blue', hex: '#418EB9', rgb: 'rgb(65, 142, 185)', swatch: '#418EB9' },
+  { name: 'Secondary Slate', hex: '#4F616E', rgb: 'rgb(79, 97, 110)', swatch: '#4F616E' },
+  { name: 'Icon Yellow', hex: '#E6E414', rgb: 'rgb(230, 228, 20)', swatch: '#E6E414' },
+];
+
+const fullAppShots = [
+  { title: 'Month View', file: '/press/screenshots/web/helium-web-full-month-view.png' },
+  { title: 'Notebook', file: '/press/screenshots/web/helium-web-full-notebook.png' },
+  { title: 'Grades Dashboard', file: '/press/screenshots/web/helium-web-full-grades.png' },
+];
+
+const webShots = [
+  { title: 'Month View', file: '/press/screenshots/web/helium-web-month-view.png' },
+  { title: 'Week View', file: '/press/screenshots/web/helium-web-week-view.png' },
+  { title: 'Grades Dashboard', file: '/press/screenshots/web/helium-web-grades.png' },
+  { title: 'Grades Breakdown', file: '/press/screenshots/web/helium-web-grade-detail.png' },
+  { title: 'Notebook', file: '/press/screenshots/web/helium-web-notebook.png' },
+  { title: 'Todos', file: '/press/screenshots/web/helium-web-todos.png' },
+  { title: 'Assignment Planner', file: '/press/screenshots/web/helium-web-assignment-planner.png' },
+  { title: 'Class Manager', file: '/press/screenshots/web/helium-web-classes-list.png' },
+  { title: 'External Calendars', file: '/press/screenshots/web/helium-web-external-calendars.png' },
+];
+
+const FULL_W = 2790;
+const FULL_H = 1482;
+const WEB_W = 1880;
+const WEB_H = 1000;
+const PHONE_W = 1320;
+const PHONE_H = 2868;
+const TABLET_W = 2064;
+const TABLET_H = 2752;
+
+const phoneShots = [
+  { title: 'Month View', file: '/press/screenshots/mobile/helium-phone-month-view.png' },
+  { title: 'Grades', file: '/press/screenshots/mobile/helium-phone-grades.png' },
+  { title: 'Todos', file: '/press/screenshots/mobile/helium-phone-todos.png' },
+  { title: 'Notebook', file: '/press/screenshots/mobile/helium-phone-note-editor.png' },
+];
+
+const tabletShots = [
+  { title: 'Month View', file: '/press/screenshots/mobile/helium-tablet-month-view.png' },
+  { title: 'Grades', file: '/press/screenshots/mobile/helium-tablet-grades.png' },
+  { title: 'Todos', file: '/press/screenshots/mobile/helium-tablet-todos.png' },
+  { title: 'Notebook', file: '/press/screenshots/mobile/helium-tablet-note-editor.png' },
+];
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper containerClass="max-w-5xl mx-auto py-16 md:py-20 lg:py-24">
+    <div class="text-center">
+      <h1 class="font-bold font-heading text-4xl md:text-5xl lg:text-6xl leading-tighter tracking-tighter text-heading">
+        Press kit.
+      </h1>
+      <p class="mt-4 text-xl text-muted max-w-2xl mx-auto">
+        Logos, app icons, screenshots, brand colors, and copy-ready boilerplate. Take what you need.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <Button variant="primary" text="Download assets" href="#assets" icon="tabler:download" />
+        <Button variant="secondary" text="Press contact" href="#contact" />
+      </div>
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="facts" containerClass="max-w-5xl mx-auto">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+    <Headline
+      tagline="Quick Facts"
+      title="The fast version."
+      subtitle="So you don't have to ask."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 max-w-3xl mx-auto">
+      {
+        facts.map((f) => (
+          <div class="flex items-baseline justify-between border-b border-gray-200 dark:border-slate-700 py-3">
+            <dt class="text-sm font-bold tracking-wide uppercase text-secondary dark:text-blue-200">{f.label}</dt>
+            <dd class="text-default dark:text-slate-200 text-right">{f.value}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="about" containerClass="max-w-3xl mx-auto">
+    <Headline
+      tagline="Boilerplate"
+      title="Copy-ready description."
+      subtitle={'Lift verbatim, use as a starting point, or see <a href="/about/" class="text-primary hover:underline">About</a> for more of the history.'}
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="relative rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 pr-16 shadow-sm">
+      <p id="boilerplate-text" class="text-default dark:text-slate-200 leading-relaxed">{boilerplate}</p>
+      <button
+        type="button"
+        data-copy-target="boilerplate-text"
+        aria-label="Copy to clipboard"
+        class="absolute top-3 right-3 text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-5 h-5"
+          aria-hidden="true"
+        >
+          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+        </svg>
+      </button>
+    </div>
+  </WidgetWrapper>
+
+  <template id="press-copied-icon">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="w-5 h-5"
+      aria-hidden="true"
+    >
+      <path d="M5 12l5 5l10 -10" />
+    </svg>
+  </template>
+
+  <script>
+    const COPY_LABEL = 'Copy to clipboard';
+    const COPIED_LABEL = 'Copied';
+
+    const copiedTemplate = document.getElementById('press-copied-icon') as HTMLTemplateElement | null;
+    if (copiedTemplate) {
+      document.querySelectorAll<HTMLButtonElement>('[data-copy-target]').forEach((button) => {
+        const originalChildren = Array.from(button.children).map((c) => c.cloneNode(true));
+        button.addEventListener('click', async () => {
+          const targetId = button.dataset.copyTarget;
+          if (!targetId) return;
+          const target = document.getElementById(targetId);
+          const text = target?.textContent?.trim() ?? '';
+          if (!text) return;
+          try {
+            await navigator.clipboard.writeText(text);
+            const copied = Array.from(copiedTemplate.content.children).map((c) => c.cloneNode(true));
+            button.replaceChildren(...copied);
+            button.setAttribute('aria-label', COPIED_LABEL);
+            setTimeout(() => {
+              button.replaceChildren(...originalChildren.map((c) => c.cloneNode(true)));
+              button.setAttribute('aria-label', COPY_LABEL);
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy boilerplate:', err);
+          }
+        });
+      });
+    }
+  </script>
+
+  <WidgetWrapper id="assets" containerClass="max-w-7xl mx-auto">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+    <Headline
+      tagline="Logos"
+      title="Marks and assets."
+      subtitle="Ready-to-use PNGs."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      {
+        logos.map((logo) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <div class={`flex items-center justify-center p-8 ${logo.bg}`} style="min-height: 180px;">
+              <img src={logo.file} alt={logo.alt} width={logo.width} height={logo.height} class="max-h-24 w-auto" loading="lazy" />
+            </div>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-bold text-heading dark:text-white">{logo.title}</h3>
+              <p class="text-sm text-muted dark:text-slate-400 mt-1 flex-1">{logo.description}</p>
+              <a
+                href={logo.file}
+                download
+                class="mt-4 inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                Download PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="colors" containerClass="max-w-5xl mx-auto">
+    <Headline
+      tagline="Brand Colors"
+      title="The palette."
+      subtitle="In hex and RGB."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      {
+        colors.map((c) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
+            <div class="h-32" style={`background-color: ${c.swatch};`} aria-hidden="true" />
+            <div class="p-5">
+              <h3 class="font-bold text-heading dark:text-white">{c.name}</h3>
+              <p class="text-sm text-muted dark:text-slate-400 mt-1 font-mono">{c.hex}</p>
+              <p class="text-xs text-muted dark:text-slate-500 font-mono">{c.rgb}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="web-screenshots" containerClass="max-w-7xl mx-auto">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+    <Headline
+      tagline="Product Screenshots (Web)"
+      title="On web."
+      subtitle="Full-app hero shots and feature crops."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Full app</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+      {
+        fullAppShots.map((s) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <a href={s.file} download class="block">
+              <img
+                src={s.file}
+                alt={`Helium web app (full) — ${s.title}`}
+                width={FULL_W}
+                height={FULL_H}
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-4 flex items-center justify-between">
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
+              <a
+                href={s.file}
+                download
+                class="inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Feature crops</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        webShots.map((s) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <a href={s.file} download class="block">
+              <img
+                src={s.file}
+                alt={`Helium web app — ${s.title}`}
+                width={WEB_W}
+                height={WEB_H}
+                class="w-full h-auto"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-4 flex items-center justify-between">
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
+              <a
+                href={s.file}
+                download
+                class="inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="mobile-screenshots" containerClass="max-w-7xl mx-auto">
+    <Headline
+      tagline="Product Screenshots (Mobile)"
+      title="On iOS &amp; Android."
+      subtitle="Device-framed PNGs."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Phone</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-12">
+      {
+        phoneShots.map((s) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <a href={s.file} download class="block bg-gray-50 dark:bg-slate-800 p-4">
+              <img src={s.file} alt={`Helium phone — ${s.title}`} width={PHONE_W} height={PHONE_H} class="w-full h-auto" loading="lazy" />
+            </a>
+            <div class="p-4 flex items-center justify-between">
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
+              <a
+                href={s.file}
+                download
+                class="inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h3 class="text-lg font-bold text-heading dark:text-white mb-4">Tablet</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      {
+        tabletShots.map((s) => (
+          <div class="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col">
+            <a href={s.file} download class="block bg-gray-50 dark:bg-slate-800 p-4">
+              <img src={s.file} alt={`Helium tablet — ${s.title}`} width={TABLET_W} height={TABLET_H} class="w-full h-auto" loading="lazy" />
+            </a>
+            <div class="p-4 flex items-center justify-between">
+              <h4 class="font-semibold text-heading dark:text-white text-sm">{s.title}</h4>
+              <a
+                href={s.file}
+                download
+                class="inline-flex items-center gap-1 text-primary hover:underline text-sm font-semibold"
+              >
+                <Icon name="tabler:download" class="w-4 h-4" />
+                PNG
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <section id="contact" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blue-50/40 to-blue-50/80 dark:from-transparent dark:via-primary/5 dark:to-primary/10"></div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tighter font-heading text-heading">
+        Press inquiries.
+      </h2>
+      <p class="mt-4 text-lg text-muted">
+        Need something not on this page, or want to talk to us?
+      </p>
+      <div class="mt-8">
+        <Button variant="primary" text={CONTACT_EMAIL} href={`mailto:${CONTACT_EMAIL}`} icon="tabler:mail" />
+      </div>
+    </div>
+  </section>
+</Layout>

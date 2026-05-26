@@ -1,0 +1,65 @@
+site:
+  name: Helium
+  site: 'https://www.heliumedu.com'
+  base: '/'
+  trailingSlash: true
+
+# Default SEO metadata
+metadata:
+  title:
+    default: 'Helium — Student Planner & Academic Calendar App'
+    template: '%s | Helium'
+  description: 'A free, color-coded online student planner for classes, homework, grades, and notes — the academic calendar built for the way you actually study.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Helium
+    images:
+      - url: 'https://www.heliumedu.com/img/og-default.png'
+        width: 1200
+        height: 630
+    type: website
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false
+
+    post:
+      isEnabled: false
+      permalink: '/%slug%'
+      robots:
+        index: false
+
+    list:
+      isEnabled: false
+      pathname: 'blog'
+      robots:
+        index: false
+
+    category:
+      isEnabled: false
+      pathname: 'category'
+      robots:
+        index: false
+
+    tag:
+      isEnabled: false
+      pathname: 'tag'
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: false
+    relatedPostsCount: 0
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: G-S032FE2183
+
+ui:
+  theme: 'system'

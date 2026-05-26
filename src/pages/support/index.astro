@@ -1,0 +1,204 @@
+---
+import { Icon } from 'astro-icon/components';
+import { getCollection } from 'astro:content';
+import Search from 'astro-pagefind/components/Search.astro';
+
+import Layout from '~/layouts/PageLayout.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
+
+import { SUPPORT_CATEGORIES } from '~/utils/supportCategories';
+
+const allArticles = await getCollection('support');
+
+const categoriesWithCounts = SUPPORT_CATEGORIES.map((c) => ({
+  ...c,
+  count: allArticles.filter((a) => a.data.category === c.slug).length,
+}));
+
+// Curated recommended articles — reorder/swap as desired.
+const recommended = [
+  {
+    slug: 'where-to-start-with-helium',
+    category: 'getting-started',
+    categoryTitle: 'Getting Started',
+    title: 'Where to Start with Helium',
+    excerpt: 'Set up a new term step by step, or import a whole syllabus with an AI-assisted prompt.',
+  },
+  {
+    slug: 'setting-up-and-managing-classes',
+    category: 'classes',
+    categoryTitle: 'Classes',
+    title: 'Setting Up and Managing Classes',
+    excerpt: 'Add classes, set schedules, and keep your terms organized from day one.',
+  },
+  {
+    slug: 'how-helium-calculates-your-grades',
+    category: 'grades-and-progress',
+    categoryTitle: 'Grades & Progress',
+    title: 'How Helium Calculates Your Grades',
+    excerpt: 'A walkthrough of how categories, weights, and assignments roll up to your overall grade.',
+  },
+  {
+    slug: 'how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars',
+    category: 'sync-and-integration',
+    categoryTitle: 'Sync & Integration',
+    title: 'Sync Google, Apple, or Other Calendars into Helium',
+    excerpt: 'Subscribe to external calendars and see them alongside your Helium schedule.',
+  },
+];
+
+const metadata = {
+  title: 'Helium Support — Knowledge Base & Help Center',
+  description: 'Search the Helium knowledge base, browse help articles by topic, or submit a support ticket.',
+};
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper id="support-hero" containerClass="max-w-5xl mx-auto py-16 md:py-20 lg:py-24">
+    <div class="text-center">
+      <h1 class="font-bold font-heading text-4xl md:text-5xl lg:text-6xl leading-tighter tracking-tighter text-heading">
+        How can we help?
+      </h1>
+      <p class="mt-4 text-xl text-muted max-w-2xl mx-auto">
+        Search the knowledge base, browse articles by topic, or get in touch.
+      </p>
+
+      <div class="mt-8 max-w-2xl mx-auto support-search">
+        <Search className="pagefind-ui" searchboxOptions={{ placeholder: 'Search ...', shortcut: 'none', 'hide-shortcut': 'true' }} />
+      </div>
+    </div>
+  </WidgetWrapper>
+
+  <style is:global>
+    /* Elevate the hero stacking context so the Pagefind dropdown overlays
+       the category/recommended cards below. */
+    #support-hero {
+      z-index: 30;
+    }
+
+    /* Override Pagefind defaults: fill the centered container and match the
+       original placeholder's input height. */
+    .support-search pagefind-searchbox {
+      --pf-searchbox-max-width: 100%;
+      --pf-input-height: 56px;
+      --pf-input-font-size: 16px;
+    }
+  </style>
+
+  <WidgetWrapper containerClass="max-w-5xl mx-auto py-8 md:py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <a
+        href="#browse"
+        class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all"
+      >
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <Icon name="tabler:books" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-heading dark:text-white">Browse knowledge base</h3>
+            <p class="text-muted dark:text-slate-400 text-sm mt-1">Get the most out of Helium with guides and how-tos.</p>
+          </div>
+        </div>
+      </a>
+      <a
+        href="/support/submit/"
+        class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all"
+      >
+        <div class="flex items-center gap-4">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <Icon name="tabler:ticket" class="w-6 h-6" />
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-heading dark:text-white">Submit a ticket</h3>
+            <p class="text-muted dark:text-slate-400 text-sm mt-1">Reach out and we'll get back to you.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper containerClass="max-w-7xl mx-auto">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
+    </Fragment>
+    <Headline
+      title="Recommended articles."
+      subtitle="Answers to common questions."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        recommended.map((article) => (
+          <a
+            href={`/support/${article.category}/${article.slug}`}
+            class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all"
+          >
+            <p class="text-xs font-bold tracking-wide uppercase text-secondary dark:text-blue-200">
+              {article.categoryTitle}
+            </p>
+            <h3 class="mt-2 text-lg font-bold text-heading dark:text-white group-hover:text-primary transition-colors">
+              {article.title}
+            </h3>
+            <p class="text-muted dark:text-slate-400 text-sm mt-2">{article.excerpt}</p>
+          </a>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper id="browse" containerClass="max-w-7xl mx-auto">
+    <Headline
+      title="Browse by topic."
+      subtitle="Help articles organized by category."
+      classes={{
+        container: 'max-w-3xl mx-auto',
+        title: 'text-3xl md:text-4xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-2xl mx-auto text-lg text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        categoriesWithCounts.map((cat) => (
+          <a
+            href={`/support/${cat.slug}`}
+            class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col"
+          >
+            <div class="flex items-center gap-3 mb-3">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary p-2">
+                <Icon name={cat.icon} class="w-6 h-6" />
+              </div>
+              <h3 class="text-lg font-bold text-heading dark:text-white">{cat.title}</h3>
+            </div>
+            <p class="text-muted dark:text-slate-400 text-sm flex-1">{cat.description}</p>
+            <p class="text-xs text-muted dark:text-slate-500 mt-4 font-medium">
+              {cat.count} {cat.count === 1 ? 'article' : 'articles'}
+            </p>
+          </a>
+        ))
+      }
+    </div>
+  </WidgetWrapper>
+
+  <section class="relative overflow-hidden">
+    <div
+      class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-blue-50/40 to-blue-50/80 dark:from-transparent dark:via-primary/5 dark:to-primary/10"
+    >
+    </div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tighter font-heading text-heading">
+        Can't find what you need?
+      </h2>
+      <p class="mt-4 text-lg text-muted">Happy to help.</p>
+      <div class="mt-8">
+        <Button variant="primary" text="Submit a ticket" href="/support/submit/" icon="tabler:ticket" />
+      </div>
+    </div>
+  </section>
+</Layout>
