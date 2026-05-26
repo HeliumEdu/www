@@ -50,7 +50,7 @@ export default defineConfig({
     '/contact': '/support/submit',
     '/status': 'https://status.heliumedu.com',
     '/app': 'https://app.heliumedu.com',
-    '/signin': 'https://app.heliumedu.com/login',
+    '/signin': 'https://app.heliumedu.com/signin',
     '/signup': 'https://app.heliumedu.com/signup',
     '/docs': 'https://api.heliumedu.com/docs',
     '/api': 'https://api.heliumedu.com/docs',
@@ -60,7 +60,7 @@ export default defineConfig({
       '/support/notebook/using-resources-to-track-study-materials',
     // Helium Classic (legacy frontend) shutdown 2026-08-01 — preserve
     // bookmarked routes by mapping them to their app.heliumedu.com equivalents.
-    '/login': 'https://app.heliumedu.com/login',
+    '/login': 'https://app.heliumedu.com/signin',
     '/register': 'https://app.heliumedu.com/signup',
     '/settings': 'https://app.heliumedu.com/settings',
     '/planner': 'https://app.heliumedu.com/',
