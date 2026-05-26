@@ -1,4 +1,4 @@
-export const APP_LOGIN = 'https://app.heliumedu.com/login';
+export const APP_SIGNIN = 'https://app.heliumedu.com/signin';
 export const APP_SIGNUP = 'https://app.heliumedu.com/signup';
 
 export const IOS_STORE = 'https://apps.apple.com/us/app/helium-student-planner/id6758323154';

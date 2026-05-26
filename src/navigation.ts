@@ -1,6 +1,6 @@
 import { getPermalink } from './utils/permalinks';
 import {
-  APP_LOGIN,
+  APP_SIGNIN,
   APP_SIGNUP,
   IOS_STORE,
   ANDROID_STORE,
@@ -16,14 +16,14 @@ export const headerData = {
     { text: 'Support', href: getPermalink('/support') },
   ],
   actions: [
-    { text: 'Sign in', href: APP_LOGIN, target: '_blank', class: 'hidden md:inline-flex' },
+    { text: 'Sign in', href: APP_SIGNIN, target: '_blank', class: 'hidden md:inline-flex' },
     { text: 'Sign up', href: APP_SIGNUP, target: '_blank', variant: 'primary', icon: 'tabler:user-plus', class: 'hidden md:inline-flex' },
   ],
   mobileExtras: [
     {
       title: 'Account',
       links: [
-        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'Sign in', href: APP_SIGNIN, target: '_blank' },
         { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
       ],
     },
@@ -52,7 +52,7 @@ export const footerData = {
       title: 'App',
       links: [
         { text: 'Sign up', href: APP_SIGNUP, target: '_blank' },
-        { text: 'Sign in', href: APP_LOGIN, target: '_blank' },
+        { text: 'Sign in', href: APP_SIGNIN, target: '_blank' },
         { text: 'iOS', href: IOS_STORE, target: '_blank' },
         { text: 'Android', href: ANDROID_STORE, target: '_blank' },
       ],
