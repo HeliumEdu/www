@@ -8,8 +8,8 @@ updatedDate: 2026-05-19
 
 There are two ways to set up Helium for a new term. Pick whichever fits how you like to work — both end with the same well-organized planner.
 
-  * **Manual setup** — the walkthrough below will get you started.
-  * **AI-assisted syllabus import** — paste the prompt below into any modern AI assistant, attach your syllabi, and Helium imports the whole term from the file the AI produces.
+  * [**Manual setup**](#set-up-your-first-term) — the walkthrough below will get you started.
+  * [**AI-assisted syllabus import**](#import-a-whole-syllabus-with-ai) — paste [the prompt below](#the-prompt) into any modern AI assistant, attach your syllabi, and Helium imports the whole term from the file the AI produces.
 
 ## Set Up Your First Term
 

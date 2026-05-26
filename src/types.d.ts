@@ -153,14 +153,6 @@ export interface Price {
   ribbonTitle?: string;
 }
 
-export interface Testimonial {
-  title?: string;
-  testimonial?: string;
-  name?: string;
-  job?: string;
-  image?: string | unknown;
-}
-
 export interface Input {
   type: HTMLInputTypeAttribute;
   name: string;

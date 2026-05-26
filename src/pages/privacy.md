@@ -30,6 +30,8 @@ We do not sell your personal information. We share information only with:
 - **Business transfers** if we are involved in a merger, acquisition, financing, or sale of assets
 - **Authorized personnel** who may access account data on a need-to-know basis for purposes of operating and maintaining the Services, providing customer support, or as required by law
 
+Helium is open source — our code is publicly available at [github.com/HeliumEdu](https://github.com/HeliumEdu).
+
 When you enable private calendar feeds, your calendar data becomes accessible to anyone with the unique feed URL. Treat these URLs as confidential.
 
 ## 4. Data Storage and Security
