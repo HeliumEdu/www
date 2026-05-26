@@ -1,4 +1,4 @@
-export const APP_LOGIN = 'https://app.heliumedu.com/login';
+export const APP_SIGNIN = 'https://app.heliumedu.com/signin';
 export const APP_SIGNUP = 'https://app.heliumedu.com/signup';
 export const CLASSIC_LOGIN = 'https://www.heliumedu.com/login';
 

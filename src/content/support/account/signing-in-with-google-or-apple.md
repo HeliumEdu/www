@@ -15,7 +15,7 @@ In addition to signing in with an email and password, Helium supports signing in
 
 ## How to Sign In
 
-  1. On the [login screen](https://app.heliumedu.com/login), tap **Sign in with Google** or **Sign in with Apple**
+  1. On the [sign in screen](https://app.heliumedu.com/signin), tap **Sign in with Google** or **Sign in with Apple**
   2. Complete the sign-in prompt from Google or Apple
   3. If this is your first time signing in, Helium will create an account for you and link it to this third-party provider
 
