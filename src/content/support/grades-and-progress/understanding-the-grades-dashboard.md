@@ -3,7 +3,7 @@ title: Understanding the Grades   Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-05-27
 ---
 
 The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
@@ -37,7 +37,7 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
 ## Pending Impact
 
-**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The class with the most ungraded work appears as a colored badge below the count. When more than one class has ungraded work, tap the badge to cycle through the others.
+**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The colored badge below the count shows which class has ungraded work, and a second badge below it highlights the single assignment that would have the greatest impact on your grade if completed next. When more than one class has ungraded work, tap the badge to cycle through the others.
 
 ## Grade Trend Graph
 
