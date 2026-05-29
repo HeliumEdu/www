@@ -10,9 +10,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "build-og-image": "./scripts/build-og-image.sh",
-    "grab-screenshots": "./scripts/grab-screenshots.sh",
-    "scale-for-appstore": "./scripts/scale-for-appstore.sh"
+    "build-og-image": "./scripts/build-og-image.sh"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
