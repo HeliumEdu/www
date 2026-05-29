@@ -3,7 +3,7 @@ title: Resetting Your Password
 description: "Reset a forgotten Helium password from the login page, or change your current password from inside Settings."
 category: account
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-05-29
 ---
 
 ## How to Reset a Forgotten Password
@@ -19,9 +19,13 @@ updatedDate: 2026-05-19
   2. Enter your **Current password**
   3. Enter your **New password**
   4. Re-enter your new password in the **Confirm password** field
-  5. Tap **Save**
+  5. Click **Save**
 
-> **Note:** The Change Password option is only shown if your account was created with an email and password. If you signed up through a third-party provider (such as Google), password management is handled by that provider.
+## Setting a Password for the First Time (OAuth Accounts)
+
+If you signed up with Google, Apple, or Microsoft and have never set a Helium password, open **Settings → Set Password**. The "Current password" field won't appear — just enter and confirm your new password and click **Save**.
+
+Once set, you can sign in with either your email and password or your linked provider.
 
 ## Troubleshooting
 
@@ -30,7 +34,7 @@ updatedDate: 2026-05-19
 
 ## Related Articles
 
-  * [Signing In with Google or Apple](/support/account/signing-in-with-google-or-apple/)
+  * [Signing In with Google, Apple, or Microsoft](/support/account/signing-in-with-google-apple-or-microsoft/)
 
 ---
 

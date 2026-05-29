@@ -16,7 +16,7 @@ Helium provides two ways to exclude dates from a class's recurring schedule: **C
 
 The fastest way to cancel a single session:
 
-  1. Tap the class occurrence on the **Planner** for the date to skip
+  1. Click the class occurrence on the **Planner** for the date to skip
   2. Select **Skip this class** from the menu
 
 The session is removed from the Planner immediately and added to the class's cancellation list.
@@ -25,21 +25,21 @@ The session is removed from the Planner immediately and added to the class's can
 
 To manage multiple cancellations, or to remove a previously cancelled date:
 
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and tap the class
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
   2. Go to the **Schedule** tab
-  3. Tap **Class Cancellations**
-  4. Tap the **+** button to add a date, or tap the trash icon next to a date to remove it
-  5. Tap **Save**
+  3. Click **Class Cancellations**
+  4. Click the **+** button to add a date, or click the trash icon next to a date to remove it
+  5. Click **Save**
 
 ## Holidays & Breaks
 
 **Holidays & Breaks** are set at the Class Group level and apply automatically to every class in that group. Use this for any term-wide date that school is not in session.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Open the class group dropdown and tap the edit (pencil) icon next to the group
-  3. Tap **Holidays & Breaks**
-  4. Tap the **+** button to add a date, or tap the trash icon next to a date to remove it
-  5. Tap **Save**
+  2. Open the class group dropdown and click the edit (pencil) icon next to the group
+  3. Click **Holidays & Breaks**
+  4. Click the **+** button to add a date, or click the trash icon next to a date to remove it
+  5. Click **Save**
 
 ## What Is Not Affected
 

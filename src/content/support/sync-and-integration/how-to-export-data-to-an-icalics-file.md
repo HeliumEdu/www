@@ -15,11 +15,11 @@ You can export Helium calendar data to iCal/ICS format for a one-time import int
 ## Steps
 
   1. Open [**Settings → Feeds**](https://app.heliumedu.com/settings/feeds)
-  2. If feeds are not yet enabled, tap **Enable**
+  2. If feeds are not yet enabled, click **Enable**
   3. Helium displays individual feed URLs for Assignments, Class Schedules, and Events
-  4. Tap **Copy** next to the feed you want to export
+  4. Click **Copy** next to the feed you want to export
   5. Paste the copied URL into your browser's address bar and press **Enter** — this will download the `.ics` file
-  6. If you don't want or need ongoing synchronization, tap **Disable** once you're done to disable **Feeds**
+  6. If you don't want or need ongoing synchronization, click **Disable** once you're done to disable **Feeds**
 
 ---
 

@@ -25,13 +25,13 @@ On mobile devices, the month view displays colored indicator dots below each dat
   * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#5658D7;vertical-align:middle;margin-right:0.4em"></span>**Class Schedules**
   * <span style="display:inline-block;width:0.6em;height:0.6em;border-radius:50%;background:#049F71;vertical-align:middle;margin-right:0.4em"></span>**External Calendars**
 
-Tap any date to view the full list of items in the agenda section below the calendar.
+Click any date to view the full list of items in the agenda section below the calendar.
 
 ## Changing Your Default View
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
   2. Choose your desired option from the **Default view** dropdown
-  3. Tap **Save**
+  3. Click **Save**
 
 The Preferences screen also contains additional display and notification options for tailoring how your schedule looks and behaves.
 

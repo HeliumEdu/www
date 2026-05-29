@@ -13,16 +13,16 @@ In Helium, your academic life is organized around **Class Groups** and **Classes
 Before adding classes, you need at least one Class Group to hold them. Class Groups set the overall date range for a term.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Tap the group menu at the top and select **Add Group**
+  2. Click the group menu at the top and select **Add Group**
   3. Fill in the group details:
      * **Title** — e.g., "Fall 2025" or "Spring 2026"
      * **From / To** — the start and end dates of the term
      * **Hide this group's classes and assignments from the Planner** — check this to temporarily hide the entire group from your calendar without deleting anything
-  4. Tap **Save**
+  4. Click **Save**
 
 ## Adding a Class
 
-With a group selected, tap the **+** button to add a class. Class setup is split across four tabs: **Details**, **Schedule**, **Categories**, and **Attachments**. On mobile, you'll step through them in order when creating a new class.
+With a group selected, click the **+** button to add a class. Class setup is split across four tabs: **Details**, **Schedule**, **Categories**, and **Attachments**. On mobile, you'll step through them in order when creating a new class.
 
 ### Details Tab
 
@@ -34,16 +34,16 @@ With a group selected, tap the **+** button to add a class. Class setup is split
   * **Online** — check this if the class is fully online; unchecking it reveals a **Location** field for the room or building
   * **Color** — the color used to represent this class across Planner and Grades
 
-Tap **Save** to create the class and proceed to the Schedule tab.
+Click **Save** to create the class and proceed to the Schedule tab.
 
 ### Schedule Tab
 
 The Schedule tab is where you set when your class meets each week. Once configured, Helium automatically generates recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
 
-  1. Select the days your class meets using the **Class Days** toggle (tap each day to include it)
+  1. Select the days your class meets using the **Class Days** toggle (click each day to include it)
   2. Set the **Start** and **End** times for class
   3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** — this lets you set independent start and end times for each selected day
-  4. Tap **Save**
+  4. Click **Save**
 
 Class Schedule items appear on the **Week**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
 
@@ -55,7 +55,7 @@ Categories let you organize assignments by type (Homework, Quizzes, Exams, etc.)
 
 ### Attachments Tab
 
-You can attach files (such as your syllabus or class packet) directly to a class. Tap the **+** button on the Attachments tab to upload a file or photo from your device.
+You can attach files (such as your syllabus or class packet) directly to a class. Click the **+** button on the Attachments tab to upload a file or photo from your device.
 
 ## Related Articles
 

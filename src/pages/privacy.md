@@ -15,7 +15,7 @@ Your use of the Services is also governed by our [Terms of Service](/terms/).
 
 **Information Collected Automatically:** Device and app information, push-notification device tokens/identifiers, usage analytics, and crash/error reports used to troubleshoot and improve the Services.
 
-**Third-Party Login:** If you sign in with Google or Apple, we receive your verified email address and a provider identifier needed to authenticate your account. We do not receive your third-party password.
+**Third-Party Login:** If you sign in with Google, Apple, or Microsoft, we receive your verified email address and a provider identifier needed to authenticate your account. We do not receive your third-party password.
 
 ## 2. How We Use Your Information
 

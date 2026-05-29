@@ -58,6 +58,10 @@ export default defineConfig({
     '/support/resources': '/support/notebook',
     '/support/resources/using-resources-to-track-study-materials':
       '/support/notebook/using-resources-to-track-study-materials',
+    '/support/grades-and-progress/what-grade-do-i-need-grade-calculator':
+      '/support/grades-and-progress/grade-calculator',
+    '/support/account/signing-in-with-google-or-apple':
+      '/support/account/signing-in-with-google-apple-or-microsoft',
     // Helium Classic (legacy frontend) shutdown 2026-08-01 — preserve
     // bookmarked routes by mapping them to their app.heliumedu.com equivalents.
     '/login': 'https://app.heliumedu.com/signin',

@@ -10,11 +10,11 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
 
 ## How to Set Up Weighted Grading
 
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and tap on the class you want to configure
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click on the class you want to configure
   2. Select the **Categories** tab
-  3. Tap the **+** button to add a category, or tap an existing category to edit it
+  3. Click the **+** button to add a category, or click an existing category to edit it
   4. Set the **Weight (%)** field to match the weight given in your syllabus
-  5. Tap **Save**
+  5. Click **Save**
   6. Repeat for each category — all weights should add up to 100%
 
 ## Related Articles
