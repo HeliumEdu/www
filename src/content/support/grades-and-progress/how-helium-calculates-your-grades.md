@@ -26,3 +26,9 @@ The overall grade of a category is a flat average of all graded assignments in t
 ## Overall Term Grade
 
 The overall grade of a term is a flat average of each class's current grade. How your specific institution calculates this overall grade may be different, based on relative credits, weights, or some other system, and Helium does not currently offer term-level grading beyond flat averages.
+
+## Related Articles
+
+  * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
+  * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [Understanding the Grades Dashboard](/support/grades-and-progress/understanding-the-grades-dashboard/)

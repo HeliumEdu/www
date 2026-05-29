@@ -15,12 +15,12 @@ You can share your Helium schedules with external calendar applications using Fe
 ## Find & Enable Your Feed URLs
 
   1. Open [**Settings → Feeds**](https://app.heliumedu.com/settings/feeds)
-  2. If feeds are not yet enabled, tap **Enable**
+  2. If feeds are not yet enabled, click **Enable**
   3. Helium generates individual feed URLs for:
      * Assignments
      * Class Schedules
      * Events
-  4. Tap **Copy** next to any feed to copy its URL to your clipboard, then paste it into your external calendar application. On supported devices, you can also tap the **Share** button to send the URL directly.
+  4. Click **Copy** next to any feed to copy its URL to your clipboard, then paste it into your external calendar application. On supported devices, you can also tap the **Share** button to send the URL directly.
 
 For instructions on how to add a feed URL to a specific calendar application, see your provider's documentation — for example, [Google Calendar's guide for subscribing to calendars](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop).
 

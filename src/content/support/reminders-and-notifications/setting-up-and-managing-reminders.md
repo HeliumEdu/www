@@ -21,19 +21,19 @@ To avoid re-configuring the same type and offset every time, set the defaults un
 
 ### For an Assignment or Event
 
-  1. Open the [**Planner**](https://app.heliumedu.com/planner) and tap on an assignment or event to open its details
-  2. In the details panel, tap **+**
+  1. Open the [**Planner**](https://app.heliumedu.com/planner) and click on an assignment or event to open its details
+  2. In the details panel, click **+**
   3. Enter a **Message** for the reminder, **Type**, and **Remind before**
-  4. Tap **Save**
+  4. Click **Save**
 
 ### For a Class
 
 Class reminders fire before every session of a class's recurring schedule.
 
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and tap the class
-  2. Go to the **Schedule Reminders** tab, tap **+**
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
+  2. Go to the **Schedule Reminders** tab, click **+**
   3. Enter a **Message** for the reminder, **Type**, and **Remind before**
-  4. Tap **Save**
+  4. Click **Save**
 
 You can add more than one reminder to the same item — for example, a push reminder a day before and an email reminder an hour before — by repeating these steps with a different **Type** or **Remind before**.
 
@@ -41,7 +41,7 @@ You can add more than one reminder to the same item — for example, a push remi
 
 Open the item the reminder is attached to (the assignment or event in the [**Planner**](https://app.heliumedu.com/planner), or the **Schedule Reminders** tab of a [**Class**](https://app.heliumedu.com/classes)), then:
 
-  * Tap an existing reminder to change its **Message**, **Type**, or **Remind before**, then tap **Save**
+  * Click an existing reminder to change its **Message**, **Type**, or **Remind before**, then click **Save**
   * Delete a reminder to stop it from being sent
 
 If you change the due date or start time of an assignment or event, its reminders are rescheduled automatically — there's no need to re-create them. Deleting an assignment, class, or event also removes any reminders attached to it.

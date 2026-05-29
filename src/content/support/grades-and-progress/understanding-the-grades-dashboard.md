@@ -3,7 +3,7 @@ title: Understanding the Grades   Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-05-27
 ---
 
 The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
@@ -12,13 +12,13 @@ The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **P
 
 **At-Risk Classes** shows how many classes have an overall grade below a threshold you set. The label reads _All classes passing!_ when no classes are at risk. A class is included only after it has at least one graded assignment.
 
-Tap the widget to scroll to and expand the first at-risk class in the list below.
+Click the widget to scroll to and expand the first at-risk class in the list below.
 
 ### Adjusting the At-Risk Threshold
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
   2. Set the **At-risk threshold (%)** value (default 70%)
-  3. Tap **Save**
+  3. Click **Save**
 
 ## Progress vs. Pace
 
@@ -33,15 +33,15 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
   2. Set the **On-track tolerance (%)** value (default 10%)
-  3. Tap **Save**
+  3. Click **Save**
 
 ## Pending Impact
 
-**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The class with the most ungraded work appears as a colored badge below the count. When more than one class has ungraded work, tap the badge to cycle through the others.
+**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The colored badge below the count shows which class has ungraded work, and a second badge below it highlights the single assignment that would have the greatest impact on your grade if completed next. When more than one class has ungraded work, click the badge to cycle through the others.
 
 ## Grade Trend Graph
 
-The grade trend graph plots your grades over the class of the term. Tap the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
+The grade trend graph plots your grades over the class of the term. Click the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
 
 ### Switch between term view and individual class view
 
@@ -69,5 +69,5 @@ A category may show a smaller contribution than its configured weight if its cur
 
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
-  * [What Grade Do I Need? (Grade Calculator)](/support/grades-and-progress/what-grade-do-i-need-grade-calculator/)
+  * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
   * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)

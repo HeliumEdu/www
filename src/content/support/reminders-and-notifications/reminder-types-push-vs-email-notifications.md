@@ -24,7 +24,7 @@ An **Email** reminder is sent to the email address on your account. The email in
 
 The **Notification Center** (the bell icon at the top of every screen) collects **Push** reminders after they've been sent. From there you can:
 
-  * Tap a notification to open the linked assignment, class, or event
+  * Click a notification to open the linked assignment, class, or event
   * Dismiss individual notifications to remove them from the list
 
 Notifications are removed automatically when you edit or delete their linked item. Only Push reminders appear in the Notification Center — Email reminders are delivered to your inbox and do not show up here.

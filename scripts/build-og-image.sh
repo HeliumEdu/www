@@ -148,10 +148,11 @@ build_og_card() {
   echo "  Building OG card -> $OUT"
   echo "============================================================"
 
-  command -v magick >/dev/null || {
-    echo "[FAIL] ImageMagick not found. Install with: brew install imagemagick" >&2
-    exit 1
-  }
+  if ! command -v magick >/dev/null; then
+    echo "ImageMagick not found; installing via brew ..."
+    command -v brew >/dev/null || { echo "[FAIL] Homebrew not installed" >&2; exit 1; }
+    brew install imagemagick
+  fi
   [[ -f "$LAPTOP" ]] || { echo "[FAIL] $LAPTOP not found" >&2; exit 1; }
 
   mkdir -p "$(dirname "$OUT")"

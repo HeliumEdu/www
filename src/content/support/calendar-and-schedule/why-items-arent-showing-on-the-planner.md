@@ -16,7 +16,7 @@ The Planner has filter options that control what's displayed. A highlighted filt
 
 ### Hidden Class Group
 
-A hidden Class Group hides all of its class schedules and assignments. In [**Classes**](https://app.heliumedu.com/classes), a hidden group shows a closed eye icon — tap it to make the group visible again.
+A hidden Class Group hides all of its class schedules and assignments. In [**Classes**](https://app.heliumedu.com/classes), a hidden group shows a closed eye icon — click it to make the group visible again.
 
 ### Wrong View
 

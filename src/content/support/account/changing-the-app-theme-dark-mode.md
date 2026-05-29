@@ -12,7 +12,7 @@ Helium supports Light, Dark, and System-synced themes. You can change the theme 
 
   1. Open [**Settings**](https://app.heliumedu.com/settings)
   2. At the top of the Settings screen, find the three-icon theme toggle
-  3. Tap your preferred option:
+  3. Click your preferred option:
      * **Light** (sun icon) — always uses the light theme
      * **Dark** (moon icon) — always uses the dark theme
      * **System** (auto-brightness icon) — follows your current device's appearance setting

@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-05-20
+updatedDate: 2026-05-29
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ To use the API from a script or tool, you need an **API token** — a long-lived
 
 > **Important:** Your new API token is shown **exactly once**. Copy it the moment you see it and save it somewhere safe. If you lose it, you can always generate a new one with these same steps.
 
-> **Note:** This requires a Helium password. If you signed up with Google or Apple and don't have a Helium password, the steps below won't work for you.
+> **Note:** This requires a Helium password. If you signed up with an OAuth provider (Google, Apple, or Microsoft) and haven't set one yet, go to **Settings → Set Password** first.
 
   1. **Sign in.** Trade your email and password for a short-lived session token:
 

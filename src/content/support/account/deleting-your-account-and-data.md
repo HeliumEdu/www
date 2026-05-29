@@ -18,9 +18,9 @@ Consider reviewing the following before proceeding:
 ## Steps to Delete Your Account
 
   1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
-  2. Scroll to the **Danger Zone** section and tap it to expand
+  2. Scroll to the **Danger Zone** section and click it to expand
   3. Select **Delete Account**
-  4. In the confirmation dialog, enter your password (if your account uses one) and tap **Delete**
+  4. In the confirmation dialog, enter your password (if your account uses one) and click **Delete**
 
 Once confirmed, your data is removed from Helium's systems immediately, and any active Feed connections will stop working.
 
@@ -28,4 +28,4 @@ Once confirmed, your data is removed from Helium's systems immediately, and any 
 
 The Danger Zone also contains a **Delete All Events** option. This permanently removes every Event from your account without deleting your account itself. Assignments, classes (and their schedules), external calendars, and grades are not affected.
 
-To delete all Events: open [**Settings**](https://app.heliumedu.com/settings), expand **Danger Zone**, and tap **Delete All Events**. Confirm in the dialog that appears.
+To delete all Events: open [**Settings**](https://app.heliumedu.com/settings), expand **Danger Zone**, and click **Delete All Events**. Confirm in the dialog that appears.

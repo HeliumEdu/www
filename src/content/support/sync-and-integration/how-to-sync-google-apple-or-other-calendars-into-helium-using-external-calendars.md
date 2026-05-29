@@ -15,12 +15,12 @@ Helium can display calendars from other services alongside your own schedule, as
 ## How to Add an External Calendar
 
   1. Open [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars)
-  2. Tap the **+** button
+  2. Click the **+** button
   3. Enter a **Name** for the calendar
   4. Paste your iCal/ICS **URL**
   5. Choose a **Color** for how events from this calendar will appear
   6. Toggle **Show on calendar** to control whether it displays on your Planner
-  7. Tap **Save**
+  7. Click **Save**
 
 ## Important Notes
 
