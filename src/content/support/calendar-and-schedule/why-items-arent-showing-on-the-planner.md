@@ -12,7 +12,7 @@ If something isn't appearing on your Planner, one of the causes below is usually
 
 ### Filters
 
-The Planner has filter options that control what's displayed. A highlighted filter indicator means filters are currently active. If **Remember filter selections** is enabled in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences), filters from a previous session may still be in effect. Verify that the type of item you're looking for (Assignments, Events, Class Schedules, or External Calendars) is selected.
+The Planner has filter options that control what's displayed. A highlighted filter indicator means filters are currently active. If **Remember filter selections** is enabled in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences), filters from a previous session may still be in effect. Verify that the type of item you're looking for (Assignments, Class Schedules, Events, or External Calendars) is selected in the **Types** section.
 
 ### Hidden Class Group
 
