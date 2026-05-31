@@ -18,6 +18,7 @@ import smartCalendars from '~/assets/img/screenshots/month-view.png';
 import externalCalendars from '~/assets/img/screenshots/external-calendars.png';
 import liveGrades from '~/assets/img/screenshots/grades.png';
 import gradeDetail from '~/assets/img/screenshots/grade-detail.png';
+import gradeCalculator from '~/assets/img/screenshots/grade-calculator.png';
 import schedules from '~/assets/img/screenshots/week-view.png';
 import classesList from '~/assets/img/screenshots/classes-list.png';
 import notebook from '~/assets/img/screenshots/notebook.png';
@@ -173,7 +174,7 @@ const softwareSchema = {
       {
         title: 'Nudges, never nags',
         description:
-          'Native push on iOS, Android, and web, or email — before assignments, classes, and exams sneak up.',
+          'Native push on iOS, Android, and web — or email — before assignments, classes, and exams sneak up.',
         icon: 'tabler:bell',
       },
       {
@@ -202,7 +203,7 @@ const softwareSchema = {
       {
         title: 'Sign up',
         description:
-          'Use Google, Apple, or any email and password to create an account.',
+          'Use Google, Apple, Microsoft, or any email and password to create an account.',
         icon: 'tabler:user-plus',
       },
       {
@@ -220,7 +221,7 @@ const softwareSchema = {
       {
         title: 'Stay ahead',
         description:
-          'Trust Helium to nudge you before things sneak up. Glance at <strong>At-Risk Classes</strong> when you sit down to study to help target what might need more focus.',
+          'Trust Helium to nudge you before things sneak up. When you sit down to study, glance at <strong>At-Risk Classes</strong> and use the <strong>Grade Calculator</strong> to help target what might need more focus.',
         icon: 'tabler:trending-up',
       },
     ]}
@@ -275,13 +276,14 @@ const softwareSchema = {
       <p class="mt-4">
         Drill down into any class to see how every category contributes — essays, quizzes, labs, exams — and
         precisely where the points are coming from. The built-in <strong>Grade Calculator</strong> goes further:
-        drag sliders to set hypothetical scores and see your projected grade in real time (<strong>What Could I Get?</strong>),
-        or enter a target grade to find out exactly what you need on the Final (<strong>What Do I Need?</strong>).
+        drag sliders to set hypothetical scores and see your projected grade with (<strong>What Could I Get?</strong>),
+        or enter a target grade to find out exactly what you need on the Final with (<strong>What Do I Need?</strong>).
       </p>
     </Fragment>
     <Fragment slot="image">
       <Image src={liveGrades} alt="Grades dashboard" class="rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
       <Image src={gradeDetail} alt="Class grade category breakdown" class="mt-4 rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={gradeCalculator} alt="Grade Calculator" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] rounded-xl shadow-2xl hidden md:block" widths={[480, 720, 960]} sizes="28vw" />
     </Fragment>
   </Content>
 
@@ -297,13 +299,14 @@ const softwareSchema = {
   >
     <Fragment slot="content">
       <p>
-        Your Notebook can hold notes for anything in Helium — and each one knows what it's about, so the rubric, the
-        lecture summary, or the half-written outline is always one click from what it relates to. Need to draft
-        a paper or jot down lecture notes that aren't tied to anything yet? Standalone notes let you capture that too.
+        Keep notes on anything in Helium — and each one knows what it's about, so the rubric, the
+        lecture summary, or the half-written outline is always one click away from what it relates to.
+        Need to draft a paper or jot down lecture notes that aren't tied to anything yet? Standalone notes
+        let you capture that too.
       </p>
       <p class="mt-4">
         Notes can be formatted just like you would a doc — headings, lists, quotes, and links — so they read the way
-        you think. Search across everything you've written, and print any note when you need a hard copy.
+        you think. Search across everything you've written, print when you need a hard copy.
       </p>
     </Fragment>
     <Fragment slot="bg">
@@ -321,11 +324,11 @@ const softwareSchema = {
     <Fragment slot="content">
       <p>
         Zoom in to your week, hour by hour. Class meetings are time-blocked — even when that
-        varies day-to-day, like a Friday lab that runs longer than Tuesday's lecture.
+        varies, like a Friday lab that runs longer than Tuesday's lecture, Helium handles it.
       </p>
       <p class="mt-4">
-        Assignments show up exactly when they're due, so a glance at tomorrow morning tells you what you're walking
-        into. Drag and drop to shift an assignment or event when plans inevitably change, and check assignments off
+        Assignments show up when they're due, so a glance at tomorrow morning tells you what you're walking
+        into. Drag and drop to shift things around when plans inevitably change, and check off completed assignments
         right from the calendar.
       </p>
       <p class="mt-4">
@@ -351,9 +354,9 @@ const softwareSchema = {
   >
     <Fragment slot="content">
       Sometimes a calendar isn't what you need. The <strong>Todos</strong> view in the <strong>Planner</strong> turns
-      your assignments into a focused, checkable list — sort and filter by anything, and check things off as you go. See what's due next,
-      isolate one class to prep for an exam, or knock out what's piled up. When things get busy, this <strong>Planner</strong>
-      view is where you stay in control.
+      your assignments into a focused, checklist — sort and filter by anything, see what's due next,
+      isolate one class to prep for an exam, or knock out what's piled up. When things get busy, this view is where
+      you stay in control.
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>
