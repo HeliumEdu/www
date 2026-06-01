@@ -11,13 +11,13 @@ In addition to signing in with an email and password, Helium supports signing in
 ## Available Providers
 
   * **Google** — available on iOS, Android, and web
-  * **Apple** — available on iOS, Android, and web
+  * **Apple** — available on iOS and web
   * **Microsoft** — available on iOS, Android, and web
 
 ## How to Sign In
 
   1. On the [sign in screen](https://app.heliumedu.com/signin), click **Sign in with Google**, **Sign in with Apple**, or **Sign in with Microsoft**
-  2. Complete the sign-in prompt from your chosen provider
+  2. Complete the sign in prompt from your chosen provider
   3. If this is your first time signing in, Helium will create an account for you and link it to this third-party provider
 
 ## Linking an Existing Account
