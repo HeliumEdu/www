@@ -73,6 +73,6 @@ The result will tell you one of the following:
 
 ## Helium Classic
 
-The grade calculator is not available in Helium Classic.
+The Grade Calculator is not available in Helium Classic.
 
 __Helium Classic will remain available until July 31, 2026.__

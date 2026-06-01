@@ -24,8 +24,8 @@ Helium can display calendars from other services (including your school) alongsi
 
 ## Important Notes
 
-  * External calendars are read-only within Helium — you cannot create, edit, or delete events from an external calendar within Helium
-  * External calendars refresh on their own schedule; updates from the source may take some time to appear in Helium
+  * External Calendars are read-only within Helium — you cannot create, edit, or delete events from an External Calendar within Helium
+  * External Calendars refresh on their own schedule; updates from the source may take some time to appear in Helium
 
 If your external calendar isn't appearing after adding it, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
 
