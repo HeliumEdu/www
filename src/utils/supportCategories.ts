@@ -9,7 +9,7 @@ export const SUPPORT_CATEGORIES: SupportCategory[] = [
   { slug: 'getting-started', title: 'Getting Started', description: 'Installing Helium and first-time setup.', icon: 'tabler:rocket' },
   { slug: 'calendar-and-schedule', title: 'Planner', description: 'Calendar and Todos views, adding events, and color customization.', icon: 'tabler:calendar-month' },
   { slug: 'classes', title: 'Classes', description: 'Setting up and managing classes, terms, and sessions.', icon: 'tabler:school' },
-  { slug: 'grades-and-progress', title: 'Grades & Progress', description: 'Grade calculations, weighted categories, and the Grade Calculator.', icon: 'tabler:chart-bar' },
+  { slug: 'grades-and-progress', title: 'Grades & Progress', description: 'Grading, weighted categories, and the Grade Calculator.', icon: 'tabler:chart-bar' },
   { slug: 'notebook', title: 'Notebook & Resources', description: 'Notes (linked or standalone) and study materials organized by class.', icon: 'tabler:notebook' },
   { slug: 'reminders-and-notifications', title: 'Reminders & Notifications', description: 'Setting up push and email reminders.', icon: 'tabler:bell' },
   { slug: 'sync-and-integration', title: 'Sync & Integration', description: 'External Calendars, Feeds, and the Helium API.', icon: 'tabler:refresh' },
