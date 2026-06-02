@@ -37,7 +37,7 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
 ## Pending Impact
 
-**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The colored badge below the count shows which class has ungraded work, and a second badge below it highlights the single assignment that would have the greatest impact on your grade if completed next. When more than one class has ungraded work, click the badge to cycle through the others.
+**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The first badge with the class name shows the total number in that class, and the second badge below it shows the single assignment in that class that will have the most impact on your overall grade. When more than one class has ungraded work, click the first badge to cycle through the others.
 
 ## Grade Trend Graph
 
@@ -49,9 +49,9 @@ Select **Entire Term** to see all classes plotted together, or choose a specific
 
 ### Auto-adjust to graded range
 
-Check **Auto-adjust to graded range** to zoom the graph's X-axis to the actual date range of your graded assignments, rather than spanning the full class group date range. This can make grade trends easier to read when grading is clustered within a shorter period.
+Check **Auto-adjust to graded range** to zoom the graph's X-axis to just the date range of your graded assignments, rather than spanning the full class group date range. This can make grade trends easier to read when grading is clustered within a shorter period.
 
-## Grade Calculator
+### Grade Calculator
 
 Click the calculator icon to the right of the **Grade Trend** header to open the **Grade Calculator**. If you have multiple classes, select the one you want to calculate for.
 
