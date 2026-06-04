@@ -3,7 +3,7 @@ title: Linked vs. Standalone Notes
 description: "Notes in Helium can be linked to a class, assignment, event, or resource — or stand on their own. When to use each, and why."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-05-29
+updatedDate: 2026-06-04
 ---
 
 Notes in Helium can exist on their own or be linked to an Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
@@ -38,3 +38,13 @@ You can link or unlink a note directly from the note editor. Open any note in th
 
   * **Linked note:** Click the **×** on the badge to unlink it. The note becomes standalone — your content is preserved, and the change is saved the next time you save.
   * **Standalone note:** Click the **Standalone** badge to open the link picker. Select the type (Assignment, Event, or Resource), search for the item, and click it to link the note.
+
+## Auto-Save
+
+Notes are saved automatically as you type — you don't need to tap **Save** manually.
+
+A cloud icon in the top-right corner of the note editor shows the current sync status.
+
+  * **Grey** — the note hasn't synced yet (new notes, before auto-save is active)
+  * **Blue** — auto-save is active and changes are syncing normally
+  * **Red** — a recent save failed; Helium will retry automatically
