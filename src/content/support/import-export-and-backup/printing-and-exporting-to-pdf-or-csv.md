@@ -1,9 +1,9 @@
 ---
-title: Printing and Exporting
-description: "Print any Helium screen to paper or PDF, print formatted notes, and export your Todos view to a CSV spreadsheet."
+title: Printing & Exporting to PDF or CSV
+description: "Print any Helium screen to PDF, print a formatted note, or export your Todos list as a CSV spreadsheet."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-06-10
 ---
 
 Helium can print (or export to PDF) from any screen, as well as formatted notes, and the **Todos** view can be exported to a CSV file.
@@ -45,5 +45,5 @@ The exported file includes a row for every todo that matches your current filter
 
 ## Related Articles
 
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
+  * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)
   * [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes/)

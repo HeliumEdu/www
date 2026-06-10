@@ -12,7 +12,7 @@ You can permanently remove your Helium account and all associated data at any ti
 
 Consider reviewing the following before proceeding:
 
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/) — export a copy of your data first
+  * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/) — export a copy of your data first
   * [How to Export Data to an iCal/ICS File](/support/sync-and-integration/how-to-export-data-to-an-icalics-file/) — export your schedule in a portable format
 
 ## Steps to Delete Your Account

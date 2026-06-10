@@ -62,6 +62,10 @@ export default defineConfig({
       '/support/grades-and-progress/grade-calculator',
     '/support/account/signing-in-with-google-or-apple':
       '/support/account/signing-in-with-google-apple-or-microsoft',
+    '/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts':
+      '/support/import-export-and-backup/importing-and-exporting-your-data',
+    '/support/import-export-and-backup/printing-and-exporting':
+      '/support/import-export-and-backup/printing-and-exporting-to-pdf-or-csv',
     // Helium Classic (legacy frontend) shutdown 2026-08-01 — preserve
     // bookmarked routes by mapping them to their app.heliumedu.com equivalents.
     '/login': 'https://app.heliumedu.com/signin',

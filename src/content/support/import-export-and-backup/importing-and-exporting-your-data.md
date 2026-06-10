@@ -1,9 +1,9 @@
 ---
-title: Using Exports to Backup Data, Move Between Accounts
-description: "Export your full Helium schedule as JSON to back up your data, transfer to another account, or seed an automated import."
+title: Importing & Exporting Your Data
+description: "Import and export your Helium data as JSON to back up, restore, or transfer your schedule between accounts."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-05-20
+updatedDate: 2026-06-10
 ---
 
 ## Overview
@@ -30,11 +30,9 @@ Imported data is added alongside existing schedules in separate groups and does 
 
 > **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported. Newer backups will not include these legacy fields, so they will not import as **comments** or **details** into Helium Classic.
 
-## Build Your Own Integration
+## Data Transfer
 
-Helium's import endpoint accepts the same JSON format produced by its exports. You can use scripts or other tooling to build your own integration to migrate from another planner or automate the import process for a syllabus or course outline.
-
-If you're starting from a syllabus, the fastest path is the AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/#the-prompt) — paste it into any modern AI assistant, attach your syllabi, and upload the file it produces. For things beyond that, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api/).
+The import endpoint accepts the same JSON format exports produce, making it straightforward to migrate data from another tool or automate schedule entry. The AI-assisted prompt in [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/#the-prompt) covers the no-code path; for scripted use, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api/).
 
 ## Related Articles
 

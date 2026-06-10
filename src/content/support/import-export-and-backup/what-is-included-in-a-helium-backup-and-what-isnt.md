@@ -30,7 +30,7 @@ Helium backups contain nearly all of your account data, exported in JSON format.
 
 ## **Related Articles**
 
-  * **[Using Exports to Backup Data& Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)**
+  * **[Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)**
   * **[Using Resources to Track Study Materials](/support/notebook/using-resources-to-track-study-materials/)**
   * **[Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)**
   * **[How to Export Data to an iCal/ICS File](/support/sync-and-integration/how-to-export-data-to-an-icalics-file/)**
