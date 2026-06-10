@@ -49,7 +49,7 @@ If you change the due date or start time of an assignment or event, its reminder
 ## Related Articles
 
   * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/)
-  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-or-email-reminders-not-working/)
+  * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working/)
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
 
 ---

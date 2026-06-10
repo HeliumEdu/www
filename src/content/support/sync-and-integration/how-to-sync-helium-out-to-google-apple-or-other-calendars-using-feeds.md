@@ -10,7 +10,7 @@ updatedDate: 2026-05-19
 
 You can share your Helium schedules with external calendar applications using Feeds, which provide standard iCal/ICS URLs for continuous synchronization.
 
-> **Tip:** If you're looking to import data from other calendar applications _in_ to Helium, see [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/).
+> **Tip:** If you're looking to import data from other calendar applications into Helium, see [How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/).
 
 ## Find & Enable Your Feed URLs
 

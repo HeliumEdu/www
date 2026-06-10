@@ -10,7 +10,7 @@ updatedDate: 2026-05-19
 
 Helium can display calendars from other services (including your school) alongside your own schedule, as long as those services provide a public iCal/ICS URL. For example, you can find instructions for getting a Google Calendar iCal URL in [Google's own documentation](https://support.google.com/calendar/answer/37648?hl=en).
 
-> **Tip:** If you're looking to export data from Helium _to_ another calendar, see [How to Sync Google, Apple, or Other Calendars into Helium Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds/).
+> **Tip:** If you're looking to export data from Helium _to_ another calendar, see [How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds](/support/sync-and-integration/how-to-sync-helium-out-to-google-apple-or-other-calendars-using-feeds/).
 
 ## How to Add an External Calendar
 

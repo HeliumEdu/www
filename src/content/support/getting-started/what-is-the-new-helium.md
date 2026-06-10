@@ -22,7 +22,7 @@ The new Helium includes several features not available in Classic:
     * **Pending Impact** showing ungraded assignments that could most affect your grade
     * **Improved Grade Graph** — The grade trend chart now has enhanced tooltips that let you see how an individual assignment's grade affected both the overall class and term grades at a glance. On mobile, tap and hold to view.
     * Class' category grade breakdown is now easier to view, as a stacked bar chart.
-  * **Dark Mode** — Choose between light, dark, or system-synced themes in Settings. See [Changing the App Theme](/support/account/changing-the-app-theme-dark-mode/) for details.
+  * **Dark Mode** — Choose between light, dark, or system-synced themes in Settings. See [Changing the App Theme (Dark Mode)](/support/account/changing-the-app-theme-dark-mode/) for details.
   * **Sign in with Google, Apple, or Microsoft** — Create an account or sign in using your existing Google, Apple, or Microsoft account instead of a password. See [Signing In with Google, Apple, or Microsoft](/support/account/signing-in-with-google-apple-or-microsoft/).
   * **Grade Calculator** — Project your grade with hypothetical scores, or find out what you need on a final assignment to hit your target. See [Grade Calculator](/support/grades-and-progress/grade-calculator/).
   * **Notebook** — Capture rich-text notes linked to Assignments, Events, or Resources — or keep them standalone. Search and filter everything in one place. See [Linked vs. Standalone Notes](/support/notebook/linked-vs-standalone-notes/).
