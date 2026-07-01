@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-06-04
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.
@@ -31,7 +31,7 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Website** — a link to the class's page, LMS, or other online resource
   * **Teacher** — your instructor's name
   * **Email** — your instructor's email address
-  * **Online** — check this if the class is fully online; unchecking it reveals a **Location** field for the room or building
+  * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
 
 Click **Save** to create the class and proceed to the Schedule tab.

@@ -31,6 +31,7 @@ Once set, you can sign in with either your email and password or your linked pro
 
   * If you don't see the reset email, check your spam or junk folder
   * Try searching your inbox for "Helium" or "password reset"
+  * If you signed up with Google, Apple, or Microsoft and never set a Helium password, no reset email will be sent — use your provider to sign in, or go to **Settings → Set Password** to add one
 
 ## Related Articles
 

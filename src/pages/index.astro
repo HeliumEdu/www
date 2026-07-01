@@ -21,7 +21,8 @@ import gradeDetail from '~/assets/img/screenshots/grades-breakdown.png';
 import gradeCalculator from '~/assets/img/screenshots/grade-calculator-square.png';
 import schedules from '~/assets/img/screenshots/week-view.png';
 import classesList from '~/assets/img/screenshots/class-manager.png';
-import notebook from '~/assets/img/screenshots/notebook.png';
+import editNote from '~/assets/img/screenshots/edit-note.png';
+import notebookList from '~/assets/img/screenshots/notebook.png';
 import assignmentPlanner from '~/assets/img/screenshots/assignment-planner.png';
 import customTodos from '~/assets/img/screenshots/todos.png';
 import reminders from '~/assets/img/screenshots/reminders.png';
@@ -82,7 +83,7 @@ const faqs = [
   {
     title: 'Can I take my data with me, or import it from another app?',
     description:
-      'Always. Export your full schedule as JSON — classes, grades, notes, events, reminders — anytime. The same format powers Helium\'s import, so you can migrate from another planner, restore a backup, or build an integration that automatically imports from a syllabus or course outline. Our <a href="/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/" class="text-primary hover:underline">import guide</a> has more information, and the <a href="' +
+      'Always. Export your full schedule as JSON — classes, grades, notes, events, reminders — anytime. The same format powers Helium\'s import, so you can migrate from another planner, restore a backup, or build an integration that automatically imports from a syllabus or course outline. Our <a href="/support/import-export-and-backup/importing-and-exporting-your-data/" class="text-primary hover:underline">import guide</a> has more information, and the <a href="' +
       API_DOCS +
       '" target="_blank" rel="noopener" class="text-primary hover:underline">API docs</a> are where the magic happens.',
   },
@@ -292,10 +293,6 @@ const softwareSchema = {
     tagline="Rich Notebook"
     title="Notes that know what they're about."
     subtitle="The Backstory."
-    image={{
-      src: notebook,
-      alt: 'Rich Notebook',
-    }}
   >
     <Fragment slot="content">
       <p>
@@ -308,6 +305,10 @@ const softwareSchema = {
         Notes can be formatted just like you would a doc — headings, lists, quotes, and links — so they read the way
         you think. Search across everything you've written, print when you need a hard copy.
       </p>
+    </Fragment>
+    <Fragment slot="image">
+      <Image src={editNote} alt="Edit note" class="rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
+      <Image src={notebookList} alt="Notebook list" class="mt-4 rounded-lg shadow-lg" widths={[640, 960, 1280, 1600]} sizes="(max-width: 768px) 100vw, 50vw" />
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50/40 dark:bg-white/[0.03]"></div>

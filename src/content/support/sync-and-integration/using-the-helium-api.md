@@ -63,6 +63,6 @@ For the full authentication reference, see the [API docs](https://api.heliumedu.
 ## Related Articles
 
   * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/)
-  * [Using Exports to Backup Data, Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
+  * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)
 
 ---

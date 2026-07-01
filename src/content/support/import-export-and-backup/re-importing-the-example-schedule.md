@@ -25,5 +25,5 @@ To remove the example schedule from your account:
 
 ## Related Articles
 
-  * [Using Exports to Backup Data & Move Between Accounts](/support/import-export-and-backup/using-exports-to-backup-data-move-between-accounts/)
+  * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)
   * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt/)

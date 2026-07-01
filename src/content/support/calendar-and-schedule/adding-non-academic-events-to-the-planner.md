@@ -1,5 +1,5 @@
 ---
-title: Adding non-Academic Events to the Planner
+title: Adding Non-Academic Events to the Planner
 description: "Add study sessions, appointments, concerts, and anything else to your Helium Planner alongside your classes and assignments."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
