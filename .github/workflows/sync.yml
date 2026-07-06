@@ -34,7 +34,14 @@ jobs:
 
       - name: Install ImageMagick 7
         run: |
-          sudo apt-get install -y imagemagick
+          release=$(curl -fsSL https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest)
+          tag=$(echo "$release" | jq -r '.tag_name')
+          url=$(echo "$release" | jq -r '.assets[] | select(.name | test("gcc-x86_64.AppImage$")) | .browser_download_url')
+          wget -q "$url" -O /tmp/magick.AppImage
+          chmod +x /tmp/magick.AppImage
+          cd /tmp && ./magick.AppImage --appimage-extract > /dev/null
+          sudo mv /tmp/squashfs-root /opt/imagemagick
+          sudo ln -sf /opt/imagemagick/usr/bin/magick /usr/local/bin/magick
           magick -version
 
       - name: Regenerate OG image
