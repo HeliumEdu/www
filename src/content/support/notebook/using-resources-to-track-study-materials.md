@@ -3,7 +3,7 @@ title: Using Resources to Track Study Materials
 description: "Track textbooks, software, websites, and other study materials in Helium, organized alongside the classes that use them."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-07-25
 ---
 
 The [**Resources**](https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into **Resource Groups** — for example, you could group them by term, or category.
@@ -25,6 +25,10 @@ The [**Resources**](https://app.heliumedu.com/resources) screen lets you track t
      * **Classes** — one or more classes this resource is associated with
      * **Website** — a URL for the resource (e.g., a publisher page, textbook, or link to an online app or tool)
   4. Click **Save**
+
+## Resources and Hidden Class Groups
+
+If a class belongs to a Class Group that's been hidden (via **Hide this group's classes and assignments from the Planner and Resources** on the group), that class stops appearing in two places: the linked-class chips shown on the resource's card in the Resources list, and the **Classes** field (along with its selected-class chips) when adding or editing that resource. The resource-to-class association isn't removed — it's just not shown while the group is hidden, and it reappears automatically once you un-hide the group. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/) for more on hiding a Class Group.
 
 ---
 
