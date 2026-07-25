@@ -32,13 +32,13 @@ To delete all Events: open [**Settings**](https://app.heliumedu.com/settings), e
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, account deletion is found in a different location:
+In Classic Helium, account deletion is found in a different location:
 
   1. Sign in to your Helium account
   2. Navigate to [**Account → Settings → Account**](https://www.heliumedu.com/settings/#tab-account)
   3. Select the **Delete Account** button
   4. Enter your password and confirm deletion
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

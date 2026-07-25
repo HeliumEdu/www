@@ -51,8 +51,8 @@ You can reschedule assignments and events by dragging them to a different time s
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-The same views are available in Helium Classic. To change your default view, navigate to [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), select your preferred option from the **Default view** dropdown, and click **Save**.
+The same views are available in Classic Helium. To change your default view, navigate to [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), select your preferred option from the **Default view** dropdown, and click **Save**.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

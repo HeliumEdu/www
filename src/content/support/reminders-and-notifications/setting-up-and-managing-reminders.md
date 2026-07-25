@@ -54,13 +54,13 @@ If you change the due date or start time of an assignment or event, its reminder
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, reminders work similarly:
+In Classic Helium, reminders work similarly:
 
   * **Popup** — alerts in the browser
   * **Email** — sent to your registered email address
 
-There are no Push notifications in Helium Classic.
+There are no Push notifications in Classic Helium.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

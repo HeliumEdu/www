@@ -30,9 +30,9 @@ To remove the example schedule from your account:
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, the steps are similar:
+In Classic Helium, the steps are similar:
 
   1. Sign in to your account
   2. Navigate to **Account → Settings → Import/Export**
@@ -40,4 +40,4 @@ In Helium Classic, the steps are similar:
 
 To remove the example schedule, navigate to the **Calendar** and click **Delete Example Schedule** in the **Welcome to Helium** dialog. This dialog appears each time you land on the Calendar page until you clear the example data.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

@@ -22,8 +22,8 @@ Helium offers several color customization options for how items appear on your P
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, these same options are available under [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), but use slightly different labels.
+In Classic Helium, these same options are available under [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), but use slightly different labels.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

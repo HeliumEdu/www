@@ -38,9 +38,9 @@ For instructions on how to add a feed URL to a specific calendar application, se
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, the navigation and interface differ slightly:
+In Classic Helium, the navigation and interface differ slightly:
 
   1. Sign in to your Helium account
   2. Navigate to [**Account → Settings → Feeds**](https://www.heliumedu.com/settings/#tab-feeds)
@@ -48,4 +48,4 @@ In Helium Classic, the navigation and interface differ slightly:
   4. Helium displays individual feed URLs for Assignments, Class Schedule, and Events
   5. Copy any of the URLs and paste them into your external calendar application
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

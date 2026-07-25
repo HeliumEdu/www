@@ -71,8 +71,8 @@ The result will tell you one of the following:
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-The Grade Calculator is not available in Helium Classic.
+The Grade Calculator is not available in Classic Helium.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

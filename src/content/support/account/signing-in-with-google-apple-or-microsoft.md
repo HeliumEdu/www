@@ -42,8 +42,8 @@ If your account is linked to both a password and an OAuth provider, the **Change
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-Helium Classic supports email and password sign-in only. Google, Apple, and Microsoft sign-in are not available in Helium Classic.
+Classic Helium supports email and password sign-in only. Google, Apple, and Microsoft sign-in are not available in Classic Helium.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

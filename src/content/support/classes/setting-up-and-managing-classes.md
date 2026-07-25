@@ -65,13 +65,13 @@ You can attach files (such as your syllabus or class packet) directly to a class
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, classes work the same way conceptually. The key navigation differences are:
+In Classic Helium, classes work the same way conceptually. The key navigation differences are:
 
   * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu
   * To add or edit a class, click on it and then use the tabs (**Details**, **Schedule**, **Categories**, **Attachments**) — the same four tabs exist in Classic
   * The category weight field is labeled **Weight** (not "Weight (%)")
   * Class Groups are labeled by term and work identically
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

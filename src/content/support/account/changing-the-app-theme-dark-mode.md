@@ -21,8 +21,8 @@ The theme change takes effect immediately and is saved to your account, so it wi
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-Theme selection is not available in Helium Classic. The interface is always displayed in light mode.
+Theme selection is not available in Classic Helium. The interface is always displayed in light mode.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

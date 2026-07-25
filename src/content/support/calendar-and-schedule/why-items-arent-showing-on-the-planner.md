@@ -62,12 +62,12 @@ Helium refreshes External Calendars on a periodic basis. If the source calendar 
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-The same troubleshooting steps apply in Helium Classic. The key navigation differences are:
+The same troubleshooting steps apply in Classic Helium. The key navigation differences are:
 
   * The **Remember filter selections** setting is at [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences)
   * Active filters are indicated by blue dropdown indicators on the calendar
   * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

@@ -46,8 +46,8 @@ calendar.
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-Helium Classic supports **Popup** reminders (alerts in the browser) and **Email** reminders sent to your registered email address. There are no Push notifications and no Notification Center in Helium Classic.
+Classic Helium supports **Popup** reminders (alerts in the browser) and **Email** reminders sent to your registered email address. There are no Push notifications and no Notification Center in Classic Helium.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

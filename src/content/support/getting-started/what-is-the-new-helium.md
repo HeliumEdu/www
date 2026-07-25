@@ -1,6 +1,6 @@
 ---
 title: What is the New Helium?
-description: "The new Helium is a redesigned web app plus brand-new iOS and Android apps — what's new, what's retired, and how to switch from Helium Classic."
+description: "The new Helium is a redesigned web app plus brand-new iOS and Android apps — what's new, what's retired, and how to switch from Classic Helium."
 category: getting-started
 publishedDate: 2026-05-19
 updatedDate: 2026-05-19
@@ -8,7 +8,7 @@ updatedDate: 2026-05-19
 
 We've completely rebuilt Helium from the ground up — sleek, modern, fast, and built to last. The new Helium includes a redesigned web app plus **brand new native iOS and Android apps**, all sharing a consistent experience.
 
-**Helium Classic will remain available until July 31, 2026**, giving you plenty of time to transition at your own pace. Your data syncs seamlessly between both versions, so you can use whichever works best for you.
+**Classic Helium will shut down on August 5, 2026**, giving you plenty of time to transition at your own pace. Your data syncs seamlessly between both versions, so you can use whichever works best for you.
 
 ## What's New in Helium
 
@@ -35,7 +35,7 @@ The new Helium includes several features not available in Classic:
 
 ## Retired Features
 
-Some features from Helium Classic are being retired and will not be available in the new Helium:
+Some features from Classic Helium are being retired and will not be available in the new Helium:
 
   * **SMS Reminders** — Text message reminders are being replaced by push notifications in the native mobile apps and browsers, which offer more flexibility and don't require sharing your phone number.
   * **Popup Reminders** — Browser popup reminders have also been replaced by push notifications.

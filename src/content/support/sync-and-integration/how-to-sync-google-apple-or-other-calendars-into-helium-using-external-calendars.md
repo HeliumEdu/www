@@ -35,9 +35,9 @@ If your external calendar isn't appearing after adding it, see [Why Items Aren't
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, External Calendars are found inside the Preferences page rather than as their own dedicated section:
+In Classic Helium, External Calendars are found inside the Preferences page rather than as their own dedicated section:
 
   1. Sign in to your Helium account
   2. Navigate to [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences)
@@ -48,4 +48,4 @@ In Helium Classic, External Calendars are found inside the Preferences page rath
   7. Check the **Enabled** checkbox
   8. Click **Save**
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

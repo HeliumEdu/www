@@ -37,8 +37,8 @@ Helium backups contain nearly all of your account data, exported in JSON format.
 
 ---
 
-## **Helium Classic**
+## **Classic Helium**
 
-**In Helium Classic, the same data is included with one naming difference: Resources are called Materials, so your export file will show "Material Groups" instead of "Resource Groups."**
+**In Classic Helium, the same data is included with one naming difference: Resources are called Materials, so your export file will show "Material Groups" instead of "Resource Groups."**
 
-**__Helium Classic will remain available until July 31, 2026.__**
+**__Classic Helium will shut down on August 5, 2026.__**

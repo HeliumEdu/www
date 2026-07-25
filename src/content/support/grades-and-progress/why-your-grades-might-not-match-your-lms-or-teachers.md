@@ -46,11 +46,11 @@ Double-check term and class dates — the start and end dates you set for the te
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-The same steps apply in Helium Classic. The key navigation differences are:
+The same steps apply in Classic Helium. The key navigation differences are:
 
   * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu; the category weight field is labeled **Weight** (not "Weight (%)")
   * Assignments can be reviewed on the [**Calendar**](https://www.heliumedu.com/planner/calendar)
 
- __Helium Classic will remain available until July 31, 2026.__
+ __Classic Helium will shut down on August 5, 2026.__

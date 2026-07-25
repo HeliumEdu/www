@@ -52,8 +52,8 @@ Class reminders fire before each session of the class's recurring schedule. If t
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-Helium Classic supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
+Classic Helium supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__

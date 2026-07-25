@@ -25,13 +25,13 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
 
 ---
 
-## Helium Classic
+## Classic Helium
 
-In Helium Classic, the steps are similar but the navigation differs:
+In Classic Helium, the steps are similar but the navigation differs:
 
   1. Open [**Classes**](https://www.heliumedu.com/planner/classes) and click on the class you want to configure
   2. Click **Categories**
   3. Add a **Weight** for each category, matching the weights provided in your syllabus
   4. All **Weight** values should add up to 100%
 
-__Helium Classic will remain available until July 31, 2026.__
+__Classic Helium will shut down on August 5, 2026.__
