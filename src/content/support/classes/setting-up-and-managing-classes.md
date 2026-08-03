@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-06-04
+updatedDate: 2026-07-25
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.
@@ -17,7 +17,7 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
   3. Fill in the group details:
      * **Title** — e.g., "Fall 2025" or "Spring 2026"
      * **From / To** — the start and end dates of the term
-     * **Hide this group's classes and assignments from the Planner** — check this to temporarily hide the entire group from your calendar without deleting anything
+     * **Hide this group's classes and assignments from the Planner and Resources** — check this to hide the entire group from your calendar and from the Resources page's class associations, without deleting anything
   4. Click **Save**
 
 ## Adding a Class

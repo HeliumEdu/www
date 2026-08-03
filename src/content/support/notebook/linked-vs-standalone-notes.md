@@ -27,7 +27,7 @@ A standalone note isn't attached to anything — you can think of these more as 
 The Notebook has filters that may hide some notes. If you're missing a note:
 
   * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Events, Resources, or Standalone) is selected.
-  * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to course groups that are hidden from your calendar won't appear.
+  * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to Class Groups that are hidden from your calendar won't appear.
   * **Search by title:** Use the search bar to find notes by title or by the name of the linked item.
 
 If you have "Remember filter state" enabled in Settings, your filters persist between sessions — so a filter you set last week might still be active.
