@@ -34,11 +34,3 @@ When you sign in on a new device, all your classes, assignments, grades, and set
 
   * [Signing In with Google, Apple, or Microsoft](/support/account/signing-in-with-google-apple-or-microsoft/)
   * [Resetting Your Password](/support/account/resetting-your-password/)
-
----
-
-## Classic Helium
-
-Classic Helium is a web-only experience and does not have dedicated iOS or Android apps. It is accessible in a browser at [**heliumedu.com**](https://www.heliumedu.com).
-
-__Classic Helium will shut down on August 5, 2026.__

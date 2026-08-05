@@ -28,7 +28,7 @@ Imported data is added alongside existing schedules in separate groups and does 
   2. Sign out and sign in to the destination account
   3. Import the backup file
 
-> **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported. Newer backups will not include these legacy fields, so they will not import as **comments** or **details** into Classic Helium.
+> **Note:** Backups store notes in a dedicated **notes** section. Older backups that used the legacy **comments** or **details** fields will be preserved and automatically converted to **Notes** when imported.
 
 ## Data Transfer
 
@@ -40,13 +40,3 @@ The import endpoint accepts the same JSON format exports produce, making it stra
   * [Re-Importing the "Example Schedule"](/support/import-export-and-backup/re-importing-the-example-schedule/)
   * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/)
   * [Using the Helium API](/support/sync-and-integration/using-the-helium-api/)
-
----
-
-## Classic Helium
-
-In Classic Helium, access Import/Export via **Account → Settings → Import/Export**.
-
-The process is the same — click **Export** to download or select a file and click **Import** to restore.
-
-__Classic Helium will shut down on August 5, 2026.__

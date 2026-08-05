@@ -36,13 +36,3 @@ Once set, you can sign in with either your email and password or your linked pro
 ## Related Articles
 
   * [Signing In with Google, Apple, or Microsoft](/support/account/signing-in-with-google-apple-or-microsoft/)
-
----
-
-## Classic Helium
-
-In Classic Helium, the password reset option works the same way, but in a different location. The logged-in password change option is no longer available in Classic Helium.
-
-  * **Forgot your password:** Click [**Forgot your Password?**](https://www.heliumedu.com/forgot) on the login page
-
- __Classic Helium will shut down on August 5, 2026.__

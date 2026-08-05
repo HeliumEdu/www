@@ -32,11 +32,3 @@ Use the group dropdown at the top of the screen to switch between Resource Group
 ## Resources and Hidden Class Groups
 
 If a class belongs to a Class Group that's been hidden (via **Hide this group's classes and assignments from the Planner and Resources** on the group), that class stops appearing in two places: the linked-class chips shown on the resource's card in the Resources list, and the **Classes** field (along with its selected-class chips) when adding or editing that resource. The resource-to-class association isn't removed — it's just not shown while the group is hidden, and it reappears automatically once you un-hide the group. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/) for more on hiding a Class Group.
-
----
-
-## Classic Helium
-
-In Classic Helium, Resources are called **Materials** and are accessible from the Planner menu at [**Planner → Materials**](https://www.heliumedu.com/planner/materials). The concept is the same — materials are organized into Material Groups and can be associated with classes. The field labels and navigation differ slightly, but the same information can be tracked.
-
-_Classic Helium will shut down on August 5, 2026._

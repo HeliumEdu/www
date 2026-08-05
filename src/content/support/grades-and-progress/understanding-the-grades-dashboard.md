@@ -82,15 +82,3 @@ A category may show a smaller contribution than its configured weight if its cur
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
   * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
   * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)
-
----
-
-## Classic Helium
-
-In [Classic Helium Grades](https://www.heliumedu.com/planner/grades), the graph settings work similarly but class selection uses a dropdown instead of radio buttons:
-
-  1. Click the gear icon in the Grades graph area
-  2. Select a class from the **dropdown menu** to narrow the graph to that class, or leave it on the full term view
-  3. Check the corresponding box to enable **Auto-adjust to graded range**
-
- _Classic Helium will shut down on August 5, 2026._

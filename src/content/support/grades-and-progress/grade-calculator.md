@@ -68,11 +68,3 @@ The result will tell you one of the following:
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
   * [Understanding the Grades Dashboard](/support/grades-and-progress/understanding-the-grades-dashboard/)
-
----
-
-## Classic Helium
-
-The Grade Calculator is not available in Classic Helium.
-
-__Classic Helium will shut down on August 5, 2026.__

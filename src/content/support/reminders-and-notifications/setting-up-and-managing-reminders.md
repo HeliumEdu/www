@@ -51,16 +51,3 @@ If you change the due date or start time of an assignment or event, its reminder
   * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/)
   * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working/)
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
-
----
-
-## Classic Helium
-
-In Classic Helium, reminders work similarly:
-
-  * **Popup** — alerts in the browser
-  * **Email** — sent to your registered email address
-
-There are no Push notifications in Classic Helium.
-
-__Classic Helium will shut down on August 5, 2026.__

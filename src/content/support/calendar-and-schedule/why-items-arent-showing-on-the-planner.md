@@ -59,15 +59,3 @@ Helium refreshes External Calendars on a periodic basis. If the source calendar 
   * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
   * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
   * [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)
-
----
-
-## Classic Helium
-
-The same troubleshooting steps apply in Classic Helium. The key navigation differences are:
-
-  * The **Remember filter selections** setting is at [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences)
-  * Active filters are indicated by blue dropdown indicators on the calendar
-  * [**Classes**](https://www.heliumedu.com/planner/classes) is found under the Planner menu
-
- __Classic Helium will shut down on August 5, 2026.__

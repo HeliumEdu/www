@@ -39,11 +39,3 @@ If your account is linked to both a password and an OAuth provider, the **Change
 ## Related Articles
 
   * [Resetting Your Password](/support/account/resetting-your-password/)
-
----
-
-## Classic Helium
-
-Classic Helium supports email and password sign-in only. Google, Apple, and Microsoft sign-in are not available in Classic Helium.
-
-__Classic Helium will shut down on August 5, 2026.__

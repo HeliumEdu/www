@@ -49,11 +49,3 @@ Class reminders fire before each session of the class's recurring schedule. If t
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
   * [Reminder Types: Push vs. Email Notifications](/support/reminders-and-notifications/reminder-types-push-vs-email-notifications/)
   * [Getting the Helium App (iOS, Android, and Web)](/support/getting-started/getting-the-helium-app-ios-android-and-web/)
-
----
-
-## Classic Helium
-
-Classic Helium supports **Popup** and **Email** reminders only. For a missing email, verify your registered email address is correct. **Popup** reminders are delivered in the browser.
-
-__Classic Helium will shut down on August 5, 2026.__

@@ -22,16 +22,3 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
   * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
   * [Why Your Grades Might Not Match Your LMS' or Teacher's](/support/grades-and-progress/why-your-grades-might-not-match-your-lms-or-teachers/)
-
----
-
-## Classic Helium
-
-In Classic Helium, the steps are similar but the navigation differs:
-
-  1. Open [**Classes**](https://www.heliumedu.com/planner/classes) and click on the class you want to configure
-  2. Click **Categories**
-  3. Add a **Weight** for each category, matching the weights provided in your syllabus
-  4. All **Weight** values should add up to 100%
-
-__Classic Helium will shut down on August 5, 2026.__

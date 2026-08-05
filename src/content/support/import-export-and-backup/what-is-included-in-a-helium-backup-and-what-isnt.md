@@ -35,10 +35,3 @@ Helium backups contain nearly all of your account data, exported in JSON format.
   * **[Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)**
   * **[How to Export Data to an iCal/ICS File](/support/sync-and-integration/how-to-export-data-to-an-icalics-file/)**
 
----
-
-## **Classic Helium**
-
-**In Classic Helium, the same data is included with one naming difference: Resources are called Materials, so your export file will show "Material Groups" instead of "Resource Groups."**
-
-**__Classic Helium will shut down on August 5, 2026.__**

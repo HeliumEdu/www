@@ -43,11 +43,3 @@ calendar.
 
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
   * [Push Notifications or Email Reminders Not Working](/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working/)
-
----
-
-## Classic Helium
-
-Classic Helium supports **Popup** reminders (alerts in the browser) and **Email** reminders sent to your registered email address. There are no Push notifications and no Notification Center in Classic Helium.
-
-__Classic Helium will shut down on August 5, 2026.__

@@ -19,11 +19,3 @@ Helium offers several color customization options for how items appear on your P
 
   * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
   * [How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)
-
----
-
-## Classic Helium
-
-In Classic Helium, these same options are available under [**Account → Settings → Preferences**](https://www.heliumedu.com/settings/#tab-preferences), but use slightly different labels.
-
-__Classic Helium will shut down on August 5, 2026.__

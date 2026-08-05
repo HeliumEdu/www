@@ -18,11 +18,3 @@ Helium supports Light, Dark, and System-synced themes. You can change the theme 
      * **System** (auto-brightness icon) — follows your current device's appearance setting
 
 The theme change takes effect immediately and is saved to your account, so it will apply across all your devices.
-
----
-
-## Classic Helium
-
-Theme selection is not available in Classic Helium. The interface is always displayed in light mode.
-
-__Classic Helium will shut down on August 5, 2026.__
