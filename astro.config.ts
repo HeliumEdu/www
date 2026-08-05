@@ -68,8 +68,7 @@ export default defineConfig({
       '/support/import-export-and-backup/printing-and-exporting-to-pdf-or-csv',
     '/support/reminders-and-notifications/push-or-email-reminders-not-working':
       '/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working',
-    // Helium Classic (legacy frontend) shutdown 2026-08-01 — preserve
-    // bookmarked routes by mapping them to their app.heliumedu.com equivalents.
+    // Legacy aliases
     '/login': 'https://app.heliumedu.com/signin',
     '/register': 'https://app.heliumedu.com/signup',
     '/settings': 'https://app.heliumedu.com/settings',
