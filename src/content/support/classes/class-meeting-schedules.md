@@ -46,20 +46,20 @@ Each schedule is edited and deleted independently, and each generates its own Cl
 
 Many schools run rotating schedules — A/B days, a fixed-length day cycle, or alternating weeks — where the meeting pattern doesn't line up with an ordinary calendar week. To set one up, choose **Rotating** at the top of the schedule editor, then pick a pattern from the **Rotation** dropdown.
 
-### Day cycles (A/B Day, 6-Day Cycle, 8-Day Cycle)
+### Day cycles
 
 A day cycle rotates through a fixed number of "cycle days" — Day 1, Day 2, and so on — advancing one cycle day per school day, independent of the calendar week.
 
-  1. Select **A/B Day**, **6-Day Cycle**, or **8-Day Cycle** from the **Rotation** dropdown
+  1. Select **A/B Day**, **6-Day Cycle**, **7-Day Cycle**, **8-Day Cycle**, or **10-Day Cycle** from the **Rotation** dropdown
   2. For each cycle day (**Day 1**, **Day 2**, …), toggle whether the class meets and set its **Start** and **End** times
   3. Set **Cycle Day 1 falls on** to the calendar date your cycle's Day 1 lands on, so Helium can line the rotation up with your calendar
   4. Click **Save**
 
-If your cycle isn't 2, 6, or 8 days — a 10-day timetable cycle, for example — choose **Custom** instead (see below). It works exactly the same way, with any cycle length.
+If your school uses a cycle length Helium doesn't offer, [let us know](/support/submit/) and we'll look at adding it.
 
 ### Week rotations (Week A/B)
 
-A week rotation alternates by calendar week — you may know this as **odd/even weeks**, **single/double weeks**, or a **fortnightly** class. For example, a class that meets only on "A" weeks.
+A week rotation has the class meet **every other week**, alternating by calendar week. You may also know this as **odd/even weeks**, **single/double weeks**, or **fortnightly**. For example, a class that meets only on "A" weeks.
 
   1. Select **Week A/B** from the **Rotation** dropdown
   2. Choose the weekly pattern under **Class Days** and **Class Time**, the same way as a weekly schedule
@@ -70,13 +70,6 @@ A week rotation alternates by calendar week — you may know this as **odd/even 
 **Which week is "A"?** Helium counts forward from the **Week A begins on** date — that week is A, the next is B, and so on. Set it to the first day of the earliest week your rotation is "on," reading from your school's timetable or calendar. If the Planner shows the pattern flipped after you save, shift the anchor one week.
 
 If your "A" and "B" weeks have _different_ day patterns, add a separate schedule for each — one for Week A and one for Week B (see **Multiple schedules per class** above).
-
-### Custom rotations
-
-If none of the presets match, select **Custom** from the **Rotation** dropdown, then choose **Day cycle** or **Week cycle**:
-
-  * **Day cycle** — set the **Cycle length (days)**, then configure each cycle day as described above
-  * **Week cycle** — set **Repeats every (weeks)** and **Which week**, then configure the weekly pattern
 
 ## Limiting a schedule to part of the term
 
