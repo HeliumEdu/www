@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-07-25
+updatedDate: 2026-08-10
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together.
@@ -15,7 +15,7 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
   1. Open [**Classes**](https://app.heliumedu.com/classes)
   2. Click the group menu at the top and select **Add Group**
   3. Fill in the group details:
-     * **Title** — e.g., "Fall 2025" or "Spring 2026"
+     * **Title** — e.g., "Fall 2025," "Spring Term," or "2025–26 School Year" for a year-round setup
      * **From / To** — the start and end dates of the term
      * **Hide this group's classes and assignments from the Planner and Resources** — check this to hide the entire group from your calendar and from the Resources page's class associations, without deleting anything
   4. Click **Save**
@@ -38,16 +38,11 @@ Click **Save** to create the class and proceed to the Schedule tab.
 
 ### Schedule Tab
 
-The Schedule tab is where you set when your class meets each week. Once configured, Helium automatically generates recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
+The Schedule tab is where you set when your class meets. Once configured, Helium automatically generates recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
 
-  1. Select the days your class meets using the **Class Days** toggle (click each day to include it)
-  2. Set the **Start** and **End** times for class
-  3. If your class meets at _different_ times on different days (e.g., a lab on Fridays runs longer), check **Varies by day** — this lets you set independent start and end times for each selected day
-  4. Click **Save**
+For a class that meets at the same time each week, click **+** (**Add schedule**), select the days under **Class Days**, set the **Start** and **End** times, and click **Save**. A class can also have more than one schedule, follow a rotating A/B or cycle-day pattern, or use a schedule that runs for only part of the term — see [Class Meeting Schedules](/support/classes/class-meeting-schedules/) for the full guide.
 
-Class Schedule items appear on the **Week**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If your schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
-
-A schedule is optional — if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no days selected.
+A schedule is optional — if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no schedules.
 
 ### Categories Tab
 
@@ -59,6 +54,7 @@ You can attach files (such as your syllabus or class packet) directly to a class
 
 ## Related Articles
 
+  * [Class Meeting Schedules](/support/classes/class-meeting-schedules/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
   * [Cancelling Class Sessions and Setting Term Holidays](/support/classes/cancelling-class-sessions-and-setting-term-holidays/)
   * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/)

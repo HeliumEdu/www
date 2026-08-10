@@ -6,11 +6,11 @@ publishedDate: 2026-05-19
 updatedDate: 2026-05-19
 ---
 
-Helium provides two ways to exclude dates from a class's recurring schedule: **Class Cancellations** for individual sessions of a single class, and **Holidays & Breaks** for term-wide dates that apply to every class in a Class Group.
+Helium provides two ways to exclude dates from a class's recurring schedule: **Cancellations** for individual sessions of a single class, and **Holidays & Breaks** for term-wide dates that apply to every class in a Class Group.
 
-## Class Cancellations
+## Cancellations
 
-**Class Cancellations** exclude specific dates from a single class's recurring schedule. Cancelled sessions are removed from the Planner.
+**Cancellations** exclude specific dates from a single class's recurring schedule. Cancelled sessions are removed from the Planner.
 
 ### From the Planner
 
@@ -27,7 +27,7 @@ To manage multiple cancellations, or to remove a previously cancelled date:
 
   1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
   2. Go to the **Schedule** tab
-  3. Click **Class Cancellations**
+  3. Click **Cancellations**
   4. Click the **+** button to add a date, or click the trash icon next to a date to remove it
   5. Click **Save**
 
@@ -48,4 +48,5 @@ Cancellations and holidays only affect the recurring class schedule. They do _no
 ## Related Articles
 
   * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
+  * [Class Meeting Schedules](/support/classes/class-meeting-schedules/)
   * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
