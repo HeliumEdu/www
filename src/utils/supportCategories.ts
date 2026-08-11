@@ -13,7 +13,7 @@ export const SUPPORT_CATEGORIES: SupportCategory[] = [
   { slug: 'notebook', title: 'Notebook & Resources', description: 'Notes (linked or standalone) and study materials organized by class.', icon: 'tabler:notebook' },
   { slug: 'reminders-and-notifications', title: 'Reminders & Notifications', description: 'Setting up push and email reminders.', icon: 'tabler:bell' },
   { slug: 'sync-and-integration', title: 'Sync & Integration', description: 'External Calendars, Feeds, and the Helium API.', icon: 'tabler:refresh' },
-  { slug: 'import-export-and-backup', title: 'Import, Export & Backup', description: 'Backups, exports, printing, and managing the example schedule.', icon: 'tabler:arrows-left-right' },
+  { slug: 'import-export-and-backup', title: 'Import, Export & Backup', description: 'Backups, exports, printing, switching from other apps, and managing the example schedule.', icon: 'tabler:arrows-left-right' },
   { slug: 'account', title: 'Account', description: 'Signing in, password reset, theme settings, and account deletion.', icon: 'tabler:user-circle' },
 ];
 

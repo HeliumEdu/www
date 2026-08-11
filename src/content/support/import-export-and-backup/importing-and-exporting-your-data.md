@@ -17,6 +17,8 @@ Helium lets you export your data as a JSON file, which can be used to archive yo
 
 ## Importing Data
 
+> **Coming from another planner?** See our guides for moving your schedule into Helium from [iStudiez Pro](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/) or [myHomework](/support/import-export-and-backup/switching-from-myhomework-to-helium/).
+
   1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
   2. Click **Import** and select your backup file
 
@@ -36,6 +38,8 @@ The import endpoint accepts the same JSON format exports produce, making it stra
 
 ## Related Articles
 
+  * [Switching from iStudiez Pro to Helium](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/)
+  * [Switching from myHomework to Helium](/support/import-export-and-backup/switching-from-myhomework-to-helium/)
   * [What Is Included in a Helium Backup (and What Isn't)?](/support/import-export-and-backup/what-is-included-in-a-helium-backup-and-what-isnt/)
   * [Re-Importing the "Example Schedule"](/support/import-export-and-backup/re-importing-the-example-schedule/)
   * [Where to Start with Helium](/support/getting-started/where-to-start-with-helium/)
