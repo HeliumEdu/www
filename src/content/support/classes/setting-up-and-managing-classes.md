@@ -42,7 +42,7 @@ The Schedule tab is where you set when your class meets. Once configured, Helium
 
 For a class that meets at the same time each week, click the **+** button, select the days under **Class Days**, set the **Start** and **End** times, and click **Save**. A class can also have more than one schedule, follow a rotating A/B or cycle-day pattern, or use a schedule that runs for only part of the term — see [Class Meeting Schedules](/support/classes/class-meeting-schedules/) for the full guide.
 
-A schedule is optional — if your class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no schedules.
+A schedule is optional — if your class has no fixed meeting time, you can leave the Schedule tab with no schedules.
 
 ### Categories Tab
 
