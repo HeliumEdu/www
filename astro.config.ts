@@ -25,8 +25,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SUPPORT_URL_PATTERN = /^\/support\/([^/]+)\/([^/]+)\/?$/;
 
 function readSupportArticleDate(category: string, slug: string): string | null {
-  const filePath = path.resolve(__dirname, './src/content/support', category, `${slug}.md`);
-  if (!fs.existsSync(filePath)) return null;
+  const base = path.resolve(__dirname, './src/content/support', category, slug);
+  const filePath = ['.md', '.mdx'].map((ext) => `${base}${ext}`).find((candidate) => fs.existsSync(candidate));
+  if (!filePath) return null;
 
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const fmMatch = fileContent.match(/^---\r?\n([\s\S]*?)\r?\n---/);

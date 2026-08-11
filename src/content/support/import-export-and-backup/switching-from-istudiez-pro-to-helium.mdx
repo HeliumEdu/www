@@ -6,6 +6,8 @@ publishedDate: 2026-08-11
 updatedDate: 2026-08-11
 ---
 
+import BringScheduleIntoHelium from '~/components/support/BringScheduleIntoHelium.astro';
+
 iStudiez Pro is no longer being actively maintained. Its calendar sync still works today, but once iStudiez's cloud servers go offline, there's no way to pull your schedule back out.
 
 ## Export Your iStudiez Pro Data Before It Shuts Down
@@ -21,19 +23,9 @@ iStudiez Pro publishes your schedule as a calendar feed that lives on **iStudiez
 
 A calendar export carries your **class schedule and assignment due dates**. Grades, GPA, and credit hours don't travel in a calendar file — re-enter those in Helium as the term goes on.
 
-## Bring Your Schedule into Helium
-
-The fastest way to get an existing schedule into Helium is the **AI-assisted import**. You hand your exported iStudiez data to any modern AI assistant, it produces a Helium import file, and you upload that file to Helium.
-
-  1. Follow the [**AI-assisted syllabus import**](/support/getting-started/where-to-start-with-helium/#import-a-whole-syllabus-with-ai) steps in *Where to Start with Helium*.
-  2. When the assistant asks for your source material, attach the **`.ics` file** you saved above (or simply paste your list of classes, meeting times, and assignments).
-  3. Answer its follow-up questions, download the import file it produces, and import it under [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export).
-
-Prefer to set things up by hand? The [**manual walkthrough**](/support/getting-started/where-to-start-with-helium/#set-up-your-first-term) in the same article gets you to a usable term step by step. See [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/) for how Helium's import works.
+<BringScheduleIntoHelium />
 
 If your school runs a rotating or A/B schedule, Helium supports that natively — see [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/).
-
-> **Note:** To see what Helium does, [check out our homepage](https://www.heliumedu.com/#features).
 
 ## Related Articles
 
