@@ -11,6 +11,8 @@ There are two ways to set up Helium for a new term. Pick whichever fits how you 
   * [**Manual setup**](#set-up-your-first-term) — the walkthrough below will get you started.
   * [**AI-assisted syllabus import**](#import-a-whole-syllabus-with-ai) — paste [the prompt below](#the-prompt) into any modern AI assistant, attach your syllabi, and Helium imports the whole term from the file the AI produces.
 
+> **Coming from another planner?** See our guides for moving your schedule into Helium from [iStudiez Pro](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/) or [myHomework](/support/import-export-and-backup/switching-from-myhomework-to-helium/).
+
 ## Set Up Your First Term
 
 Each step below has a one-line summary and a link to the full article in the relevant category. If you already have an account and the app installed, skip straight to step 2.
@@ -89,3 +91,5 @@ If the AI's first attempt looks off (missing classes, wrong dates, or text paste
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
   * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)
   * [Using the Helium API](/support/sync-and-integration/using-the-helium-api/)
+  * [Switching from iStudiez Pro to Helium](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/)
+  * [Switching from myHomework to Helium](/support/import-export-and-backup/switching-from-myhomework-to-helium/)
