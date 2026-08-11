@@ -11,7 +11,7 @@ Your use of the Services is also governed by our [Terms of Service](/terms/).
 
 ## 1. Information We Collect
 
-**Information You Provide:** Account information (such as username, email, and password), optional phone number (for SMS reminders), time zone, planner content (such as classes, assignments, grades, events, notes, reminders, and attachments), and external calendar URLs you choose to import.
+**Information You Provide:** Account information (such as username, email, and password), time zone, planner content (such as classes, assignments, grades, events, notes, reminders, and attachments), and external calendar URLs you choose to import.
 
 **Information Collected Automatically:** Device and app information, push-notification device tokens/identifiers, usage analytics, and crash/error reports used to troubleshoot and improve the Services.
 
@@ -19,7 +19,7 @@ Your use of the Services is also governed by our [Terms of Service](/terms/).
 
 ## 2. How We Use Your Information
 
-We use your information to provide and maintain the Services, authenticate users, sync and display planner/calendar data, send reminders (push, email, or SMS when enabled), support import/export and private feed features, improve performance and reliability, and comply with legal obligations.
+We use your information to provide and maintain the Services, authenticate users, sync and display planner/calendar data, send reminders (push or email), support import/export and private feed features, improve performance and reliability, and comply with legal obligations.
 
 ## 3. Information Sharing
 

@@ -29,7 +29,7 @@ You retain ownership of the content you submit to the Service (such as classes, 
 
 ## 5. Privacy and Communications
 
-Our [Privacy Policy](/privacy/) is incorporated into these Terms by reference. You agree that we may send service-related communications (for example, account, security, verification, and reminder messages) by email, push notification, or SMS when enabled by you.
+Our [Privacy Policy](/privacy/) is incorporated into these Terms by reference. You agree that we may send service-related communications (for example, account, security, verification, and reminder messages) by email or push notification.
 
 ## 6. Cancellation and Termination
 
