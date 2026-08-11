@@ -16,7 +16,8 @@ export async function getStaticPaths() {
     'getting-started': [
       'getting-the-helium-app-ios-android-and-web',
       'where-to-start-with-helium',
-      'what-is-the-new-helium',
+      'switching-from-istudiez-pro-to-helium',
+      'switching-from-myhomework-to-helium',
     ],
     'calendar-and-schedule': [
       'planner-views-and-changing-your-default',
@@ -65,6 +66,15 @@ export async function getStaticPaths() {
     ],
   };
 
+  // Articles that live in a different category but are cross-listed here for discoverability.
+  // The article's actual category/URL/breadcrumb is unchanged — this only affects this listing.
+  const CROSS_LISTED: Record<string, string[]> = {
+    'getting-started': [
+      'import-export-and-backup/switching-from-istudiez-pro-to-helium',
+      'import-export-and-backup/switching-from-myhomework-to-helium',
+    ],
+  };
+
   const articleSlug = (id: string) => id.split('/').slice(1).join('/');
 
   const allArticles = await getCollection('support');
@@ -75,9 +85,10 @@ export async function getStaticPaths() {
       const i = order.indexOf(slug);
       return i === -1 ? Number.MAX_SAFE_INTEGER : i;
     };
+    const crossListed = CROSS_LISTED[category.slug] ?? [];
 
     const articles = allArticles
-      .filter((a) => a.data.category === category.slug)
+      .filter((a) => a.data.category === category.slug || crossListed.includes(a.id))
       .sort((a, b) => {
         const ai = indexOf(articleSlug(a.id));
         const bi = indexOf(articleSlug(b.id));

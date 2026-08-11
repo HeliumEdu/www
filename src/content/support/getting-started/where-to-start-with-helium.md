@@ -91,5 +91,3 @@ If the AI's first attempt looks off (missing classes, wrong dates, or text paste
   * [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/)
   * [Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)
   * [Using the Helium API](/support/sync-and-integration/using-the-helium-api/)
-  * [Switching from iStudiez Pro to Helium](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/)
-  * [Switching from myHomework to Helium](/support/import-export-and-backup/switching-from-myhomework-to-helium/)
