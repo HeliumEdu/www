@@ -14,17 +14,17 @@ Most classes need just one simple weekly schedule. But a class can also have sev
 
 All schedules are managed from the **Schedule** tab of a class.
 
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and click a class (or add a new one)
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click a class
   2. Go to the **Schedule** tab
   3. Under **Schedules**, click the **+** button to create a schedule, or click an existing schedule to edit it
 
 Each schedule appears as its own card showing its days and times. To remove a schedule, use the delete icon on its card.
 
-A schedule is optional — if a class has no fixed meeting time (e.g., a fully asynchronous online class), you can leave the Schedule tab with no schedules.
+A schedule is optional — if a class has no fixed meeting time, you can leave the Schedule tab with no schedules.
 
 ## Weekly Schedules
 
-A weekly schedule meets on the same days every week — the most common setup.
+A weekly schedule meets on the same days every week.
 
   1. In the schedule editor, make sure **Weekly** is selected at the top
   2. Under **Class Days**, click each day the class meets to include it
@@ -34,7 +34,7 @@ A weekly schedule meets on the same days every week — the most common setup.
 
 ## Rotating Schedules
 
-Many schools run rotating schedules — A/B days, a fixed-length day cycle, or alternating weeks — where the meeting pattern doesn't line up with an ordinary calendar week. To set one up, choose **Rotating** at the top of the schedule editor, then pick a pattern from the **Rotation** dropdown.
+If your school runs a rotating schedule — A/B days, a fixed-length day cycle, or alternating weeks — where the meeting pattern doesn't line up with an ordinary calendar week, choose **Rotating** at the top of the schedule editor, then pick a pattern from the **Rotation** dropdown.
 
 ### Day Cycles
 

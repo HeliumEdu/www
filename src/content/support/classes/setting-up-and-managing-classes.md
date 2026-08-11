@@ -15,7 +15,7 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
   1. Open [**Classes**](https://app.heliumedu.com/classes)
   2. Click the group menu at the top and select **Add Group**
   3. Fill in the group details:
-     * **Title** — e.g., "Fall 2025," "Spring Term," or "2025–26 School Year" for a year-round setup
+     * **Title** — e.g., "Fall 2025," "Spring Term," "2025–26 School Year"
      * **From / To** — the start and end dates of the term
      * **Hide this group's classes and assignments from the Planner and Resources** — check this to hide the entire group from your calendar and from the Resources page's class associations, without deleting anything
   4. Click **Save**

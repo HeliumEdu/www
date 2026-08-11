@@ -25,7 +25,7 @@ Use the group dropdown at the top of the screen to switch between Resource Group
   3. Fill in the resource details:
      * **Group** — the Resource Group the resource belongs to (required). This is set to whatever Resource Group you're currently viewing. If currently viewing **Show All**, then this must be set manually. Changing this field on an existing resource moves the resource to the newly selected group.
      * **Title** — the name of the resource (required)
-     * **Classes** — one or more classes this resource is associated with
+     * **Classes** — classes this resource is associated with
      * **Website** — a URL for the resource (e.g., a publisher page, textbook, or link to an online app or tool)
   4. Click **Save**
 
