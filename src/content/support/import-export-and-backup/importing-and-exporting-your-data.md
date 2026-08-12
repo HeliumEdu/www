@@ -1,9 +1,9 @@
 ---
 title: Importing & Exporting Your Data
-description: "Import and export your Helium data as JSON to back up, restore, or transfer your schedule between accounts."
+description: "Import and export your Helium data to back up, restore, or transfer your schedule between accounts."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-06-10
+updatedDate: 2026-08-12
 ---
 
 ## Overview
@@ -23,6 +23,22 @@ Helium lets you export your data as a JSON file, which can be used to archive yo
   2. Click **Import** and select your backup file
 
 Imported data is added alongside existing schedules in separate groups and does not overwrite anything already in your account.
+
+## Importing a Calendar (.ics) File
+
+You can also import a calendar (`.ics`) file — for example, one exported from Google Calendar, Apple Calendar, or another planner.
+
+  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
+  2. Click **Choose** and select your `.ics` file
+  3. Under **Import into**, pick where the events should go:
+     * **An existing class** — each event becomes an assignment in that class
+     * **A new class** — a class is created in the group you pick, and each event becomes an assignment in it
+     * **Events** — each event is added to your Planner as an event, not tied to a class
+  4. Click **Import**
+
+A calendar only carries your schedule and due dates, so imported assignments start out ungraded and uncategorized — you can fill those in as the term goes on. A repeating event becomes a separate assignment for each occurrence through the class's end date, or a single recurring event when imported as Events.
+
+> **Note:** A single `.ics` file imports into one place — Helium won't split one calendar across several classes. If yours covers multiple classes and you want them kept separate, split it into one `.ics` per class and import each on its own — or hand the whole calendar to the [AI-assisted prompt](/support/getting-started/where-to-start-with-helium/#the-prompt), which can sort a mixed calendar into the right classes for you.
 
 ## Moving Data to Another Account
 
