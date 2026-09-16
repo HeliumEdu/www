@@ -3,7 +3,7 @@ title: Re-Importing the "Example Schedule"
 description: "Bring back Helium's example schedule after clearing it, or remove it if you want to start with an empty account."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-09-16
 ---
 
 ## Overview
@@ -11,8 +11,7 @@ updatedDate: 2026-05-19
 When you first create a Helium account, an example schedule is automatically added to help you explore the app's features. If you've cleared this data and want to bring it back, you can re-import it at any time.
 
   1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
-  2. Scroll down to **Import / Export** and click it
-  3. Click **Re-Import Example Schedule**
+  2. Scroll down to **Example Schedule** and click **Re-Import Example Schedule**
 
 The example data will be imported alongside your existing data in separate groups — it won't overwrite anything already in your account.
 

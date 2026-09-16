@@ -3,12 +3,14 @@ title: Adding Non-Academic Events to the Planner
 description: "Add study sessions, appointments, concerts, and anything else to your Helium Planner alongside your classes and assignments."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-09-16
 ---
 
 Helium lets you add events like study sessions, concerts, appointments, and anything else you need to block out time for in your schedule. Unlike assignments, events are not attached to a class, are ungraded, and won't appear in the Todos view.
 
 ## How to Add an Event
+
+> **Note:** The Assignment/Event toggle appears only once you have at least one class. Until then, every Planner item is created as an Event and no toggle is shown. After you add a class, the form defaults to Assignment and you use the toggle to switch to Event.
 
   1. Open the [**Planner**](https://app.heliumedu.com/planner)
   2. Click on a day or time slot, or click the **+** button
