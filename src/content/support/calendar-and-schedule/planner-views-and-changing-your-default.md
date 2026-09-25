@@ -1,17 +1,18 @@
 ---
 title: Planner Views, and Changing Your Default
-description: "Switch between Month, Week, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
+description: "Switch between Month, Week, 3-Day, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-09-20
+updatedDate: 2026-09-25
 ---
 
 ## Available Views
 
-Helium offers five Planner display options:
+Helium offers six Planner display options:
 
   * **Month** — Best for long-range planning
   * **Week** — Great for a standard weekly academic workflow
+  * **3-Day** — Three days side by side on a time-grid, for a closer look than Week
   * **Day** — Helps you focus on what's on your plate today
   * **Agenda** — Similar to Week, but displays items as a list instead of a time-grid
   * **Todos** — Displays only Assignments; Events, External Calendars, and Class Schedules are not shown in this view
@@ -40,7 +41,7 @@ The Preferences screen is also where you'll find your time zone, the day your we
 You can reschedule assignments and events by dragging them to a different time slot or day, or adjust their duration by clicking on the top or bottom edge and dragging.
 
   * On **desktop and web**, drag-and-drop and resizing are always enabled
-  * On **touch** devices, drag-and-drop is enabled by default (though only supported in **Week** and **Day** views). If you find it interferes with your preferred experience, you can turn it off in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences) by disabling **Drag-and-drop on touch devices**
+  * On **touch** devices, drag-and-drop is enabled by default (though only supported in **Week**, **3-Day**, and **Day** views). If you find it interferes with your preferred experience, you can turn it off in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences) by disabling **Drag-and-drop on touch devices**
     * Adjusting time by dragging the top or bottom edge is not supported on **touch** devices
 
 > **Note:** On touch devices (including tablets), drag-and-drop is not supported in **Month** view. Tapping the top or bottom edge and dragging to resize an item is also not supported on touch devices.

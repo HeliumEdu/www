@@ -3,7 +3,7 @@ title: Why Items Aren't Showing on the Planner
 description: "Troubleshoot missing assignments, events, class schedules, and External Calendars on your Helium Planner — common causes and fixes."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-09-25
 ---
 
 If something isn't appearing on your Planner, one of the causes below is usually responsible. The first three apply to anything that can show on the Planner; the later sections cover what's specific to each item type.
@@ -20,7 +20,7 @@ A hidden Class Group hides all of its class schedules and assignments. In [**Cla
 
 ### Wrong View
 
-The **Todos** view displays only Assignments. Events, Class Schedules, and External Calendars will not appear there. Switch to **Week**, **Day**, **Month**, or **Agenda** if you're looking for any of those.
+The **Todos** view displays only Assignments. Events, Class Schedules, and External Calendars will not appear there. Switch to **Week**, **3-Day**, **Day**, **Month**, or **Agenda** if you're looking for any of those.
 
 ## Assignments or Events
 

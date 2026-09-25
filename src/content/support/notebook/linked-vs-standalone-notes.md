@@ -3,7 +3,7 @@ title: Linked vs. Standalone Notes
 description: "Notes in Helium can be linked to a class, assignment, event, or resource — or stand on their own. When to use each, and why."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-06-04
+updatedDate: 2026-09-25
 ---
 
 Notes in Helium can exist on their own or be linked to an Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
@@ -28,7 +28,7 @@ The Notebook has filters that may hide some notes. If you're missing a note:
 
   * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Events, Resources, or Standalone) is selected.
   * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to Class Groups that are hidden from your calendar won't appear.
-  * **Search by title:** Use the search bar to find notes by title or by the name of the linked item.
+  * **Search by title or content:** The search bar matches note titles and the name of the linked item. To also match text inside your notes, click the **Also search note content** button in the search bar.
 
 If you have "Remember filter state" enabled in Settings, your filters persist between sessions — so a filter you set last week might still be active.
 

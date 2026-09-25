@@ -3,7 +3,7 @@ title: Class Meeting Schedules
 description: "Give a class one or more meeting schedules — including rotating A/B and cycle-day patterns and schedules that run for only part of the term — so your Planner reflects exactly when class meets."
 category: classes
 publishedDate: 2026-08-10
-updatedDate: 2026-08-10
+updatedDate: 2026-09-25
 ---
 
 Each class in Helium can have one or more **schedules**. A schedule is a meeting pattern — the days and times a class meets — and Helium uses it to generate recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
@@ -77,7 +77,7 @@ You can combine a custom range with a rotation — for example, a lab that meets
 
 ## Where Schedules Appear
 
-Class Schedule items appear on the **Week**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If a schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
+Class Schedule items appear on the **Week**, **3-Day**, **Day**, **Month**, and **Agenda** views of the Planner. They do _not_ appear in the **Todos** view, which shows assignments only. If a schedule isn't showing up, see [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/).
 
 To skip individual sessions or block out term-wide holidays, see [Cancelling Class Sessions and Setting Term Holidays](/support/classes/cancelling-class-sessions-and-setting-term-holidays/).
 
