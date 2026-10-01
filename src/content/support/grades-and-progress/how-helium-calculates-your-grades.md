@@ -3,7 +3,7 @@ title: How Helium Calculates Your Grades
 description: "How Helium computes your class, category, and term grades — covering points-based and weighted grading, missing work, and date ranges."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-09-30
+updatedDate: 2026-10-01
 ---
 
 Helium supports point-based grading as well as weighted grading.
@@ -17,11 +17,11 @@ For weighted grading, your class grade is calculated against the weight of each 
   * Assignments are not included in grade calculations unless they **Complete** is checked and **Grade** is set
   * A missed assignment needs to still be marked as **Completed** and have its **Grade** set to "0" to be reflected in the grade calculation — simply leaving **Grade** blank will not cause it to affect grade calculations
   * In classes with weighted grading, categories that have no **Weight** are ungraded — assignments placed in this category are ignored by the grading system, even if **Grade** is set
-  * The start/end dates you set for the term and the class can impact what grades are calculated and how grades are shown, so be sure all assignments are within the date range of the class and term in which they are to be graded
+  * The start/end dates you set for the term set the range of the grade graph and the pace comparison; term and class dates do not change which assignments count toward your grades
 
 ## Overall Category Grade
 
-The overall grade of a category is a flat average of all graded assignments in that category. Even in classes with weighted grading, weights would only play a role when comparing assignments in different categories, so this is not taken into consideration when simply looking at an individual category's grade.
+The overall grade of a category is the total number of earned points over the total number of possible points for all graded assignments in that category. Even in classes with weighted grading, weights would only play a role when comparing assignments in different categories, so this is not taken into consideration when simply looking at an individual category's grade.
 
 ## Overall Term Grade
 
