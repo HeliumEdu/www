@@ -3,14 +3,14 @@ title: How Helium Calculates Your Grades
 description: "How Helium computes your class, category, and term grades — covering points-based and weighted grading, missing work, and date ranges."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-09-30
 ---
 
 Helium supports point-based grading as well as weighted grading.
 
 For points based grading, your class grade is calculated as the total number of earned points over the total number of possible points. Assignment categories do not play a role in points-based grade calculations.
 
-For weighted grading, your class grade is calculated against the weight of each category, so the final grade is the average score of each category multiplied by its weight, over the sum of all weights. In weighted grading, each assignment contributes to the overall grade based on its category's weight.
+For weighted grading, your class grade is calculated against the weight of each category, so the final grade is the average score of each category multiplied by its weight, over the sum of all weights.
 
 ## Missing or Ungraded Work
 
