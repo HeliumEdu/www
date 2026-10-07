@@ -74,6 +74,11 @@ jobs:
 
           echo "Deployment complete."
 
+      - name: Sync edge redirects
+        run: |
+          node scripts/print-redirects.mjs | ./scripts/sync-redirects.sh prod-www-redirects \
+            || echo "::warning::Edge redirects were not synced, the fallback redirect pages still work."
+
       - name: Invalidate CloudFront cache
         env:
           DOMAIN: www.heliumedu.com
