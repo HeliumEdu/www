@@ -8,7 +8,7 @@ updatedDate: 2026-05-29
 
 ## Overview
 
-Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, see grades, edit notes, run a bulk import — is also available via the API. The full schema and authentication reference live in our [API docs](https://api.heliumedu.com/docs).
+Helium exposes a public REST API. Anything you can do in the iOS, Android, or web apps — view classes, add assignments, see grades, edit notes, run a bulk import — is also available via the API. The full schema and authentication reference live in our [API docs](https://api.heliumedu.com/docs/).
 
 Helium doesn't maintain official tooling or pre-built integrations, but the platform is open so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu) — contributions are welcome, and if you build something with the API and want to share it, [let us know](/support/submit/).
 
@@ -46,7 +46,7 @@ To use the API from a script or tool, you need an **API token** — a long-lived
        -H 'Authorization: Token <API_TOKEN>'
      ```
 
-For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs#section/Authentication).
+For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs/#section/Authentication).
 
 ## Rotating or Revoking Your Token
 

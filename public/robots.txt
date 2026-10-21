@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /pagefind/
-Disallow: /support/submit
 
 Sitemap: https://www.heliumedu.com/sitemap.xml

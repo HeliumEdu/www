@@ -46,7 +46,7 @@ const breadcrumbs = [
       {
         category && (
           <>
-            <a href={`/support/${category.slug}`} class="hover:text-primary">
+            <a href={`/support/${category.slug}/`} class="hover:text-primary">
               {category.title}
             </a>
             <span class="mx-2">/</span>
@@ -71,7 +71,7 @@ const breadcrumbs = [
       {
         category && (
           <a
-            href={`/support/${category.slug}`}
+            href={`/support/${category.slug}/`}
             class="inline-flex items-center gap-1 text-sm text-primary hover:underline"
           >
             <Icon name="tabler:arrow-left" class="w-4 h-4" />

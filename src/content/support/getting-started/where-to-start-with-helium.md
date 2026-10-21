@@ -34,7 +34,7 @@ In this approach, an AI assistant (a modern LLM like ChatGPT, Claude, Gemini, or
 
   1. Copy the prompt in the next section.
   2. Open a fresh chat with the AI assistant of your choice. Paste the prompt as your first message.
-  3. The AI will read [the Helium API docs](https://api.heliumedu.com/docs) you pointed it at. When it's ready, it will ask you to attach your syllabi — you can include every class in a single conversation.
+  3. The AI will read [the Helium API docs](https://api.heliumedu.com/docs/) you pointed it at. When it's ready, it will ask you to attach your syllabi — you can include every class in a single conversation.
   4. Answer the AI's follow-up questions about anything the syllabi don't make explicit. The prompt instructs the AI to ask rather than guess (credits, lecture/lab structure, online vs. in-person, vague due-by times, and similar often come up).
   5. The AI will produce an import file for you to download. Save it somewhere you can find it again — you do not need to open it.
   6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Import**, and select your saved file.

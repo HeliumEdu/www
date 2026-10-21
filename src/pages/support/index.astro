@@ -137,7 +137,7 @@ const metadata = {
       {
         recommended.map((article) => (
           <a
-            href={`/support/${article.category}/${article.slug}`}
+            href={`/support/${article.category}/${article.slug}/`}
             class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all"
           >
             <p class="text-xs font-bold tracking-wide uppercase text-secondary dark:text-blue-200">
@@ -167,7 +167,7 @@ const metadata = {
       {
         categoriesWithCounts.map((cat) => (
           <a
-            href={`/support/${cat.slug}`}
+            href={`/support/${cat.slug}/`}
             class="group rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col"
           >
             <div class="flex items-center gap-3 mb-3">
