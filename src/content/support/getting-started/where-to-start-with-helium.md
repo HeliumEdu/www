@@ -41,10 +41,10 @@ Helium works with any AI assistant that supports custom connectors (also called 
 
   1. In your AI assistant's settings, add a custom connector with the URL `https://mcp.heliumedu.com/mcp`.
   2. When Helium opens in your browser, sign in and click **Allow**.
-  3. Attach the syllabus for every class in your term, and ask the assistant to import your term into Helium. Attaching them all at once keeps every class together in one Class Group.
+  3. Attach the syllabus for every class in your term, plus any calendar files (`.ics`) your professors share, and ask the assistant to import your term into Helium. Attaching them all at once keeps every class together in one Class Group.
   4. Answer the assistant's questions about anything your syllabi leave unclear. It checks the term with Helium before saving anything.
 
-If a syllabus arrives after your term is in Helium, attach it and ask your assistant to add the class to that term.
+If a syllabus or calendar file arrives after your term is in Helium, attach it and ask your assistant to add it to that term.
 
 Once connected, ask your assistant about your planner any time — "What's due this week?" or "What's my grade in BIO 151?" The assistant reads your assignments, events, notes, classes, resources, and grades. It never changes or deletes anything already in Helium.
 
