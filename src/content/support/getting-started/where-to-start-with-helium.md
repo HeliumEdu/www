@@ -63,9 +63,6 @@ If the assistant pastes text into the chat instead of producing a file, or its f
 
 ### The Prompt
 
-<details>
-<summary><strong>Show the prompt</strong></summary>
-
 ```
 You will produce a single JSON file that the user uploads to Helium via Settings → Import / Export → Import. The user will attach one or more syllabi after you confirm you've read the docs.
 
@@ -100,8 +97,6 @@ When you have everything you need:
 
 You never call the Helium API and never see the user's password, token, or account data. Your only inputs are the syllabi and answers the user provides.
 ```
-
-</details>
 
 ## Related Articles
 
