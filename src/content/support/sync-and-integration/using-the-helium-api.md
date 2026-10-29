@@ -58,6 +58,8 @@ For the full authentication reference, see the [API docs](https://api.heliumedu.
       -H 'Authorization: Bearer <SESSION>'
     ```
 
+Changing or resetting your password also revokes your API token.
+
 > **Note:** Only one API token is active per Helium account at a time. If you have multiple scripts or tools that need access, you can use the same token across all of them (just be sure to rotate them together, if you request a new token).
 
 ## Related Articles
