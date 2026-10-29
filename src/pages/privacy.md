@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated March 9, 2026_
+_Last updated October 28, 2026_
 
 This Privacy Policy describes how Helium Edu ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
@@ -29,6 +29,7 @@ We do not sell your personal information. We share information only with:
 - **Legal authorities** when required by law or to protect rights, safety, and security
 - **Business transfers** if we are involved in a merger, acquisition, financing, or sale of assets
 - **Authorized personnel** who may access account data on a need-to-know basis for purposes of operating and maintaining the Services, providing customer support, or as required by law
+- **Connected apps you authorize**. With your permission, a connected app can read your account email and settings, classes (including room, teacher name and email, website, credits, meeting times, and grading categories), assignments, events, grades, and notes, and can add new terms to your planner. The app keeps this access until you revoke it. Its own privacy policy governs what it does with the information it receives.
 
 Helium is open source — our code is publicly available at [github.com/HeliumEdu](https://github.com/HeliumEdu).
 
@@ -44,7 +45,7 @@ We retain account data while your account is active. Accounts that are not verif
 
 ## 6. Your Rights and Choices
 
-You may access, export, or delete your data through the Services. You can disable push notifications in your device settings and manage optional communications using available in-product settings or unsubscribe links.
+You may access, export, or delete your data through the Services. You can revoke every connected app's access at any time by changing your Helium password. You can disable push notifications in your device settings and manage optional communications using available in-product settings or unsubscribe links.
 
 ## 7. Cookies and Local Storage
 
