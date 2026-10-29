@@ -1,15 +1,15 @@
 ---
 title: Where to Start with Helium
-description: "Set up Helium for a new term step by step, or import a whole syllabus at once with an AI-assisted prompt — two ways to get started."
+description: "Set up Helium for a new term step by step, or let an AI assistant set it up from your syllabi — two ways to get started."
 category: getting-started
 publishedDate: 2026-05-19
-updatedDate: 2026-09-25
+updatedDate: 2026-10-29
 ---
 
 There are two ways to set up Helium for a new term. Pick whichever fits how you like to work — both end with the same well-organized planner.
 
   * [**Manual setup**](#set-up-your-first-term) — the walkthrough below will get you started.
-  * [**AI-assisted syllabus import**](#import-a-whole-syllabus-with-ai) — paste [the prompt below](#the-prompt) into any modern AI assistant, attach your syllabi, and Helium imports the whole term from the file the AI produces.
+  * [**AI scheduling assistant**](#use-ai-as-a-scheduling-assistant) — give an AI assistant your syllabi and it sets up the whole term in Helium for you.
 
 > **Coming from another planner?** See our guides for moving your schedule into Helium from [iStudiez Pro](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/) or [myHomework](/support/import-export-and-backup/switching-from-myhomework-to-helium/).
 
@@ -26,25 +26,45 @@ Each step below has a one-line summary and a link to the full article in the rel
 
 That's the minimum to get a usable term in Helium. Bring outside calendars in with **External Calendars**, or send Helium out to other apps with **Feeds** — see [Sync & Integration](/support/sync-and-integration/) when you're ready.
 
-## Import a Whole Syllabus with AI
+## Use AI as a Scheduling Assistant
 
-In this approach, an AI assistant (a modern LLM like ChatGPT, Claude, Gemini, or others) reads your syllabi and produces a single Helium import file. You then upload that file to Helium yourself.
+Use an AI assistant to set up and keep track of your schedule. Give it your syllabi and it sets up your term in Helium: the Class Group, classes and meeting times, grading categories, assignments, and events. There are two ways to do it:
 
-### How It Works
+  * [**Connect your AI assistant**](#connect-your-ai-assistant) to Helium. It imports the term for you, and answers questions about your planner afterward.
+  * [**Use a prompt**](#use-a-prompt-instead) with any AI assistant. It produces an import file, and you upload that file to Helium yourself.
 
-  1. Copy the prompt in the next section.
-  2. Open a fresh chat with the AI assistant of your choice. Paste the prompt as your first message.
-  3. The AI will read [the Helium API docs](https://api.heliumedu.com/docs/) you pointed it at. When it's ready, it will ask you to attach your syllabi — you can include every class in a single conversation.
-  4. Answer the AI's follow-up questions about anything the syllabi don't make explicit. The prompt instructs the AI to ask rather than guess (credits, lecture/lab structure, online vs. in-person, vague due-by times, and similar often come up).
-  5. The AI will produce an import file for you to download. Save it somewhere you can find it again — you do not need to open it.
-  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Import**, and select your saved file.
-  7. Spot-check the result — term dates on the Class Group, class colors and meeting times, category weights matching your syllabus, and a sample assignment's due date. Tweak directly in Helium from there.
+Either way, nothing already in your account is changed or overwritten: a term imports as a new Class Group alongside what you already have. When an import finishes, spot-check the result: term dates on the Class Group, class colors and meeting times, category weights matching your syllabus, and a sample assignment's due date. Adjust anything directly in Helium. To start over, delete the imported Class Group and import again.
 
-Each import adds new Class Groups alongside anything you've already added — nothing in your account gets overwritten. If you want to start over after a bad import, delete the imported Class Group and try again.
+### Connect Your AI Assistant
 
-> **What the AI sees:** only the syllabus text you give it. **What the AI never sees:** your Helium password, email, or any account data. You stay signed in to Helium; the AI just builds the import file you upload yourself.
+Helium works with any AI assistant that supports custom connectors (also called MCP servers).
+
+  1. In your AI assistant's settings, add a custom connector with the URL `https://mcp.heliumedu.com/mcp`.
+  2. When Helium opens in your browser, sign in and click **Allow**.
+  3. Attach the syllabus for every class in your term, and ask the assistant to import your term into Helium. Attaching them all at once keeps every class together in one Class Group.
+  4. Answer the assistant's questions about anything your syllabi leave unclear. It checks the term with Helium before saving anything.
+
+If a syllabus arrives after your term is in Helium, attach it and ask your assistant to add the class to that term.
+
+Once connected, ask your assistant about your planner any time — "What's due this week?" or "What's my grade in BIO 151?" The assistant reads your assignments, events, notes, classes, resources, and grades. It never changes or deletes anything already in Helium.
+
+### Use a Prompt Instead
+
+If your assistant does not support custom connectors, use [the prompt below](#the-prompt). The assistant reads your syllabi and produces an import file, and you upload that file to Helium yourself.
+
+  1. Copy [the prompt](#the-prompt).
+  2. Open a new chat with your AI assistant and paste the prompt as your first message.
+  3. The assistant reads [the Helium API docs](https://api.heliumedu.com/docs/), then asks you to attach your syllabi. Attach the syllabus for every class in your term at once.
+  4. Answer the assistant's questions about anything your syllabi leave unclear. The prompt tells it to ask rather than guess — credits, lecture and lab structure, online or in-person, and vague due times come up often.
+  5. Download the import file the assistant produces. You do not need to open it.
+  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Import**, and select the file.
+
+If the assistant pastes text into the chat instead of producing a file, or its first attempt looks off (missing classes or wrong dates), ask it to regenerate the file strictly per the prompt.
 
 ### The Prompt
+
+<details>
+<summary><strong>Show the prompt</strong></summary>
 
 ```
 You will produce a single JSON file that the user uploads to Helium via Settings → Import / Export → Import. The user will attach one or more syllabi after you confirm you've read the docs.
@@ -81,7 +101,7 @@ When you have everything you need:
 You never call the Helium API and never see the user's password, token, or account data. Your only inputs are the syllabi and answers the user provides.
 ```
 
-If the AI's first attempt looks off (missing classes, wrong dates, or text pasted into the chat instead of a file to download), ask it to regenerate strictly per the prompt.
+</details>
 
 ## Related Articles
 
