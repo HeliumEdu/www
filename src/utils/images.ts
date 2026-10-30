@@ -5,10 +5,16 @@ import type { ImagesOptimizer } from './images-optimization';
 /** The optimized image shape returned by our ImagesOptimizer */
 type OptimizedImage = Awaited<ReturnType<ImagesOptimizer>>[0];
 
+type ImageModule = { default: ImageMetadata };
+
+// Eager, since components also import some of these images statically (a lazy glob makes Vite warn about each)
 const load = async function () {
-  let images: Record<string, () => Promise<unknown>> | undefined = undefined;
+  let images: Record<string, ImageModule> | undefined = undefined;
   try {
-    images = import.meta.glob('~/assets/img/**/*.{jpeg,jpg,png,tiff,webp,gif,svg,JPEG,JPG,PNG,TIFF,WEBP,GIF,SVG}');
+    images = import.meta.glob<ImageModule>(
+      '~/assets/img/**/*.{jpeg,jpg,png,tiff,webp,gif,svg,JPEG,JPG,PNG,TIFF,WEBP,GIF,SVG}',
+      { eager: true }
+    );
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     // continue regardless of error
@@ -16,7 +22,7 @@ const load = async function () {
   return images;
 };
 
-let _images: Record<string, () => Promise<unknown>> | undefined = undefined;
+let _images: Record<string, ImageModule> | undefined = undefined;
 
 /** */
 export const fetchLocalImages = async () => {
@@ -46,9 +52,7 @@ export const findImage = async (
   const images = await fetchLocalImages();
   const key = imagePath.replace('~/', '/src/');
 
-  return images && typeof images[key] === 'function'
-    ? ((await images[key]()) as { default: ImageMetadata })['default']
-    : null;
+  return images?.[key]?.default ?? null;
 };
 
 /** */
