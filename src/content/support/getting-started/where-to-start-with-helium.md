@@ -33,7 +33,7 @@ Use an AI assistant to set up and keep track of your schedule. Give it your syll
   * [**Connect your AI assistant**](#connect-your-ai-assistant) to Helium. It imports the term for you, and answers questions about your planner afterward.
   * [**Use a prompt**](#use-a-prompt-instead) with any AI assistant. It produces an import file, and you upload that file to Helium yourself.
 
-Either way, nothing already in your account is changed or overwritten: a term imports as a new Class Group alongside what you already have. When an import finishes, spot-check the result: term dates on the Class Group, class colors and meeting times, category weights matching your syllabus, and a sample assignment's due date. Adjust anything directly in Helium. To start over, delete the imported Class Group and import again.
+Either way, nothing already in your account is changed or overwritten: a term imports as a new Class Group alongside what you already have, and a syllabus that arrives later adds its class to that Class Group. When an import finishes, spot-check the result: term dates on the Class Group, class colors and meeting times, category weights matching your syllabus, and a sample assignment's due date. Adjust anything directly in Helium. To start over, delete the imported Class Group and import again.
 
 ### Connect Your AI Assistant
 
@@ -57,7 +57,7 @@ If your assistant does not support custom connectors, use [the prompt below](#th
   3. The assistant reads [the Helium API docs](https://api.heliumedu.com/docs/), then asks you to attach your syllabi. Attach the syllabus for every class in your term at once.
   4. Answer the assistant's questions about anything your syllabi leave unclear. The prompt tells it to ask rather than guess — credits, lecture and lab structure, online or in-person, and vague due times come up often.
   5. Download the import file the assistant produces. You do not need to open it.
-  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Import**, and select the file.
+  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Choose**, and select the file. Under **Import into**, keep **Create new groups** for a new term, or pick the term's Class Group to add classes to a term already in Helium. Then click **Import**.
 
 If the assistant pastes text into the chat instead of producing a file, or its first attempt looks off (missing classes or wrong dates), ask it to regenerate the file strictly per the prompt.
 
@@ -68,23 +68,25 @@ You will produce a single JSON file that the user uploads to Helium via Settings
 
 Before doing anything:
 
-1. Open https://api.heliumedu.com/docs/. Find the section titled "Importing a schedule from a syllabus" and read it in full. It explains the import flow end-to-end, including the relationship-by-id pattern, schedule field defaults, and known limitations.
+1. Open https://api.heliumedu.com/docs/. Find the section titled "Importing a schedule from a syllabus" and read it in full. It explains the import flow end-to-end, including the relationship-by-id pattern, schedule field defaults, and its "Common pitfalls" subsection. Skip its "Incremental edits via REST" subsection: it describes per-entity API calls, which this workflow never uses.
 2. Find the section titled "Bulk import via /importexport/import/" and read it in its entirety. This section is the source of truth for what the bulk endpoint accepts — its request example, every field's purpose and format, and its constraints. This is the ONLY import mechanism you will use.
    The same docs page also documents per-entity API routes (GET/POST/PUT for course_groups, courses, course_schedules, homework, and so on, grouped under planner.* tags further down the page). These are useful as REFERENCE for what each entity's fields look like. They are NOT an import path. Do not generate a sequence of API calls against them, do not assume the user will run any HTTP requests, and do not let a per-entity request example mislead you about how the import works.
 3. The docs are long and may be truncated, paginated, or summarized in your view — if any of the sections named above are not fully present, fetch the rest before continuing. A partial read is worse than no read; it produces output that looks plausible but isn't valid.
 4. Read the section titled "Vocabulary (wire format vs. user-facing terms)" in full. The wire-format names you must use in the JSON (course_group, homework, resource, and so on) do not match the words a syllabus uses. Map syllabus language to wire-format keys via this table before generating.
 5. Do not rely on prior knowledge of Helium. Confirm every field name, encoding, and relationship against the docs you just read.
 
-After reading the sections above in full, tell the user you're ready and ask them to attach their source material — course syllabi, or an `.ics` file exported from another app. They can include every class for the term in a single conversation; you do not need them one at a time. An `.ics` file is source material to convert, not a file to upload as-is in this workflow: read its entries and fold them into the JSON you produce, and use the interview below to fill in what an `.ics` cannot carry — grading categories and weights, meeting schedules, and credits.
+After reading the sections above in full, tell the user you're ready and ask them to attach their source material — course syllabi, or an `.ics` file exported from another app. They can include every class for the term in a single conversation; you do not need them one at a time. An `.ics` file is source material to convert, not a file to upload as-is in this workflow: read its entries and fold them into the JSON you produce, and use the interview below to fill in what an `.ics` cannot carry — grading categories and weights, meeting schedules, and credits. Ask which class each `.ics` file is for when it isn't clear.
 
-Then interview the user about anything the syllabi do not make explicit. The principle is no assumptions — the docs decide Helium's shape; the user decides what their syllabi, school, and schedule mean. If something could be read more than one way, ask. And if you still can't confirm a value after asking — for any reason, on any side — leave the field (or the whole item) off rather than inventing one. Omission is always safer than invention. Common things student syllabi leave ambiguous, and that you should ask about whenever they aren't clearly stated:
+Ask whether the term is already in Helium. If it is, the file adds classes to it: still produce a complete file, and tell the user to pick that term's Class Group under Import into when they upload it, so Helium adds the file's classes to that term instead of creating a new one. Keep asking for more syllabi or `.ics` files until the user says that's everything for the term.
 
-  - The user's IANA timezone (e.g., America/Los_Angeles)
-  - Term start and end dates
-  - Credits per course — frequently omitted from syllabi; ask, do not invent
-  - Whether lecture and lab/recitation/discussion should be entered as one course or as separate courses
+Then interview the user about anything the syllabi do not make explicit. The principle is no assumptions — the docs decide Helium's shape; the user decides what their syllabi, school, and schedule mean. If something could be read more than one way, ask. And if you still can't confirm a value after asking — for any reason, on any side — leave the field (or the whole item) off rather than inventing one. Omission is always safer than invention. The exception is a field the docs mark as required, where the docs give the value to use when it's unknown: `"0.00"` for a course's `credits`, and `"-1/100"` (ungraded) for an assignment's `current_grade`. Common things student syllabi leave ambiguous, and that you should ask about whenever they aren't clearly stated:
+
+  - The time zone set in the user's Helium account (Settings → Preferences), as an IANA name (e.g., America/Los_Angeles). If they don't know it, ask where they are and work out the name
+  - Term start and end dates, and days with no class (holidays, breaks)
+  - Credits per course — frequently omitted from syllabi; ask, do not invent. If still unknown, use `"0.00"`
+  - Whether a lecture and its lab/recitation/discussion are graded together (one course with a schedule for each) or separately (separate courses)
   - Online vs. in-person, and the room or location when in-person
-  - Days and times when a class meets at different times on different days
+  - Days and times when a class meets at different times on different days, or on a rotating schedule (A/B weeks, A/B days)
   - Recurring assignments without specific dated entries ("weekly problem sets") — ask for the actual dates
   - Time-of-day for assignments that say only "due in class" or "due that week"
   - Grading scheme — weighted categories with their weights, or total-points
