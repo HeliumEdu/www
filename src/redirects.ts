@@ -27,7 +27,7 @@ export const redirects: Record<string, string> = {
     '/support/import-export-and-backup/printing-and-exporting-to-pdf-or-csv/',
   '/support/reminders-and-notifications/push-or-email-reminders-not-working':
     '/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working/',
-  // Legacy aliases
+  // Alias paths, maintained for old backlinks
   '/support/getting-started/what-is-the-new-helium': '/support/',
   // Alias paths, redirected to their current pages in the app
   '/login': 'https://app.heliumedu.com/signin',
