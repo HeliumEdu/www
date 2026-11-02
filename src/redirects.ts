@@ -28,6 +28,8 @@ export const redirects: Record<string, string> = {
   '/support/reminders-and-notifications/push-or-email-reminders-not-working':
     '/support/reminders-and-notifications/push-notifications-or-email-reminders-not-working/',
   // Legacy aliases
+  '/support/getting-started/what-is-the-new-helium': '/support/',
+  // Alias paths, redirected to their current pages in the app
   '/login': 'https://app.heliumedu.com/signin',
   '/register': 'https://app.heliumedu.com/signup',
   '/logout': 'https://app.heliumedu.com/signin',

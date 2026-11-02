@@ -26,8 +26,6 @@ Helium backups contain nearly all of your account data, exported in JSON format.
   * **User Preferences**
   * **Login and Account Information**
 
-> **Note:** Backups store notes in a dedicated **notes** section. Legacy **comments** and **details** fields from earlier versions of Helium are preserved and automatically converted to **Notes** when a backup is imported
-
 ## **Related Articles**
 
   * **[Importing & Exporting Your Data](/support/import-export-and-backup/importing-and-exporting-your-data/)**
