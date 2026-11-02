@@ -29,6 +29,8 @@ fi
 [[ -f "$LAPTOP" ]] || { echo "[FAIL] $LAPTOP not found" >&2; exit 1; }
 
 mkdir -p "$(dirname "$OUT")"
+RENDERED=$(mktemp -t og-default.XXXXXX).png
+trap 'rm -f "$RENDERED"' EXIT
 
 # Downscale in linear-light (RGB) with Lanczos2 for sharper UI text/edges,
 # then a light unsharp mask to crisp up details lost in the downscale.
@@ -36,7 +38,13 @@ magick -size "${WIDTH}x${HEIGHT}" "xc:${BG_COLOR}" \
   \( "$LAPTOP" -colorspace RGB -filter Lanczos2 -resize "${WIDTH}x" -colorspace sRGB \
      -unsharp 0x0.5+0.6+0.01 \) \
   -gravity north -geometry "+0+${LAPTOP_TOP}" -composite \
-  -depth 8 -type TrueColor -strip \
-  "$OUT"
+  -depth 8 -type TrueColor -strip -define png:exclude-chunk=date,time \
+  "$RENDERED"
 
-echo "  [OK] wrote $OUT (${WIDTH}x${HEIGHT})"
+if [[ -f "$OUT" ]] && [[ "$(magick compare -metric AE "$RENDERED" "$OUT" null: 2>&1)" == 0* ]]; then
+  echo "  [OK] $OUT unchanged"
+else
+  chmod 644 "$RENDERED"
+  mv -f "$RENDERED" "$OUT"
+  echo "  [OK] wrote $OUT (${WIDTH}x${HEIGHT})"
+fi
