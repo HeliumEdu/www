@@ -33,27 +33,6 @@ curl https://api.heliumedu.com/planner/courses/ \
 
 For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs/#section/Authentication).
 
-### Getting a Token Without the App
-
-You can also request a token from the API itself. This requires a Helium password; if you signed up with Google, Apple, or Microsoft, set one first under **Settings → Security & API**.
-
-  1. **Sign in.** Trade your email and password for a short-lived session token:
-
-     ```sh
-     curl -X POST https://api.heliumedu.com/auth/token/ \
-       -H 'Content-Type: application/json' \
-       -d '{"email": "you@example.com", "password": "your-password"}'
-     # → {"access": "<SESSION>", "refresh": "..."}
-     ```
-
-  2. **Request your API token** using that session:
-
-     ```sh
-     curl -X POST https://api.heliumedu.com/auth/api-token/ \
-       -H 'Authorization: Bearer <SESSION>'
-     # → {"token": "<API_TOKEN>", "created_at": "..."}
-     ```
-
 ## Rotating or Revoking Your Token
 
 Both are under **Settings → Security & API**, where you can also see when your current token was created.
@@ -64,8 +43,6 @@ Both are under **Settings → Security & API**, where you can also see when your
 Changing or resetting your password also revokes your API token.
 
 > **Note:** Only one API token is active per Helium account at a time. If you have multiple scripts or tools that need access, you can use the same token across all of them (just be sure to update them together when you rotate).
-
-From the API, `POST /auth/api-token/` again rotates, and `DELETE /auth/api-token/` revokes.
 
 ## Connected Apps
 
