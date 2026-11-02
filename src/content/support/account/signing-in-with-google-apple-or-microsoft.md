@@ -3,7 +3,7 @@ title: Signing In with Google, Apple, or Microsoft
 description: "Sign in to Helium with your Google, Apple, or Microsoft account — and link to an existing email-and-password account if you already have one."
 category: account
 publishedDate: 2026-05-19
-updatedDate: 2026-05-28
+updatedDate: 2026-11-01
 ---
 
 In addition to signing in with an email and password, Helium supports signing in with your Google, Apple, or Microsoft account. This lets you log in without managing a separate password.
@@ -28,13 +28,13 @@ Once linked, you can sign in using either your email and password _or_ your link
 
 ## Account Management with OAuth
 
-If your account was created entirely through Google, Apple, or Microsoft sign-in, a **Set Password** option appears in Settings. Clicking it lets you add a Helium password to your account — after which you can sign in with either your email and password or your linked provider, whichever you prefer.
+If your account was created entirely through Google, Apple, or Microsoft sign-in, a **Set Password** button appears under **Settings → Security & API**. Clicking it lets you add a Helium password to your account — after which you can sign in with either your email and password or your linked provider, whichever you prefer.
 
 **Forgot Password** only works for accounts that already have a Helium password. If your account has no Helium password, use your linked provider to sign in instead.
 
 If your account has a linked OAuth provider, the **Change Email** option will not appear in Settings.
 
-If your account is linked to both a password and an OAuth provider, the **Change Password** option remains available.
+If your account is linked to both a password and an OAuth provider, **Settings → Security & API** shows **Change Password** instead.
 
 ## Related Articles
 

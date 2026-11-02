@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-10-29
+updatedDate: 2026-11-01
 ---
 
 ## Overview
@@ -16,11 +16,26 @@ Helium doesn't maintain official tooling or pre-built integrations, but the plat
 
 ## Getting Your API Token
 
-To use the API from a script or tool, you need an **API token** — a long-lived key you can copy into your script, save in a password manager, or paste into something like Postman.
+To use the API from a script or tool, you need an **API token**, a long-lived key you can copy into your script, save in a password manager, or paste into something like Postman.
 
-> **Important:** Your new API token is shown **exactly once**. Copy it the moment you see it and save it somewhere safe. If you lose it, you can always generate a new one with these same steps.
+  1. Open [**Settings → Security & API**](https://app.heliumedu.com/settings/security).
+  2. Under **API Token**, click **Generate**.
+  3. Click **Copy**, and save the token somewhere safe.
 
-> **Note:** This requires a Helium password. If you signed up with an OAuth provider (Google, Apple, or Microsoft) and haven't set one yet, go to **Settings → Set Password** first.
+> **Important:** Your new API token is shown **exactly once**. Copy it the moment you see it. If you lose it, rotate it to get a new one.
+
+Then send the token on every API call:
+
+```sh
+curl https://api.heliumedu.com/planner/courses/ \
+  -H 'Authorization: Token <API_TOKEN>'
+```
+
+For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs/#section/Authentication).
+
+### Getting a Token Without the App
+
+You can also request a token from the API itself. This requires a Helium password; if you signed up with Google, Apple, or Microsoft, set one first under **Settings → Security & API**.
 
   1. **Sign in.** Trade your email and password for a short-lived session token:
 
@@ -39,28 +54,22 @@ To use the API from a script or tool, you need an **API token** — a long-lived
      # → {"token": "<API_TOKEN>", "created_at": "..."}
      ```
 
-  3. **Use the API token** on every API call from then on:
-
-     ```sh
-     curl https://api.heliumedu.com/planner/courses/ \
-       -H 'Authorization: Token <API_TOKEN>'
-     ```
-
-For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs/#section/Authentication).
-
 ## Rotating or Revoking Your Token
 
-  * **Rotate** — get a fresh token and invalidate the old one. Repeat step 2 above. Do this if you think your token may have leaked, or on a schedule of your own choosing.
-  * **Revoke** — turn off your current token without replacing it:
+Both are under **Settings → Security & API**, where you can also see when your current token was created.
 
-    ```sh
-    curl -X DELETE https://api.heliumedu.com/auth/api-token/ \
-      -H 'Authorization: Bearer <SESSION>'
-    ```
+  * **Rotate** gets a fresh token and invalidates the old one. Do this if you think your token may have leaked, or on a schedule of your own choosing.
+  * **Revoke** turns off your current token without replacing it.
 
 Changing or resetting your password also revokes your API token.
 
-> **Note:** Only one API token is active per Helium account at a time. If you have multiple scripts or tools that need access, you can use the same token across all of them (just be sure to rotate them together, if you request a new token).
+> **Note:** Only one API token is active per Helium account at a time. If you have multiple scripts or tools that need access, you can use the same token across all of them (just be sure to update them together when you rotate).
+
+From the API, `POST /auth/api-token/` again rotates, and `DELETE /auth/api-token/` revokes.
+
+## Connected Apps
+
+Apps you've connected to your Helium account, such as an [AI assistant](/support/getting-started/where-to-start-with-helium/#connect-your-ai-assistant), are listed under **Settings → Security & API → Connected Apps**, with what each can do and when it last connected. Click **Revoke** on an app to cut off its access; you can connect it again later.
 
 ## Related Articles
 

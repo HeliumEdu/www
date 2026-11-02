@@ -3,7 +3,7 @@ title: Resetting Your Password
 description: "Reset a forgotten Helium password from the login page, or change your current password from inside Settings."
 category: account
 publishedDate: 2026-05-19
-updatedDate: 2026-05-29
+updatedDate: 2026-11-01
 ---
 
 ## How to Reset a Forgotten Password
@@ -15,15 +15,17 @@ updatedDate: 2026-05-29
 
 ## Changing Your Password While Logged In
 
-  1. Open [**Settings → Change Password**](https://app.heliumedu.com/settings/change-password)
+  1. Open [**Settings → Security & API**](https://app.heliumedu.com/settings/security) and click **Change Password**
   2. Enter your **Current password**
   3. Enter your **New password**
   4. Re-enter your new password in the **Confirm password** field
   5. Click **Save**
 
+Changing your password also revokes your [API token](/support/sync-and-integration/using-the-helium-api/), if you have one.
+
 ## Setting a Password for the First Time (OAuth Accounts)
 
-If you signed up with Google, Apple, or Microsoft and have never set a Helium password, open **Settings → Set Password**. The "Current password" field won't appear — just enter and confirm your new password and click **Save**.
+If you signed up with Google, Apple, or Microsoft and have never set a Helium password, open **Settings → Security & API** and click **Set Password**. The "Current password" field won't appear — just enter and confirm your new password and click **Save**.
 
 Once set, you can sign in with either your email and password or your linked provider.
 
@@ -31,7 +33,7 @@ Once set, you can sign in with either your email and password or your linked pro
 
   * If you don't see the reset email, check your spam or junk folder
   * Try searching your inbox for "Helium" or "password reset"
-  * If you signed up with Google, Apple, or Microsoft and never set a Helium password, no reset email will be sent — use your provider to sign in, or go to **Settings → Set Password** to add one
+  * If you signed up with Google, Apple, or Microsoft and never set a Helium password, no reset email will be sent — use your provider to sign in, or go to **Settings → Security & API** and click **Set Password** to add one
 
 ## Related Articles
 
