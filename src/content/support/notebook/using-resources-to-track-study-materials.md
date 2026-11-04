@@ -3,7 +3,7 @@ title: Using Resources to Track Study Materials
 description: "Track textbooks, software, websites, and other study materials in Helium, organized alongside the classes that use them."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-07-25
+updatedDate: 2026-11-04
 ---
 
 The [**Resources**](https://app.heliumedu.com/resources) screen lets you track textbooks, software, websites, and any other study materials associated with your classes. Resources are organized into **Resource Groups** — for example, you could group them by term, category, etc.
@@ -27,7 +27,13 @@ Use the group dropdown at the top of the screen to switch between Resource Group
      * **Title** — the name of the resource (required)
      * **Classes** — classes this resource is associated with
      * **Website** — a URL for the resource (e.g., a publisher page, textbook, or link to an online app or tool)
-  4. Click **Save**
+  4. Click **Save**. The **Attachments** tab opens next, where you can add files.
+
+## Attaching Files to a Resource
+
+You can attach files to a resource, such as a PDF of a reading. Open the resource, go to the **Attachments** tab, click **Choose Files**, then **Upload**.
+
+To download a resource's attachments without opening it, click the paperclip on its card. They also show on the assignments that use the resource.
 
 ## Resources and Hidden Class Groups
 
