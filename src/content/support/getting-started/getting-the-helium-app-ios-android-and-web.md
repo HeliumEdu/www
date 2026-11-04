@@ -3,10 +3,10 @@ title: Getting the Helium App (iOS, Android, and Web)
 description: "Get Helium on iOS, Android, and the web — install steps for each platform and how your data syncs automatically across every device."
 category: getting-started
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-04
 ---
 
-Helium is available as a native app for iOS and Android, and also runs in any modern web browser. Your data syncs automatically across all platforms.
+Helium is available as a native app for iOS and Android, and also runs in any modern web browser. Your data syncs automatically across all platforms. See [Using Helium on More Than One Device](/support/sync-and-integration/using-helium-on-more-than-one-device/).
 
 ## iOS (iPhone and iPad)
 
@@ -34,3 +34,4 @@ When you sign in on a new device, all your classes, assignments, grades, and set
 
   * [Signing In with Google, Apple, or Microsoft](/support/account/signing-in-with-google-apple-or-microsoft/)
   * [Resetting Your Password](/support/account/resetting-your-password/)
+  * [Using Helium on More Than One Device](/support/sync-and-integration/using-helium-on-more-than-one-device/)

@@ -3,7 +3,7 @@ title: Planner Views, and Changing Your Default
 description: "Switch between Month, Week, 3-Day, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-09-25
+updatedDate: 2026-11-04
 ---
 
 ## Available Views
@@ -34,7 +34,7 @@ Click any date to view the full list of items in the agenda section below the ca
   2. Choose your desired option from the **Default view** dropdown
   3. Click **Save**
 
-The Preferences screen is also where you'll find your time zone, the day your week starts, and how dates, times, and numbers are written. Helium sets these from your device when you sign up, so they should already match where you live, but if you've moved since then, this is the place to fix it.
+The Preferences screen is also where you'll find your time zone, the day your week starts, and how dates, times, and numbers are written. Helium sets these from your device when you sign up, so they should already match where you live, but if you've moved since then, this is the place to fix it. See [Changing Your Time Zone, Date Format, and 24-Hour Time](/support/calendar-and-schedule/changing-your-time-zone-date-format-and-24-hour-time/).
 
 ## Dragging to Reschedule, Adjust Time
 
@@ -49,3 +49,4 @@ You can reschedule assignments and events by dragging them to a different time s
 ## Related Articles
 
   * [Customizing Colors for Planner Display](/support/calendar-and-schedule/customizing-colors-for-planner-display/)
+  * [Changing Your Time Zone, Date Format, and 24-Hour Time](/support/calendar-and-schedule/changing-your-time-zone-date-format-and-24-hour-time/)

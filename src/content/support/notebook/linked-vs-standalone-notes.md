@@ -3,7 +3,7 @@ title: Linked vs. Standalone Notes
 description: "Notes in Helium can be linked to a class, assignment, event, or resource — or stand on their own. When to use each, and why."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-09-25
+updatedDate: 2026-11-04
 ---
 
 Notes in Helium can exist on their own or be linked to an Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
@@ -27,10 +27,11 @@ A standalone note isn't attached to anything — you can think of these more as 
 The Notebook has filters that may hide some notes. If you're missing a note:
 
   * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Events, Resources, or Standalone) is selected.
+  * **Check your class filters:** If you have picked classes under **Classes** in the filter menu, only notes for those classes show, along with event and standalone notes, which aren't tied to a class.
   * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to Class Groups that are hidden from your calendar won't appear.
   * **Search by title or content:** The search bar matches note titles and the name of the linked item. To also match text inside your notes, click the **Also search note content** button in the search bar.
 
-If you have "Remember filter state" enabled in Settings, your filters persist between sessions — so a filter you set last week might still be active.
+If you have **Remember filter selections** enabled in **Settings → Preferences**, your filters persist between sessions — so a filter you set last week might still be active.
 
 ## Changing a Note's Link
 
@@ -47,4 +48,6 @@ A cloud icon in the top-right corner of the note editor shows the current sync s
 
   * **Grey** — the note hasn't synced yet (new notes, before auto-save is active)
   * **Blue** — auto-save is active and changes are syncing normally
-  * **Red** — a recent save failed; Helium will retry automatically
+  * **Yellow, with a line through it** — auto-save is paused, for example while you're offline. Helium keeps retrying, or click the icon to retry right away
+
+To learn how notes sync between devices and how unsaved notes are recovered, see [Using Helium on More Than One Device](/support/sync-and-integration/using-helium-on-more-than-one-device/).

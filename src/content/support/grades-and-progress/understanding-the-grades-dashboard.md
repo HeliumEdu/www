@@ -3,7 +3,7 @@ title: Understanding the Grades   Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-10-01
+updatedDate: 2026-11-04
 ---
 
 The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
@@ -17,7 +17,7 @@ Click the widget to scroll to and expand the first at-risk class in the list bel
 ### Adjusting the At-Risk Threshold
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
-  2. Set the **At-risk threshold (%)** value (default 70%)
+  2. Set the **At-risk threshold (%)** value
   3. Click **Save**
 
 ## Progress vs. Pace
@@ -32,7 +32,7 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 ### Adjusting the On-Track Tolerance
 
   1. Open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences)
-  2. Set the **On-track tolerance (%)** value (default 10%)
+  2. Set the **On-track tolerance (%)** value
   3. Click **Save**
 
 ## Pending Impact
