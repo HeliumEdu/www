@@ -6,13 +6,13 @@ publishedDate: 2026-05-19
 updatedDate: 2026-11-04
 ---
 
-Notes in Helium can exist on their own or be linked to an Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
+Notes in Helium can exist on their own or be linked to a Class, Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
 
 ## Linked Notes
 
-A linked note is attached to an Assignment, Event, or Resource. These are auto-created for you anytime you use the smaller "Notes" area when editing one of these items. To specifically create one with a link:
+A linked note is attached to a Class, Assignment, Event, or Resource, and each of these can have one linked note. These are auto-created for you anytime you use the smaller "Notes" area when editing one of these items. To specifically create one with a link:
 
-  1. Open an Assignment, Event, or Resource
+  1. Open a Class, Assignment, Event, or Resource
   2. Scroll down to the **Notes** section
   3. Click "Open in Notebook"
 
@@ -26,8 +26,8 @@ A standalone note isn't attached to anything — you can think of these more as 
 
 The Notebook has filters that may hide some notes. If you're missing a note:
 
-  * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Events, Resources, or Standalone) is selected.
-  * **Check your class filters:** If you have picked classes under **Classes** in the filter menu, only notes for those classes show, along with event and standalone notes, which aren't tied to a class.
+  * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Events, Resources, Classes, or Standalone) is selected.
+  * **Check your class filters:** If you have picked classes under **Classes** in the filter menu, only notes for those classes and their assignments and resources show, along with event and standalone notes, which aren't tied to a class.
   * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to Class Groups that are hidden from your calendar won't appear.
   * **Search by title or content:** The search bar matches note titles and the name of the linked item. To also match text inside your notes, click the **Also search note content** button in the search bar.
 
@@ -38,7 +38,7 @@ If you have **Remember filter selections** enabled in **Settings → Preferences
 You can link or unlink a note directly from the note editor. Open any note in the Notebook and look for the badge in the title row:
 
   * **Linked note:** Click the **×** on the badge to unlink it. The note becomes standalone — your content is preserved, and the change is saved the next time you save.
-  * **Standalone note:** Click the **Standalone** badge to open the link picker. Select the type (Assignment, Event, or Resource), search for the item, and click it to link the note.
+  * **Standalone note:** Click the **Standalone** badge to open the link picker. Select the type (Assignment, Event, Resource, or Class), search for the item, and click it to link the note.
 
 ## Auto-Save
 

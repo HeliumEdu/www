@@ -33,6 +33,7 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Email** — your instructor's email address
   * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
+  * **Notes** — a note for the class; click **Open in Notebook** to edit it in the Notebook
 
 Click **Save** to create the class and proceed to the Schedule tab.
 
@@ -53,6 +54,10 @@ Categories let you organize assignments by type (Homework, Quizzes, Exams, etc.)
 You can attach files (such as your syllabus or class packet) directly to a class. On the Attachments tab, click **Choose Files**, then **Upload**.
 
 To download a class's attachments without opening it, click the paperclip on its card. A class's attachments also show on each of its assignments.
+
+## Deleting a Class or Class Group
+
+Deleting a class also deletes its note, schedules, categories, attachments, and reminders, plus its assignments and their notes, attachments, and reminders. Deleting a Class Group deletes every class in it.
 
 ## Related Articles
 

@@ -3,7 +3,7 @@ title: Adding Non-Academic Events to the Planner
 description: "Add study sessions, appointments, concerts, and anything else to your Helium Planner alongside your classes and assignments."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-09-16
+updatedDate: 2026-11-04
 ---
 
 Helium lets you add events like study sessions, concerts, appointments, and anything else you need to block out time for in your schedule. Unlike assignments, events are not attached to a class, are ungraded, and won't appear in the Todos view.
@@ -17,6 +17,10 @@ Helium lets you add events like study sessions, concerts, appointments, and anyt
   3. In the top-right corner of the form, click the **Event** icon in the toggle (the right side of the two-icon toggle) to switch to Event mode
   4. Enter your event details
   5. Click **Save**
+
+## Deleting an Event
+
+Deleting an event also deletes its note, attachments, and reminders.
 
 ## Related Articles
 

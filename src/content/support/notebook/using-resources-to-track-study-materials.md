@@ -35,6 +35,10 @@ You can attach files to a resource, such as a PDF of a reading. Open the resourc
 
 To download a resource's attachments without opening it, click the paperclip on its card. They also show on the assignments that use the resource.
 
+## Deleting a Resource or Resource Group
+
+Deleting a resource also deletes its note and attachments. Deleting a Resource Group deletes every resource in it, along with their notes and attachments.
+
 ## Resources and Hidden Class Groups
 
 If a class belongs to a Class Group that's been hidden (via **Hide this group's classes and assignments from the Planner and Resources** on the group), that class stops appearing in two places: the linked-class chips shown on the resource's card in the Resources list, and the **Classes** field (along with its selected-class chips) when adding or editing that resource. The resource-to-class association isn't removed — it's just not shown while the group is hidden, and it reappears automatically once you un-hide the group. See [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/) for more on hiding a Class Group.
