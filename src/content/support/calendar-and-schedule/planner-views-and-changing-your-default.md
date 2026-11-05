@@ -17,7 +17,7 @@ Helium offers six Planner display options:
   * **Agenda** — Similar to Week, but displays items as a list instead of a time-grid
   * **Todos** — Displays only Assignments; Events, External Calendars, and Class Schedules are not shown in this view
 
-In **Todos**, click an assignment's paperclip to download its attachments, including those from its class and resources.
+In **Todos**, click an assignment's paperclip to download its attachments, including those from its class and resources, or its book icon to open its resources' websites.
 
 ## Month View on Mobile
 
