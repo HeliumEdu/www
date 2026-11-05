@@ -22,7 +22,7 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
 
 ## Adding a Class
 
-With a group selected, click the **+** button to add a class. Class setup is split across four tabs: **Details**, **Schedule**, **Categories**, and **Attachments**. On mobile, you'll step through them in order when creating a new class.
+With a group selected, click the **+** button to add a class. Class setup is split across five tabs: **Details**, **Schedules**, **Schedule Reminders**, **Categories**, and **Attachments**. On mobile, you'll step through them in order when creating a new class.
 
 ### Details Tab
 
@@ -33,17 +33,21 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Email** — your instructor's email address
   * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
-  * **Notes** — a note for the class; click **Open in Notebook** to edit it in the Notebook
+  * **Notes** — a note for the class; once the class is saved, click **Open in Notebook** to edit it in the Notebook
 
-Click **Save** to create the class and proceed to the Schedule tab.
+Click **Save** to create the class and proceed to the Schedules tab.
 
-### Schedule Tab
+### Schedules Tab
 
-The Schedule tab is where you set when your class meets. Once configured, Helium automatically generates recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
+The Schedules tab is where you set when your class meets. Once configured, Helium automatically generates recurring **Class Schedule** items on your Planner for every occurrence within the class's date range.
 
 For a class that meets at the same time each week, click the **+** button, select the days under **Class Days**, set the **Start** and **End** times, and click **Save**. A class can also have more than one schedule, follow a rotating A/B or cycle-day pattern, or use a schedule that runs for only part of the term — see [Class Meeting Schedules](/support/classes/class-meeting-schedules/) for the full guide.
 
-A schedule is optional — if your class has no fixed meeting time, you can leave the Schedule tab with no schedules.
+A schedule is optional — if your class has no fixed meeting time, you can leave the Schedules tab with no schedules.
+
+### Schedule Reminders Tab
+
+Add push or email reminders that fire before every session of the class. See [Setting Up and Managing Reminders](/support/reminders-and-notifications/setting-up-and-managing-reminders/).
 
 ### Categories Tab
 
