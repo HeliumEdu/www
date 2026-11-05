@@ -28,7 +28,7 @@ The Notebook has filters that may hide some notes. If you're missing a note:
 
   * **Check your type filters:** Click the filter icon and make sure the relevant type (Assignments, Classes, Events, Resources, or Standalone) is selected.
   * **Check your class filters:** If you have picked classes under **Classes** in the filter menu, only notes for those classes and their assignments and resources show, along with event and standalone notes, which aren't tied to a class.
-  * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to Class Groups that are hidden from your calendar won't appear.
+  * **Check "Hide notes linked to hidden groups":** If this option is enabled in the filter menu, notes linked to items in hidden Class or Resource Groups won't appear.
   * **Search by title or content:** The search bar matches note titles and the name of the linked item. To also match text inside your notes, click the **Also search note content** button in the search bar.
 
 If you have **Remember filter selections** enabled in **Settings → Preferences**, your filters persist between sessions — so a filter you set last week might still be active.
@@ -38,7 +38,7 @@ If you have **Remember filter selections** enabled in **Settings → Preferences
 You can link or unlink a note directly from the note editor. Open any note in the Notebook and look for the badge in the title row:
 
   * **Linked note:** Click the **×** on the badge to unlink it. The note becomes standalone — your content is preserved, and the change is saved the next time you save.
-  * **Standalone note:** Click the **Standalone** badge to open the link picker. Select the type (Assignment, Class, Event, or Resource), search for the item, and click it to link the note.
+  * **Standalone note:** Click the **Standalone** badge to open the link picker. Select the type (Assignment, Class, Event, or Resource), search for the item, and click it to link the note. Items in hidden groups aren't listed, so un-hide the group to link to one.
 
 ## Auto-Save
 

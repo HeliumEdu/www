@@ -15,7 +15,7 @@ Use the group dropdown at the top of the screen to switch between Resource Group
   1. Open [**Resources**](https://app.heliumedu.com/resources)
   2. Click the **+** button to create a new group
   3. Enter a **Title** for the group (e.g., "Spring 2026 Materials", "Textbooks", "Links")
-  4. Optionally check **Hide this group's resources from Planner** if you don't want them displayed on your Planner
+  4. Optionally check **Hide this group's resources from the Planner** if you don't want them displayed on your Planner or offered in the Notebook's link picker
   5. Click **Save**
 
 ## Adding a Resource
