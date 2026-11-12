@@ -3,7 +3,7 @@ title: How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds
 description: "Share your Helium assignments, class schedules, and events to Google Calendar, Apple Calendar, or any other calendar app via iCal feeds."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-11
 ---
 
 ## Overview
@@ -29,6 +29,7 @@ For instructions on how to add a feed URL to a specific calendar application, se
   * External applications can only **display** Helium calendars through this method; they cannot edit Helium data
   * Feed refresh occurs on the host application's own schedule — updates may not appear immediately
   * Feeds are disabled by default to protect your privacy
+  * Classes in a group with **Hide this group's classes and assignments from the Planner and Resources** checked, and their assignments, are left out of the feeds
   * Keep your private feed URLs secret. If a feed URL is ever compromised, disabling and re-enabling Feeds will regenerate new URLs for all three feeds
 
 ## Related Articles

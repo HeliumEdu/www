@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-11-01
+updatedDate: 2026-11-11
 ---
 
 ## Overview
@@ -32,6 +32,8 @@ curl https://api.heliumedu.com/planner/courses/ \
 ```
 
 For the full authentication reference, see the [API docs](https://api.heliumedu.com/docs/#section/Authentication).
+
+> **Note:** An API token can't change your email or password, delete your account, or manage your API token and connected apps. Do those from **Settings** in the Helium app.
 
 ## Rotating or Revoking Your Token
 
