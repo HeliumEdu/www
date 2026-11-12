@@ -37,7 +37,7 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
 ## Pending Impact
 
-**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The first badge with the class name shows the total number in that class, and the second badge below it shows the single assignment in that class that will have the most impact on your overall grade. When more than one class has ungraded work, click the first badge to cycle through the others.
+**Pending Impact** shows the total number of ungraded assignments in the current Class Group. The first badge with the class name shows the total number in that class, and the second badge below it shows the single assignment in that class that will have the most impact on your overall grade, marked with a lightning bolt. When more than one class has ungraded work, click the first badge to cycle through the others.
 
 ## Grade Trend Graph
 
