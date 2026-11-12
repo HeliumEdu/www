@@ -3,7 +3,7 @@ title: Where to Start with Helium
 description: "Set up Helium for a new term step by step, or let an AI assistant set it up from your syllabi — two ways to get started."
 category: getting-started
 publishedDate: 2026-05-19
-updatedDate: 2026-10-29
+updatedDate: 2026-11-12
 ---
 
 There are two ways to set up Helium for a new term. Pick whichever fits how you like to work — both end with the same well-organized planner.
@@ -83,11 +83,11 @@ Then interview the user about anything the syllabi do not make explicit. The pri
 
   - The time zone set in the user's Helium account (Settings → Preferences), as an IANA name (e.g., America/Los_Angeles). If they don't know it, ask where they are and work out the name
   - Term start and end dates, and days with no class (holidays, breaks)
-  - Credits per course — frequently omitted from syllabi; ask, do not invent. If still unknown, use `"0.00"`
+  - Credits per course — frequently omitted from syllabi; ask, do not invent. If still unknown, use `"0.00"`, which leaves the course out of the user's GPA
   - Whether a lecture and its lab/recitation/discussion are graded together (one course with a schedule for each) or separately (separate courses)
   - Online vs. in-person, and the room or location when in-person
   - Days and times when a class meets at different times on different days, or on a rotating schedule (A/B weeks, A/B days)
-  - Recurring assignments without specific dated entries ("weekly problem sets") — ask for the actual dates
+  - The days and last date of recurring work, like weekly problem sets, when the syllabus doesn't list its dates — then make it one assignment with a `recurrence_rule` (see Homework's `recurrence_rule` in the docs) rather than one per date
   - Time-of-day for assignments that say only "due in class" or "due that week"
   - Grading scheme — weighted categories with their weights, or total-points
   - Anything else in the syllabi that could be read more than one way

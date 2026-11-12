@@ -1,12 +1,16 @@
 ---
-title: Understanding the Grades   Dashboard
-description: "What the widgets on your Helium Grades dashboard are showing you — at-risk classes, progress vs. pace, ungraded work, and grade trends."
+title: Understanding the Grades Dashboard
+description: "What the widgets on your Helium Grades dashboard are showing you — your overall grade and GPA, at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-04
+updatedDate: 2026-11-12
 ---
 
-The Grades dashboard surfaces three summary widgets — **At-Risk Classes**, **Progress vs. Pace**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
+The Grades dashboard surfaces four summary widgets — **Overall Grade**, **Progress vs. Pace**, **At-Risk Classes**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
+
+## Overall Grade
+
+**Overall Grade** shows the current Class Group's grade and its trend. Once the group has a grade scale and a class with credits has a grade, your **GPA** shows below it, along with **All**, your GPA across all terms. If something isn't counted, click the info icon to see why. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
 
 ## At-Risk Classes
 
@@ -27,7 +31,7 @@ Click the widget to scroll to and expand the first at-risk class in the list bel
   * **Work** — the percentage of assignments completed in the current Class Group
   * **Time** — the percentage of the Class Group's date range that has elapsed
 
-A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_.
+A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_. Before the term starts, or while the group has no assignments, the badge reads _Warming Up_. Once the term is over and all your work is complete, it reads _All Done_.
 
 ### Adjusting the On-Track Tolerance
 
@@ -64,7 +68,7 @@ For a full walkthrough of both tabs, see [Grade Calculator](/support/grades-and-
 
 ## Per-Class Breakdown
 
-Below the trend graph, each class has a breakdown table with one row per category, including:
+Below the trend graph, each class shows its grade, its trend, and its grade point if it has credits (e.g., "3.50 GP"), plus a breakdown table with one row per category, including:
 
   * **Contribution** — shown only for classes using weighted grading (see below)
   * **Graded** — how many assignments in the category have been graded
@@ -79,6 +83,7 @@ A category may show a smaller contribution than its configured weight if its cur
 ## Related Articles
 
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
+  * [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
   * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
   * [Why Your Grade Graph Shows Sudden Drops or Spikes](/support/grades-and-progress/why-your-grade-graph-shows-sudden-drops-or-spikes/)

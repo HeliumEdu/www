@@ -1,9 +1,9 @@
 ---
 title: How Helium Calculates Your Grades
-description: "How Helium computes your class, category, and term grades — covering points-based and weighted grading, missing work, and date ranges."
+description: "How Helium computes your class, category, and term grades — covering points-based and weighted grading, missing work, date ranges, and GPA."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-10-01
+updatedDate: 2026-11-12
 ---
 
 Helium supports point-based grading as well as weighted grading.
@@ -25,10 +25,11 @@ The overall grade of a category is the total number of earned points over the to
 
 ## Overall Term Grade
 
-The overall grade of a term is a flat average of each class's current grade. How your specific institution calculates this overall grade may be different, based on relative credits, weights, or some other system, and Helium does not currently offer term-level grading beyond flat averages.
+The overall grade of a term is a flat average of each class's current grade, so every class counts the same. To weigh classes by their credits instead, choose a grade scale and Helium calculates your GPA — see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
 
 ## Related Articles
 
+  * [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
   * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
   * [Understanding the Grades Dashboard](/support/grades-and-progress/understanding-the-grades-dashboard/)

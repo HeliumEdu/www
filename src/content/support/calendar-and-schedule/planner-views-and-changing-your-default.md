@@ -3,7 +3,7 @@ title: Planner Views, and Changing Your Default
 description: "Switch between Month, Week, 3-Day, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-11-04
+updatedDate: 2026-11-12
 ---
 
 ## Available Views
@@ -40,7 +40,7 @@ The Preferences screen is also where you'll find your time zone, the day your we
 
 ## Dragging to Reschedule, Adjust Time
 
-You can reschedule assignments and events by dragging them to a different time slot or day, or adjust their duration by clicking on the top or bottom edge and dragging.
+You can reschedule assignments and events by dragging them to a different time slot or day, or adjust their duration by clicking on the top or bottom edge and dragging. For a repeating item, Helium asks whether to change just that one or all of them; see [Repeating Assignments and Events](/support/calendar-and-schedule/repeating-assignments-and-events/).
 
   * On **desktop and web**, drag-and-drop and resizing are always enabled
   * On **touch** devices, drag-and-drop is enabled by default (though only supported in **Week**, **3-Day**, and **Day** views). If you find it interferes with your preferred experience, you can turn it off in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences) by disabling **Drag-and-drop on touch devices**

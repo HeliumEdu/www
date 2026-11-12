@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-11-04
+updatedDate: 2026-11-12
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together. Assignments belong to a class, so at least one class has to exist before you can add one.
@@ -15,8 +15,9 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
   1. Open [**Classes**](https://app.heliumedu.com/classes)
   2. Click the group menu at the top and select **Add Group**
   3. Fill in the group details:
-     * **Title** — e.g., "Fall 2025," "Spring Term," "2025–26 School Year"
+     * **Title** — e.g., "Fall 2025," "Spring Term," "2025-26 School Year"
      * **From / To** — the start and end dates of the term
+     * **Grade scale** — how class grades turn into grade points for your GPA, or **None** if you don't track one; see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
      * **Hide this group's classes and assignments from the Planner and Resources** — check this to hide the entire group from your calendar, from the Resources page's class associations, and from the Notebook's link picker, without deleting anything
   4. Click **Save**
 
@@ -33,6 +34,7 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Email** — your instructor's email address
   * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
+  * **Credits** — how much the class counts toward your GPA
   * **Notes** — a note for the class; once the class is saved, click **Open in Notebook** to edit it in the Notebook
 
 Click **Save** to create the class and proceed to the Schedules tab.
@@ -67,5 +69,6 @@ Deleting a class also deletes its note, schedules, categories, attachments, and 
 
   * [Class Meeting Schedules](/support/classes/class-meeting-schedules/)
   * [Setting Up Weighted Grading & Assignment Categories](/support/grades-and-progress/setting-up-weighted-grading-assignment-categories/)
+  * [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
   * [Cancelling Class Sessions and Setting Term Holidays](/support/classes/cancelling-class-sessions-and-setting-term-holidays/)
   * [Why Items Aren't Showing on the Planner](/support/calendar-and-schedule/why-items-arent-showing-on-the-planner/)

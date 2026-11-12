@@ -3,7 +3,7 @@ title: Setting Up and Managing Reminders
 description: "Add push or email reminders to any assignment, class, or event in Helium, set defaults so you don't configure each one, and edit or delete them later."
 category: reminders-and-notifications
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-12
 ---
 
 Reminders let you receive an alert before an assignment is due, or when a class or event is about to start. You can add reminders to any assignment, class schedule, or event, and choose whether each is delivered as a push notification or an email.
@@ -28,7 +28,7 @@ To avoid re-configuring the same type and offset every time, set the defaults un
 
 ### For a Class
 
-Class reminders fire before every session of a class's recurring schedule.
+Class reminders fire before every session of a class's recurring schedule. Reminders on a [repeating assignment or event](/support/calendar-and-schedule/repeating-assignments-and-events/) likewise fire before every occurrence.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
   2. Go to the **Schedule Reminders** tab, click **+**

@@ -12,7 +12,7 @@ Helium offers several color customization options for how items appear on your P
 
   1. **Color for Events** — The default color applied to non-academic calendar items (Events)
   2. **Color for grades** — The color used when displaying grade badges on assignments
-  3. **Color for resources** — The color used when displaying resource badges on assignments
+  3. **Color for Resources** — The color used when displaying resource badges on assignments
   4. **Color by assignment category** — When enabled, Planner items are colored by their _assignment's category_ rather than by class. This is especially useful for visually distinguishing Homework vs. Quizzes vs. Exams, or for tracking workload across categories.
 
 ## Related Articles
