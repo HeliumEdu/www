@@ -83,5 +83,5 @@ export const footerData = {
     { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: GITHUB },
     { ariaLabel: 'Patreon', icon: 'tabler:brand-patreon', href: PATREON },
   ],
-  footNote: `&copy; ${new Date().getFullYear()} Helium Edu`,
+  footNote: `&copy; ${new Date().getFullYear()} Helium Edu, LLC`,
 };

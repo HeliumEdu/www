@@ -3,9 +3,9 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated October 29, 2026_
+_Last updated November 11, 2026_
 
-This Privacy Policy describes how Helium Edu ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
+This Privacy Policy describes how Helium Edu, LLC ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
 Your use of the Services is also governed by our [Terms of Service](/terms/).
 

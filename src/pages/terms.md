@@ -3,11 +3,11 @@ title: 'Terms of Service'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated February 19, 2026_
+_Last updated November 11, 2026_
 
 ## 1. Acceptance of Terms
 
-By accessing or using Helium's website, apps, and related services (the "Service"), you agree to these Terms of Service ("Terms"). If you do not agree to these Terms or our [Privacy Policy](/privacy/), do not use the Service.
+These Terms of Service ("Terms") are an agreement between you and Helium Edu, LLC ("Helium," "we," "us," or "our"). By accessing or using our website, apps, and related services (the "Service"), you agree to these Terms. If you do not agree to these Terms or our [Privacy Policy](/privacy/), do not use the Service.
 
 ## 2. Eligibility and Accounts
 
