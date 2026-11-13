@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated November 11, 2026_
+_Last updated November 12, 2026_
 
 This Privacy Policy describes how Helium Edu, LLC ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
@@ -29,11 +29,11 @@ We do not sell your personal information. We share information only with:
 - **Legal authorities** when required by law or to protect rights, safety, and security
 - **Business transfers** if we are involved in a merger, acquisition, financing, or sale of assets
 - **Authorized personnel** who may access account data on a need-to-know basis for purposes of operating and maintaining the Services, providing customer support, or as required by law
-- **Connected apps you authorize**. With your permission, a connected app can read your account email and settings, assignments, events, notes, classes (including teacher names and email addresses), resources, and grades, and can add new terms and classes to your planner. The app keeps this access until you revoke it. Its own privacy policy governs what it does with the information it receives.
+- **Connected apps you authorize**. With your permission, a connected app can read your account email and settings and your planner data, including grades and teacher contact info, and can add new terms and classes to your planner. It can read your notes only if you also allow that. The app keeps this access until you revoke it. Its own privacy policy governs what it does with the information it receives.
 
 Helium is open source — our code is publicly available at [github.com/HeliumEdu](https://github.com/HeliumEdu).
 
-When you enable private calendar feeds, your calendar data becomes accessible to anyone with the unique feed URL. Treat these URLs as confidential.
+When you enable private calendar feeds, your calendar data (events, class schedules, and assignments with their details, such as completion and grades) becomes accessible to anyone with the unique feed URL. Treat these URLs as confidential.
 
 ## 4. Data Storage and Security
 
