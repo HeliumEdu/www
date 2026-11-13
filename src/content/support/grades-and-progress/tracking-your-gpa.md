@@ -13,28 +13,28 @@ Helium calculates a GPA for each Class Group once you choose a grade scale for i
 A grade scale turns a class grade into a grade point, like 90% and up earning a 4.0. A new group uses the scale of your most recent group, or **None** for your first.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Select the group, then click the edit (pencil) icon next to the group menu at the top
+  2. Open the group menu at the top and click the edit (pencil) icon next to the group
   3. Choose a **Grade scale**, then click the table icon next to it to check its bands against your school's
   4. Click **Save**
 
-A scale created through the [Helium API](/support/sync-and-integration/using-the-helium-api/) or an import shows as **Custom**.
+A scale set through the [Helium API](/support/sync-and-integration/using-the-helium-api/) or an import that doesn't match a preset shows as **Custom**.
 
 ## Adding Credits
 
 Credits decide how much each class counts toward your GPA. A class with no credits isn't counted.
 
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the edit (pencil) icon on a class
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
   2. On the **Details** tab, set **Credits**
   3. Click **Save**
 
 ## How GPA Is Calculated
 
-  * Each class earns the grade point of the band its grade falls in, shown next to the class on the **Grades** page (e.g., "3.50 GP")
+  * Each class earns the grade point of the band its grade falls in, shown next to the class on the **Grades** page when it has credits (e.g., "3.50 GP")
   * Your GPA is each class's grade point times its credits, added up, over the total credits
 
 ## GPA Across All Terms
 
-When you have more than one Class Group, the **Overall Grade** widget also shows **All**, your GPA across every group on the same grade scale as your most recent one, weighted by credits. The example schedule isn't included.
+When you have more than one Class Group, the **Overall Grade** widget also shows **All**, your GPA across every group on the same grade scale as your most recent group that has one, weighted by credits. The example schedule isn't included.
 
 ## Related Articles
 

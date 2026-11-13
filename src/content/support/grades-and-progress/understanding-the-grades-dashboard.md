@@ -10,7 +10,7 @@ The Grades dashboard surfaces four summary widgets — **Overall Grade**, **Prog
 
 ## Overall Grade
 
-**Overall Grade** shows the current Class Group's grade and its trend. Once the group has a grade scale and a class with credits has a grade, your **GPA** shows below it, along with **All**, your GPA across all terms. If something isn't counted, click the info icon to see why. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
+**Overall Grade** shows the current Class Group's grade and its trend. Once the group has a grade scale and a class with credits has a grade, your **GPA** shows below it, along with **All**, your GPA across terms on the same grade scale. If something isn't counted, click the info icon to see why. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
 
 ## At-Risk Classes
 
@@ -31,7 +31,7 @@ Click the widget to scroll to and expand the first at-risk class in the list bel
   * **Work** — the percentage of assignments completed in the current Class Group
   * **Time** — the percentage of the Class Group's date range that has elapsed
 
-A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_. Before the term starts, or while the group has no assignments, the badge reads _Warming Up_. Once the term is over and all your work is complete, it reads _All Done_.
+A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap must exceed the tolerance threshold in either direction before the status switches from _On Track_. Before the term starts with nothing completed yet, or while the group has no assignments, the badge reads _Warming Up_. Once the term is over and all your work is complete, it reads _All Done_.
 
 ### Adjusting the On-Track Tolerance
 

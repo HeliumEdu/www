@@ -13,23 +13,23 @@ A weekly reading response, a lab report every other Friday, or a monthly club me
   1. Add or open an assignment or event on the [**Planner**](https://app.heliumedu.com/planner)
   2. Under the date and time, choose **Daily**, **Weekly**, **Monthly**, or **Yearly** from **Repeat**
   3. Set **Every** (for example, every 2 weeks), and for weekly repeats, pick the days
-  4. Choose when it **Ends**: **Never** (events) or **End of class** (assignments), **On date**, or **After** a number of times
+  4. Choose when it **Ends**: **Never** (events) or **End of class** (assignments), **On date**, or **After** a number of **Occurrences**
   5. Click **Save**
 
 A monthly repeat on the 29th, 30th, or 31st skips months without that day, unless you check **On the last day of the month**.
 
 ## Completing and Grading
 
-You complete and grade each occurrence of a repeating assignment on its own. Checking one off or entering its grade makes it a separate assignment, and the rest of the repeat carries on. Your class's assignment counts include every occurrence.
+You complete each occurrence of a repeating assignment on its own, then grade it like any assignment. Completing one makes it a separate assignment, and the other occurrences carry on. Your class's assignment counts include every occurrence.
 
-## Changing or Deleting a Repeat
+## Changing or Deleting Repeating Items
 
-When you edit, move, or delete a repeating item, choose whether the change is for this one or all of them.
+When you edit, move, or delete a repeating item, choose whether the change is for this one or all of them. Changing the **Repeat** settings always changes all of them.
 
-  * **This event** or **This assignment** changes only that one. It keeps its reminders; notes and attachments stay with the repeat
-  * **All events** or **All assignments** changes the whole repeat. Assignments you've already completed, graded, or changed on their own are separate now, so they stay as they are, even when you delete the repeat
+  * **This event** or **This assignment** changes only that one. It keeps its reminders; notes and attachments stay with the other occurrences
+  * **All events** or **All assignments** changes all of them. Occurrences you've already completed or changed on their own are separate now, so changing or deleting all of them leaves those as they are
 
-A repeat imported from another calendar that the **Repeat** options can't show appears as **Custom repeat**. You can still change or delete it, or choose a new repeat to replace it.
+A repeat the **Repeat** options can't show, like some imported from another calendar, appears as **Custom repeat**. You can still edit or delete the item, or choose a new repeat to replace it.
 
 ## Related Articles
 

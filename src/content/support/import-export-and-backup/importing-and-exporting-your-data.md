@@ -38,7 +38,7 @@ You can also import a calendar (`.ics`) file — for example, one exported from 
      * **Events** — each entry is added to your Planner as an Event, not tied to a class
   4. Click **Import**
 
-A calendar only carries your schedule and due dates, so imported assignments start out ungraded and uncategorized — you can fill those in as the term goes on. A repeating entry becomes a [repeating assignment](/support/calendar-and-schedule/repeating-assignments-and-events/) that runs through the class's end date (or the entry's own end), or a repeating event when imported as Events. If a repeating assignment would have more than 366 occurrences, the import stops and Helium tells you which entry to shorten.
+A calendar only carries your schedule and due dates, so imported assignments start out ungraded and uncategorized — you can fill those in as the term goes on. A repeating entry becomes a [repeating assignment](/support/calendar-and-schedule/repeating-assignments-and-events/) that runs through the class's end date (or the entry's own end), or a repeating event when imported as Events. If a repeating assignment would have more than 366 occurrences, the import stops and Helium tells you which entry repeats too many times.
 
 > **Note:** A single `.ics` file imports into one place — Helium won't split one calendar across several classes. If yours covers multiple classes and you want them kept separate, split it into one `.ics` per class and import each on its own — or hand the whole calendar to [your AI assistant](/support/getting-started/where-to-start-with-helium/#use-ai-as-a-scheduling-assistant), which can sort a mixed calendar into the right classes for you.
 
