@@ -26,8 +26,8 @@ You complete each occurrence of a repeating assignment on its own, then grade it
 
 When you edit, move, or delete a repeating item, choose whether the change is for this one or all of them. Changing the **Repeat** settings always changes all of them.
 
-  * **This event** or **This assignment** changes only that one. It keeps its reminders; notes and attachments stay with the other occurrences
-  * **All events** or **All assignments** changes all of them. Occurrences you've already completed or changed on their own are separate now, so changing or deleting all of them leaves those as they are
+  * **This occurrence** changes only that one, and it keeps its reminders
+  * **All occurrences** changes all of them. Occurrences you've already completed or changed on their own are separate now, so changing or deleting all of them leaves those as they are
 
 A repeat the **Repeat** options can't show, like some imported from another calendar, appears as **Custom repeat**. You can still edit or delete the item, or choose a new repeat to replace it.
 
