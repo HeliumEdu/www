@@ -3,7 +3,7 @@ title: Understanding the Grades Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — your overall grade and GPA, at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-12
+updatedDate: 2026-11-14
 ---
 
 The Grades dashboard surfaces four summary widgets — **Overall Grade**, **Progress vs. Pace**, **At-Risk Classes**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
@@ -64,7 +64,7 @@ Two tabs are available:
 - **What Could I Get?** — drag sliders to set hypothetical scores for ungraded assignments and see your projected overall grade update in real time.
 - **What Do I Need?** — enter a target overall grade to find out the exact score you need on a single remaining assignment.
 
-For a full walkthrough of both tabs, see [Grade Calculator](/support/grades-and-progress/grade-calculator/).
+Switch **Calculate for** to **Term GPA** to work with your term GPA instead. For a full walkthrough of both tabs, see [Grade Calculator](/support/grades-and-progress/grade-calculator/).
 
 ## Per-Class Breakdown
 

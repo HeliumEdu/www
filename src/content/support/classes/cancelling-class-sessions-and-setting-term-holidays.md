@@ -3,7 +3,7 @@ title: Cancelling Class Sessions and Setting Term Holidays
 description: "Skip individual class sessions or block out term-wide holidays so your Helium schedule reflects when class actually meets."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-08-10
+updatedDate: 2026-11-14
 ---
 
 Helium provides two ways to exclude dates from a class's recurring schedule: **Cancellations** for individual sessions of a single class, and **Holidays & Breaks** for term-wide dates that apply to every class in a Class Group.
@@ -36,10 +36,10 @@ To manage multiple cancellations, or to remove a previously cancelled date:
 **Holidays & Breaks** are set at the Class Group level and apply automatically to every class in that group. Use this for any term-wide date that school is not in session.
 
   1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Open the class group dropdown and click the edit (pencil) icon next to the group
+  2. Open the class group dropdown and click the edit (pencil) icon next to the group, or select **Add Group**
   3. Click **Holidays & Breaks**
   4. Click the **+** button to add a date, or click the delete icon next to a date to remove it
-  5. Click **Save**
+  5. Click **Save**, then click **Save** on the group
 
 ## What Is Not Affected
 

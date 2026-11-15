@@ -3,7 +3,7 @@ title: Where to Start with Helium
 description: "Set up Helium for a new term step by step, or let an AI assistant set it up from your syllabi — two ways to get started."
 category: getting-started
 publishedDate: 2026-05-19
-updatedDate: 2026-11-12
+updatedDate: 2026-11-14
 ---
 
 There are two ways to set up Helium for a new term. Pick whichever fits how you like to work — both end with the same well-organized planner.
@@ -84,6 +84,7 @@ Then interview the user about anything the syllabi do not make explicit. The pri
   - The time zone set in the user's Helium account (Settings → Preferences), as an IANA name (e.g., America/Los_Angeles). If they don't know it, ask where they are and work out the name
   - Term start and end dates, and days with no class (holidays, breaks)
   - Credits per course — frequently omitted from syllabi; ask, do not invent. If still unknown, use `"0.00"`, which leaves the course out of the user's GPA
+  - The school's grade scale for GPA (e.g., 4.0 with +/-), set as the term's `grade_scale_template`; ask, do not invent. Give a course its own `grade_scale_template` only when its syllabus grades differently (e.g., whole letters in a term graded with +/-), and only a preset whose grades the term's scale also awards (see CourseGroup's and Course's `grade_scale_template` in the docs). If still unknown, leave it unset
   - Whether a lecture and its lab/recitation/discussion are graded together (one course with a schedule for each) or separately (separate courses)
   - Online vs. in-person, and the room or location when in-person
   - Days and times when a class meets at different times on different days, or on a rotating schedule (A/B weeks, A/B days)

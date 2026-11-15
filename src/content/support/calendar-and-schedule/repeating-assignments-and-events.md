@@ -3,7 +3,7 @@ title: Repeating Assignments and Events
 description: "Set an assignment or event to repeat, then change or delete one occurrence or all of them."
 category: calendar-and-schedule
 publishedDate: 2026-11-12
-updatedDate: 2026-11-12
+updatedDate: 2026-11-14
 ---
 
 A weekly reading response, a lab report every other Friday, or a monthly club meeting can be set up once and repeat on its own.

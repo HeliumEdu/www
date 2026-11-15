@@ -3,7 +3,7 @@ title: Tracking Your GPA
 description: "How Helium calculates your GPA for each term and across all terms, and how to turn it on with a grade scale and credits."
 category: grades-and-progress
 publishedDate: 2026-11-12
-updatedDate: 2026-11-12
+updatedDate: 2026-11-14
 ---
 
 Helium calculates a GPA for each Class Group once you choose a grade scale for it and a class with credits has a grade. It shows in the **Overall Grade** widget on the [**Grades**](https://app.heliumedu.com/grades) page. If your school doesn't use GPA, leave the grade scale on **None** and Helium won't show one.
@@ -18,6 +18,18 @@ A grade scale turns a class grade into a grade point, like 90% and up earning a 
   4. Click **Save**
 
 A scale set through the [Helium API](/support/sync-and-integration/using-the-helium-api/) or an import that doesn't match a preset shows as **Custom**.
+
+## A Class With Its Own Grade Scale
+
+If a syllabus grades differently from the rest of your term, like whole letters in a group graded with +/-, give that class its own scale.
+
+  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
+  2. On the **Details** tab, choose a **Grade scale**
+  3. Click **Save**
+
+The list only offers scales whose grades your group's scale also uses, so your GPA stays on one scale. It's unavailable when the group has no scale or nothing else fits. For example, a school that grades in whole letters never records an A-, so a class in that group can't use a scale with +/-. **Same as group** uses the group's scale. If you change the group's scale, a class scale that no longer fits goes back to **Same as group**.
+
+When a class has a grade scale, its card on the **Classes** page shows it.
 
 ## Adding Credits
 
@@ -40,4 +52,5 @@ When you have more than one Class Group, the **Overall Grade** widget also shows
 
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
   * [Understanding the Grades Dashboard](/support/grades-and-progress/understanding-the-grades-dashboard/)
+  * [Grade Calculator](/support/grades-and-progress/grade-calculator/)
   * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)

@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-11-12
+updatedDate: 2026-11-14
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together. Assignments belong to a class, so at least one class has to exist before you can add one.
@@ -35,6 +35,7 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
   * **Credits** — how much the class counts toward your GPA
+  * **Grade scale** — **Same as group** uses the group's scale; choose another only if this class's syllabus grades differently; see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
   * **Notes** — a note for the class; once the class is saved, click **Open in Notebook** to edit it in the Notebook
 
 Click **Save** to create the class and proceed to the Schedules tab.
