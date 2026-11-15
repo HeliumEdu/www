@@ -3,7 +3,7 @@ title: Understanding the Grades Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — your overall grade and GPA, at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-14
+updatedDate: 2026-11-15
 ---
 
 The Grades dashboard surfaces four summary widgets — **Overall Grade**, **Progress vs. Pace**, **At-Risk Classes**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
@@ -68,7 +68,7 @@ Switch **Calculate for** to **Term GPA** to work with your term GPA instead. For
 
 ## Per-Class Breakdown
 
-Below the trend graph, each class shows its grade, its trend, and its grade point if it has credits (e.g., "3.50 GP"), plus a breakdown table with one row per category, including:
+Below the trend graph, each class shows its grade, its trend, its letter grade if it has a grade scale, and its grade point if it also has credits (e.g., "B+ &bull; 3.50 GP"), plus a breakdown table with one row per category, including:
 
   * **Contribution** — shown only for classes using weighted grading (see below)
   * **Graded** — how many assignments in the category have been graded

@@ -3,7 +3,7 @@ title: Tracking Your GPA
 description: "How Helium calculates your GPA for each term and across all terms, and how to turn it on with a grade scale and credits."
 category: grades-and-progress
 publishedDate: 2026-11-12
-updatedDate: 2026-11-14
+updatedDate: 2026-11-15
 ---
 
 Helium calculates a GPA for each Class Group once you choose a grade scale for it and a class with credits has a grade. It shows in the **Overall Grade** widget on the [**Grades**](https://app.heliumedu.com/grades) page. If your school doesn't use GPA, leave the grade scale on **None** and Helium won't show one.
@@ -41,7 +41,7 @@ Credits decide how much each class counts toward your GPA. A class with no credi
 
 ## How GPA Is Calculated
 
-  * Each class earns the grade point of the band its grade falls in, shown next to the class on the **Grades** page when it has credits (e.g., "3.50 GP")
+  * Each class earns the grade point of the band its grade falls in, shown with the band's letter next to the class on the **Grades** page (e.g., "B+ &bull; 3.50 GP"). A class without credits shows only the letter
   * Your GPA is each class's grade point times its credits, added up, over the total credits
 
 ## GPA Across All Terms
