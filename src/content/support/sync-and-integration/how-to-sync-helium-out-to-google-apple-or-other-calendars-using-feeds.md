@@ -27,7 +27,7 @@ For instructions on how to add a feed URL to a specific calendar application, se
 ## Key Notes About Feeds
 
   * External applications can only **display** Helium calendars through this method; they cannot edit Helium data
-  * Your calendar app checks your feeds on its own schedule, so new items and changes, like a new due date, can take some time to show up there
+  * Your calendar app checks your feeds on its own schedule, so new items and changes, like an updated due date, can take some time to show up there
   * Feeds are disabled by default to protect your privacy
   * Classes in a group with **Hide this group's classes and assignments from the Planner and Resources** checked, and their assignments, are left out of the feeds
   * Keep your private feed URLs secret. If a feed URL is ever compromised, disabling and re-enabling Feeds will regenerate new URLs for all three feeds
