@@ -59,6 +59,15 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
           maxlength="200"
           class="w-full px-4 py-3 text-base rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
         />
+        <div aria-live="polite">
+          <div
+            id="form-suggestions"
+            class="hidden mt-3 rounded-lg border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-white/5 px-4 py-3 text-sm"
+          >
+            <p class="text-muted">These articles might answer your question:</p>
+            <ul id="form-suggestions-list" class="mt-2 space-y-1"></ul>
+          </div>
+        </div>
       </div>
 
       <div>
@@ -213,6 +222,85 @@ const FALLBACK_MAX_UPLOAD_BYTES = 10485760;
         showError(oversizeMessage(oversized.name));
         fileInput.value = '';
       }
+    });
+
+    type ArticleData = { url: string; meta: { title: string } };
+    type PagefindResult = { id: string; score: number; data: () => Promise<ArticleData> };
+    type Pagefind = { search: (term: string) => Promise<{ results: PagefindResult[] }> };
+
+    const SUGGESTION_LIMIT = 3;
+    const STOPWORDS = new Set([
+      'about', 'after', 'again', 'all', 'also', 'and', 'any', 'are', 'because', 'been', 'before', 'being', 'but',
+      'can', 'cannot', 'cant', 'could', 'did', 'didnt', 'does', 'doesnt', 'dont', 'even', 'for', 'from', 'get',
+      'gets', 'getting', 'got', 'had', 'has', 'have', 'hello', 'here', 'how', 'into', 'isnt', 'its', 'just', 'keep',
+      'keeps', 'like', 'more', 'not', 'now', 'off', 'only', 'our', 'out', 'please', 'should', 'some', 'still',
+      'than', 'thank', 'thanks', 'that', 'the', 'their', 'them', 'then', 'there', 'these', 'they', 'this', 'those',
+      'too', 'very', 'was', 'wasnt', 'were', 'what', 'when', 'where', 'which', 'while', 'who', 'why', 'will', 'with',
+      'without', 'wont', 'would', 'you', 'your',
+      'bug', 'bugs', 'report', 'issue', 'issues', 'problem', 'problems', 'help', 'question', 'questions', 'helium',
+    ]);
+    const subjectInput = form.querySelector<HTMLInputElement>('input[name="subject"]')!;
+    const suggestions = document.getElementById('form-suggestions')!;
+    const suggestionsList = document.getElementById('form-suggestions-list')!;
+    let pagefind: Promise<Pagefind> | null = null;
+    let latestSuggestionRequest = 0;
+    let suggestionTimer: number | undefined;
+
+    async function suggestArticles(keywords: string[]) {
+      const path = '/pagefind/pagefind.js';
+      pagefind ??= import(/* @vite-ignore */ path);
+      const index = await pagefind;
+      const searches = await Promise.all(keywords.map((keyword) => index.search(keyword)));
+      const ranked = new Map<string, { result: PagefindResult; matched: number; score: number }>();
+      for (const search of searches) {
+        for (const result of search.results) {
+          const entry = ranked.get(result.id) ?? { result, matched: 0, score: 0 };
+          entry.matched += 1;
+          entry.score += result.score;
+          ranked.set(result.id, entry);
+        }
+      }
+      const minMatched = Math.ceil(keywords.length / 2);
+      const best = [...ranked.values()]
+        .filter((entry) => entry.matched >= minMatched)
+        .sort((a, b) => b.matched - a.matched || b.score - a.score)
+        .slice(0, SUGGESTION_LIMIT);
+      return Promise.all(best.map((entry) => entry.result.data()));
+    }
+    function showSuggestions(articles: ArticleData[]) {
+      suggestionsList.replaceChildren(
+        ...articles.map((article) => {
+          const link = document.createElement('a');
+          link.href = article.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.className = 'text-primary hover:underline';
+          link.textContent = article.meta.title;
+          const item = document.createElement('li');
+          item.append(link);
+          return item;
+        })
+      );
+      suggestions.classList.toggle('hidden', !articles.length);
+    }
+    async function updateSuggestions() {
+      const request = ++latestSuggestionRequest;
+      const words = subjectInput.value.toLowerCase().replace(/['’]/g, '').split(/[^a-z0-9]+/);
+      const keywords = [...new Set(words.filter((w) => w.length >= 3 && !STOPWORDS.has(w)))];
+      let articles: ArticleData[] = [];
+      if (keywords.length) {
+        try {
+          articles = await suggestArticles(keywords);
+        } catch {
+          pagefind = null;
+        }
+      }
+      if (request === latestSuggestionRequest) showSuggestions(articles);
+    }
+
+    subjectInput.addEventListener('input', () => {
+      window.clearTimeout(suggestionTimer);
+      suggestionTimer = window.setTimeout(updateSuggestions, 300);
     });
 
     form.addEventListener('submit', async (e) => {
