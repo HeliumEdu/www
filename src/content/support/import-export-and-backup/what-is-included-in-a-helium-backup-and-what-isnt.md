@@ -3,7 +3,7 @@ title: What is Included in a Helium Backup (and What Isn't)?
 description: "What a Helium JSON backup includes — classes, assignments, grades, notes, reminders — and what it doesn't (attachments, preferences, login info)."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-16
 ---
 
 ## Overview
@@ -22,7 +22,7 @@ Helium backups contain nearly all of your account data, exported in JSON format.
 ## What's Not Included
 
   * **Attachments** — uploaded files are not included
-  * **Private Feed URLs** — these are regenerated per-account
+  * **Feed URLs** — these are regenerated per-account
   * **User Preferences**
   * **Login and Account Information**
 

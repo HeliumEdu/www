@@ -3,7 +3,7 @@ title: Why Items Aren't Showing on the Planner
 description: "Troubleshoot missing assignments, events, class schedules, and External Calendars on your Helium Planner — common causes and fixes."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-11-14
+updatedDate: 2026-11-16
 ---
 
 If something isn't appearing on your Planner, one of the causes below is usually responsible. The first three apply to anything that can show on the Planner; the later sections cover what's specific to each item type.
@@ -44,19 +44,19 @@ Class Schedules are generated only for dates within the class's start and end da
 
 Each external calendar has a **Show on calendar** toggle. If it's off, the calendar won't appear on the Planner. Find your calendar in [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars) and make sure the toggle is on.
 
-If the toggle keeps turning itself off, something is likely wrong with the iCal feed itself — Helium automatically disables a calendar when it encounters recurring errors with the URL source.
+If the toggle keeps turning itself off, something is likely wrong with the calendar itself — Helium automatically disables a calendar when it encounters recurring errors with the URL source.
 
 ### URL Changed
 
-Some services rotate or invalidate feed URLs after account changes (changing your password, switching accounts, adjusting privacy settings). If a feed suddenly stops working, check the source URL to see if it's changed, and update it in [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars).
+Some services rotate or invalidate calendar URLs after account changes (changing your password, switching accounts, adjusting privacy settings). If a calendar suddenly stops working, check the source URL to see if it's changed, and update it in [**Settings → External Calendars**](https://app.heliumedu.com/settings/external-calendars).
 
 ### Refresh Delay
 
-Helium refreshes External Calendars on a periodic basis. If the source calendar updates slowly or its provider caches the feed, changes may take time to appear.
+Helium refreshes External Calendars on a periodic basis. If the source calendar updates slowly or its provider caches it, changes may take time to appear.
 
 ## Related Articles
 
   * [Planner Views, and Changing Your Default](/support/calendar-and-schedule/planner-views-and-changing-your-default/)
   * [Class Meeting Schedules](/support/classes/class-meeting-schedules/)
   * [Setting Up and Managing Classes](/support/classes/setting-up-and-managing-classes/)
-  * [How to Sync Google, Apple, or Other Calendars in to Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)
+  * [How to Sync Google, Apple, or Other Calendars into Helium Using External Calendars](/support/sync-and-integration/how-to-sync-google-apple-or-other-calendars-into-helium-using-external-calendars/)

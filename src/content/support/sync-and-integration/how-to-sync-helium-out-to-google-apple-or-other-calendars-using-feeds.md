@@ -1,9 +1,9 @@
 ---
 title: How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds
-description: "Share your Helium assignments, class schedules, and events to Google Calendar, Apple Calendar, or any other calendar app via iCal feeds."
+description: "Share your Helium assignments, class schedules, and events to Google Calendar, Apple Calendar, or any other calendar app via Feeds."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-11-15
+updatedDate: 2026-11-16
 ---
 
 ## Overview
