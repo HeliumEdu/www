@@ -3,7 +3,7 @@ title: Cancelling Class Sessions and Setting Term Holidays
 description: "Skip individual class sessions or block out term-wide holidays so your Helium schedule reflects when class actually meets."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-11-14
+updatedDate: 2026-11-16
 ---
 
 Helium provides two ways to exclude dates from a class's recurring schedule: **Cancellations** for individual sessions of a single class, and **Holidays & Breaks** for term-wide dates that apply to every class in a Class Group.
@@ -17,7 +17,7 @@ Helium provides two ways to exclude dates from a class's recurring schedule: **C
 The fastest way to cancel a single session:
 
   1. Click the class occurrence on the **Planner** for the date to skip
-  2. Select **Skip this class** from the menu
+  2. Select **Skip this class** from the menu (**Skip this meeting** if the class meets more than once that day)
 
 The session is removed from the Planner immediately and added to the class's cancellation list.
 
@@ -44,6 +44,8 @@ To manage multiple cancellations, or to remove a previously cancelled date:
 ## What Is Not Affected
 
 Cancellations and holidays only affect the recurring class schedule. They do _not_ move **Assignments** due on those dates. Adjust the due date manually to reschedule an assignment.
+
+On a day cycle, a cancellation doesn't change the rotation: the next school day keeps its cycle day. Holidays & Breaks pause it, and the rotation picks up on the next school day.
 
 ## Related Articles
 

@@ -3,7 +3,7 @@ title: Repeating Assignments and Events
 description: "Set an assignment or event to repeat, then change or delete one occurrence or all of them."
 category: calendar-and-schedule
 publishedDate: 2026-11-12
-updatedDate: 2026-11-15
+updatedDate: 2026-11-16
 ---
 
 A weekly reading response, a lab report every other Friday, or a monthly club meeting can be set up once and repeat on its own.
@@ -28,6 +28,8 @@ When you edit, move, or delete a repeating item, choose whether the change is fo
 
   * **This occurrence** changes only that one, and it keeps its reminders
   * **All occurrences** changes all of them. Occurrences you've already completed or changed on their own are separate now, so changing or deleting all of them leaves those as they are
+
+A repeat doesn't skip holidays or cancelled classes. To skip one, delete that occurrence and choose **This occurrence**.
 
 A repeat the **Repeat** options can't show, like some imported from another calendar, appears as **Custom**, with how it repeats shown beneath. You can still edit or delete the item, or choose a new repeat to replace it.
 
