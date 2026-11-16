@@ -16,7 +16,7 @@ Helium provides two ways to exclude dates from a class's recurring schedule: **C
 
 The fastest way to cancel a single session:
 
-  1. Click the class occurrence on the **Planner** for the date to skip
+  1. Click the class meeting on the **Planner** for the date to skip
   2. Select **Skip this class** from the menu (**Skip this meeting** if the class meets more than once that day)
 
 The session is removed from the Planner immediately and added to the class's cancellation list.
