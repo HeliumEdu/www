@@ -3,7 +3,7 @@ title: Resetting Your Password
 description: "Reset a forgotten Helium password from the login page, or change your current password from inside Settings."
 category: account
 publishedDate: 2026-05-19
-updatedDate: 2026-11-01
+updatedDate: 2026-11-16
 ---
 
 ## How to Reset a Forgotten Password
@@ -21,7 +21,7 @@ updatedDate: 2026-11-01
   4. Re-enter your new password in the **Confirm password** field
   5. Click **Save**
 
-Changing your password also revokes your [API token](/support/sync-and-integration/using-the-helium-api/), if you have one.
+Changing your password also revokes your [API token](/support/sync-and-integration/using-the-helium-api/), if you have one. [Connected apps](/support/sync-and-integration/using-the-helium-api/#connected-apps), like an AI assistant, keep their access. If you think someone else used your account, check **Settings → Security & API → Connected Apps** too, and revoke anything you don't recognize.
 
 ## Setting a Password for the First Time (OAuth Accounts)
 

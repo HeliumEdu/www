@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-11-11
+updatedDate: 2026-11-16
 ---
 
 ## Overview
@@ -12,7 +12,7 @@ Helium exposes a public REST API. Anything you can do in the iOS, Android, or we
 
 Helium doesn't maintain official tooling or pre-built integrations, but the platform is open so you can build your own. Helium is also open source on [GitHub](https://github.com/HeliumEdu) — contributions are welcome, and if you build something with the API and want to share it, [let us know](/support/submit/).
 
-> **Tip:** If you'd rather not write any code, [use AI as a scheduling assistant](/support/getting-started/where-to-start-with-helium/#use-ai-as-a-scheduling-assistant) — connect your AI assistant to Helium and it imports your syllabi for you, or use the prompt there and upload the file it produces.
+> **Tip:** If you'd rather not write any code, [connect your AI assistant](/support/getting-started/where-to-start-with-helium/#connect-your-ai-assistant) to Helium and it imports your syllabi for you.
 
 ## Getting Your API Token
 

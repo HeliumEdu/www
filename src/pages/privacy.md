@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated November 12, 2026_
+_Last updated November 16, 2026_
 
 This Privacy Policy describes how Helium Edu, LLC ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
@@ -45,7 +45,7 @@ We retain account data while your account is active. Accounts that are not verif
 
 ## 6. Your Rights and Choices
 
-You may access, export, or delete your data through the Services. You can revoke every connected app's access at any time by changing your Helium password. You can disable push notifications in your device settings and manage optional communications using available in-product settings or unsubscribe links.
+You may access, export, or delete your data through the Services. You can revoke a connected app's access at any time from Settings in the Helium app. Changing your Helium password revokes your API token; connected apps keep their access until you revoke them. You can disable push notifications in your device settings and manage optional communications using available in-product settings or unsubscribe links.
 
 ## 7. Cookies and Local Storage
 
