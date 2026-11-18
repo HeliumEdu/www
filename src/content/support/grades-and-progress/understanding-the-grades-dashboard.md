@@ -3,14 +3,14 @@ title: Understanding the Grades Dashboard
 description: "What the widgets on your Helium Grades dashboard are showing you — your overall grade and GPA, at-risk classes, progress vs. pace, ungraded work, and grade trends."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-15
+updatedDate: 2026-11-18
 ---
 
 The Grades dashboard surfaces four summary widgets — **Overall Grade**, **Progress vs. Pace**, **At-Risk Classes**, and **Pending Impact** — at the top of the page, followed by a grade trend graph and a per-class breakdown.
 
 ## Overall Grade
 
-**Overall Grade** shows the current Class Group's grade and its trend. Once the group has a grade scale and a class with credits has a grade, your **GPA** shows below it, along with **All**, your GPA across terms on the same grade scale. If something isn't counted, click the info icon to see why. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
+**Overall Grade** shows the current Class Group's grade and its trend. Once the group has a grade scale and a class with credits has a grade, your **GPA** shows below it, along with **All**, your GPA across terms on the same grade scale, plus any prior credits from your transcript. If something isn't counted, click the info icon to see why. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
 
 ## At-Risk Classes
 
@@ -45,15 +45,17 @@ A status badge of _Ahead_, _On Track_, or _Behind_ compares the two. The gap mus
 
 ## Grade Trend Graph
 
-The grade trend graph plots your grades over the class of the term. Click the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
+The grade trend graph plots your grades throughout the term. Click the **Graph settings** icon (gear) in the upper-right corner of the graph to open the settings panel.
 
 ### Switch between term view and individual class view
 
-Select **Entire Term** to see all classes plotted together, or choose a specific class from the list to focus the graph on that class's grade trend alone.
+Select **Entire Term** to see all classes plotted together, or choose a specific class from the list to focus the graph on that class's grade trend alone. On **Entire Term**, a **Term GPA** line shows your term GPA on the right-hand axis.
+
+Select **GPA Across Terms**, above **Entire Term**, to graph your **Term GPA** for each term and a running **All**.
 
 ### Auto-adjust to graded range
 
-Check **Auto-adjust to graded range** to zoom the graph's X-axis to just the date range of your graded assignments, rather than spanning the full class group date range. This can make grade trends easier to read when grading is clustered within a shorter period.
+Check **Auto-adjust to graded range** to zoom the graph's X-axis to just the date range of your graded assignments, rather than spanning the full class group date range. This can make grade trends easier to read when grading is clustered within a shorter period. In **GPA Across Terms**, it shows only the terms that have a GPA.
 
 ### Grade Calculator
 
