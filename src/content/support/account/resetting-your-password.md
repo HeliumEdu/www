@@ -8,7 +8,7 @@ updatedDate: 2026-11-16
 
 ## How to Reset a Forgotten Password
 
-  1. Go to the Helium login page and click [**Forgot your Password?**](https://app.heliumedu.com/forgot)
+  1. Go to the Helium login page and click [**Forgot your password?**](https://app.heliumedu.com/forgot)
   2. Enter your email address
   3. Check your inbox for the reset link
   4. Follow the instructions to create a new password
