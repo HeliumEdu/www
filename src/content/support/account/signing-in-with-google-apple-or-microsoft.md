@@ -3,7 +3,7 @@ title: Signing In with Google, Apple, or Microsoft
 description: "Sign in to Helium with your Google, Apple, or Microsoft account — and link to an existing email-and-password account if you already have one."
 category: account
 publishedDate: 2026-05-19
-updatedDate: 2026-11-01
+updatedDate: 2026-11-19
 ---
 
 In addition to signing in with an email and password, Helium supports signing in with your Google, Apple, or Microsoft account. This lets you log in without managing a separate password.
@@ -25,6 +25,16 @@ In addition to signing in with an email and password, Helium supports signing in
 If you already have a Helium account with an email and password, you can link it to your Google, Apple, or Microsoft account (as long as the email address matches). Follow the same steps above for "How to Sign In", and when the process completes, Helium will detect your existing account by the matching email address, and merge them.
 
 Once linked, you can sign in using either your email and password _or_ your linked provider — whichever is more convenient.
+
+## Removing a Provider
+
+To stop signing in with a provider:
+
+  1. Go to **Settings** and click the provider icons beside your email address
+  2. Under **Sign-in Methods**, click the remove (broken link) icon next to the provider
+  3. Click **Remove** to confirm
+
+You can't remove your only way to sign in, so the icons only open **Sign-in Methods** when your account has a Helium password or more than one provider. To remove your only provider, set a password first (see below).
 
 ## Account Management with OAuth
 
