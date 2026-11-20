@@ -3,20 +3,21 @@ title: How Helium Calculates Your Grades
 description: "How Helium computes your class, category, and term grades — covering points-based and weighted grading, missing work, date ranges, and GPA."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-12
+updatedDate: 2026-11-20
 ---
 
 Helium supports point-based grading as well as weighted grading.
 
 For points-based grading, your class grade is calculated as the total number of earned points over the total number of possible points. Assignment categories do not play a role in points-based grade calculations.
 
-For weighted grading, your class grade is calculated against the weight of each category, so the final grade is the average score of each category multiplied by its weight, over the sum of all weights.
+For weighted grading, your class grade is calculated against the weight of each category, so the final grade is the average score of each category multiplied by its weight, over the sum of the weights of the categories that have graded work.
 
 ## Missing or Ungraded Work
 
   * Assignments are not included in grade calculations unless **Complete** is checked and **Grade** is set
   * A missed assignment needs to still be marked as **Completed** and have its **Grade** set to "0" to be reflected in the grade calculation — simply leaving **Grade** blank will not cause it to affect grade calculations
-  * In classes with weighted grading, categories that have no **Weight** are ungraded — assignments placed in this category are ignored by the grading system, even if **Grade** is set
+  * In classes with weighted grading, categories that have no **Weight** are ungraded — they're marked **Not Graded** in an assignment's **Category** list, and assignments placed in them are ignored by the grading system
+  * Unchecking **Complete**, or moving an assignment into a **Not Graded** category, keeps its **Grade**, but it stops counting until the assignment is complete again and, in a weighted class, its category has a **Weight**
   * The start/end dates you set for the term set the range of the grade graph and the pace comparison; term and class dates do not change which assignments count toward your grades
 
 ## Overall Category Grade
@@ -25,7 +26,7 @@ The overall grade of a category is the total number of earned points over the to
 
 ## Overall Term Grade
 
-The overall grade of a term is a flat average of each class's current grade, so every class counts the same. To weigh classes by their credits instead, choose a grade scale and Helium calculates your GPA — see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
+The overall grade of a term is a flat average of each class's current grade, so every class counts the same. To weigh classes by their credits instead, choose a [grade scale](/support/grades-and-progress/choosing-a-grade-scale/) and add credits, and Helium calculates your GPA — see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/).
 
 ## Related Articles
 

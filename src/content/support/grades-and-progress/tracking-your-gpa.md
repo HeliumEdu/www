@@ -1,35 +1,12 @@
 ---
 title: Tracking Your GPA
-description: "How Helium calculates your GPA for each term and across all terms, and how to turn it on with a grade scale and credits."
+description: "How Helium calculates your GPA for each term and across all terms, and how to turn it on with credits once your classes have a grade scale."
 category: grades-and-progress
 publishedDate: 2026-11-12
-updatedDate: 2026-11-18
+updatedDate: 2026-11-20
 ---
 
-Helium calculates a GPA for each Class Group once you choose a grade scale for it and a class with credits has a grade. It shows in the **Overall Grade** widget on the [**Grades**](https://app.heliumedu.com/grades) page. If your school doesn't use GPA, leave the grade scale on **None** and Helium won't show one.
-
-## Choosing a Grade Scale
-
-A grade scale turns a class grade into a grade point, like 90% and up earning a 4.0. A new group uses the scale of your most recent group, or **None** for your first.
-
-  1. Open [**Classes**](https://app.heliumedu.com/classes)
-  2. Open the group menu at the top and click the edit (pencil) icon next to the group
-  3. Choose a **Grade scale**, then click the table icon next to it to check its bands against your school's
-  4. Click **Save**
-
-A scale set through the [Helium API](/support/sync-and-integration/using-the-helium-api/) or an import that doesn't match a preset shows as **Custom**.
-
-## A Class With Its Own Grade Scale
-
-If a syllabus grades differently from the rest of your term, like whole letters in a group graded with +/-, give that class its own scale.
-
-  1. Open [**Classes**](https://app.heliumedu.com/classes) and click the class
-  2. On the **Details** tab, choose a **Grade scale**
-  3. Click **Save**
-
-The list only offers scales whose grades your group's scale also uses, so your GPA stays on one scale. It's unavailable when the group has no scale or nothing else fits. For example, a school that grades in whole letters never records an A-, so a class in that group can't use a scale with +/-. **Same as group** uses the group's scale. If you change the group's scale, a class scale that no longer fits goes back to **Same as group**.
-
-When a class has a grade scale, its card on the **Classes** page shows it.
+Helium calculates a GPA for each Class Group once it has a grade scale and a class with credits has a grade. It shows in the **Overall Grade** widget on the [**Grades**](https://app.heliumedu.com/grades) page. To choose your school's scale, see [Choosing a Grade Scale](/support/grades-and-progress/choosing-a-grade-scale/).
 
 ## Adding Credits
 
@@ -60,6 +37,7 @@ Prior credits count toward **All** at your prior GPA, like one more term on its 
 
 ## Related Articles
 
+  * [Choosing a Grade Scale](/support/grades-and-progress/choosing-a-grade-scale/)
   * [How Helium Calculates Your Grades](/support/grades-and-progress/how-helium-calculates-your-grades/)
   * [Understanding the Grades Dashboard](/support/grades-and-progress/understanding-the-grades-dashboard/)
   * [Grade Calculator](/support/grades-and-progress/grade-calculator/)

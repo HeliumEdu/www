@@ -3,7 +3,7 @@ title: Grade Calculator
 description: "Use Helium's Grade Calculator to project your overall grade or term GPA with hypothetical scores, or find out exactly what you need on a final assignment to hit your target."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-14
+updatedDate: 2026-11-20
 ---
 
 ## How to Open the Grade Calculator
@@ -18,7 +18,7 @@ The top of the dialog shows the class's grade, and its grade point when the clas
 
 ## Class Grade or Term GPA
 
-Use **Calculate for** to switch both tabs between **Class grade** and **Term GPA**. Term GPA needs a grade scale on the class's group and credits on the class; until then it's unavailable, and the dialog says what's missing. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/) to set them up.
+Once the class's group has a [grade scale](/support/grades-and-progress/choosing-a-grade-scale/), use **Calculate for** to switch both tabs between **Class grade** and **Term GPA**. Term GPA also needs credits on the class; until it has them, the dialog says so. See [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/) to add them.
 
 ---
 
@@ -30,7 +30,7 @@ Each ungraded assignment appears as a row with a slider and a percentage. Drag t
 
 ### Default Slider Positions
 
-Each slider starts at your current category average. If a category has no graded work yet, sliders in that category default to 100%.
+Each slider starts where your grades stand now: in a weighted class, its category's average, or your current class grade when nothing in the category is graded yet. In a class without category weights, every slider starts at your current class grade. Left untouched, the projected grade is your current grade. Before anything in the class is graded, sliders start at 100%.
 
 ### Projected Grade Indicator
 
@@ -43,7 +43,7 @@ In **Term GPA**, it adds the class's projected grade point and your projected te
 
 ### Reset
 
-Click **Reset** to restore all sliders to their category-average defaults.
+Click **Reset** to restore all sliders to their starting positions.
 
 ### How the Projection Works
 
@@ -54,6 +54,8 @@ For weighted classes, each category's hypothetical grade averages your existing 
 ## What Do I Need?
 
 Calculates the exact score you need on a single remaining assignment to achieve your desired overall grade.
+
+It assumes the rest of your ungraded work scores where your grades stand now, the same starting point as **What Could I Get?**. Once something in the class is graded, enter the score it gives you there and the projected grade lands on your target.
 
 ### Requirements
 

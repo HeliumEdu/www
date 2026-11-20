@@ -3,7 +3,7 @@ title: Setting Up and Managing Classes
 description: "Add classes, set meeting schedules, configure grading categories, and organize them by term — the foundation of how Helium tracks your academic life."
 category: classes
 publishedDate: 2026-05-19
-updatedDate: 2026-11-14
+updatedDate: 2026-11-20
 ---
 
 In Helium, your academic life is organized around **Class Groups** and **Classes**. A Class Group typically represents a term or semester, and the classes within it represent your individual classes. Setting up your classes correctly is what makes grades, assignments, and your recurring schedule all work together. Assignments belong to a class, so at least one class has to exist before you can add one.
@@ -17,7 +17,7 @@ Before adding classes, you need at least one Class Group to hold them. Class Gro
   3. Fill in the group details:
      * **Title** — e.g., "Fall 2025," "Spring Term," "2025-26 School Year"
      * **From / To** — the start and end dates of the term
-     * **Grade scale** — how class grades turn into grade points for your GPA, or **None** if you don't track one; see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
+     * **Grade scale** — how class grades turn into letter grades and grade points for your GPA, or **Percentages only** to keep plain percentages; see [Choosing a Grade Scale](/support/grades-and-progress/choosing-a-grade-scale/)
      * **Hide this group's classes and assignments from the Planner and Resources** — check this to hide the entire group from your calendar, from the Resources page's class associations, and from the Notebook's link picker, without deleting anything
   4. Click **Save**
 
@@ -35,7 +35,7 @@ With a group selected, click the **+** button to add a class. Class setup is spl
   * **Online / Location** — where the class is held, or check **Online** for a fully remote class.
   * **Color** — the color used to represent this class across Planner and Grades
   * **Credits** — how much the class counts toward your GPA
-  * **Grade scale** — **Same as group** uses the group's scale; choose another only if this class's syllabus grades differently; see [Tracking Your GPA](/support/grades-and-progress/tracking-your-gpa/)
+  * **Grade scale** — **Same as group** uses the group's scale; choose another only if this class's syllabus grades differently; see [Choosing a Grade Scale](/support/grades-and-progress/choosing-a-grade-scale/)
   * **Notes** — a note for the class; once the class is saved, click **Open in Notebook** to edit it in the Notebook
 
 Click **Save** to create the class and proceed to the Schedules tab.
