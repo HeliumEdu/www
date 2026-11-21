@@ -3,7 +3,7 @@ title: Linked vs. Standalone Notes
 description: "Notes in Helium can be linked to a class, assignment, event, or resource — or stand on their own. When to use each, and why."
 category: notebook
 publishedDate: 2026-05-19
-updatedDate: 2026-11-04
+updatedDate: 2026-11-21
 ---
 
 Notes in Helium can exist on their own or be linked to a Class, Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
@@ -51,3 +51,7 @@ A cloud icon in the top-right corner of the note editor shows the current sync s
   * **Yellow, with a line through it** — auto-save is paused, for example while you're offline. Helium keeps retrying, or click the icon to retry right away
 
 To learn how notes sync between devices and how unsaved notes are recovered, see [Using Helium on More Than One Device](/support/sync-and-integration/using-helium-on-more-than-one-device/).
+
+## Related Articles
+
+  * [Printing & Exporting to PDF or CSV](/support/import-export-and-backup/printing-and-exporting-to-pdf-or-csv/)
