@@ -1,12 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
 import { getCollection } from 'astro:content';
-import Search from 'astro-pagefind/components/Search.astro';
 
 import Layout from '~/layouts/PageLayout.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
+import SupportSearch from '~/components/support/SupportSearch.astro';
 
 import { SUPPORT_CATEGORIES } from '~/utils/supportCategories';
 
@@ -65,8 +65,8 @@ const metadata = {
         Search the knowledge base, browse articles by topic, or get in touch.
       </p>
 
-      <div class="mt-8 max-w-2xl mx-auto support-search">
-        <Search className="pagefind-ui" searchboxOptions={{ placeholder: 'Search ...', shortcut: 'none', 'hide-shortcut': 'true' }} />
+      <div class="mt-8 max-w-2xl mx-auto support-hero-search">
+        <SupportSearch placeholder="Search ..." />
       </div>
     </div>
   </WidgetWrapper>
@@ -78,12 +78,8 @@ const metadata = {
       z-index: 30;
     }
 
-    /* Override Pagefind defaults: fill the centered container and match the
-       original placeholder's input height. */
-    .support-search pagefind-searchbox {
-      --pf-searchbox-max-width: 100%;
+    .support-hero-search pagefind-searchbox {
       --pf-input-height: 56px;
-      --pf-input-font-size: 16px;
     }
   </style>
 

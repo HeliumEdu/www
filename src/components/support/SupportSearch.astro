@@ -1,0 +1,154 @@
+---
+import '@pagefind/component-ui/css/pagefind-component-ui.css';
+import { join } from 'node:path/posix';
+
+export interface Props {
+  placeholder?: string;
+  showSearchIcon?: boolean;
+  name?: string;
+  required?: boolean;
+  maxlength?: number;
+  labelId?: string;
+  openResultsInNewTab?: boolean;
+}
+
+const {
+  placeholder = ' ',
+  showSearchIcon = true,
+  name,
+  required = false,
+  maxlength,
+  labelId,
+  openResultsInNewTab = false,
+} = Astro.props;
+
+const bundlePath = join(import.meta.env.BASE_URL, 'support-search/');
+---
+
+<pagefind-config bundle-path={bundlePath}></pagefind-config>
+<div class:list={['support-search', { 'support-search-no-icon': !showSearchIcon }]}>
+  <pagefind-searchbox
+    max-results="5"
+    shortcut="none"
+    hide-shortcut="true"
+    placeholder={placeholder}
+    data-field-name={name}
+    data-field-required={required ? '' : undefined}
+    data-field-maxlength={maxlength}
+    data-label-id={labelId}
+    data-new-tab={openResultsInNewTab ? '' : undefined}
+  ></pagefind-searchbox>
+</div>
+
+<style is:global>
+  .support-search {
+    --pf-searchbox-max-width: 100%;
+    --pf-input-font-size: 16px;
+    --pf-border-radius: theme('borderRadius.lg');
+    --pf-border: theme('colors.gray.200');
+    --pf-border-focus: var(--aw-color-primary);
+    --pf-outline-focus: rgb(from var(--aw-color-primary) r g b / 0.3);
+  }
+
+  .support-search[data-pf-theme='dark'] {
+    --pf-background: theme('colors.slate.900');
+    --pf-border: theme('colors.slate.700');
+    --pf-text: theme('colors.slate.200');
+    --pf-text-secondary: theme('colors.slate.400');
+    --pf-text-muted: theme('colors.slate.400');
+    --pf-mark: theme('colors.slate.200');
+    --pf-hover: theme('colors.slate.800');
+    --pf-skeleton: theme('colors.slate.800');
+    --pf-skeleton-shine: theme('colors.slate.700');
+  }
+
+  .support-search-no-icon .pf-searchbox-input-wrapper::before {
+    display: none !important;
+  }
+
+  .support-search-no-icon .pf-searchbox-input {
+    padding-inline-start: theme('spacing.4') !important;
+  }
+
+  .support-search pagefind-searchbox[data-focus-left] .pf-searchbox-dropdown {
+    display: none !important;
+  }
+</style>
+
+<script>
+  import '@pagefind/component-ui';
+  import { getInstanceManager } from '@pagefind/component-ui';
+
+  function bindFormField(searchbox: HTMLElement) {
+    const { fieldName, fieldRequired, fieldMaxlength, labelId } = searchbox.dataset;
+    const applyFieldAttributes = () => {
+      const input = searchbox.querySelector<HTMLInputElement>('input.pf-searchbox-input');
+      if (!input) return;
+      if (fieldName) input.name = fieldName;
+      input.required = fieldRequired !== undefined;
+      if (fieldMaxlength) input.maxLength = Number(fieldMaxlength);
+      const label = labelId ? document.getElementById(labelId) : null;
+      if (label instanceof HTMLLabelElement) label.htmlFor = input.id;
+    };
+    applyFieldAttributes();
+    new MutationObserver(applyFieldAttributes).observe(searchbox, { childList: true });
+  }
+
+  /**
+   * Pagefind closes the dropdown on Tab, but a search still in its debounce reopens it after focus has moved on.
+   * Hiding it while focus is elsewhere covers that and any other way of leaving the field. A pointer press inside
+   * is ignored, since Safari moves focus off the input before a result link's click lands.
+   */
+  function closeWhenFocusLeaves(searchbox: HTMLElement) {
+    let pointerPressedInside = false;
+    searchbox.addEventListener('pointerdown', () => (pointerPressedInside = true));
+    document.addEventListener('pointerup', () => (pointerPressedInside = false));
+    searchbox.addEventListener('focusin', () => delete searchbox.dataset.focusLeft);
+    searchbox.addEventListener('focusout', (event) => {
+      if (pointerPressedInside || searchbox.contains(event.relatedTarget as Node | null)) return;
+      searchbox.dataset.focusLeft = '';
+      (event.target as Element).dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+    });
+  }
+
+  function openResultsInNewTab(searchbox: HTMLElement) {
+    searchbox.addEventListener(
+      'click',
+      (event) => {
+        const link = (event.target as Element).closest('a[href]');
+        if (link instanceof HTMLAnchorElement) {
+          link.target = '_blank';
+          link.rel = 'noopener';
+        }
+      },
+      true
+    );
+    searchbox.addEventListener(
+      'keydown',
+      (event) => {
+        if (event.key !== 'Enter' || !event.isTrusted) return;
+        if (event.shiftKey || event.metaKey || event.ctrlKey || event.altKey) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        event.target?.dispatchEvent(
+          new KeyboardEvent('keydown', { key: 'Enter', shiftKey: true, bubbles: true, cancelable: true })
+        );
+      },
+      true
+    );
+  }
+
+  function syncThemeWithSite() {
+    const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    document.querySelectorAll<HTMLElement>('.support-search').forEach((el) => (el.dataset.pfTheme = theme));
+  }
+
+  getInstanceManager().getInstance().setTranslations({ searching: 'Searching for [SEARCH_TERM] ...' });
+  document.querySelectorAll<HTMLElement>('.support-search pagefind-searchbox').forEach((searchbox) => {
+    bindFormField(searchbox);
+    closeWhenFocusLeaves(searchbox);
+    if (searchbox.dataset.newTab !== undefined) openResultsInNewTab(searchbox);
+  });
+  syncThemeWithSite();
+  new MutationObserver(syncThemeWithSite).observe(document.documentElement, { attributeFilter: ['class'] });
+</script>
