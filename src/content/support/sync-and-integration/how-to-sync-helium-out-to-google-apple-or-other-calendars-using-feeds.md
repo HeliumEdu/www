@@ -3,7 +3,7 @@ title: How to Sync Helium out to Google, Apple, or Other Calendars Using Feeds
 description: "Share your Helium assignments, class schedules, and events to Google Calendar, Apple Calendar, or any other calendar app via Feeds."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-11-16
+updatedDate: 2026-11-21
 ---
 
 ## Overview
@@ -20,7 +20,7 @@ You can share your Helium schedules with external calendar applications using Fe
      * Assignments
      * Class Schedules
      * Events
-  4. Click **Copy** next to any feed to copy its URL to your clipboard, then paste it into your external calendar application. On supported devices, you can also tap the **Share** button to send the URL directly.
+  4. Click **Copy** next to any feed to copy its URL to your clipboard, then paste it into your external calendar application. You can also click the share icon next to it to send the URL directly.
 
 For instructions on how to add a feed URL to a specific calendar application, see your provider's documentation — for example, [Google Calendar's guide for subscribing to calendars](https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop).
 

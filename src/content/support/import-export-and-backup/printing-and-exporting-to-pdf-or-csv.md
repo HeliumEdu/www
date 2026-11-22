@@ -18,29 +18,15 @@ Printing a note is the way to get a formatted copy of it out of Helium. It works
 
 ## Printing a Screen
 
-On a computer, the **Planner**, **Notebook**, **Classes**, **Resources**, and **Grades** screens can be printed with the standard keyboard shortcut:
-
-  * **Mac:** Cmd + P
-  * **Windows / Linux:** Ctrl + P
-
-Helium opens a PDF preview, which you can print or save. The **Agenda** view prints the week you're viewing, and tables like **Todos** print the page that's shown; set **Show** to **All** to print every row.
+On a computer, press Ctrl+P (Cmd+P on a Mac) on the **Planner**, **Notebook**, **Classes**, **Resources**, or **Grades** screen. Helium opens a PDF preview, which you can print or save. The **Agenda** view prints the week you're viewing, and tables like **Todos** print the page that's shown; set **Show** to **All** to print every row.
 
 ## Exporting Todos to CSV
 
   1. Open the [**Planner**](https://app.heliumedu.com/planner) and switch to the **Todos** view
-  2. Apply any filters you want reflected in the export
+  2. Filter, search, or sort the list the way you want it exported
   3. Click **Export CSV** in the footer
 
-The exported file includes a row for every todo that matches your current filters, with columns for:
-
-  * **Completed** — Yes or No
-  * **Title**
-  * **Due** — date, or date and time if not all-day
-  * **Class**
-  * **Category**
-  * **Priority**
-  * **Grade** — populated for completed assignments
-  * **Resources** — included only if any exported todo has linked resources
+The file has a row for every todo in the list, in the order shown, including ones on other pages.
 
 ## Related Articles
 

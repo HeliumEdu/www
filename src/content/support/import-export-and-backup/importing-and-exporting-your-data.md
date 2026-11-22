@@ -3,7 +3,7 @@ title: Importing & Exporting Your Data
 description: "Import and export your Helium data to back up, restore, or transfer your schedule between accounts."
 category: import-export-and-backup
 publishedDate: 2026-05-19
-updatedDate: 2026-11-16
+updatedDate: 2026-11-21
 ---
 
 ## Overview
@@ -50,7 +50,7 @@ A calendar only carries your schedule and due dates, so imported assignments sta
 
 ## Data Transfer
 
-The import endpoint accepts the same JSON format exports produce, making it straightforward to migrate data from another tool or automate schedule entry. [Connecting your AI assistant](/support/getting-started/where-to-start-with-helium/#connect-your-ai-assistant) covers the no-code path; for scripted use, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api/).
+Imports use the same JSON format as exports. To have your syllabi imported for you, [connect your AI assistant](/support/getting-started/where-to-start-with-helium/#connect-your-ai-assistant). To script it yourself, see [Using the Helium API](/support/sync-and-integration/using-the-helium-api/).
 
 ## Related Articles
 

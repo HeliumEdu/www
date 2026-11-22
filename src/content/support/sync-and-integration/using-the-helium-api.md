@@ -3,7 +3,7 @@ title: Using the Helium API
 description: "Build your own integrations on top of Helium's public REST API — anything you can do in the apps is available via the API too."
 category: sync-and-integration
 publishedDate: 2026-05-19
-updatedDate: 2026-11-16
+updatedDate: 2026-11-21
 ---
 
 ## Overview
@@ -16,7 +16,7 @@ Helium doesn't maintain official tooling or pre-built integrations, but the plat
 
 ## Getting Your API Token
 
-To use the API from a script or tool, you need an **API token**, a long-lived key you can copy into your script, save in a password manager, or paste into something like Postman.
+To use the API from a script or tool, you need an **API token**, a long-lived key your script sends with each request.
 
   1. Open [**Settings → Security & API**](https://app.heliumedu.com/settings/security).
   2. Under **API Token**, click **Generate**.

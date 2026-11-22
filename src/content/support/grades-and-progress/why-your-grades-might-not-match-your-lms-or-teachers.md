@@ -3,7 +3,7 @@ title: Why Your Grades Might Not Match Your LMS' or Teacher's
 description: "If your Helium grade differs from your teacher's or LMS, it's usually category weighting or missing assignments — how to find and fix the mismatch."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-21
 ---
 
 If your Helium grade looks different from the grade your teacher or LMS is showing you, it's usually due to category weighting differences or missing/ungraded assignments.
@@ -15,7 +15,6 @@ If your Helium grade looks different from the grade your teacher or LMS is showi
   * An assignment is in the wrong category
   * Ungraded assignments are affecting the calculation
   * Attendance is graded but not set up in Helium
-  * Term or class date mismatch
 
 ## Steps to Fix
 
@@ -35,8 +34,6 @@ If attendance is graded:
   * Add an Attendance category to the class
   * Create a single assignment in that category, with its date at or near the end of the term
   * Mark it as Complete and grade it accordingly
-
-Double-check term and class dates — the start and end dates you set for the term and class affect which assignments are calculated and how grades are displayed. Adjust dates to ensure all assignments fall within the class and term date range.
 
 ## Related Articles
 

@@ -3,7 +3,7 @@ title: Customizing Colors for Planner Display
 description: "Customize how items are color-coded on your Helium Planner — by class, by category, by grade, and more."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-05-19
+updatedDate: 2026-11-21
 ---
 
 Helium offers several color customization options for how items appear on your Planner. These settings are found in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences).
@@ -13,7 +13,7 @@ Helium offers several color customization options for how items appear on your P
   1. **Color for Events** — The default color applied to non-academic calendar items (Events)
   2. **Color for grades** — The color used when displaying grade badges on assignments
   3. **Color for Resources** — The color used when displaying resource badges on assignments
-  4. **Color by assignment category** — When enabled, Planner items are colored by their _assignment's category_ rather than by class. This is especially useful for visually distinguishing Homework vs. Quizzes vs. Exams, or for tracking workload across categories.
+  4. **Color by assignment category** — When enabled, Planner items are colored by their _assignment's category_ rather than by class.
 
 ## Related Articles
 

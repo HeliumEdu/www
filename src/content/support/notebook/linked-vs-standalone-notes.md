@@ -6,7 +6,7 @@ publishedDate: 2026-05-19
 updatedDate: 2026-11-21
 ---
 
-Notes in Helium can exist on their own or be linked to a Class, Assignment, Event, or Resource. Understanding the difference helps you stay organized and find them later.
+Notes in Helium can exist on their own or be linked to a Class, Assignment, Event, or Resource.
 
 ## Linked Notes
 
@@ -20,7 +20,7 @@ Linked notes display a badge showing what they're connected to, making it easy t
 
 ## Standalone Notes
 
-A standalone note isn't attached to anything — you can think of these more as general documents, from taking broader notes, jotting down your thoughts, or drafting a paper or project. Create one by opening the Notebook and clicking the "+" button.
+A standalone note isn't attached to anything — use it for general notes, brainstorming, or drafting a paper. Create one by opening the Notebook and clicking the "+" button.
 
 ## Why Can't I See My Notes?
 
@@ -42,13 +42,13 @@ You can link or unlink a note directly from the note editor. Open any note in th
 
 ## Auto-Save
 
-Notes are saved automatically as you type — you don't need to tap **Save** manually.
+Notes save as you type, so you don't need to click save.
 
-A cloud icon in the top-right corner of the note editor shows the current sync status.
+A cloud icon in the top-right corner of the note editor shows where auto-save stands:
 
-  * **Grey** — the note hasn't synced yet (new notes, before auto-save is active)
-  * **Blue** — auto-save is active and changes are syncing normally
-  * **Yellow, with a line through it** — auto-save is paused, for example while you're offline. Helium keeps retrying, or click the icon to retry right away
+  * **Grey** — auto-save isn't active yet; a new note starts saving once you give it a title or some text
+  * **Blue, with a check** — auto-save is active and your changes are saving
+  * **Yellow, with a line through it** — auto-save is paused, like when you're offline or while you choose between your changes and another device's. Helium keeps retrying, or click the icon to retry right away
 
 To learn how notes sync between devices and how unsaved notes are recovered, see [Using Helium on More Than One Device](/support/sync-and-integration/using-helium-on-more-than-one-device/).
 

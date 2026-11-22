@@ -3,7 +3,7 @@ title: Planner Views, and Changing Your Default
 description: "Switch between Month, Week, 3-Day, Day, Agenda, and Todos views in the Helium Planner, and pick which one opens by default."
 category: calendar-and-schedule
 publishedDate: 2026-05-19
-updatedDate: 2026-11-12
+updatedDate: 2026-11-21
 ---
 
 ## Available Views
@@ -36,14 +36,14 @@ Click any date to view the full list of items in the agenda section below the ca
   2. Choose your desired option from the **Default view** dropdown
   3. Click **Save**
 
-The Preferences screen is also where you'll find your time zone, the day your week starts, and how dates, times, and numbers are written. Helium sets these from your device when you sign up, so they should already match where you live, but if you've moved since then, this is the place to fix it. See [Changing Your Time Zone, Date Format, and 24-Hour Time](/support/calendar-and-schedule/changing-your-time-zone-date-format-and-24-hour-time/).
+Preferences also has your time zone, first day of the week, and date and time formats. See [Changing Your Time Zone, Date Format, and 24-Hour Time](/support/calendar-and-schedule/changing-your-time-zone-date-format-and-24-hour-time/).
 
 ## Dragging to Reschedule, Adjust Time
 
 You can reschedule assignments and events by dragging them to a different time slot or day, or adjust their duration by clicking on the top or bottom edge and dragging. For a repeating item, Helium asks whether to change just that one or all of them; see [Repeating Assignments and Events](/support/calendar-and-schedule/repeating-assignments-and-events/).
 
   * On **desktop and web**, drag-and-drop and resizing are always enabled
-  * On **touch** devices, drag-and-drop is enabled by default (though only supported in **Week**, **3-Day**, and **Day** views). If you find it interferes with your preferred experience, you can turn it off in [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences) by disabling **Drag-and-drop on touch devices**
+  * On **touch** devices, drag-and-drop is enabled by default (though only supported in **Week**, **3-Day**, and **Day** views). To turn it off, open [**Settings → Preferences**](https://app.heliumedu.com/settings/preferences) and turn off **Drag-and-drop on touch devices**
     * Adjusting time by dragging the top or bottom edge is not supported on **touch** devices
 
 > **Note:** On touch devices (including tablets), drag-and-drop is not supported in **Month** view. Tapping the top or bottom edge and dragging to resize an item is also not supported on touch devices.
