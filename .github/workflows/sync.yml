@@ -20,6 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
+    env:
+      IMAGEMAGICK_VERSION: 7.1.2-35
+
     steps:
       - name: Generate GitHub App token
         id: app-token
@@ -35,10 +38,8 @@ jobs:
 
       - name: Install ImageMagick 7
         run: |
-          release=$(curl -fsSL https://api.github.com/repos/ImageMagick/ImageMagick/releases/latest)
-          tag=$(echo "$release" | jq -r '.tag_name')
-          url=$(echo "$release" | jq -r '.assets[] | select(.name | test("gcc-x86_64.AppImage$")) | .browser_download_url')
-          wget -q "$url" -O /tmp/magick.AppImage
+          base_url="https://github.com/ImageMagick/ImageMagick/releases/download/${IMAGEMAGICK_VERSION}"
+          wget -q "$base_url/ImageMagick-${IMAGEMAGICK_VERSION}-gcc-x86_64.AppImage" -O /tmp/magick.AppImage
           chmod +x /tmp/magick.AppImage
           cd /tmp && ./magick.AppImage --appimage-extract > /dev/null
           sudo mv /tmp/squashfs-root /opt/imagemagick
