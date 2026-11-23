@@ -38,8 +38,7 @@ The site is built with [Astro](https://astro.build) on the [AstroWind](https://g
 To install dependencies and start the dev server, execute:
 
 ```sh
-npm install
-npm run dev
+make run-devserver
 ```
 
 The dev server is available at http://localhost:4321.
@@ -47,7 +46,7 @@ The dev server is available at http://localhost:4321.
 To build a production version of the site, execute:
 
 ```sh
-npm run build
+make build
 ```
 
 ### Deployment

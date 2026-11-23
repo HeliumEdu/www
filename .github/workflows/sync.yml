@@ -46,7 +46,7 @@ jobs:
           magick -version
 
       - name: Regenerate OG image
-        run: npm run build-og-image
+        run: make build-og-image
 
       - name: Get GitHub App bot user ID
         id: get-bot-user-id

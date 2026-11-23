@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds src/assets/img/og-default.png from the framed-laptop screenshot.
 #
-#   npm run build-og-image
+#   make build-og-image
 #
 # frame-laptop.png is captured and framed by `make screenshots` in frontend
 # (bin/grab-screenshots-web.py), which runs this script when the frame changes.

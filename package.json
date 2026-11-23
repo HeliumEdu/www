@@ -11,6 +11,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "preview": "astro preview",
     "build-og-image": "./scripts/build-og-image.sh"
   },
   "dependencies": {
