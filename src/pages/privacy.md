@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated November 16, 2026_
+_Last updated November 24, 2026_
 
 This Privacy Policy describes how Helium Edu, LLC ("Helium," "we," "us," or "our") collects, uses, and shares information when you use our website, mobile applications, and related services (collectively, the "Services").
 
@@ -13,7 +13,7 @@ Your use of the Services is also governed by our [Terms of Service](/terms/).
 
 **Information You Provide:** Account information (such as username, email, and password), time zone, planner content (such as classes, assignments, grades, events, notes, reminders, and attachments), and external calendar URLs you choose to import.
 
-**Information Collected Automatically:** Device and app information, push-notification device tokens/identifiers, usage analytics, and crash/error reports used to troubleshoot and improve the Services.
+**Information Collected Automatically:** Device and app information, push-notification device tokens/identifiers, usage analytics, and crash/error reports used to troubleshoot and improve the Services. Usage analytics are linked to an internal account number, never your name or email address.
 
 **Third-Party Login:** If you sign in with Google, Apple, or Microsoft, we receive your verified email address and a provider identifier needed to authenticate your account. We do not receive your third-party password.
 
