@@ -12,14 +12,14 @@ Helium lets you export your data as a JSON file, which can be used to archive yo
 
 ## Exporting Your Data
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
+  1. Open [**Settings → Import/Export**](https://app.heliumedu.com/settings/import-export)
   2. Click **Export**
 
 ## Importing Data
 
 > **Coming from another planner?** See our guides for moving your schedule into Helium from [iStudiez Pro](/support/import-export-and-backup/switching-from-istudiez-pro-to-helium/) or [myHomework](/support/import-export-and-backup/switching-from-myhomework-to-helium/).
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
+  1. Open [**Settings → Import/Export**](https://app.heliumedu.com/settings/import-export)
   2. Click **Choose** and select your backup file
   3. Under **Import into**, keep **Create new groups**, or pick an existing group to add the file's classes to it
   4. Click **Import**
@@ -30,7 +30,7 @@ Imported data is added alongside what's already in your account — in new group
 
 You can also import a calendar (`.ics`) file — for example, one exported from Google Calendar, Apple Calendar, or another planner.
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
+  1. Open [**Settings → Import/Export**](https://app.heliumedu.com/settings/import-export)
   2. Click **Choose** and select your `.ics` file
   3. Under **Import into**, pick where the entries should go:
      * **An existing class** — each entry becomes an assignment in that class

@@ -57,14 +57,14 @@ If your assistant does not support custom connectors, use [the prompt below](#th
   3. The assistant reads [the Helium API docs](https://api.heliumedu.com/docs/), then asks you to attach your syllabi. Attach the syllabus for every class in your term at once.
   4. Answer the assistant's questions about anything your syllabi leave unclear. The prompt tells it to ask rather than guess — credits, lecture and lab structure, online or in-person, and vague due times come up often.
   5. Download the import file the assistant produces. You do not need to open it.
-  6. In Helium, open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export), click **Choose**, and select the file. Under **Import into**, keep **Create new groups** for a new term, or pick the term's Class Group to add classes to a term already in Helium. Then click **Import**.
+  6. In Helium, open [**Settings → Import/Export**](https://app.heliumedu.com/settings/import-export), click **Choose**, and select the file. Under **Import into**, keep **Create new groups** for a new term, or pick the term's Class Group to add classes to a term already in Helium. Then click **Import**.
 
 If the assistant pastes text into the chat instead of producing a file, or its first attempt looks off (missing classes or wrong dates), ask it to regenerate the file strictly per the prompt.
 
 ### The Prompt
 
 ```
-You will produce a single JSON file that the user uploads to Helium via Settings → Import / Export → Import. The user will attach one or more syllabi after you confirm you've read the docs.
+You will produce a single JSON file that the user uploads to Helium via Settings → Import/Export → Import. The user will attach one or more syllabi after you confirm you've read the docs.
 
 Before doing anything:
 
@@ -96,7 +96,7 @@ Then interview the user about anything the syllabi do not make explicit. The pri
 When you have everything you need:
 
   - Generate the JSON exactly matching the Export schema from the docs.
-  - Deliver it as a downloadable file (e.g., helium-import.json) so the user can save it with a single click. Do NOT paste the file contents into chat as text or wrap them in a markdown code block — the user is non-technical and should not have to copy, format, or extract anything. The file you provide is what they upload directly to Helium via Settings → Import / Export.
+  - Deliver it as a downloadable file (e.g., helium-import.json) so the user can save it with a single click. Do NOT paste the file contents into chat as text or wrap them in a markdown code block — the user is non-technical and should not have to copy, format, or extract anything. The file you provide is what they upload directly to Helium via Settings → Import/Export.
 
 You never call the Helium API and never see the user's password, token, or account data. Your only inputs are the syllabi and answers the user provides.
 ```

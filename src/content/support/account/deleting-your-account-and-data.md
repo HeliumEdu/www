@@ -17,7 +17,7 @@ Consider reviewing the following before proceeding:
 
 ## Steps to Delete Your Account
 
-  1. Open [**Settings → Import / Export**](https://app.heliumedu.com/settings/import-export)
+  1. Open [**Settings → Import/Export**](https://app.heliumedu.com/settings/import-export)
   2. Scroll to the **Danger Zone** section and click it to expand
   3. Select **Delete Account**
   4. In the confirmation dialog, enter your password (if your account uses one) and click **Delete**
