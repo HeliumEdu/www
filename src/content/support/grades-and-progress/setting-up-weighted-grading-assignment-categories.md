@@ -3,7 +3,7 @@ title: Setting Up Weighted Grading & Assignment Categories
 description: "Match your teacher's grading scheme in Helium by setting weights for assignment categories like Homework, Quizzes, and Exams."
 category: grades-and-progress
 publishedDate: 2026-05-19
-updatedDate: 2026-11-20
+updatedDate: 2026-11-26
 ---
 
 Weighted categories let you match your teacher's grading scheme (e.g., Homework 30%, Quizzes 20%, Exams 50%). Weighted grading is enabled for a class whenever any of its categories has a **Weight (%)** value set.
@@ -17,7 +17,7 @@ Weighted categories let you match your teacher's grading scheme (e.g., Homework 
   5. Click **Save**
   6. Repeat for each category — all weights should add up to 100%
 
-> **Note:** Once a class uses weights, any category without one, including **Uncategorized**, is marked **Not Graded** in an assignment's **Category** list, and grades in it don't count toward the class grade. Move those assignments into a weighted category, or give the category a weight.
+> **Note:** Once a class uses weights, any category without one, including **Uncategorized**, is marked **Not Graded** in an assignment's **Category** list, and grades in it don't count toward the class grade. Move those assignments into a weighted category, or give their category a weight (**Uncategorized** can't have one).
 
 ## Related Articles
 
